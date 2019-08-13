@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerWalk : StateMachineBehaviour
 {
-    public GameObject Player;
+    protected GameObject Player;
     private Animator animControl;
 
     private Rigidbody rb;
@@ -14,7 +14,10 @@ public class PlayerWalk : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       if (!Player) Player = GameObject.FindGameObjectWithTag("Player");
+       if (!Player) 
+       {
+           Player = GameObject.FindGameObjectWithTag("Player");
+       }
         animControl = Player.GetComponent<Animator>();
         rb = Player.GetComponent<Rigidbody>();
     }
@@ -29,7 +32,8 @@ public class PlayerWalk : StateMachineBehaviour
        }
 
         rb.velocity = input * speed;
-        lookPoint = Vector3.Lerp(lookPoint, Player.transform.position + input, Time.deltaTime);
+        lookPoint = Player.transform.position + input;
+
         Player.transform.LookAt(lookPoint);
 
        if (Input.GetButtonDown("Jump")) {
