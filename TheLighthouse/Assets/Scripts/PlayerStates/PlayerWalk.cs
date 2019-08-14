@@ -31,10 +31,10 @@ public class PlayerWalk : StateMachineBehaviour
            return;
        }
 
-        rb.velocity = input * speed;
-        lookPoint = Player.transform.position + input;
+        rb.velocity = input.normalized * speed;
+        lookPoint = Player.transform.position + rb.velocity;
 
-        Player.transform.LookAt(lookPoint);
+        Player.transform.rotation = Quaternion.Lerp(Player.transform.rotation, Quaternion.LookRotation(rb.velocity, Vector3.up), 30f * Time.deltaTime);
 
        if (Input.GetButtonDown("Jump")) {
            animControl.SetTrigger("Jump");
