@@ -21,9 +21,6 @@ public class Player : MonoBehaviour
         [SerializeField] protected float _speed;
         public float speed => _speed;
 
-        [SerializeField] protected MeshRenderer _playerMesh;
-        public MeshRenderer PlayerMesh => _playerMesh;
-
         private Vector2 _direction;
         private bool _canMove;
     
@@ -64,7 +61,6 @@ public class Player : MonoBehaviour
         }
 
         animator.SetBool("canMove", true);
-        PlayerMesh.material.color = Color.white;
         _canMove = true;
     }
 
@@ -83,6 +79,9 @@ public class Player : MonoBehaviour
     protected void Move () {
         Vector2 dir = _direction.normalized;
         rigidbody.velocity = dir * speed;
+        
+        animator.SetFloat("walkSpeed", _direction.x);
+        animator.SetBool("isWalking", _direction.x != 0);
     }
 
     protected void InitiateSearch() {

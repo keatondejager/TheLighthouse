@@ -19,7 +19,7 @@ public class PlayerExamineState : StateMachineBehaviour
     // OnStateExit is called before OnStateExit is called on any state inside this state machine
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       Player.controls.Examine.Disable();
+        Player.controls.Examine.Disable();
     }
 
     // OnStateMove is called before OnStateMove is called on any state inside this state machine
