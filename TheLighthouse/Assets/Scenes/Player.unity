@@ -361,7 +361,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: -6057140222963153312, guid: 8873ac98c2aa89e4c88a288d6f663399,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 496a8f7df1c060e4b90734de21df4ceb, type: 2}
+    m_RemovedComponents:
+    - {fileID: -6057140222963153312, guid: 8873ac98c2aa89e4c88a288d6f663399, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8873ac98c2aa89e4c88a288d6f663399, type: 3}
 --- !u!4 &1121984731 stripped
 Transform:
@@ -396,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954551187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82099223, y: 1.1482906, z: 0.746428}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1121984731}
@@ -434,8 +440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216caa17e6b205a4d8f09082937604e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
-  _playerMesh: {fileID: 0}
+  _speed: 1
+  _turnSpeed: 5
 --- !u!54 &1954551191
 Rigidbody:
   m_ObjectHideFlags: 0

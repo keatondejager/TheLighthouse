@@ -21,7 +21,11 @@ public class Player : MonoBehaviour
         [SerializeField] protected float _speed;
         public float speed => _speed;
 
+        [SerializeField] protected float _turnSpeed;
+        public float turnSpeed => _turnSpeed;
+
         private Vector2 _direction;
+        private Vector2 _rotation;
         private bool _canMove;
     
 
@@ -40,6 +44,9 @@ public class Player : MonoBehaviour
 
         controls.Movement.Move.performed += ctx => _direction = ctx.ReadValue<Vector2>();
         controls.Movement.Move.canceled += ctx => _direction = Vector2.zero;
+
+        controls.Movement.Rotate.performed += ctx => _rotation = ctx.ReadValue<Vector2>();
+        controls.Movement.Rotate.canceled += ctx => _rotation = Vector2.zero;
 
         controls.Movement.Search.performed += ctx => InitiateSearch();
         controls.Movement.Examine.performed += ctx => InitiateExamine();
@@ -70,6 +77,7 @@ public class Player : MonoBehaviour
         }
 
         Move();
+        Rotate();
     }
 
     protected void Jump () {
@@ -77,39 +85,44 @@ public class Player : MonoBehaviour
     }
 
     protected void Move () {
-        Vector2 dir = _direction.normalized;
+        Vector3 temp = _direction.normalized;
+        Vector3 dir = Vector3.right * temp.x + Vector3.forward * temp.y;
+    
         rigidbody.velocity = dir * speed;
-        
-        animator.SetFloat("walkSpeed", _direction.x);
-        animator.SetBool("isWalking", _direction.x != 0);
+        if (_direction.sqrMagnitude != 0)
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), turnSpeed * Time.deltaTime);
+
+        // animator.SetFloat("walkSpeed_y", _direction.y);
+        // animator.SetFloat("walkSpeed_x", _direction.x);
+        animator.SetBool("isWalking", _direction.sqrMagnitude != 0);
+    }
+
+    protected void Rotate () {
+         
     }
 
     protected void InitiateSearch() {
         animator.SetBool("canMove", false);
         animator.SetBool("isSearching", true);
         _canMove = false;
-        print("Searching");
     }
 
     protected void InitiateExamine () {
         animator.SetBool("canMove", false);
         animator.SetBool("isExamining", true);
         _canMove = false;
-        print("Examining");
     }
 
     protected void CloseSearch() {
         animator.SetBool("canMove", true);
         animator.SetBool("isSearching", false);
         _canMove = true;
-        print("Not Searching");
     }
 
     protected void CloseExamine () {
         animator.SetBool("canMove", true);
         animator.SetBool("isExamining", false);
         _canMove = true;
-        print("Not Examining");
     }
 
 }
