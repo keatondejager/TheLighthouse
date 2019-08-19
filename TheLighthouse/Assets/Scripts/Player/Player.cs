@@ -12,10 +12,10 @@ public class Player : MonoBehaviour
         public static PlayerControls controls;
 
     [Header("General Reference")]
-        protected Rigidbody _rigidbody;
+        [SerializeField] protected Rigidbody _rigidbody;
         public new Rigidbody rigidbody => _rigidbody;
 
-        protected Animator _animator;
+        [SerializeField] protected Animator _animator;
         public Animator animator => _animator;
 
         [SerializeField] protected float _speed;
@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         [SerializeField] protected float _turnSpeed;
         public float turnSpeed => _turnSpeed;
 
+        private bool isGrounded;
         private Vector2 _direction;
         private Vector2 _rotation;
         private bool _canMove;
@@ -73,15 +74,15 @@ public class Player : MonoBehaviour
 
     private void Update() {
         if (!_canMove) {
+            rigidbody.velocity = new Vector3 (0, rigidbody.velocity.y, 0);
             return;
-        }
+        } 
 
         Move();
-        Rotate();
     }
 
     protected void Jump () {
-
+        animator.SetTrigger("Jump");
     }
 
     protected void Move () {
@@ -95,10 +96,6 @@ public class Player : MonoBehaviour
         // animator.SetFloat("walkSpeed_y", _direction.y);
         // animator.SetFloat("walkSpeed_x", _direction.x);
         animator.SetBool("isWalking", _direction.sqrMagnitude != 0);
-    }
-
-    protected void Rotate () {
-         
     }
 
     protected void InitiateSearch() {
