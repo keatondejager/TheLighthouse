@@ -9,7 +9,7 @@ public class PlayerMovementState : StateMachineBehaviour
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Player.controls.Movement.Enable();
+        Player.instance.EnableControlMap(Player.PlayerControlMaps.Movement);
     }
 
     // OnStateUpdate is called before OnStateUpdate is called on any state inside this state machine
@@ -22,7 +22,7 @@ public class PlayerMovementState : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (!animator.GetBool("canMove"))
-            Player.controls.Movement.Disable();
+            Player.instance.DisableControlMap(Player.PlayerControlMaps.Movement);
     }
 
     // OnStateMove is called before OnStateMove is called on any state inside this state machine

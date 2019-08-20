@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     [Header("Static Reference")]
         public static Player instance;
-        public static PlayerControls controls;
+        
 
     [Header("General Reference")]
         [SerializeField] protected Rigidbody _rigidbody;
@@ -24,7 +24,13 @@ public class Player : MonoBehaviour
         [SerializeField] protected float _turnSpeed;
         public float turnSpeed => _turnSpeed;
 
-        private bool isGrounded;
+        protected PlayerControls controls;
+        public enum PlayerControlMaps { Movement = 0, Examining = 1, Searching = 2, Menus = 3};
+
+    [Header("Private")]
+        [SerializeField] private bool _isGrounded;
+        public bool Grounded => _isGrounded;
+
         private Vector2 _direction;
         private Vector2 _rotation;
         private bool _canMove;
@@ -81,11 +87,72 @@ public class Player : MonoBehaviour
         Move();
     }
 
+    public void EnableControlMap (int ControlMap) {
+        switch (ControlMap) {
+            case 0:
+                controls.Movement.Enable();
+                controls.Examine.Disable();
+                controls.Search.Disable();
+                break;
+            case 1:
+                controls.Examine.Enable();
+                controls.Search.Disable();
+                controls.Movement.Disable();
+                break;
+            case 2:
+                controls.Search.Enable();
+                controls.Examine.Disable();
+                controls.Movement.Disable();
+                break;
+            case 3:
+                // Menu Controls
+                break;
+        }
+    }
+
+    public void EnableControlMap (PlayerControlMaps ControlMap) {
+        int controlMap = (int)ControlMap;
+        EnableControlMap(controlMap);
+    }
+
+    public void DisableControlMap (int ControlMap) {
+        switch (ControlMap) {
+            case 0:
+                controls.Movement.Disable();
+                break;
+            case 1:
+                controls.Examine.Disable();
+                break;
+            case 2:
+                controls.Search.Disable();
+                break;
+            case 3:
+                // Menu Controls
+                break;
+        }
+    }
+
+    public void DisableControlMap (PlayerControlMaps ControlMap) {
+        int controlMap = (int)ControlMap;
+        DisableControlMap(controlMap);
+    }
+
+    public void LandOnGround () {
+        _isGrounded = true;
+        animator.SetBool("isGrounded", _isGrounded);
+    }
+
     protected void Jump () {
         animator.SetTrigger("Jump");
+        _isGrounded = false;
+        animator.SetBool("isGrounded", _isGrounded);
     }
 
     protected void Move () {
+        if (!_isGrounded)
+            return;
+        
+
         Vector3 temp = _direction.normalized;
         Vector3 dir = Vector3.right * temp.x + Vector3.forward * temp.y;
     
