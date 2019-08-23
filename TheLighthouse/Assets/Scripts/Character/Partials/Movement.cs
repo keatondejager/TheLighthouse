@@ -16,6 +16,7 @@ namespace PlayerManager
                 [Header("Reference")]
                 [SerializeField] private Vector2 direction;
                 [SerializeField] private bool canJump = true;
+
             
             #region Methods
                 protected void Move () {
@@ -23,7 +24,6 @@ namespace PlayerManager
                         return;
                     }
                     Vector3 Offset = Vector3.forward * direction.y + Vector3.right * direction.x;
-
                     if (Offset.sqrMagnitude > 0) {
                         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(Offset), _turnSpeed * 20f * Time.deltaTime);
                         isWalking = isGrounded;
@@ -32,6 +32,9 @@ namespace PlayerManager
                     }
 
                     Offset = Offset.normalized * _speed;
+                    if (!isGrounded) {
+                        Offset *= 0.75f;
+                    }
                     Offset.y = _rigidbody.velocity.y;
                     _rigidbody.velocity = Offset;
                 }
@@ -43,6 +46,7 @@ namespace PlayerManager
                     _rigidbody.AddForce(transform.up * _jumpForce, ForceMode.Impulse);
                     isGrounded = false;
                     canJump = false;
+                    _animator.SetTrigger("Jump");
                     Invoke("ResetJump", _jumpDelay);
                 }
 
