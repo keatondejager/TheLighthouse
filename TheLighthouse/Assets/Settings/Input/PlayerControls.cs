@@ -311,6 +311,22 @@ public class PlayerControls : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""Button"",
+                    ""id"": ""6f6217f7-f581-44f3-9126-ab6071c03285"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Rotate"",
+                    ""type"": ""Button"",
+                    ""id"": ""1cb66035-ff75-4db6-86d1-c0b2d03c4131"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -335,6 +351,61 @@ public class PlayerControls : IInputActionCollection
                     ""action"": ""Close"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Triggers"",
+                    ""id"": ""cefe2803-83c6-404e-8b8a-6caec2745677"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""8e00fe32-72ac-4ca3-91a8-176ad4df9d64"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""1a0e8901-7360-478b-a61c-47e170ae0ce2"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd321b2a-0882-4ae6-ac24-8ac194411155"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f380362d-cf67-4819-8459-ad8567e5b45d"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -346,6 +417,14 @@ public class PlayerControls : IInputActionCollection
                     ""name"": ""Close"",
                     ""type"": ""Button"",
                     ""id"": ""139ea58e-e041-4bf4-8248-6c1cf0b9abaa"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Navigate"",
+                    ""type"": ""Button"",
+                    ""id"": ""29750775-206d-45fa-8d7f-74f82406f49d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
@@ -373,6 +452,138 @@ public class PlayerControls : IInputActionCollection
                     ""action"": ""Close"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""494a1391-c255-4731-9896-19b5a904eab7"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2da05475-19ac-439a-ab75-eef7ae05e1ae"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""ArrowKeys"",
+                    ""id"": ""84c2a250-2c28-4779-ac36-e86e78730519"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""088be43b-fd9c-45f0-8306-c803984d0c2d"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""562b77fe-fdbe-4e6c-842b-e568850a0113"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d8978b6c-1fb1-4b06-b886-3f317cde53b5"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""b5160348-4f2b-46ee-a0e0-1326c30219f1"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""02f44d73-a37c-4f5f-8a81-928ba8a71d4a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""0762487e-8549-47f2-92a0-f104e2861737"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""dc522e6a-58eb-44d9-9df5-b077bf59fd13"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""85fb4de8-33b6-4457-8c38-b93f29dc9536"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2d815a34-7457-42fb-bd1c-eabf85317f13"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -390,9 +601,12 @@ public class PlayerControls : IInputActionCollection
         // Examine
         m_Examine = asset.GetActionMap("Examine");
         m_Examine_Close = m_Examine.GetAction("Close");
+        m_Examine_Zoom = m_Examine.GetAction("Zoom");
+        m_Examine_Rotate = m_Examine.GetAction("Rotate");
         // Search
         m_Search = asset.GetActionMap("Search");
         m_Search_Close = m_Search.GetAction("Close");
+        m_Search_Navigate = m_Search.GetAction("Navigate");
     }
 
     ~PlayerControls()
@@ -516,11 +730,15 @@ public class PlayerControls : IInputActionCollection
     private readonly InputActionMap m_Examine;
     private IExamineActions m_ExamineActionsCallbackInterface;
     private readonly InputAction m_Examine_Close;
+    private readonly InputAction m_Examine_Zoom;
+    private readonly InputAction m_Examine_Rotate;
     public struct ExamineActions
     {
         private PlayerControls m_Wrapper;
         public ExamineActions(PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Close => m_Wrapper.m_Examine_Close;
+        public InputAction @Zoom => m_Wrapper.m_Examine_Zoom;
+        public InputAction @Rotate => m_Wrapper.m_Examine_Rotate;
         public InputActionMap Get() { return m_Wrapper.m_Examine; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -533,6 +751,12 @@ public class PlayerControls : IInputActionCollection
                 Close.started -= m_Wrapper.m_ExamineActionsCallbackInterface.OnClose;
                 Close.performed -= m_Wrapper.m_ExamineActionsCallbackInterface.OnClose;
                 Close.canceled -= m_Wrapper.m_ExamineActionsCallbackInterface.OnClose;
+                Zoom.started -= m_Wrapper.m_ExamineActionsCallbackInterface.OnZoom;
+                Zoom.performed -= m_Wrapper.m_ExamineActionsCallbackInterface.OnZoom;
+                Zoom.canceled -= m_Wrapper.m_ExamineActionsCallbackInterface.OnZoom;
+                Rotate.started -= m_Wrapper.m_ExamineActionsCallbackInterface.OnRotate;
+                Rotate.performed -= m_Wrapper.m_ExamineActionsCallbackInterface.OnRotate;
+                Rotate.canceled -= m_Wrapper.m_ExamineActionsCallbackInterface.OnRotate;
             }
             m_Wrapper.m_ExamineActionsCallbackInterface = instance;
             if (instance != null)
@@ -540,6 +764,12 @@ public class PlayerControls : IInputActionCollection
                 Close.started += instance.OnClose;
                 Close.performed += instance.OnClose;
                 Close.canceled += instance.OnClose;
+                Zoom.started += instance.OnZoom;
+                Zoom.performed += instance.OnZoom;
+                Zoom.canceled += instance.OnZoom;
+                Rotate.started += instance.OnRotate;
+                Rotate.performed += instance.OnRotate;
+                Rotate.canceled += instance.OnRotate;
             }
         }
     }
@@ -549,11 +779,13 @@ public class PlayerControls : IInputActionCollection
     private readonly InputActionMap m_Search;
     private ISearchActions m_SearchActionsCallbackInterface;
     private readonly InputAction m_Search_Close;
+    private readonly InputAction m_Search_Navigate;
     public struct SearchActions
     {
         private PlayerControls m_Wrapper;
         public SearchActions(PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Close => m_Wrapper.m_Search_Close;
+        public InputAction @Navigate => m_Wrapper.m_Search_Navigate;
         public InputActionMap Get() { return m_Wrapper.m_Search; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -566,6 +798,9 @@ public class PlayerControls : IInputActionCollection
                 Close.started -= m_Wrapper.m_SearchActionsCallbackInterface.OnClose;
                 Close.performed -= m_Wrapper.m_SearchActionsCallbackInterface.OnClose;
                 Close.canceled -= m_Wrapper.m_SearchActionsCallbackInterface.OnClose;
+                Navigate.started -= m_Wrapper.m_SearchActionsCallbackInterface.OnNavigate;
+                Navigate.performed -= m_Wrapper.m_SearchActionsCallbackInterface.OnNavigate;
+                Navigate.canceled -= m_Wrapper.m_SearchActionsCallbackInterface.OnNavigate;
             }
             m_Wrapper.m_SearchActionsCallbackInterface = instance;
             if (instance != null)
@@ -573,6 +808,9 @@ public class PlayerControls : IInputActionCollection
                 Close.started += instance.OnClose;
                 Close.performed += instance.OnClose;
                 Close.canceled += instance.OnClose;
+                Navigate.started += instance.OnNavigate;
+                Navigate.performed += instance.OnNavigate;
+                Navigate.canceled += instance.OnNavigate;
             }
         }
     }
@@ -589,9 +827,12 @@ public class PlayerControls : IInputActionCollection
     public interface IExamineActions
     {
         void OnClose(InputAction.CallbackContext context);
+        void OnZoom(InputAction.CallbackContext context);
+        void OnRotate(InputAction.CallbackContext context);
     }
     public interface ISearchActions
     {
         void OnClose(InputAction.CallbackContext context);
+        void OnNavigate(InputAction.CallbackContext context);
     }
 }

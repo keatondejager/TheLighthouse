@@ -11,6 +11,13 @@ namespace Environment
             [SerializeField] protected GameObject _buttonPrompt ;
             [Range(0.1f, 0.5f)] [SerializeField] protected float _disableDelay = 0.2f;
             [SerializeField] protected bool _promptState = false;
+
+        [Header("Object To Be Interated")]
+            [SerializeField] protected string _objName = "Narrative Object";
+            [SerializeField] protected string _objDescription = "This object was a part of my narrative.";
+            [SerializeField] protected PlayerManager.PlayerManager.NarrativeType _objType; 
+            [SerializeField] protected PlayerManager.PlayerManager.InteractableObject _myObj;
+            
         public void Interact () {
             if(!_promptState) {
                 return;

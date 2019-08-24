@@ -18,6 +18,15 @@ namespace PlayerManager
                 }
             #region Methods
 
+
+
+
+            protected void Search () {
+                if (!isSearching) {
+                    return;
+                }
+            }
+
             #endregion
         #endregion
     }

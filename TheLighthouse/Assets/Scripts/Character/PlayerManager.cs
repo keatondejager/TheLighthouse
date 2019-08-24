@@ -10,6 +10,17 @@ namespace PlayerManager
     [RequireComponent(typeof(Rigidbody), typeof(Animator), typeof(CapsuleCollider))]
     public partial class PlayerManager : MonoBehaviour {
 
+        public enum NarrativeType {
+            Definitive = 0,
+            Optional = 1,
+            Hidden = 2,
+            Searchable = 3,
+            Climbable = 4,
+            Fixable = 5,
+            Cleanable = 6
+        }
+
+
         #region General 
             [Header("General")] 
         
@@ -21,6 +32,7 @@ namespace PlayerManager
                         _animator.SetBool("canMove", _canMove);
                     }
                 }
+
                 [SerializeField] protected bool _isGrounded; 
                 public bool isGrounded {
                     get => _isGrounded;
@@ -41,6 +53,8 @@ namespace PlayerManager
             #region Methods
                 private void Update() {
                     Move();
+                    Examine();
+                    Search();
                 }
 
                 private void FixedUpdate() {
@@ -70,15 +84,26 @@ namespace PlayerManager
                     }
 
                     _controls = new PlayerControls();
-
+                    
+                    //* Movement */
                     _controls.Movement.Move.performed += ctx => direction = ctx.ReadValue<Vector2>();
                     _controls.Movement.Move.canceled += ctx => direction = Vector2.zero;
 
                     _controls.Movement.Jump.performed += ctx => Jump();
 
+                    //* EXAMINING */
                     _controls.Movement.Examine.performed += ctx => ExamineEvent();
-                    _controls.Movement.Search.performed += ctx => InteractEvent();
 
+                    _controls.Examine.Close.performed += ctx => ExitExamine();
+
+                    _controls.Examine.Zoom.performed += ctx => _examineZoom = ctx.ReadValue<float>();
+                    _controls.Examine.Zoom.canceled += ctx => _examineZoom = 0f;
+
+                    _controls.Examine.Rotate.performed += ctx => _examineRotation = ctx.ReadValue<Vector2>();
+                    _controls.Examine.Rotate.canceled += ctx => _examineRotation = Vector2.zero;
+
+                    //* INTERACTIONS */
+                    _controls.Movement.Search.performed += ctx => InteractEvent();
                 }
 
                 private void Start () {
@@ -92,6 +117,8 @@ namespace PlayerManager
 
                 private void OnDisable() {
                     _controls.Movement.Disable();
+                    _controls.Examine.Disable();
+                    _controls.Search.Disable();
                 }
             #endregion
 
