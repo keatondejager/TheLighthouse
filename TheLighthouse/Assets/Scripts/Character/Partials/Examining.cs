@@ -14,13 +14,22 @@ namespace PlayerManager
                     set {
                         _isExamining = value;
                         _animator.SetBool("isExamining", _isExamining);
+                        _ExamineParent.SetActive(_isExamining);
                     }
                 }
+
+                [SerializeField] protected Transform _refPoint;
+                [SerializeField] protected GameObject _ExamineParent;
+
+                private InteractableObject _activeExamine;
 
                 public struct InteractableObject {
                     public string name;
                     public string description;
                     public NarrativeType type;
+                    public Transform mesh;
+                    public Vector3 originalPosition;
+                    public Quaternion originalRotation;
                 }
 
             [Header("Examine Controls")]
@@ -36,6 +45,10 @@ namespace PlayerManager
                 _controls.Movement.Disable();
                 _controls.Examine.Enable();
 
+                Obj.mesh.position = _refPoint.position;
+
+                _activeExamine = Obj;
+
                 Debug.Log("Examining: " + Obj.name);
             }   
 
@@ -45,6 +58,9 @@ namespace PlayerManager
                 _controls.Movement.Enable();
                 _controls.Examine.Disable();
 
+                _activeExamine.mesh.position = _activeExamine.originalPosition;
+                _activeExamine.mesh.rotation = _activeExamine.originalRotation;
+
                 Debug.Log("Exit Examine State");
             }
 
@@ -53,7 +69,8 @@ namespace PlayerManager
                     return;
                 }
 
-                Debug.Log(_examineZoom);
+                _activeExamine.mesh.position += -Vector3.forward * _examineZoom / 100f * Time.deltaTime;
+                _activeExamine.mesh.Rotate(new Vector3(_examineRotation.y, _examineRotation.x, 0) * 25f * Time.deltaTime, Space.World);
             }
 
             #endregion

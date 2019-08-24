@@ -91,9 +91,10 @@ namespace PlayerManager
 
                     _controls.Movement.Jump.performed += ctx => Jump();
 
-                    //* EXAMINING */
                     _controls.Movement.Examine.performed += ctx => ExamineEvent();
+                    _controls.Movement.Search.performed += ctx => InteractEvent();
 
+                    //* EXAMINING */
                     _controls.Examine.Close.performed += ctx => ExitExamine();
 
                     _controls.Examine.Zoom.performed += ctx => _examineZoom = ctx.ReadValue<float>();
@@ -103,7 +104,7 @@ namespace PlayerManager
                     _controls.Examine.Rotate.canceled += ctx => _examineRotation = Vector2.zero;
 
                     //* INTERACTIONS */
-                    _controls.Movement.Search.performed += ctx => InteractEvent();
+                    
                 }
 
                 private void Start () {

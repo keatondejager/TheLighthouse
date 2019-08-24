@@ -387,7 +387,18 @@
                 {
                     "name": "",
                     "id": "f380362d-cf67-4819-8459-ad8567e5b45d",
-                    "path": "",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34ee8a7e-305c-4265-a54c-089965e4c2ee",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

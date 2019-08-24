@@ -14,6 +14,7 @@ namespace Environment
 
         [Header("Interaction Controls")]
             [SerializeField] protected GameObject _buttonPrompt;
+            [SerializeField] protected Transform _objMesh;
             [Range(0.1f, 0.5f)] [SerializeField] protected float _disableDelay;
             [SerializeField] protected bool _promptState;
 
@@ -25,12 +26,15 @@ namespace Environment
             [SerializeField] protected PlayerManager.PlayerManager.InteractableObject _myObj;
 
         private void Start() {
+
             _myObj = new PlayerManager.PlayerManager.InteractableObject();
 
             _myObj.name = _objName;
             _myObj.description = _objDescription;
             _myObj.type = _objType;
-
+            _myObj.mesh = _objMesh;
+            _myObj.originalPosition = _objMesh.position;
+            _myObj.originalRotation = _objMesh.rotation;
         }
 
         public void Interact () {
@@ -80,5 +84,7 @@ namespace Environment
                 PlayerManager.PlayerManager.OnExamine -= Interact;
             }
         }
+
+
     }
 }
