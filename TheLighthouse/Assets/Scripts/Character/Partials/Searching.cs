@@ -16,7 +16,6 @@ namespace PlayerManager
                         _animator.SetBool("isSearching", _isSearching);
                     }
                 }
-
             #region Methods
 
             #endregion
