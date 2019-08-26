@@ -43,7 +43,11 @@ namespace PlayerManager
             #region Methods
 
             public void SetExamine (InteractableObject Obj) {
+
+                CurrentState = PlayerState.Examining;
+
                 canMove = false;
+                isSearching = false;
                 isExamining = true;
                 _controls.Movement.Disable();
                 _controls.Examine.Enable();
@@ -59,9 +63,16 @@ namespace PlayerManager
             }   
 
             public void ExitExamine () {
-                canMove = true;
                 isExamining = false;
-                _controls.Movement.Enable();
+
+                CurrentState = _previousState;
+
+                canMove = CurrentState == PlayerState.Movement;
+                isSearching = CurrentState == PlayerState.Interacting;
+
+                if (canMove) {
+                    _controls.Movement.Enable();
+                }
                 _controls.Examine.Disable();
 
                 _activeExamine.mesh.position = _activeExamine.originalPosition;

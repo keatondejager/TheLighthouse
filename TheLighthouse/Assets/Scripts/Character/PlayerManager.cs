@@ -50,6 +50,21 @@ namespace PlayerManager
                     }
                 }
 
+                public enum PlayerState {
+                    Movement, Examining, Interacting, Inventory, Menu
+                }
+
+                [SerializeField] private PlayerState _previousState;
+                [SerializeField] private PlayerState _currentState = PlayerState.Movement;
+
+                public PlayerState CurrentState {
+                    get => _currentState;
+                    set {
+                        _previousState = _currentState;
+                        _currentState = value;
+                    }
+                }
+
             #region Methods
                 private void Update() {
                     Move();
@@ -104,7 +119,7 @@ namespace PlayerManager
                     _controls.Examine.Rotate.canceled += ctx => _examineRotation = Vector2.zero;
 
                     //* INTERACTIONS */
-                    
+                    _controls.Search.Close.performed += ctx => ExitSearch();
                 }
 
                 private void Start () {
@@ -114,6 +129,7 @@ namespace PlayerManager
 
                 private void OnEnable() {
                     _controls.Movement.Enable();
+                    _previousState = PlayerState.Movement;
                 }
 
                 private void OnDisable() {
