@@ -38,6 +38,8 @@ namespace PlayerManager
                 [SerializeField] protected float _examineZoom;
                 [SerializeField] protected Vector2 _examineRotation;
                 [Range(1f, 2.5f)][SerializeField] protected float _MaxZoom = 1f;
+
+                private Vector3 offsetVector;
            
 
             #region Methods
@@ -58,6 +60,7 @@ namespace PlayerManager
                 _objectDescription.text = Obj.description;
 
                 _activeExamine = Obj;
+                offsetVector = Vector3.zero;
 
                 Debug.Log("Examining: " + Obj.name);
             }   
@@ -85,8 +88,11 @@ namespace PlayerManager
                 if (!isExamining) {
                     return;
                 }
+
                 
-                _activeExamine.mesh.position += -Vector3.forward * _examineZoom / 100f * Time.deltaTime;
+                
+                offsetVector += -Vector3.forward * _examineZoom / 100f * Time.deltaTime;
+                _activeExamine.mesh.position = _refPoint.position + offsetVector;
                 if (_activeExamine.mesh.position.z > _refPoint.position.z + _MaxZoom) {
                     _activeExamine.mesh.position = _refPoint.position + Vector3.forward * _MaxZoom;
                 } else if (_activeExamine.mesh.position.z < _refPoint.position.z - _MaxZoom) {

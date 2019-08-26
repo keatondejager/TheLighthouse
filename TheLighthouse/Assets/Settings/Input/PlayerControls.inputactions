@@ -30,14 +30,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Climb",
-                    "type": "Button",
-                    "id": "0538407b-76cd-4bd6-ad5e-804f8082ab8f",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Move",
                     "type": "Button",
                     "id": "a7a4b9cf-a8e8-453c-aa47-8c507c78e002",
@@ -123,41 +115,8 @@
                 },
                 {
                     "name": "",
-                    "id": "86b94bc7-7b6c-410a-81bb-6f7758687cef",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Climb",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "175a1a1a-50e9-48c5-98c2-bb44eb77c4b7",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Climb",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "60cd6cca-138b-4075-aa3e-14fd0ec2e452",
                     "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c70d3af2-48cb-431c-8203-38511dc53205",
-                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

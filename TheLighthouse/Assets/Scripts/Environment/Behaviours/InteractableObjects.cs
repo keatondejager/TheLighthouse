@@ -17,13 +17,14 @@ namespace Environment
             [SerializeField] protected string _objDescription = "This object was a part of my narrative.";
             [SerializeField] protected PlayerManager.PlayerManager.NarrativeType _objType; 
             [SerializeField] protected PlayerManager.PlayerManager.InteractableObject _myObj;
-
+            [SerializeField] protected List<Item> _inventory;
+ 
         public void Interact () {
             if(!_promptState) {
                 return;
             }
             
-            PlayerManager.PlayerManager.instance.StartSearch();
+            PlayerManager.PlayerManager.instance.StartSearch(_inventory);
         }
 
         private void OnTriggerEnter(Collider other) {

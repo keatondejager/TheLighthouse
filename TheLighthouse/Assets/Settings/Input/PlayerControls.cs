@@ -42,14 +42,6 @@ public class PlayerControls : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Climb"",
-                    ""type"": ""Button"",
-                    ""id"": ""0538407b-76cd-4bd6-ad5e-804f8082ab8f"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Move"",
                     ""type"": ""Button"",
                     ""id"": ""a7a4b9cf-a8e8-453c-aa47-8c507c78e002"",
@@ -135,41 +127,8 @@ public class PlayerControls : IInputActionCollection
                 },
                 {
                     ""name"": """",
-                    ""id"": ""86b94bc7-7b6c-410a-81bb-6f7758687cef"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Climb"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""175a1a1a-50e9-48c5-98c2-bb44eb77c4b7"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Climb"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""60cd6cca-138b-4075-aa3e-14fd0ec2e452"",
                     ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c70d3af2-48cb-431c-8203-38511dc53205"",
-                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -650,7 +609,6 @@ public class PlayerControls : IInputActionCollection
         m_Movement_Jump = m_Movement.GetAction("Jump");
         m_Movement_Examine = m_Movement.GetAction("Examine");
         m_Movement_Search = m_Movement.GetAction("Search");
-        m_Movement_Climb = m_Movement.GetAction("Climb");
         m_Movement_Move = m_Movement.GetAction("Move");
         m_Movement_Rotate = m_Movement.GetAction("Rotate");
         // Examine
@@ -714,7 +672,6 @@ public class PlayerControls : IInputActionCollection
     private readonly InputAction m_Movement_Jump;
     private readonly InputAction m_Movement_Examine;
     private readonly InputAction m_Movement_Search;
-    private readonly InputAction m_Movement_Climb;
     private readonly InputAction m_Movement_Move;
     private readonly InputAction m_Movement_Rotate;
     public struct MovementActions
@@ -724,7 +681,6 @@ public class PlayerControls : IInputActionCollection
         public InputAction @Jump => m_Wrapper.m_Movement_Jump;
         public InputAction @Examine => m_Wrapper.m_Movement_Examine;
         public InputAction @Search => m_Wrapper.m_Movement_Search;
-        public InputAction @Climb => m_Wrapper.m_Movement_Climb;
         public InputAction @Move => m_Wrapper.m_Movement_Move;
         public InputAction @Rotate => m_Wrapper.m_Movement_Rotate;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
@@ -745,9 +701,6 @@ public class PlayerControls : IInputActionCollection
                 Search.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnSearch;
                 Search.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnSearch;
                 Search.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnSearch;
-                Climb.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnClimb;
-                Climb.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnClimb;
-                Climb.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnClimb;
                 Move.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
                 Move.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
                 Move.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
@@ -767,9 +720,6 @@ public class PlayerControls : IInputActionCollection
                 Search.started += instance.OnSearch;
                 Search.performed += instance.OnSearch;
                 Search.canceled += instance.OnSearch;
-                Climb.started += instance.OnClimb;
-                Climb.performed += instance.OnClimb;
-                Climb.canceled += instance.OnClimb;
                 Move.started += instance.OnMove;
                 Move.performed += instance.OnMove;
                 Move.canceled += instance.OnMove;
@@ -875,7 +825,6 @@ public class PlayerControls : IInputActionCollection
         void OnJump(InputAction.CallbackContext context);
         void OnExamine(InputAction.CallbackContext context);
         void OnSearch(InputAction.CallbackContext context);
-        void OnClimb(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
     }

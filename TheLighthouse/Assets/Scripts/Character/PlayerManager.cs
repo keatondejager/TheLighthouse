@@ -65,6 +65,8 @@ namespace PlayerManager
                     }
                 }
 
+                [SerializeField] protected List<Item> _inventory;
+
             #region Methods
                 private void Update() {
                     Move();

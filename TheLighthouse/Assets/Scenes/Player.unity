@@ -1256,6 +1256,9 @@ MonoBehaviour:
   _objName: Narrative Object
   _objDescription: This object was a part of my narrative.
   _objType: 0
+  _inventory:
+  - {fileID: 11400000, guid: e720c47cc1d04784da736c377b7f4e72, type: 2}
+  - {fileID: 11400000, guid: 868adb2edb09bca47b8e74f993b22bf7, type: 2}
 --- !u!65 &850420897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1760,6 +1763,7 @@ MonoBehaviour:
   _isWalking: 0
   _previousState: 0
   _currentState: 0
+  _inventory: []
   _rigidbody: {fileID: 0}
   _animator: {fileID: 0}
 --- !u!4 &1344705635
@@ -2218,12 +2222,12 @@ GameObject:
   - component: {fileID: 1853201976}
   - component: {fileID: 1853201975}
   m_Layer: 9
-  m_Name: Quad
+  m_Name: Button  Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1853201975
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2431,7 +2435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2067260252
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ namespace PlayerManager
             #region Methods
 
 
-            public void StartSearch () {
+            public void StartSearch (List<Item> inventory) {
                isSearching = true;
                canMove = false;
                isExamining = false;
@@ -32,6 +32,11 @@ namespace PlayerManager
 
                _controls.Movement.Disable();
                _controls.Search.Enable();
+
+               foreach (Item item in inventory)
+               {
+                   Debug.Log(item.name);
+               }
             }
 
             protected void Search () {
