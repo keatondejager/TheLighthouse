@@ -92,12 +92,15 @@ namespace PlayerManager
                 
                 
                 offsetVector += -Vector3.forward * _examineZoom / 100f * Time.deltaTime;
-                _activeExamine.mesh.position = _refPoint.position + offsetVector;
+                
                 if (_activeExamine.mesh.position.z > _refPoint.position.z + _MaxZoom) {
-                    _activeExamine.mesh.position = _refPoint.position + Vector3.forward * _MaxZoom;
+                    offsetVector =  Vector3.forward * _MaxZoom;
                 } else if (_activeExamine.mesh.position.z < _refPoint.position.z - _MaxZoom) {
-                    _activeExamine.mesh.position = _refPoint.position - Vector3.forward * _MaxZoom;
+                    offsetVector = - Vector3.forward * _MaxZoom;
                 }
+
+                _activeExamine.mesh.position = _refPoint.position + offsetVector;
+                
                 _activeExamine.mesh.Rotate(new Vector3(_examineRotation.y, _examineRotation.x, 0) * 50f * Time.deltaTime, Space.World);
             }
 
