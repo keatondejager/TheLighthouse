@@ -19,6 +19,9 @@ namespace PlayerManager
 
                 [SerializeField] protected GameObject _SearchParent;
 
+                [SerializeField] protected List<Item> _items;
+                [SerializeField] protected List<GameObject> _itemDisplay;
+
             #region Methods
 
 
@@ -33,9 +36,16 @@ namespace PlayerManager
                _controls.Movement.Disable();
                _controls.Search.Enable();
 
-               foreach (Item item in inventory)
-               {
-                   Debug.Log(item.name);
+                foreach (GameObject obj in _itemDisplay) {
+                    obj.SetActive(false);
+                }
+
+               for (int i = 0; i < inventory.Count; i++) {
+                   for (int j = 0; j < _items.Count; j++) {
+                       if (inventory[i] == _items[j]) {
+                           _itemDisplay[j].SetActive(true);
+                       }
+                   }
                }
             }
 
