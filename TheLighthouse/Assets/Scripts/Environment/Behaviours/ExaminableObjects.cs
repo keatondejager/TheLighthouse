@@ -25,6 +25,9 @@ namespace Environment
 
             [SerializeField] protected PlayerManager.PlayerManager.InteractableObject _myObj;
 
+            private NarrativeController _feedback;
+            [SerializeField] protected int _objectID;
+
         private void Start() {
 
             _myObj = new PlayerManager.PlayerManager.InteractableObject();
@@ -42,12 +45,12 @@ namespace Environment
                 return;
             }
 
-            // Tell the player to switch states
+            if (!_feedback) {
+                _feedback = GameObject.FindObjectOfType<NarrativeController>().GetComponent<NarrativeController>();
+            }
+            _feedback.StepNarrative(_objectID, 0);
+
             PlayerManager.PlayerManager.instance.SetExamine(_myObj);
-
-            // Tell the player what they are examining
-
-            // Give the object to the player
         }
 
         private void OnTriggerEnter(Collider other) {

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fe7f69287c9bf24d9405d317ee3a21c, type: 3}
-  m_Name: Item
+  m_Name: Key
   m_EditorClassIdentifier: 
-  name: An item or sorts
-  description: Its name says it all
+  name: Key
+  description: Unlocks stuff
   icon: {fileID: 0}

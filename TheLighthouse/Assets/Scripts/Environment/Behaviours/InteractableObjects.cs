@@ -18,12 +18,19 @@ namespace Environment
             [SerializeField] protected PlayerManager.PlayerManager.NarrativeType _objType; 
             [SerializeField] protected PlayerManager.PlayerManager.InteractableObject _myObj;
             [SerializeField] protected List<Item> _inventory;
+
+            private NarrativeController _feedback;
+            [SerializeField] protected int _objectID;
  
         public void Interact () {
             if(!_promptState) {
                 return;
             }
-            
+
+            if (!_feedback) {
+                _feedback = GameObject.FindObjectOfType<NarrativeController>().GetComponent<NarrativeController>();
+            }
+            _feedback.StepNarrative(_objectID, 0);
             PlayerManager.PlayerManager.instance.StartSearch(_inventory);
         }
 
