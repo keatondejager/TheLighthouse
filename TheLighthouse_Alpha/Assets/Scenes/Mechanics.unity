@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 1972130865}
   - component: {fileID: 1972130867}
   - component: {fileID: 1972130866}
+  - component: {fileID: 1972130868}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -506,6 +507,8 @@ MonoBehaviour:
   _moveState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
   _examineState: {fileID: 11400000, guid: fb1b9ad415b4a0049aa8fefc5adb6519, type: 2}
   _interactState: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
+  _inventoryState: {fileID: 11400000, guid: f3073f9244d0691478a67c57c5f2d74b, type: 2}
+  _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
 --- !u!95 &1972130866
 Animator:
   serializedVersion: 3
@@ -541,6 +544,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1972130868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972130863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489d13a95b091e44d935e919aa5db408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 1972130867}
+  animator: {fileID: 1972130866}
+  manager: {fileID: 1972130865}
 --- !u!1 &2106166880
 GameObject:
   m_ObjectHideFlags: 0

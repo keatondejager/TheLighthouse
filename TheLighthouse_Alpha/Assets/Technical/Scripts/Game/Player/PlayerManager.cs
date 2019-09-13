@@ -14,6 +14,8 @@ namespace Player
                 [SerializeField] protected Movement _moveState;
                 [SerializeField] protected Examine _examineState;
                 [SerializeField] protected Interact _interactState;
+                [SerializeField] protected Inventory  _inventoryState;
+                [SerializeField] protected Menus _menuState;
             
             [Header("Input Control")]
                 private PlayerInputActions controls;
@@ -22,16 +24,6 @@ namespace Player
 
         private void Awake() {
             controls = new PlayerInputActions();
-
-            controls.Movement.Interact.performed += ctx => SetState(_interactState);
-            controls.Movement.Examine.performed += ctx => SetState(_examineState);
-            controls.Movement.Inventory.performed += ctx => SetState(_moveState);
-            controls.Movement.Menu.performed += ctx => SetState(_moveState);
-
-            controls.Inventory.Exit.performed += ctx => SetState(_moveState);
-            controls.Menus.Exit.performed += ctx => SetState(_moveState);
-            controls.Interact.Exit.performed += ctx => SetState(_moveState);
-            controls.Examining.Exit.performed += ctx => SetState(_moveState);
         }
 
         // Start is called before the first frame update
@@ -40,6 +32,8 @@ namespace Player
             _moveState.Initialize(controls);
             _examineState.Initialize(controls);
             _interactState.Initialize(controls);
+            _inventoryState.Initialize(controls);
+            _menuState.Initialize(controls);
 
             if (!state) {
                 SetState(_moveState);
@@ -51,7 +45,7 @@ namespace Player
             state.Step();
         }
 
-        private void SetState (States newState) {
+        public void SetState (States newState) {
             States previousState = _moveState;
 
             if (state) {
