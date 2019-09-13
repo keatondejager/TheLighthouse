@@ -8,6 +8,9 @@ namespace Player
 
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
+            PlayerObject = PlayerReference.instance.manager;
+            controls.Examining.Exit.performed += ctx => ExitState();
+            controls.Examining.Pause.performed += ctx => Pause();
         }
 
         public override void Step() {
@@ -20,6 +23,10 @@ namespace Player
 
         public override void DisableState() {
             controls.Examining.Disable();
+        }
+
+        private void ExitState () {
+            PlayerObject.SetState(PreviousState);
         }
     }
 }

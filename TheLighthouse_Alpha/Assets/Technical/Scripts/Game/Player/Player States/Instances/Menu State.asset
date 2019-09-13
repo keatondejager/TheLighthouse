@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac5b21d7770e7644b365c8ff3aa71c9, type: 3}
-  m_Name: Interaction State
+  m_Script: {fileID: 11500000, guid: b9534c0f857ee4742b8aa914d093e161, type: 3}
+  m_Name: Menu State
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
-  _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
-  PreviousState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
-  _animator: {fileID: 0}
+  _menuState: {fileID: 0}
+  PreviousState: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
+  _moveState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}

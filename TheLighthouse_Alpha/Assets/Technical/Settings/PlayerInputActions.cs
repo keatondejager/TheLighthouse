@@ -226,6 +226,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""ed570922-5add-41d9-af77-93353d698946"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -237,6 +245,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9ede4221-b9fe-44ea-aafc-a0f5545fc841"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -253,6 +272,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""a24254cd-2396-420b-bd7f-01750f6f182a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -264,6 +291,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""324440d9-8ad6-403f-9461-ae6516f00808"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -307,6 +345,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""5dabb4c5-1abc-4b8f-90f3-40b309571b24"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -318,6 +364,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2b17185c-4208-44d6-9a3f-283f37b86186"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -336,15 +393,18 @@ public class PlayerInputActions : IInputActionCollection
         // Examining
         m_Examining = asset.GetActionMap("Examining");
         m_Examining_Exit = m_Examining.GetAction("Exit");
+        m_Examining_Pause = m_Examining.GetAction("Pause");
         // Inventory
         m_Inventory = asset.GetActionMap("Inventory");
         m_Inventory_Exit = m_Inventory.GetAction("Exit");
+        m_Inventory_Pause = m_Inventory.GetAction("Pause");
         // Menus
         m_Menus = asset.GetActionMap("Menus");
         m_Menus_Exit = m_Menus.GetAction("Exit");
         // Interact
         m_Interact = asset.GetActionMap("Interact");
         m_Interact_Exit = m_Interact.GetAction("Exit");
+        m_Interact_Pause = m_Interact.GetAction("Pause");
     }
 
     ~PlayerInputActions()
@@ -460,11 +520,13 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputActionMap m_Examining;
     private IExaminingActions m_ExaminingActionsCallbackInterface;
     private readonly InputAction m_Examining_Exit;
+    private readonly InputAction m_Examining_Pause;
     public struct ExaminingActions
     {
         private PlayerInputActions m_Wrapper;
         public ExaminingActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Exit => m_Wrapper.m_Examining_Exit;
+        public InputAction @Pause => m_Wrapper.m_Examining_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Examining; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -477,6 +539,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnExit;
                 Exit.performed -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnExit;
                 Exit.canceled -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnExit;
+                Pause.started -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnPause;
+                Pause.performed -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnPause;
+                Pause.canceled -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_ExaminingActionsCallbackInterface = instance;
             if (instance != null)
@@ -484,6 +549,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started += instance.OnExit;
                 Exit.performed += instance.OnExit;
                 Exit.canceled += instance.OnExit;
+                Pause.started += instance.OnPause;
+                Pause.performed += instance.OnPause;
+                Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -493,11 +561,13 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputActionMap m_Inventory;
     private IInventoryActions m_InventoryActionsCallbackInterface;
     private readonly InputAction m_Inventory_Exit;
+    private readonly InputAction m_Inventory_Pause;
     public struct InventoryActions
     {
         private PlayerInputActions m_Wrapper;
         public InventoryActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Exit => m_Wrapper.m_Inventory_Exit;
+        public InputAction @Pause => m_Wrapper.m_Inventory_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Inventory; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -510,6 +580,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
                 Exit.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
                 Exit.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
+                Pause.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
+                Pause.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
+                Pause.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_InventoryActionsCallbackInterface = instance;
             if (instance != null)
@@ -517,6 +590,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started += instance.OnExit;
                 Exit.performed += instance.OnExit;
                 Exit.canceled += instance.OnExit;
+                Pause.started += instance.OnPause;
+                Pause.performed += instance.OnPause;
+                Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -559,11 +635,13 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputActionMap m_Interact;
     private IInteractActions m_InteractActionsCallbackInterface;
     private readonly InputAction m_Interact_Exit;
+    private readonly InputAction m_Interact_Pause;
     public struct InteractActions
     {
         private PlayerInputActions m_Wrapper;
         public InteractActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Exit => m_Wrapper.m_Interact_Exit;
+        public InputAction @Pause => m_Wrapper.m_Interact_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Interact; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -576,6 +654,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started -= m_Wrapper.m_InteractActionsCallbackInterface.OnExit;
                 Exit.performed -= m_Wrapper.m_InteractActionsCallbackInterface.OnExit;
                 Exit.canceled -= m_Wrapper.m_InteractActionsCallbackInterface.OnExit;
+                Pause.started -= m_Wrapper.m_InteractActionsCallbackInterface.OnPause;
+                Pause.performed -= m_Wrapper.m_InteractActionsCallbackInterface.OnPause;
+                Pause.canceled -= m_Wrapper.m_InteractActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_InteractActionsCallbackInterface = instance;
             if (instance != null)
@@ -583,6 +664,9 @@ public class PlayerInputActions : IInputActionCollection
                 Exit.started += instance.OnExit;
                 Exit.performed += instance.OnExit;
                 Exit.canceled += instance.OnExit;
+                Pause.started += instance.OnPause;
+                Pause.performed += instance.OnPause;
+                Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -598,10 +682,12 @@ public class PlayerInputActions : IInputActionCollection
     public interface IExaminingActions
     {
         void OnExit(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {
         void OnExit(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IMenusActions
     {
@@ -610,5 +696,6 @@ public class PlayerInputActions : IInputActionCollection
     public interface IInteractActions
     {
         void OnExit(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

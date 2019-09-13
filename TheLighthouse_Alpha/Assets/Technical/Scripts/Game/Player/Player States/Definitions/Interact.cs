@@ -10,6 +10,9 @@ namespace Player
             [SerializeField] protected Animator _animator;
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
+            PlayerObject = PlayerReference.instance.manager;
+            controls.Interact.Exit.performed += ctx => ExitState();
+            controls.Interact.Pause.performed += ctx => Pause();
         }
 
         public override void Step() {
@@ -22,6 +25,10 @@ namespace Player
 
         public override void DisableState() {
             controls.Interact.Disable();
+        }
+
+        private void ExitState () {
+            PlayerObject.SetState(PreviousState);
         }
     }
 }

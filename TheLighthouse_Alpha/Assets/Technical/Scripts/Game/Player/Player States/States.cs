@@ -7,7 +7,8 @@ namespace Player
         
     [Header("Default")]
         [SerializeField] protected PlayerManager PlayerObject;
-        public States PreviousState;
+        [SerializeField] protected States _menuState;
+        public States PreviousState;        
 
         [SerializeField] protected PlayerInputActions controls;
 
@@ -25,6 +26,18 @@ namespace Player
 
     public virtual void DisableState () {
 
+    }
+
+    protected void Pause () {
+        if (!_menuState) {
+            return;
+        }
+        
+        if (!PlayerObject) {
+            PlayerObject = FindObjectOfType<PlayerManager>();
+        }
+
+        PlayerObject.SetState(_menuState);
     }
 
 }
