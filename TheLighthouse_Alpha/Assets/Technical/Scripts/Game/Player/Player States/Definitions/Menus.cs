@@ -8,7 +8,6 @@ namespace Player {
             controls = _controls;
             PlayerObject = PlayerReference.instance.manager;
             controls.Menus.Exit.performed += ctx => ExitState();
-    
         }
 
         public override void Step() {

@@ -18,6 +18,30 @@ namespace Player
             [SerializeField] private Vector2 direction;
             [SerializeField] private Vector3 motion;
             [Range(1, 10)] [SerializeField] protected float moveSpeed = 1f;
+            [Range(1, 10)] [SerializeField] protected float acceleration = 1f;
+            [Range(1, 10)] [SerializeField] protected float decceleration = 2f;
+
+            [Range(0, 1)] [SerializeField] protected float rotationsPerSecond = 0.2f;
+
+            [SerializeField] protected bool grounded;
+            [SerializeField] protected bool obstructed;
+
+        [Header("Collisions")]
+            [SerializeField] protected float groundCheckLength;
+            [SerializeField] protected float forwardCheckOffset;
+            [SerializeField] protected float forwardCheckRadius; 
+            [SerializeField] protected LayerMask collisionLayer;
+
+        [Header("Animations")]
+            [SerializeField] private bool _isWalking;
+            protected bool isWalking {
+                get => _isWalking;
+                set {
+                    _isWalking = value;
+                    if (_animator)
+                        _animator.SetBool("isWalking", _isWalking);
+                }
+            }
         
 
         public override void Initialize(PlayerInputActions _controls) {
@@ -37,11 +61,54 @@ namespace Player
         }
 
         public override void Step() {
-            motion = Vector3.forward * direction.y + Vector3.right * direction.x;
+            _rigidbody.angularVelocity = Vector3.zero;
 
-            _rigidbody.velocity = motion * moveSpeed;
+            grounded = GroundCheck();
+
+            if (!grounded) { 
+                return;
+            }
+
+            obstructed = ForwardCheck();
+
+            motion = Vector3.forward * direction.y + Vector3.right * direction.x;
+            
+            if (obstructed) {
+                if (Vector3.Angle(PlayerObject.transform.forward, motion) < 25f && motion.sqrMagnitude > 0) {
+                    isWalking = false;
+                    return;
+                }
+            }
+
+            motion.Normalize();
+            if (motion.sqrMagnitude > 0) {
+                PlayerObject.transform.rotation = Quaternion.Lerp(  PlayerObject.transform.rotation, 
+                                                                 Quaternion.LookRotation(motion), 
+                                                                 rotationsPerSecond * 180 * Time.deltaTime);
+                isWalking = true;
+            } else { 
+                isWalking = false;
+            }
+            motion *= moveSpeed;
+
+            motion.y = _rigidbody.velocity.y;
+
+            _rigidbody.velocity = motion;
+
+            
         }
 
+        private bool GroundCheck() {
+            return Physics.Raycast(PlayerObject.transform.position, Vector3.down, groundCheckLength, collisionLayer);
+        }
+
+        private bool ForwardCheck() {
+            bool result = Physics.CheckSphere(PlayerObject.transform.position + PlayerObject.transform.forward * forwardCheckOffset, forwardCheckRadius, collisionLayer);
+            result = result || Physics.CheckSphere(PlayerObject.transform.position - (Vector3.up * -1f) + (PlayerObject.transform.forward * forwardCheckOffset), forwardCheckRadius, collisionLayer);
+            return result;
+        }
+
+        #region StateChange
         public override void EnableState() {
             controls.Movement.Enable();
         }
@@ -51,11 +118,11 @@ namespace Player
         }
 
         private void ExamineClick() {
-            PlayerObject.SetState(_examineState);
+            PlayerObject.ExamineButtonDown();
         }
 
         private void InteractClick () {
-            PlayerObject.SetState(_interactState);
+            PlayerObject.InteractButtonDown();
         }
 
         private void InventoryClick () {
@@ -65,5 +132,6 @@ namespace Player
         private void MenuClick () {
             PlayerObject.SetState(_menuState);
         }
+        #endregion
     }
 }

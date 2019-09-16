@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.InputSystem;
 
 namespace Player
@@ -57,6 +58,30 @@ namespace Player
             state.PreviousState = previousState;
             state.EnableState();
         }
+
+        #region Interactions and Examine Events
+            public delegate void OnExamine();
+            public delegate void OnInteract();
+            public event OnInteract OnInteractEnter;
+            public event OnExamine OnExamineEnter;
+
+           public void ExamineButtonDown () {
+               if (OnExamineEnter == null) {
+                   return;
+               }
+
+               OnExamineEnter();
+           }
+
+           public void InteractButtonDown () {
+               if (OnInteractEnter == null) {
+                   return;
+               }
+
+               OnInteractEnter();
+           }
+
+        #endregion
 
     }
 }

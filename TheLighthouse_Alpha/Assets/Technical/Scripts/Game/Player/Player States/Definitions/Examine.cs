@@ -5,7 +5,6 @@ namespace Player
     [CreateAssetMenu(fileName = "Examine State", menuName = "Player State/Examine")]
     public class Examine : States {
     
-
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
             PlayerObject = PlayerReference.instance.manager;
