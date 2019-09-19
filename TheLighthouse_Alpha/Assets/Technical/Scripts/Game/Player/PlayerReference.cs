@@ -13,6 +13,9 @@ namespace Player
         public Animator animator;
         public PlayerManager manager;
 
+        public GameObject examineUI;
+        public GameObject menuObject;
+
         private void Awake() {
             if (instance == null) {
                 instance = this;

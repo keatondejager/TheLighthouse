@@ -15,6 +15,7 @@ namespace Environment {
         [Header("Reference")]
             private PlayerManager player; 
             public GameObject Prompt;
+            public GameObject ObjectMesh;
 
         private void Start() {
             triggerCollider.isTrigger = true;
