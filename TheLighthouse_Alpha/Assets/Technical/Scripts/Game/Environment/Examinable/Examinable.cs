@@ -30,7 +30,9 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.examineObject = ObjectMesh.transform;
                 player.OnExamineEnter += Examine;
+                
                 Prompt.SetActive(true);
             }
         }
@@ -40,13 +42,15 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.examineObject = null;
                 player.OnExamineEnter -= Examine;
+                
                 Prompt.SetActive(false);
             }
         }
 
         public virtual void Examine() {
-            
+            PlayerReference.instance.examineObject = ObjectMesh.transform;
         }
     }
 }

@@ -16,6 +16,9 @@ namespace Player
         public GameObject examineUI;
         public GameObject menuObject;
 
+        public Transform examineObject;
+        public Transform ExamineRefPoint;
+
         private void Awake() {
             if (instance == null) {
                 instance = this;

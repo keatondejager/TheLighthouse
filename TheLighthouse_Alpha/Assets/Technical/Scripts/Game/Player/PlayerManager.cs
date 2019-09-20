@@ -66,11 +66,14 @@ namespace Player
             public event OnExamine OnExamineEnter;
 
            public void ExamineButtonDown () {
-               if (OnExamineEnter == null) {
-                   return;
-               }
+                if (OnExamineEnter != null) {
+                    OnExamineEnter();
+                    Debug.Log("There");
+                }               
 
-               OnExamineEnter();
+                if (PlayerReference.instance.examineObject) {
+                    SetState(_examineState);
+                }
            }
 
            public void InteractButtonDown () {
