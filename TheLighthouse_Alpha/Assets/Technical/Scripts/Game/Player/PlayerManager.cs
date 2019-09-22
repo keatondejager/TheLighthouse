@@ -65,24 +65,36 @@ namespace Player
             public event OnInteract OnInteractEnter;
             public event OnExamine OnExamineEnter;
 
-           public void ExamineButtonDown () {
-                if (OnExamineEnter != null) {
-                    OnExamineEnter();
-                    Debug.Log("There");
-                }               
+        public void ExamineButtonDown()
+        {
+            if (OnExamineEnter != null)
+            {
+                OnExamineEnter();
+                Debug.Log("There");
+            }
 
-                if (PlayerReference.instance.examineObject) {
-                    SetState(_examineState);
-                }
-           }
+            if (PlayerReference.instance.examineObject)
+            {
+                SetState(_examineState);
+            }
+        }
 
-           public void InteractButtonDown () {
-               if (OnInteractEnter == null) {
-                   return;
-               }
+        public void InteractButtonDown()
+        {
+            if (OnInteractEnter == null)
+            {
+                return;
+            }
 
-               OnInteractEnter();
-           }
+            OnInteractEnter();
+
+            //matt added this
+            if (PlayerReference.instance.searchObject)
+            {
+                SetState(_interactState);
+            }
+            //end of matts adding
+        }
 
         #endregion
 

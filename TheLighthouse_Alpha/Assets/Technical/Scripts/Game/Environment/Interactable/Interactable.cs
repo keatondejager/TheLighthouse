@@ -11,7 +11,7 @@ namespace Environment {
         [SerializeField] protected BoxCollider objectCollider;
         [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
 
-        private PlayerManager player; 
+        private PlayerManager player;
         public GameObject Prompt;
 
         protected virtual void Start() {
@@ -43,7 +43,7 @@ namespace Environment {
         }
 
         public virtual void Interact() {
-            
+
         }
     }
 

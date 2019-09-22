@@ -42,8 +42,6 @@ namespace Player
         }
 
         public override void EnableState() {
-            //Matt added this line
-            objectBeingExamined.gameObject.GetComponent<MeshRenderer>().enabled = true;
             controls.Examining.Enable();
             ExamineUI.SetActive(true);
             objectBeingExamined = PlayerReference.instance.examineObject;
@@ -54,8 +52,6 @@ namespace Player
         }
 
         public override void DisableState() {
-            //Matt added this line
-            objectBeingExamined.gameObject.GetComponent<MeshRenderer>().enabled = false;
             objectBeingExamined.position = originalPosition;
             objectBeingExamined.rotation = originalRotation;
             controls.Examining.Disable();
@@ -63,6 +59,7 @@ namespace Player
         }
 
         private void ExitState () {
+            Debug.Log("we are exiting examine");
             PlayerObject.SetState(PreviousState);
         }
     }

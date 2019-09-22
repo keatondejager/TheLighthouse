@@ -19,8 +19,13 @@ namespace Environment {
 
         private void Start() {
             triggerCollider.isTrigger = true;
-            objectCollider.isTrigger = false;
-            triggerCollider.size = objectCollider.size * TriggerScale;
+
+            //Matt added this null check
+            if (objectCollider != null)
+            {
+                objectCollider.isTrigger = false;
+                triggerCollider.size = objectCollider.size * TriggerScale;
+            }
 
             player = PlayerReference.instance.manager;
         }

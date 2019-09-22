@@ -15,9 +15,13 @@ namespace Player
 
         public GameObject examineUI;
         public GameObject menuObject;
+        //Matt added
+        public GameObject searchUI;
 
         public Transform examineObject;
         public Transform ExamineRefPoint;
+        //Matt Added
+        public SearchableObject searchObject;
 
         private void Awake() {
             if (instance == null) {
