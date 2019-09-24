@@ -1,5 +1,6 @@
 ﻿
 using UnityEngine;
+using Environment;
 using TMPro;
 
 namespace Player

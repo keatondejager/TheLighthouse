@@ -33,7 +33,7 @@ namespace Player
             SearchUIObject.SetActive(false);
         }
 
-        private void ExitState () {
+        public void ExitState () {
             PlayerObject.SetState(PreviousState);
         }
     }
