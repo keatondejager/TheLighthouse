@@ -26,7 +26,7 @@ namespace Player {
             MenuObject.SetActive(false);
         }
 
-        public void ExitState () {
+        private void ExitState () {
             PlayerObject.SetState(_moveState);
         }
     }

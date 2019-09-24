@@ -1777,8 +1777,6 @@ GameObject:
   - component: {fileID: 805132870}
   - component: {fileID: 805132872}
   - component: {fileID: 805132871}
-  - component: {fileID: 805132874}
-  - component: {fileID: 805132873}
   m_Layer: 0
   m_Name: btnResume
   m_TagString: Untagged
@@ -1844,71 +1842,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805132869}
   m_CullTransparentMesh: 0
---- !u!114 &805132873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805132869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b52ce8e3cb21a541a36d046e7bdfef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ColorTransition: 1
-  SizeTransition: 0
-  SpriteTransition: 0
-  TextTransition: 0
-  AudioAnimation: 0
-  NormalColor: {r: 1, g: 1, b: 1, a: 1}
-  HighlightedColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
-  PressedColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
-  AnimateText: 0
-  StartScale: {x: 0, y: 0, z: 0}
-  HighlightedScale: {x: 0, y: 0, z: 0}
-  PressedScale: {x: 0, y: 0, z: 0}
-  NormalSprite: {fileID: 0}
-  HighlightedSprite: {fileID: 0}
-  PressedSprite: {fileID: 0}
-  StartText: 
-  StandardText: Resume
-  HighlightedText: 
-  PressedText: 
-  AnimationDelay: 0
-  source: {fileID: 0}
-  Master: {fileID: 1602010566}
-  TextObject: {fileID: 1809144753}
---- !u!114 &805132874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805132869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
-          m_MethodName: ExitState
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &817112502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,8 +3118,6 @@ GameObject:
   - component: {fileID: 1623934555}
   - component: {fileID: 1623934557}
   - component: {fileID: 1623934556}
-  - component: {fileID: 1623934559}
-  - component: {fileID: 1623934558}
   m_Layer: 0
   m_Name: btnOptions
   m_TagString: Untagged
@@ -3252,71 +3183,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623934554}
   m_CullTransparentMesh: 0
---- !u!114 &1623934558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623934554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b52ce8e3cb21a541a36d046e7bdfef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ColorTransition: 1
-  SizeTransition: 0
-  SpriteTransition: 0
-  TextTransition: 0
-  AudioAnimation: 0
-  NormalColor: {r: 1, g: 1, b: 1, a: 1}
-  HighlightedColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
-  PressedColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
-  AnimateText: 0
-  StartScale: {x: 0, y: 0, z: 0}
-  HighlightedScale: {x: 0, y: 0, z: 0}
-  PressedScale: {x: 0, y: 0, z: 0}
-  NormalSprite: {fileID: 0}
-  HighlightedSprite: {fileID: 0}
-  PressedSprite: {fileID: 0}
-  StartText: 
-  StandardText: Options
-  HighlightedText: 
-  PressedText: 
-  AnimationDelay: 0
-  source: {fileID: 0}
-  Master: {fileID: 1602010566}
-  TextObject: {fileID: 440176168}
---- !u!114 &1623934559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623934554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1652081155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,8 +3419,6 @@ GameObject:
   - component: {fileID: 1697309896}
   - component: {fileID: 1697309898}
   - component: {fileID: 1697309897}
-  - component: {fileID: 1697309900}
-  - component: {fileID: 1697309899}
   m_Layer: 0
   m_Name: btnQuit
   m_TagString: Untagged
@@ -3620,71 +3484,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697309895}
   m_CullTransparentMesh: 0
---- !u!114 &1697309899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697309895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b52ce8e3cb21a541a36d046e7bdfef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ColorTransition: 1
-  SizeTransition: 0
-  SpriteTransition: 0
-  TextTransition: 0
-  AudioAnimation: 0
-  NormalColor: {r: 1, g: 1, b: 1, a: 1}
-  HighlightedColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
-  PressedColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
-  AnimateText: 0
-  StartScale: {x: 0, y: 0, z: 0}
-  HighlightedScale: {x: 0, y: 0, z: 0}
-  PressedScale: {x: 0, y: 0, z: 0}
-  NormalSprite: {fileID: 0}
-  HighlightedSprite: {fileID: 0}
-  PressedSprite: {fileID: 0}
-  StartText: 
-  StandardText: Quit Game
-  HighlightedText: 
-  PressedText: 
-  AnimationDelay: 0
-  source: {fileID: 0}
-  Master: {fileID: 1602010566}
-  TextObject: {fileID: 736602713}
---- !u!114 &1697309900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697309895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1740440287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,8 +4212,6 @@ GameObject:
   - component: {fileID: 1885681685}
   - component: {fileID: 1885681687}
   - component: {fileID: 1885681686}
-  - component: {fileID: 1885681689}
-  - component: {fileID: 1885681688}
   m_Layer: 0
   m_Name: btnClose
   m_TagString: Untagged
@@ -4480,71 +4277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885681684}
   m_CullTransparentMesh: 0
---- !u!114 &1885681688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885681684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b52ce8e3cb21a541a36d046e7bdfef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ColorTransition: 1
-  SizeTransition: 0
-  SpriteTransition: 0
-  TextTransition: 0
-  AudioAnimation: 0
-  NormalColor: {r: 1, g: 1, b: 1, a: 1}
-  HighlightedColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
-  PressedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
-  AnimateText: 0
-  StartScale: {x: 0, y: 0, z: 0}
-  HighlightedScale: {x: 0, y: 0, z: 0}
-  PressedScale: {x: 0, y: 0, z: 0}
-  NormalSprite: {fileID: 0}
-  HighlightedSprite: {fileID: 0}
-  PressedSprite: {fileID: 0}
-  StartText: 
-  StandardText: Return to Game
-  HighlightedText: 
-  PressedText: 
-  AnimationDelay: 0
-  source: {fileID: 0}
-  Master: {fileID: 1602010566}
-  TextObject: {fileID: 1871362177}
---- !u!114 &1885681689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885681684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
-          m_MethodName: ExitState
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1972130863
 GameObject:
   m_ObjectHideFlags: 0
