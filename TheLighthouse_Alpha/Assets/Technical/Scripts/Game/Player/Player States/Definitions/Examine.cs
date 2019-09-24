@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 namespace Player
 {
@@ -10,11 +11,16 @@ namespace Player
         [SerializeField] protected Vector2 zoomInput;
 
         [Header("State Controls")]
-            public Transform objectBeingExamined;
+            public ExamineObjectData objectBeingExamined;
             public Transform ExamineReferencePoint;
             [Range(1, 50)] [SerializeField] protected float rotationSpeed = 1f;
+            [Range(1, 3)] [SerializeField] protected float maxZoomDistance = 1f;
             private Vector3 originalPosition;
             private Quaternion originalRotation;
+            [SerializeField] private float zoomDistance;
+            [Range(1, 10)] [SerializeField] protected float zoomSpeed = 1f;
+
+        private TMP_Text objectName;
             
 
         public override void Initialize(PlayerInputActions _controls) {
@@ -32,33 +38,56 @@ namespace Player
 
             controls.Examining.Zoom.performed += ctx => zoomInput = ctx.ReadValue<Vector2>();
             controls.Examining.Zoom.canceled += ctx => zoomInput = Vector2.zero;
+
+            objectName = PlayerReference.instance.examineObjectName;
         }
 
         public override void Step() {
             Vector3 _rotation = Vector3.up * rotationInput.x + Vector3.right * rotationInput.y;
+
             _rotation *= Time.deltaTime;
 
-            objectBeingExamined.Rotate(_rotation * rotationSpeed, Space.World);
+            objectBeingExamined.ObjectMesh.Rotate(_rotation * rotationSpeed, Space.World);
+
+            float zoomChange = zoomInput.y * Time.deltaTime * zoomSpeed;
+
+            if (zoomDistance + zoomChange > maxZoomDistance) {
+                zoomDistance = maxZoomDistance;
+            } else if (zoomDistance + zoomChange < -maxZoomDistance) {
+                zoomDistance = -maxZoomDistance;
+            } else {
+                zoomDistance += zoomChange;
+            }
+
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position + Vector3.forward * zoomDistance;
+
+            
         }
 
         public override void EnableState() {
             controls.Examining.Enable();
             ExamineUI.SetActive(true);
+
+            
             objectBeingExamined = PlayerReference.instance.examineObject;
-            originalPosition = objectBeingExamined.position;
-            originalRotation = objectBeingExamined.rotation;
-            objectBeingExamined.position = ExamineReferencePoint.position;
-            objectBeingExamined.rotation = ExamineReferencePoint.rotation;
+            objectName.text = objectBeingExamined.ObjectName;
+
+            originalPosition = objectBeingExamined.ObjectMesh.position;
+            originalRotation = objectBeingExamined.ObjectMesh.rotation;
+
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
+            objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
         }
 
         public override void DisableState() {
-            objectBeingExamined.position = originalPosition;
-            objectBeingExamined.rotation = originalRotation;
+            objectBeingExamined.ObjectMesh.position = originalPosition;
+            objectBeingExamined.ObjectMesh.rotation = originalRotation;
+
             controls.Examining.Disable();
             ExamineUI.SetActive(false);
         }
 
-        private void ExitState () {
+        public void ExitState () {
             PlayerObject.SetState(PreviousState);
         }
     }

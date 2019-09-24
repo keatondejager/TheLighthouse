@@ -21,3 +21,6 @@ MonoBehaviour:
   objectBeingExamined: {fileID: 0}
   ExamineReferencePoint: {fileID: 0}
   rotationSpeed: 50
+  maxZoomDistance: 1
+  zoomDistance: 1
+  zoomSpeed: 2

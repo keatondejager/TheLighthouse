@@ -355,7 +355,7 @@ public class PlayerInputActions : IInputActionCollection
                 {
                     ""name"": ""right"",
                     ""id"": ""9a8ce6ba-e3a9-4e51-a40d-21ab50f144af"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

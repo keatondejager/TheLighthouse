@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace Player
 {   
-    [RequireComponent(typeof(Rigidbody), typeof(Animator))]
+    [RequireComponent(typeof(PlayerReference))]
     public class PlayerManager : MonoBehaviour {
 
         #region Variables
@@ -82,6 +82,7 @@ namespace Player
                }
 
                OnInteractEnter();
+               SetState(_interactState);
            }
 
         #endregion
