@@ -15,6 +15,7 @@ namespace Environment {
         [Header("Reference")]
             private PlayerManager player; 
             public GameObject Prompt;
+            public ExamineObjectData TargetObject;
 
         private void Start() {
             triggerCollider.isTrigger = true;
@@ -29,7 +30,9 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.examineObject = TargetObject;
                 player.OnExamineEnter += Examine;
+                
                 Prompt.SetActive(true);
             }
         }
@@ -39,13 +42,15 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.examineObject = null;
                 player.OnExamineEnter -= Examine;
+                
                 Prompt.SetActive(false);
             }
         }
 
         public virtual void Examine() {
-            
+            PlayerReference.instance.examineObject = TargetObject;
         }
     }
 }

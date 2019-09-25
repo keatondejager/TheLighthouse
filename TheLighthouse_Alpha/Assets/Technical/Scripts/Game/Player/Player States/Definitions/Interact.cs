@@ -8,9 +8,13 @@ namespace Player
 
         [Header("Object Reference")]
             [SerializeField] protected Animator _animator;
+            public GameObject SearchUIObject;
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
             PlayerObject = PlayerReference.instance.manager;
+            
+            SearchUIObject = PlayerReference.instance.searchingUI;
+
             controls.Interact.Exit.performed += ctx => ExitState();
             controls.Interact.Pause.performed += ctx => Pause();
         }
@@ -21,13 +25,15 @@ namespace Player
 
         public override void EnableState() {
             controls.Interact.Enable();
+            SearchUIObject.SetActive(true);
         }
 
         public override void DisableState() {
             controls.Interact.Disable();
+            SearchUIObject.SetActive(false);
         }
 
-        private void ExitState () {
+        public void ExitState () {
             PlayerObject.SetState(PreviousState);
         }
     }

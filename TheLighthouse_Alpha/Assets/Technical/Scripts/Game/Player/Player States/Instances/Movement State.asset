@@ -21,16 +21,17 @@ MonoBehaviour:
   _rigidbody: {fileID: 0}
   _animator: {fileID: 0}
   direction: {x: 0, y: 0}
-  motion: {x: 0, y: 0, z: 0}
-  moveSpeed: 1.5
+  motion: {x: 0, y: 0, z: -4}
+  moveSpeed: 4
   acceleration: 1.25
   decceleration: 3.5
-  rotationsPerSecond: 0.1
+  rotationsPerSecond: 0.047
   grounded: 1
-  obstructed: 1
+  obstructed: 0
   groundCheckLength: 0.052
   forwardCheckOffset: 0.58
   forwardCheckRadius: 0.025
   collisionLayer:
     serializedVersion: 2
     m_Bits: 512
+  _isWalking: 1

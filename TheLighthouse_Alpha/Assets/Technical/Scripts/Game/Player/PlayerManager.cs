@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace Player
 {   
-    [RequireComponent(typeof(Rigidbody), typeof(Animator))]
+    [RequireComponent(typeof(PlayerReference))]
     public class PlayerManager : MonoBehaviour {
 
         #region Variables
@@ -66,11 +66,14 @@ namespace Player
             public event OnExamine OnExamineEnter;
 
            public void ExamineButtonDown () {
-               if (OnExamineEnter == null) {
-                   return;
-               }
+                if (OnExamineEnter != null) {
+                    OnExamineEnter();
+                    Debug.Log("There");
+                }               
 
-               OnExamineEnter();
+                if (PlayerReference.instance.examineObject) {
+                    SetState(_examineState);
+                }
            }
 
            public void InteractButtonDown () {
@@ -79,6 +82,7 @@ namespace Player
                }
 
                OnInteractEnter();
+               SetState(_interactState);
            }
 
         #endregion

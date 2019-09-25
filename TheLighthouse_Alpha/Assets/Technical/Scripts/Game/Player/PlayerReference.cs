@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
+using Environment;
+using TMPro;
 
 namespace Player
 {
-    [RequireComponent(typeof(Rigidbody), typeof(Animator))]
+    [RequireComponent(typeof(Rigidbody))]
     public class PlayerReference : MonoBehaviour
     {
         public static PlayerReference instance;
@@ -12,6 +13,18 @@ namespace Player
         public new Rigidbody rigidbody;
         public Animator animator;
         public PlayerManager manager;
+
+        [Header("Examining")]
+            public GameObject examineUI;
+            public TMP_Text examineObjectName;
+            public ExamineObjectData examineObject;
+            public Transform ExamineRefPoint;
+        [Header("Menus")]
+            public GameObject menuObject;
+        [Header("Interactions")]
+            public GameObject searchingUI;
+
+       
 
         private void Awake() {
             if (instance == null) {
@@ -23,7 +36,6 @@ namespace Player
 
         private void Start() {
             rigidbody = GetComponent<Rigidbody>();
-            animator = GetComponent<Animator>();
             manager = GetComponent<PlayerManager>();
         }
     }

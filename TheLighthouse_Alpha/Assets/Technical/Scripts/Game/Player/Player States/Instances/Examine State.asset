@@ -15,3 +15,12 @@ MonoBehaviour:
   PlayerObject: {fileID: 0}
   _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
   PreviousState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
+  ExamineUI: {fileID: 0}
+  rotationInput: {x: 0, y: 0}
+  zoomInput: {x: 0, y: 0}
+  objectBeingExamined: {fileID: 0}
+  ExamineReferencePoint: {fileID: 0}
+  rotationSpeed: 50
+  maxZoomDistance: 1
+  zoomDistance: 1
+  zoomSpeed: 2

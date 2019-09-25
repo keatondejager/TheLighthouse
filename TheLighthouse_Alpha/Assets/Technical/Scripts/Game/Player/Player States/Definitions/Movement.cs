@@ -115,6 +115,8 @@ namespace Player
 
         public override void DisableState() {
             controls.Movement.Disable();
+            direction = Vector2.zero;
+            isWalking = false;
         }
 
         private void ExamineClick() {

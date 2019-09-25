@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Examinable
+  - DevItem
   layers:
   - Default
   - TransparentFX
