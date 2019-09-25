@@ -10,6 +10,7 @@ namespace Environment {
         [SerializeField] protected BoxCollider triggerRange;
         [SerializeField] protected BoxCollider objectCollider;
         [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
+        [SerializeField] protected SearchableObjectData ObjectInventory;
 
         private PlayerManager player; 
         public GameObject Prompt;
@@ -27,6 +28,7 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.objectInventory = ObjectInventory;
                 player.OnInteractEnter += Interact;
                 Prompt.SetActive(true);
             }
@@ -37,13 +39,14 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.objectInventory = null;
                 player.OnInteractEnter -= Interact;
                 Prompt.SetActive(false);
             }
         }
 
         public virtual void Interact() {
-            
+            PlayerReference.instance.objectInventory = ObjectInventory;
         }
     }
 

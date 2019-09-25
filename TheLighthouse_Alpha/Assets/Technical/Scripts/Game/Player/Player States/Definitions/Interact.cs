@@ -9,6 +9,9 @@ namespace Player
         [Header("Object Reference")]
             [SerializeField] protected Animator _animator;
             public GameObject SearchUIObject;
+
+            private SearchableObjectData activeData;
+            
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
             PlayerObject = PlayerReference.instance.manager;
@@ -26,6 +29,16 @@ namespace Player
         public override void EnableState() {
             controls.Interact.Enable();
             SearchUIObject.SetActive(true);
+
+            activeData = PlayerReference.instance.objectInventory;
+            
+            foreach (UI_Item menuItem in PlayerReference.instance.objectsInGame) {
+                if (activeData.inventory.Contains(menuItem.content)) {
+                    menuItem.gameObject.SetActive(true);
+                } else {
+                    menuItem.gameObject.SetActive(false);
+                }
+            }
         }
 
         public override void DisableState() {

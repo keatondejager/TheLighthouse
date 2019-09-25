@@ -1,5 +1,6 @@
 ﻿
 using UnityEngine;
+using System.Collections.Generic;
 using Environment;
 using TMPro;
 
@@ -23,6 +24,9 @@ namespace Player
             public GameObject menuObject;
         [Header("Interactions")]
             public GameObject searchingUI;
+            public SearchableObjectData objectInventory;
+
+            public List<UI_Item> objectsInGame;
 
        
 
