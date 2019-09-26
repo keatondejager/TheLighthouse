@@ -8,15 +8,18 @@ namespace Player
 
         [Header("Object Reference")]
             [SerializeField] protected Animator _animator;
+            [SerializeField] protected ButtonNavigation interactableUIControl;
             public GameObject SearchUIObject;
 
             private SearchableObjectData activeData;
+            
             
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
             PlayerObject = PlayerReference.instance.manager;
             
             SearchUIObject = PlayerReference.instance.searchingUI;
+            interactableUIControl = SearchUIObject.GetComponentInChildren<ButtonNavigation>();
 
             controls.Interact.Exit.performed += ctx => ExitState();
             controls.Interact.Pause.performed += ctx => Pause();
@@ -32,6 +35,10 @@ namespace Player
 
             activeData = PlayerReference.instance.objectInventory;
             
+            ResetDisplay();
+        }
+
+        private void ResetDisplay() {
             foreach (UI_Item menuItem in PlayerReference.instance.objectsInGame) {
                 if (activeData.inventory.Contains(menuItem.content)) {
                     menuItem.gameObject.SetActive(true);
@@ -39,6 +46,13 @@ namespace Player
                     menuItem.gameObject.SetActive(false);
                 }
             }
+
+            if (activeData.inventory.Count == 0) {
+                return;
+            }
+
+            //interactableUIControl.defaultIndex = activeData.inventory[0].itemCode;
+            interactableUIControl.ActivateDefault();
         }
 
         public override void DisableState() {
@@ -49,5 +63,13 @@ namespace Player
         public void ExitState () {
             PlayerObject.SetState(PreviousState);
         }
+
+        public void TakeItem (int itemID) {
+            activeData.RemoveItem(PlayerReference.instance.objectsInGame[itemID].content);
+            PlayerReference.instance.PlayerInventory.Add(PlayerReference.instance.objectsInGame[itemID].content);
+
+            ResetDisplay();
+        }
+
     }
 }

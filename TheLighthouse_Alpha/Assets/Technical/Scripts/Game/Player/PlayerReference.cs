@@ -28,6 +28,8 @@ namespace Player
 
             public List<UI_Item> objectsInGame;
 
+            public List<Item> PlayerInventory;
+
        
 
         private void Awake() {

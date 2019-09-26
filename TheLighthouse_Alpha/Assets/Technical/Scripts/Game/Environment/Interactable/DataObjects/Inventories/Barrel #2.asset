@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 'Barrel #2'
   m_EditorClassIdentifier: 
   InventoryObjectName: Barrel
-  _inventory:
-  - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
+  _inventory: []
+  defaultInventory:
+  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}

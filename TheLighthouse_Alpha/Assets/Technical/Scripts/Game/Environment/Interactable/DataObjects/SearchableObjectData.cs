@@ -9,6 +9,7 @@ public class SearchableObjectData : ScriptableObject
     
     // List of items in the inventory
     [SerializeField] protected List<Item> _inventory;
+    [SerializeField] private List<Item> defaultInventory;
     public List<Item> inventory {
         get => _inventory;
     }
@@ -26,11 +27,30 @@ public class SearchableObjectData : ScriptableObject
         _inventory.RemoveAt(ItemIndex);
     }
 
+    public void RemoveItem (Item item) {
+        if (!_inventory.Contains(item)) {
+            return;
+        }
+
+        _inventory.Remove(item);
+    }
+
     public void AddItem (Item item) {
         if (_inventory.Contains(item)) {
             return;
         }
 
         _inventory.Add(item);
+    }
+
+    public void ResetInventory () {
+        _inventory.Clear();
+        foreach (Item item in defaultInventory) {
+            _inventory.Add(item);
+        }
+    }
+
+    private void OnEnable() {
+        ResetInventory();
     }
 }

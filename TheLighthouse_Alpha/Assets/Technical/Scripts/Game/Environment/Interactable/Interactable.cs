@@ -12,6 +12,7 @@ namespace Environment {
         [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
         [SerializeField] protected SearchableObjectData ObjectInventory;
 
+
         private PlayerManager player; 
         public GameObject Prompt;
 

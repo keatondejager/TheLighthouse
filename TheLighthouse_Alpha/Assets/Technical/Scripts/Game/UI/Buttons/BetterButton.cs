@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
@@ -199,6 +200,14 @@ public class BetterButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
             MainImage.color = HighlightedColor;
         }
     }
+
+
+    [Header("Event Management")]
+        public UnityEvent submitEvent;
+
+        public void Submit () {
+            submitEvent.Invoke();
+        }
 
     
 }

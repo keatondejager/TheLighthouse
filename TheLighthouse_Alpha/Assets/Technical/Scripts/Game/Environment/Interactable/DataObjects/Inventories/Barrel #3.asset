@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fbf9e5e1b06fe1409ffa6a7397f8e7e, type: 3}
-  m_Name: 'Barrel #1'
+  m_Name: 'Barrel #3'
   m_EditorClassIdentifier: 
   InventoryObjectName: Barrel
   _inventory: []
   defaultInventory:
-  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
-  - {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
   - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
+  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
