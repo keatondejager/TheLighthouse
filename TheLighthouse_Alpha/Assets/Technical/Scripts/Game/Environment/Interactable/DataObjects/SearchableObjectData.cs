@@ -9,7 +9,7 @@ public class SearchableObjectData : ScriptableObject
     
     // List of items in the inventory
     [SerializeField] protected List<Item> _inventory;
-    [SerializeField] private List<Item> defaultInventory;
+    [SerializeField] protected List<Item> defaultInventory;
     public List<Item> inventory {
         get => _inventory;
     }
