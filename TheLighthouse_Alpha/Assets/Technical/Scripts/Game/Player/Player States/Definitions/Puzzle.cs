@@ -24,6 +24,10 @@ namespace Player
         public override void EnableState() {
             controls.PuzzleControls.Enable();
             puzzle = PlayerReference.instance.dB_Puzzle;
+
+            if (puzzle.CheckRequirements() && puzzle.puzzleState == 0) {
+                puzzle.puzzleState = 1;
+            } 
         }
 
         public override void DisableState() {
