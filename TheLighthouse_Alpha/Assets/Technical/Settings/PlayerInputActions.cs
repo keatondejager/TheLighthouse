@@ -466,6 +466,17 @@ public class PlayerInputActions : IInputActionCollection
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c9770ab5-5cde-4409-9760-e4e69ba80420"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""324440d9-8ad6-403f-9461-ae6516f00808"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
@@ -501,6 +512,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""Exit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b23e34a-34a5-4e2c-b4ef-ae226ec78466"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -530,6 +552,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""f451f33d-7601-4da7-8fa7-94f46ba9e2de"",
                     ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73c2a1ce-1052-48a1-8dfc-2c4ea77c8a85"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -669,6 +702,304 @@ public class PlayerInputActions : IInputActionCollection
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""PuzzleControls"",
+            ""id"": ""f21fb99d-233a-4810-b927-f5b1b392b013"",
+            ""actions"": [
+                {
+                    ""name"": ""Close"",
+                    ""type"": ""Button"",
+                    ""id"": ""5e2948bd-6ac9-45d6-9486-8484ad95d5e3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""PrimaryButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""571faea0-6d7a-4221-887f-0144663f7960"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SecondaryButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""370d67c8-8e4c-42e0-991f-3eb4bd1afd18"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""TertiaryButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""b1024eda-bf49-4c07-8c73-6f8bac0ef4d6"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""PrimaryAxis"",
+                    ""type"": ""Button"",
+                    ""id"": ""24e97c30-dba1-446d-87b3-230e1fe59200"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SecondaryAxis"",
+                    ""type"": ""Button"",
+                    ""id"": ""f2abc25e-71cd-4b14-9f54-2c76e4c745d5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3c1350ed-cdcf-4ec9-9ccb-6e8bc14c2349"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1926ea5d-a7c8-45dc-8062-04767d52551f"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""32337777-07f0-4ce3-a948-3330649b4307"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ebab09ed-9066-48a9-9e03-50c52932e832"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""028111ad-4885-4412-acb9-bd8d6e75ca09"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c0907ae-c7b1-4830-a727-2c37f3591ca8"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82f003f8-19b1-40a9-8943-cdebd51c8fad"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2a11f093-3c5e-4fa6-b3b3-1a456151d97b"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c42c9dc-07e7-4313-9a73-0ade3ffa7c7d"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TertiaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b58eeac-c4c5-4d1a-aca4-44ae5305f0a5"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TertiaryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""645ad0f2-c937-4272-8b8d-f25197a7ec8d"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD [Keyboard]"",
+                    ""id"": ""ae4177bb-a646-4118-a37b-d3c37809997a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""2c481133-cde1-4ccb-aef2-862b8df99b88"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""62dc86ca-45b7-4e75-ba0b-70187b4f7d03"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""e9180051-ca74-4ccd-8669-d7acc94a8158"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""83335c3d-9c4c-4270-ae46-d543341d412f"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""42fc8b16-57b2-421b-9444-497cc09f5840"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""ArrowKeys [Keyboard]"",
+                    ""id"": ""51fdf6c3-c742-4f68-8626-c9b6d00d320a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9b60fa38-59a8-4772-8fcc-863aac57ef5f"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""1e24f544-e24e-4b20-b8a3-0ffae500027c"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""35dfc5d1-f273-4472-8f1f-da301b74af51"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""080d6ceb-cfab-4b10-b744-bae1aa6555de"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -702,6 +1033,14 @@ public class PlayerInputActions : IInputActionCollection
         m_UINavigation_Select = m_UINavigation.GetAction("Select");
         m_UINavigation_Down = m_UINavigation.GetAction("Down");
         m_UINavigation_Up = m_UINavigation.GetAction("Up");
+        // PuzzleControls
+        m_PuzzleControls = asset.GetActionMap("PuzzleControls");
+        m_PuzzleControls_Close = m_PuzzleControls.GetAction("Close");
+        m_PuzzleControls_PrimaryButton = m_PuzzleControls.GetAction("PrimaryButton");
+        m_PuzzleControls_SecondaryButton = m_PuzzleControls.GetAction("SecondaryButton");
+        m_PuzzleControls_TertiaryButton = m_PuzzleControls.GetAction("TertiaryButton");
+        m_PuzzleControls_PrimaryAxis = m_PuzzleControls.GetAction("PrimaryAxis");
+        m_PuzzleControls_SecondaryAxis = m_PuzzleControls.GetAction("SecondaryAxis");
     }
 
     ~PlayerInputActions()
@@ -1033,6 +1372,79 @@ public class PlayerInputActions : IInputActionCollection
         }
     }
     public UINavigationActions @UINavigation => new UINavigationActions(this);
+
+    // PuzzleControls
+    private readonly InputActionMap m_PuzzleControls;
+    private IPuzzleControlsActions m_PuzzleControlsActionsCallbackInterface;
+    private readonly InputAction m_PuzzleControls_Close;
+    private readonly InputAction m_PuzzleControls_PrimaryButton;
+    private readonly InputAction m_PuzzleControls_SecondaryButton;
+    private readonly InputAction m_PuzzleControls_TertiaryButton;
+    private readonly InputAction m_PuzzleControls_PrimaryAxis;
+    private readonly InputAction m_PuzzleControls_SecondaryAxis;
+    public struct PuzzleControlsActions
+    {
+        private PlayerInputActions m_Wrapper;
+        public PuzzleControlsActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Close => m_Wrapper.m_PuzzleControls_Close;
+        public InputAction @PrimaryButton => m_Wrapper.m_PuzzleControls_PrimaryButton;
+        public InputAction @SecondaryButton => m_Wrapper.m_PuzzleControls_SecondaryButton;
+        public InputAction @TertiaryButton => m_Wrapper.m_PuzzleControls_TertiaryButton;
+        public InputAction @PrimaryAxis => m_Wrapper.m_PuzzleControls_PrimaryAxis;
+        public InputAction @SecondaryAxis => m_Wrapper.m_PuzzleControls_SecondaryAxis;
+        public InputActionMap Get() { return m_Wrapper.m_PuzzleControls; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PuzzleControlsActions set) { return set.Get(); }
+        public void SetCallbacks(IPuzzleControlsActions instance)
+        {
+            if (m_Wrapper.m_PuzzleControlsActionsCallbackInterface != null)
+            {
+                Close.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnClose;
+                Close.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnClose;
+                Close.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnClose;
+                PrimaryButton.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryButton;
+                PrimaryButton.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryButton;
+                PrimaryButton.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryButton;
+                SecondaryButton.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryButton;
+                SecondaryButton.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryButton;
+                SecondaryButton.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryButton;
+                TertiaryButton.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnTertiaryButton;
+                TertiaryButton.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnTertiaryButton;
+                TertiaryButton.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnTertiaryButton;
+                PrimaryAxis.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryAxis;
+                PrimaryAxis.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryAxis;
+                PrimaryAxis.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnPrimaryAxis;
+                SecondaryAxis.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
+                SecondaryAxis.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
+                SecondaryAxis.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
+            }
+            m_Wrapper.m_PuzzleControlsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                Close.started += instance.OnClose;
+                Close.performed += instance.OnClose;
+                Close.canceled += instance.OnClose;
+                PrimaryButton.started += instance.OnPrimaryButton;
+                PrimaryButton.performed += instance.OnPrimaryButton;
+                PrimaryButton.canceled += instance.OnPrimaryButton;
+                SecondaryButton.started += instance.OnSecondaryButton;
+                SecondaryButton.performed += instance.OnSecondaryButton;
+                SecondaryButton.canceled += instance.OnSecondaryButton;
+                TertiaryButton.started += instance.OnTertiaryButton;
+                TertiaryButton.performed += instance.OnTertiaryButton;
+                TertiaryButton.canceled += instance.OnTertiaryButton;
+                PrimaryAxis.started += instance.OnPrimaryAxis;
+                PrimaryAxis.performed += instance.OnPrimaryAxis;
+                PrimaryAxis.canceled += instance.OnPrimaryAxis;
+                SecondaryAxis.started += instance.OnSecondaryAxis;
+                SecondaryAxis.performed += instance.OnSecondaryAxis;
+                SecondaryAxis.canceled += instance.OnSecondaryAxis;
+            }
+        }
+    }
+    public PuzzleControlsActions @PuzzleControls => new PuzzleControlsActions(this);
     public interface IMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
@@ -1067,5 +1479,14 @@ public class PlayerInputActions : IInputActionCollection
         void OnSelect(InputAction.CallbackContext context);
         void OnDown(InputAction.CallbackContext context);
         void OnUp(InputAction.CallbackContext context);
+    }
+    public interface IPuzzleControlsActions
+    {
+        void OnClose(InputAction.CallbackContext context);
+        void OnPrimaryButton(InputAction.CallbackContext context);
+        void OnSecondaryButton(InputAction.CallbackContext context);
+        void OnTertiaryButton(InputAction.CallbackContext context);
+        void OnPrimaryAxis(InputAction.CallbackContext context);
+        void OnSecondaryAxis(InputAction.CallbackContext context);
     }
 }

@@ -89,11 +89,6 @@ namespace Player
             controls.Examining.Disable();
             ExamineUI.SetActive(false);
         }
-
-        public void ExitState () {
-            PlayerObject.SetState(PreviousState);
-        }
-
         public void ResetObject () {
             objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
             objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);

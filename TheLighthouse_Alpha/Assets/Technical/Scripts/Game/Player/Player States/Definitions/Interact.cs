@@ -60,10 +60,6 @@ namespace Player
             SearchUIObject.SetActive(false);
         }
 
-        public void ExitState () {
-            PlayerObject.SetState(PreviousState);
-        }
-
         public void TakeItem (int itemID) {
             activeData.RemoveItem(PlayerReference.instance.objectsInGame[itemID].content);
             PlayerReference.instance.PlayerInventory.Add(PlayerReference.instance.objectsInGame[itemID].content);

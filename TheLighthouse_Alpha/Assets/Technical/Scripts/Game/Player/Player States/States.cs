@@ -40,6 +40,10 @@ namespace Player
         PlayerObject.SetState(_menuState);
     }
 
+    public virtual void ExitState () {
+        PlayerObject.SetState(PreviousState);
+    }
+
 }
 }
 

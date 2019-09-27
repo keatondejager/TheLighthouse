@@ -24,10 +24,6 @@ namespace Player {
             controls.Inventory.Disable();
         }
 
-        private void ExitState () {
-            PlayerObject.SetState(PreviousState);
-        }
-
     }
 
 }
