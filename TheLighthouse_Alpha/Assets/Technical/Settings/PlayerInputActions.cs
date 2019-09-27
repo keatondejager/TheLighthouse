@@ -754,6 +754,22 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Hold"",
+                    ""type"": ""Button"",
+                    ""id"": ""9c9285d3-a226-4eff-a90f-f8f3d3e8750e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Grab"",
+                    ""type"": ""Button"",
+                    ""id"": ""771d6ae9-0ac5-453d-bd1c-b1b3124f2456"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -998,6 +1014,50 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""SecondaryAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af0a3951-bf35-4229-81a9-7860f93ac068"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hold"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7e44a59-f166-4b2e-9a1a-95af4f98420f"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hold"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d6fa2e86-2fd0-4991-a84d-da8553b189e6"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a74db87-248f-4512-b46e-504d32288a62"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1041,6 +1101,8 @@ public class PlayerInputActions : IInputActionCollection
         m_PuzzleControls_TertiaryButton = m_PuzzleControls.GetAction("TertiaryButton");
         m_PuzzleControls_PrimaryAxis = m_PuzzleControls.GetAction("PrimaryAxis");
         m_PuzzleControls_SecondaryAxis = m_PuzzleControls.GetAction("SecondaryAxis");
+        m_PuzzleControls_Hold = m_PuzzleControls.GetAction("Hold");
+        m_PuzzleControls_Grab = m_PuzzleControls.GetAction("Grab");
     }
 
     ~PlayerInputActions()
@@ -1382,6 +1444,8 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_PuzzleControls_TertiaryButton;
     private readonly InputAction m_PuzzleControls_PrimaryAxis;
     private readonly InputAction m_PuzzleControls_SecondaryAxis;
+    private readonly InputAction m_PuzzleControls_Hold;
+    private readonly InputAction m_PuzzleControls_Grab;
     public struct PuzzleControlsActions
     {
         private PlayerInputActions m_Wrapper;
@@ -1392,6 +1456,8 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @TertiaryButton => m_Wrapper.m_PuzzleControls_TertiaryButton;
         public InputAction @PrimaryAxis => m_Wrapper.m_PuzzleControls_PrimaryAxis;
         public InputAction @SecondaryAxis => m_Wrapper.m_PuzzleControls_SecondaryAxis;
+        public InputAction @Hold => m_Wrapper.m_PuzzleControls_Hold;
+        public InputAction @Grab => m_Wrapper.m_PuzzleControls_Grab;
         public InputActionMap Get() { return m_Wrapper.m_PuzzleControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1419,6 +1485,12 @@ public class PlayerInputActions : IInputActionCollection
                 SecondaryAxis.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
                 SecondaryAxis.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
                 SecondaryAxis.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
+                Hold.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
+                Hold.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
+                Hold.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
+                Grab.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
+                Grab.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
+                Grab.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
             }
             m_Wrapper.m_PuzzleControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -1441,6 +1513,12 @@ public class PlayerInputActions : IInputActionCollection
                 SecondaryAxis.started += instance.OnSecondaryAxis;
                 SecondaryAxis.performed += instance.OnSecondaryAxis;
                 SecondaryAxis.canceled += instance.OnSecondaryAxis;
+                Hold.started += instance.OnHold;
+                Hold.performed += instance.OnHold;
+                Hold.canceled += instance.OnHold;
+                Grab.started += instance.OnGrab;
+                Grab.performed += instance.OnGrab;
+                Grab.canceled += instance.OnGrab;
             }
         }
     }
@@ -1488,5 +1566,7 @@ public class PlayerInputActions : IInputActionCollection
         void OnTertiaryButton(InputAction.CallbackContext context);
         void OnPrimaryAxis(InputAction.CallbackContext context);
         void OnSecondaryAxis(InputAction.CallbackContext context);
+        void OnHold(InputAction.CallbackContext context);
+        void OnGrab(InputAction.CallbackContext context);
     }
 }
