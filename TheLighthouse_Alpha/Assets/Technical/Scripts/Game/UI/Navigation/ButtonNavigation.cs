@@ -32,6 +32,7 @@ public class ButtonNavigation : MonoBehaviour
             NavigateUp();
         }
         buttonOptions[currentIndex].Activate();
+        
     }
 
     private void NavigateDown() {
@@ -44,10 +45,13 @@ public class ButtonNavigation : MonoBehaviour
         if (currentIndex >= buttonOptions.Count) {
             currentIndex = 0;
         }
+        
         if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
             NavigateDown();
         }
         buttonOptions[currentIndex].Activate();
+
+        
     }
 
     private void SelectButton () {
@@ -72,7 +76,14 @@ public class ButtonNavigation : MonoBehaviour
             return;
         }
         currentIndex = 0;
+
+        if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
+            NavigateDown();
+        }
         buttonOptions[currentIndex].Activate();
+
+       
+        
     }
 
     private void OnDisable() {
