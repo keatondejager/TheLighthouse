@@ -17,6 +17,8 @@ namespace Player
                 [SerializeField] protected Interact _interactState;
                 [SerializeField] protected Inventory  _inventoryState;
                 [SerializeField] protected Menus _menuState;
+
+                [SerializeField] protected Puzzle _puzzleState;
             
             [Header("Input Control")]
                 private PlayerInputActions controls;
@@ -35,6 +37,7 @@ namespace Player
             _interactState.Initialize(controls);
             _inventoryState.Initialize(controls);
             _menuState.Initialize(controls);
+            _puzzleState.Initialize(controls);
 
             if (!state) {
                 SetState(_moveState);
@@ -84,6 +87,8 @@ namespace Player
                OnInteractEnter();
                if (PlayerReference.instance.objectInventory) {
                     SetState(_interactState);
+               } else if (PlayerReference.instance.dB_Puzzle) { 
+                   SetState(_puzzleState);
                }
            }
 

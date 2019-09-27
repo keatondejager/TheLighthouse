@@ -56,7 +56,6 @@ namespace Environment {
 
         public virtual void Interact() {
             PlayerReference.instance.objectInventory = ObjectInventory;
-            Debug.Log("Here");
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }

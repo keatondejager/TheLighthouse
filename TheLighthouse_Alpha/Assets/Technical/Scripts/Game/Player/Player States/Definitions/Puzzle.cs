@@ -4,11 +4,12 @@ using UnityEngine;
 
 namespace Player
 {
+    [CreateAssetMenu(menuName = "Player State/Puzzle", fileName = "DB Puzzle")]
     public class Puzzle : States
     {
 
-        [Header("Visuals")]
-            [SerializeField] protected DB_Puzzle puzzleManager;
+        private DB_Puzzle puzzle;
+        
         public override void Initialize (PlayerInputActions _controls) {
             controls = _controls;
 
@@ -22,12 +23,13 @@ namespace Player
 
         public override void EnableState() {
             controls.PuzzleControls.Enable();
-            puzzleManager.gameObject.SetActive(true);
+            puzzle = PlayerReference.instance.dB_Puzzle;
         }
 
         public override void DisableState() {
             controls.PuzzleControls.Disable();
-            puzzleManager.gameObject.SetActive(false);
+            puzzle.ClosePuzzle();
+
         }
     }
 }

@@ -26,6 +26,9 @@ namespace Player
             public GameObject searchingUI;
             public SearchableObjectData objectInventory;
 
+            public DB_Puzzle dB_Puzzle;
+
+
             public List<UI_Item> objectsInGame;
 
             public List<Item> PlayerInventory;
