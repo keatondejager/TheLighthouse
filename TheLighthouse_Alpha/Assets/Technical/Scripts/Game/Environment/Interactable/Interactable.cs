@@ -7,12 +7,22 @@ namespace Environment {
 
     [RequireComponent(typeof(BoxCollider))]
     public abstract class Interactable : MonoBehaviour {
-        [SerializeField] protected BoxCollider triggerRange;
-        [SerializeField] protected BoxCollider objectCollider;
-        [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
+        
+        [Header("Control Reference")]
+            [SerializeField] protected BoxCollider triggerRange;
+            [SerializeField] protected BoxCollider objectCollider;
+            [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
+            [SerializeField] protected SearchableObjectData ObjectInventory;
 
-        private PlayerManager player; 
-        public GameObject Prompt;
+
+         [Header("Narrative and Events")]
+            public bool isNarrativeTrigger;
+            public delegate void NarrativeTrigger();
+            public event NarrativeTrigger OnNarrativeTrigger;
+
+        [Header("General Reference")]
+            public GameObject Prompt;
+            private PlayerManager player; 
 
         protected virtual void Start() {
             triggerRange.isTrigger = true;
@@ -27,6 +37,7 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.objectInventory = ObjectInventory;
                 player.OnInteractEnter += Interact;
                 Prompt.SetActive(true);
             }
@@ -37,13 +48,18 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
+                PlayerReference.instance.objectInventory = null;
                 player.OnInteractEnter -= Interact;
                 Prompt.SetActive(false);
             }
         }
 
         public virtual void Interact() {
-            
+            PlayerReference.instance.objectInventory = ObjectInventory;
+            Debug.Log("Here");
+            if (isNarrativeTrigger && OnNarrativeTrigger != null) {
+                OnNarrativeTrigger();
+            }
         }
     }
 

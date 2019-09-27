@@ -78,11 +78,13 @@ namespace Player
 
             objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
             objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
+            objectBeingExamined.ObjectMesh.gameObject.SetActive(true);
         }
 
         public override void DisableState() {
             objectBeingExamined.ObjectMesh.position = originalPosition;
             objectBeingExamined.ObjectMesh.rotation = originalRotation;
+            objectBeingExamined.ObjectMesh.gameObject.SetActive(false);
 
             controls.Examining.Disable();
             ExamineUI.SetActive(false);
@@ -90,6 +92,11 @@ namespace Player
 
         public void ExitState () {
             PlayerObject.SetState(PreviousState);
+        }
+
+        public void ResetObject () {
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
+            objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
         }
     }
 }

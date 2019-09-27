@@ -17,6 +17,11 @@ namespace Environment {
             public GameObject Prompt;
             public ExamineObjectData TargetObject;
 
+        [Header("Narrative and Events")]
+            public bool isNarrativeTrigger;
+            public delegate void NarrativeTrigger();
+            public event NarrativeTrigger OnNarrativeTrigger;
+
         private void Start() {
             triggerCollider.isTrigger = true;
             objectCollider.isTrigger = false;
@@ -51,6 +56,9 @@ namespace Environment {
 
         public virtual void Examine() {
             PlayerReference.instance.examineObject = TargetObject;
+            if (isNarrativeTrigger && OnNarrativeTrigger != null) {
+                OnNarrativeTrigger();
+            }
         }
     }
 }

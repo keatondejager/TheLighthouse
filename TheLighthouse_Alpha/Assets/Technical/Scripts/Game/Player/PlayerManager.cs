@@ -66,10 +66,10 @@ namespace Player
             public event OnExamine OnExamineEnter;
 
            public void ExamineButtonDown () {
-                if (OnExamineEnter != null) {
-                    OnExamineEnter();
-                    Debug.Log("There");
-                }               
+                if (OnExamineEnter == null) {
+                    return;
+                }   
+                OnExamineEnter();
 
                 if (PlayerReference.instance.examineObject) {
                     SetState(_examineState);
@@ -82,7 +82,9 @@ namespace Player
                }
 
                OnInteractEnter();
-               SetState(_interactState);
+               if (PlayerReference.instance.objectInventory) {
+                    SetState(_interactState);
+               }
            }
 
         #endregion
