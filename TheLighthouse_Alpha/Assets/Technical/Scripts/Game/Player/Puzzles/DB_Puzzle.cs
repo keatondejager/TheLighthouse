@@ -88,6 +88,7 @@ public class DB_Puzzle : MonoBehaviour {
 
         public void PlaceNewSwitch () {
             if (!PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Switch])) {
+                // Feedback to player why no work.
                 return;
             }
 
@@ -104,10 +105,62 @@ public class DB_Puzzle : MonoBehaviour {
 
     #region The New Wires 
         [Header("The New Wires")]
-            public Transform DemonstrationWireRight;
-            public Transform DemonstrationWireLeft;
 
-            
+            public Transform TopWireNew;
+            public Transform BottomWireNew;
+
+            private int newWireIndex = 0;
+            public void InsertWire () {
+                if (!PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Wires])) {
+                    //Feedback to player, why no work? 
+                    return;
+                }
+
+                if (!SwitchInstalled || newWireIndex == 2) {
+                    return;
+                }
+
+                newWireIndex++;
+                SetWireState();
+
+            }
+    #endregion
+
+    #region Putting the Cover Back 
+        [Header("Putting the Cover Back")]
+            public CoverCondition newCoverState = CoverCondition.Off;
+
+            public void PlaceCoverBack () {
+                if (currentCoverState != newCoverState || newWireIndex != 2) {
+                    // One of them is not set to off or the wires have not been installed
+                    return;
+                }
+
+                newCoverState = CoverCondition.Loose;
+                theCover.localPosition = onPosition;
+            }
+    #endregion
+
+    #region Screws Back in
+        [Header("Screws Back in")]
+            public int newScrewsDone = 0;
+            public bool PuzzleComplete = false;
+
+            public void NewScrew () {
+                if (newCoverState != CoverCondition.Loose || PuzzleComplete) {
+                    return;
+                }
+                        
+                if (!PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Screwdriver])) {
+                    // Feedback so the player knows why it didnt work goes here.
+                    return;
+                } 
+
+                newScrewsDone++;
+                if (newScrewsDone >= 4) {
+                    PuzzleComplete = true;
+                }
+            }
     #endregion
     
 
@@ -152,6 +205,11 @@ public class DB_Puzzle : MonoBehaviour {
         theTopCable.gameObject.SetActive(currentSwitchState < SwitchCondition.Partial);
 
         theNewSwitch.gameObject.SetActive(SwitchInstalled);
+    }
+
+    private void SetWireState() {
+        TopWireNew.gameObject.SetActive(newWireIndex > 0);
+        BottomWireNew.gameObject.SetActive(newWireIndex > 1);
     }
 
 
