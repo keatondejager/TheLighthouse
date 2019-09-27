@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17007577, g: 0.18184842, b: 0.2747654, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1097,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &210097323
 Transform:
   m_ObjectHideFlags: 0
@@ -3306,9 +3306,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requirements:
+  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
   - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
+  requirementsCheckboxes:
+  - {fileID: 663942727}
+  - {fileID: 1600724098}
+  - {fileID: 743339060}
+  acquiredCheck: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  missingCheck: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   ButtonPrompt: {fileID: 462990468}
   puzzleUI: {fileID: 210097322}
   ReferencePosition: {fileID: 74442980}
