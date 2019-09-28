@@ -37,11 +37,17 @@ namespace Player
         [Header("Rotational Input Control")]
             [SerializeField] protected List<Vector2> RotationalAccuracy;
             [SerializeField] protected float InputSensitivity = 0.2f;
+            
+            [SerializeField] private int currentIndexOfAccuracy = 0;
 
         [Header("Input Types and Progress")]
             [SerializeField] private InputTypes expectedInput;
             private List<InputTypes> orderedInputExpectations;
             [SerializeField] private float analogueProgress = 0f;
+             
+        [Header("Instructions")]
+            [SerializeField] protected List<string> _instructionText;
+            private TMPro.TMP_Text instructionObject;
 
 
         public override void Initialize (PlayerInputActions _controls) {
@@ -65,13 +71,16 @@ namespace Player
 
             controls.PuzzleControls.Grab.performed += ctx => isRightTriggerDown = true;
             controls.PuzzleControls.Grab.canceled += ctx => isRightTriggerDown = false;
+
+            instructionObject = PlayerReference.instance.instructions;
             
         }
 
 
-        [SerializeField] private int currentIndexOfAccuracy = 0;
+       
         public override void Step() {
             if (checkingInput) {
+                instructionObject.text = _instructionText[puzzle.puzzleState + 1];
                 switch (expectedInput) {
                     case InputTypes.AnalogueClockwise:
                         if (Vector2.Distance(LeftAnalogueInput.normalized, RotationalAccuracy[currentIndexOfAccuracy].normalized) < InputSensitivity) {
@@ -122,6 +131,8 @@ namespace Player
                         }
                     break;
                 }
+            } else {
+                instructionObject.text = _instructionText[0];
             }
         
             if (Input.GetKeyDown(KeyCode.Asterisk)) {

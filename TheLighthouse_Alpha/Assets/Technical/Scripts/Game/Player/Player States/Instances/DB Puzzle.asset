@@ -29,6 +29,16 @@ MonoBehaviour:
   - {x: -1, y: -1}
   - {x: -1, y: 0}
   - {x: -1, y: 1}
+  InputSensitivity: 0.2
+  currentIndexOfAccuracy: 0
   expectedInput: 0
   analogueProgress: 0
-  currentIndexOfAccuracy: 0
+  _instructionText:
+  - Press [X] to Start Task
+  - Rotate Left Analogue Anti-Clockwise
+  - Press [Square]
+  - Hold [R2] and Pull down on the Left Analogue
+  - Press [Triangle]
+  - Press [Triangle]
+  - Press [Square]
+  - Rotate Left Analogue Clockwise

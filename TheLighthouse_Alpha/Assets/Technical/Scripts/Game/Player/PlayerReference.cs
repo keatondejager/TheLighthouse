@@ -35,6 +35,8 @@ namespace Player
 
         [Header("Puzzle Cheats")]
             public GameObject CheatButtons;
+        [Header("Puzzle Reference")]
+            public TMP_Text instructions;
 
        
 
