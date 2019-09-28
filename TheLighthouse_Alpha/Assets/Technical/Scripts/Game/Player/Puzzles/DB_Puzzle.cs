@@ -41,6 +41,7 @@ public class DB_Puzzle : MonoBehaviour {
                 numScrews--;
                 if (numScrews == 0) {
                     currentCoverState = CoverCondition.Loose;
+                    puzzleState = 1;
                 }
             }
 
@@ -50,6 +51,7 @@ public class DB_Puzzle : MonoBehaviour {
                 }
 
                 currentCoverState = CoverCondition.Off;
+                puzzleState = 2;
                 SetCoverState();
             }
             [SerializeField] protected Vector3 offPosition;
@@ -76,6 +78,7 @@ public class DB_Puzzle : MonoBehaviour {
                 }
 
                 currentSwitchState++;
+                puzzleState = currentSwitchState == SwitchCondition.Removed ? 3 : puzzleState;
                 SetSwitchState();
             }
     #endregion
@@ -97,6 +100,7 @@ public class DB_Puzzle : MonoBehaviour {
             }
 
             SwitchInstalled = true;
+            puzzleState = 4;
             SetSwitchState();
         }
 
@@ -121,6 +125,9 @@ public class DB_Puzzle : MonoBehaviour {
                 }
 
                 newWireIndex++;
+                if (newWireIndex == 2) {
+                    puzzleState = 5;
+                }
                 SetWireState();
 
             }
@@ -138,6 +145,7 @@ public class DB_Puzzle : MonoBehaviour {
 
                 newCoverState = CoverCondition.Loose;
                 theCover.localPosition = onPosition;
+                puzzleState = 6;
             }
     #endregion
 
@@ -158,6 +166,7 @@ public class DB_Puzzle : MonoBehaviour {
 
                 newScrewsDone++;
                 if (newScrewsDone >= 4) {
+                    puzzleState = 7;
                     PuzzleComplete = true;
                 }
             }
