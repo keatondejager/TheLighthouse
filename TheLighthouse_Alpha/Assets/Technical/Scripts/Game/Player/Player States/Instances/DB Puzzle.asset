@@ -15,3 +15,20 @@ MonoBehaviour:
   PlayerObject: {fileID: 0}
   _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
   PreviousState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
+  checkingInput: 0
+  LeftAnalogueInput: {x: 0, y: 0}
+  RightAnalogueInput: {x: 0, y: 0}
+  isRightTriggerDown: 0
+  isLeftTriggerDown: 0
+  RotationalAccuracy:
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 1, y: -1}
+  - {x: 0, y: -1}
+  - {x: -1, y: -1}
+  - {x: -1, y: 0}
+  - {x: -1, y: 1}
+  expectedInput: 0
+  analogueProgress: 0
+  currentIndexOfAccuracy: 0

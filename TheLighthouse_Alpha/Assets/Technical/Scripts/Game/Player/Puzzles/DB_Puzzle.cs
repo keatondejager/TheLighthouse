@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Player;
+using TMPro;
 
 public class DB_Puzzle : MonoBehaviour {
     
@@ -168,12 +169,56 @@ public class DB_Puzzle : MonoBehaviour {
                 if (newScrewsDone >= 4) {
                     puzzleState = 7;
                     PuzzleComplete = true;
+                    SetWinIcon();
                 }
             }
     #endregion
     
 
     public int puzzleState = 0;
+
+
+    public TMP_Text ScrewdriverTitleCard;
+    [SerializeField] protected TMP_Text WiresTitleCard;
+    [SerializeField] protected TMP_Text SwitchTitleCard;
+    public bool CheckCurrentRequirement () {
+        // States to check 0, 3, 4, 6
+        bool result;
+        if (puzzleState % 6 == 0) {
+            result = PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Screwdriver]);
+            if (!result) {
+                StartCoroutine(WarningEffect(ScrewdriverTitleCard));
+            }
+            return result;
+        } 
+        if (puzzleState == 3) {
+            result = PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Switch]); 
+            if (!result) {
+                StartCoroutine(WarningEffect(SwitchTitleCard));
+            }
+            return result;        
+        }
+        if (puzzleState == 4) {
+            result = PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Wires]); 
+            if (!result) {
+                StartCoroutine(WarningEffect(WiresTitleCard));
+            }
+            return result;        
+        }
+        return true;
+    }
+
+    IEnumerator WarningEffect (TMP_Text obj) {
+        obj.color = Color.red;
+        for (int i = 0; i < 100; i++) {
+            obj.color = Color.Lerp(obj.color, Color.white, 0.1f * Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
+        obj.color = Color.white;
+        yield return null;
+    }
+
+    [SerializeField] protected GameObject PuzzleWinScreen;
 
     private void Start() {
         manager = PlayerReference.instance.manager;
@@ -199,13 +244,20 @@ public class DB_Puzzle : MonoBehaviour {
     public void Interact () {
         puzzleUI.SetActive(true);
         transform.position = ReferencePosition.position;
-
+        SetWinIcon();
         SetCoverState();
         SetSwitchState();
     }
 
+    private void SetWinIcon(){
+        PuzzleWinScreen.SetActive(PuzzleComplete);
+    }
+
     private void SetCoverState () {
         theCover.localPosition = currentCoverState == CoverCondition.Off ? offPosition : onPosition;
+        if (newCoverState != CoverCondition.Off) {
+            theCover.localPosition = onPosition;
+        }
     }
 
     private void SetSwitchState() {

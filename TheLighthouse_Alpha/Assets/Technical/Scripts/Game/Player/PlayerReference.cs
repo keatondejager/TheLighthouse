@@ -33,6 +33,9 @@ namespace Player
 
             public List<Item> PlayerInventory;
 
+        [Header("Puzzle Cheats")]
+            public GameObject CheatButtons;
+
        
 
         private void Awake() {

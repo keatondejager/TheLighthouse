@@ -10,6 +10,7 @@ public class ButtonNavigation : MonoBehaviour
     private int currentIndex;
 
     private PlayerInputActions controls;
+    private int problemCount = 0;
 
     private void Start() {
         controls.UINavigation.Down.performed += ctx => NavigateDown();
@@ -19,6 +20,10 @@ public class ButtonNavigation : MonoBehaviour
 
     private void NavigateUp () {
         if (buttonOptions.Count == 0) {
+            return;
+        }
+        problemCount++;
+        if (problemCount >= buttonOptions.Count) {
             return;
         }
         buttonOptions[currentIndex].Deactivate();
@@ -31,12 +36,17 @@ public class ButtonNavigation : MonoBehaviour
         if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
             NavigateUp();
         }
+        problemCount = 0;
         buttonOptions[currentIndex].Activate();
         
     }
 
     private void NavigateDown() {
         if (buttonOptions.Count == 0) {
+            return;
+        }
+        problemCount++;
+        if (problemCount >= buttonOptions.Count) {
             return;
         }
         buttonOptions[currentIndex].Deactivate();
@@ -47,8 +57,10 @@ public class ButtonNavigation : MonoBehaviour
         }
         
         if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
+            
             NavigateDown();
         }
+        problemCount = 0;
         buttonOptions[currentIndex].Activate();
 
         
@@ -75,15 +87,17 @@ public class ButtonNavigation : MonoBehaviour
         if (buttonOptions.Count == 0) {
             return;
         }
+        problemCount++;
+        if (problemCount >= buttonOptions.Count) {
+            return;
+        }
         currentIndex = 0;
 
         if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
             NavigateDown();
         }
+        problemCount = 0;
         buttonOptions[currentIndex].Activate();
-
-       
-        
     }
 
     private void OnDisable() {
