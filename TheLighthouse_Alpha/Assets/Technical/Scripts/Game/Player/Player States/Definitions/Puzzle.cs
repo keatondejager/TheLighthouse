@@ -10,7 +10,8 @@ namespace Player
 
         private DB_Puzzle puzzle;
 
-        [SerializeField] private bool checkingInput = false;
+        [Header("Puzzle State Control")]
+            [SerializeField] private bool checkingInput = false;
 
         private delegate void PuzzleInput();
 
@@ -25,18 +26,22 @@ namespace Player
             None = 9
         }
 
-        [SerializeField] private Vector2 LeftAnalogueInput;
-        [SerializeField] private Vector2 RightAnalogueInput;
+        [Header("Analogue State Feedback")]
+            [SerializeField] private Vector2 LeftAnalogueInput;
+            [SerializeField] private Vector2 RightAnalogueInput;
 
-        [SerializeField] private bool isRightTriggerDown = false;
-        [SerializeField] private bool isLeftTriggerDown = false;
+        [Header("Trigger State Feedback")]
+            [SerializeField] private bool isRightTriggerDown = false;
+            [SerializeField] private bool isLeftTriggerDown = false;
 
-        [SerializeField] private List<Vector2> RotationalAccuracy;
+        [Header("Rotational Input Control")]
+            [SerializeField] protected List<Vector2> RotationalAccuracy;
+            [SerializeField] protected float InputSensitivity = 0.2f;
 
-        [SerializeField] private InputTypes expectedInput;
-        private List<InputTypes> orderedInputExpectations;
-
-        [SerializeField] private float analogueProgress = 0f;
+        [Header("Input Types and Progress")]
+            [SerializeField] private InputTypes expectedInput;
+            private List<InputTypes> orderedInputExpectations;
+            [SerializeField] private float analogueProgress = 0f;
 
 
         public override void Initialize (PlayerInputActions _controls) {
@@ -68,8 +73,8 @@ namespace Player
         public override void Step() {
             if (checkingInput) {
                 switch (expectedInput) {
-                    case InputTypes.AnalogueAntiClockwise:
-                        if (LeftAnalogueInput.normalized == RotationalAccuracy[currentIndexOfAccuracy].normalized) {
+                    case InputTypes.AnalogueClockwise:
+                        if (Vector2.Distance(LeftAnalogueInput.normalized, RotationalAccuracy[currentIndexOfAccuracy].normalized) < InputSensitivity) {
                             currentIndexOfAccuracy++;
 
                             if (currentIndexOfAccuracy >= RotationalAccuracy.Count) {
@@ -79,8 +84,8 @@ namespace Player
                             }
                         }
                     break;
-                    case InputTypes.AnalogueClockwise:
-                        if (LeftAnalogueInput.normalized == RotationalAccuracy[currentIndexOfAccuracy].normalized) {
+                    case InputTypes.AnalogueAntiClockwise:
+                        if (Vector2.Distance(LeftAnalogueInput.normalized, RotationalAccuracy[currentIndexOfAccuracy].normalized) < InputSensitivity) {
                             currentIndexOfAccuracy--;
                             if (currentIndexOfAccuracy < 0) {
                                 currentIndexOfAccuracy = RotationalAccuracy.Count - 1;

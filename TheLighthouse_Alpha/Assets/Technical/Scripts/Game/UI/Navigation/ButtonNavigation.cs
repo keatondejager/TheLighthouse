@@ -13,8 +13,8 @@ public class ButtonNavigation : MonoBehaviour
     private int problemCount = 0;
 
     private void Start() {
-        controls.UINavigation.Down.performed += ctx => NavigateDown();
-        controls.UINavigation.Up.performed += ctx => NavigateUp();
+        controls.UINavigation.Down.started += ctx => NavigateDown();
+        controls.UINavigation.Up.started += ctx => NavigateUp();
         controls.UINavigation.Select.performed += ctx => SelectButton();
     }
 
