@@ -12042,6 +12042,7 @@ MonoBehaviour:
   searchingUI: {fileID: 425998364}
   objectInventory: {fileID: 0}
   dB_Puzzle: {fileID: 0}
+  interactableTitle: {fileID: 1970310852}
   objectsInGame:
   - {fileID: 917249255}
   - {fileID: 1761908467}
