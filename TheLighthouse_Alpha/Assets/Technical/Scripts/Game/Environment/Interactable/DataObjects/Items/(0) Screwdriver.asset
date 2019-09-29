@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: (0) Screwdriver
   m_EditorClassIdentifier: 
   name: Screw driver
-  imageIcon: {fileID: 0}
+  imageIcon: {fileID: 5449979551795561701, guid: 3f932e85e32e6844281cfee13d810601,
+    type: 3}
   itemCode: 0
