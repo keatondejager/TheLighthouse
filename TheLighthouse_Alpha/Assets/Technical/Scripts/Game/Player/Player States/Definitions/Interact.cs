@@ -34,7 +34,7 @@ namespace Player
             SearchUIObject.SetActive(true);
 
             activeData = PlayerReference.instance.objectInventory;
-            
+            PlayerReference.instance.interactableTitle.text = activeData.InventoryObjectName;
             ResetDisplay();
         }
 
