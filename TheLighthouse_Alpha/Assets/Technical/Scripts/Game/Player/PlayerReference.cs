@@ -28,7 +28,8 @@ namespace Player
 
             public DB_Puzzle dB_Puzzle;
 
-
+            public TMP_Text interactableTitle;
+            
             public List<UI_Item> objectsInGame;
 
             public List<Item> PlayerInventory;
