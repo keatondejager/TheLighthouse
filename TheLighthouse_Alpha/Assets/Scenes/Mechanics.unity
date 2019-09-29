@@ -9292,6 +9292,36 @@ Transform:
   m_Father: {fileID: 2106166881}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1654464184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1654464185}
+  m_Layer: 0
+  m_Name: PersistentSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1654464185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654464184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5818372, y: -0.23389196, z: -1.8014755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676367378
 GameObject:
   m_ObjectHideFlags: 0
@@ -11375,7 +11405,7 @@ MonoBehaviour:
   _moveState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
   _examineState: {fileID: 11400000, guid: fb1b9ad415b4a0049aa8fefc5adb6519, type: 2}
   _interactState: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
-  _inventoryState: {fileID: 11400000, guid: f3073f9244d0691478a67c57c5f2d74b, type: 2}
+  _combinationPuzzleState: {fileID: 0}
   _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
   _puzzleState: {fileID: 11400000, guid: 12af96a080bc00c49a8d61a711b3f637, type: 2}
 --- !u!54 &1972130867
@@ -11417,6 +11447,8 @@ MonoBehaviour:
   searchingUI: {fileID: 735183345}
   objectInventory: {fileID: 0}
   dB_Puzzle: {fileID: 0}
+  combinationLock: {fileID: 0}
+  interactableTitle: {fileID: 0}
   objectsInGame:
   - {fileID: 247335460}
   - {fileID: 1962092632}
