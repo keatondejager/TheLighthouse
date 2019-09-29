@@ -15,7 +15,7 @@ namespace Player
                 [SerializeField] protected Movement _moveState;
                 [SerializeField] protected Examine _examineState;
                 [SerializeField] protected Interact _interactState;
-                [SerializeField] protected Inventory  _inventoryState;
+                [SerializeField] protected CombinationPuzzle  _combinationPuzzleState;
                 [SerializeField] protected Menus _menuState;
 
                 [SerializeField] protected Puzzle _puzzleState;
@@ -35,7 +35,7 @@ namespace Player
             _moveState.Initialize(controls);
             _examineState.Initialize(controls);
             _interactState.Initialize(controls);
-            _inventoryState.Initialize(controls);
+            _combinationPuzzleState.Initialize(controls);
             _menuState.Initialize(controls);
             _puzzleState.Initialize(controls);
 

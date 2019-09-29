@@ -8,7 +8,7 @@ namespace Player
         [Header("State Reference")]
             [SerializeField] protected Examine _examineState;
             [SerializeField] protected Interact _interactState;
-            [SerializeField] protected Inventory _inventoryState;             
+            [SerializeField] protected CombinationPuzzle _inventoryState;             
 
         [Header("Component Reference")]
             [SerializeField] protected Rigidbody _rigidbody;

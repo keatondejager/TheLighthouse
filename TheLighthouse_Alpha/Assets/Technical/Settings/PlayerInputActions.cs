@@ -770,6 +770,38 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShiftCursorRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""b5102d3d-c869-425b-8bfa-f8712fdf4f17"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShiftCursorLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""75789c5a-cfbc-4857-a943-684e9281a8b1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DigitUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""f6fddd70-e84a-4e73-8c28-a2b95a7a7789"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DigitDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""19c844cf-56a6-4133-ad15-b308d099f195"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -1058,6 +1090,116 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""Grab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3f5fe618-f090-43d8-a00f-59eac6aef16e"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftCursorRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""84091917-2451-4311-98f4-52916700d790"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftCursorRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""180419d2-7ad6-4ed3-abee-fc3c26842f4f"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftCursorLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a1a6891b-9e1e-4708-a1bf-7a4c53d62e06"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftCursorLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""46a71efe-5b97-425a-9bc8-cdb7014e9c14"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""025083d1-8519-451f-b6e3-6890de37fa2c"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3aa67cf3-07e7-49b5-b3a7-a3ad7dd8e651"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""898ff5e7-2e47-4f77-8ba9-2c98be441e8f"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7410615-bf26-4eef-8add-4d04925d6d2d"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce748143-0c11-4672-ac5d-1b9ce057809d"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DigitDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1103,6 +1245,10 @@ public class PlayerInputActions : IInputActionCollection
         m_PuzzleControls_SecondaryAxis = m_PuzzleControls.GetAction("SecondaryAxis");
         m_PuzzleControls_Hold = m_PuzzleControls.GetAction("Hold");
         m_PuzzleControls_Grab = m_PuzzleControls.GetAction("Grab");
+        m_PuzzleControls_ShiftCursorRight = m_PuzzleControls.GetAction("ShiftCursorRight");
+        m_PuzzleControls_ShiftCursorLeft = m_PuzzleControls.GetAction("ShiftCursorLeft");
+        m_PuzzleControls_DigitUp = m_PuzzleControls.GetAction("DigitUp");
+        m_PuzzleControls_DigitDown = m_PuzzleControls.GetAction("DigitDown");
     }
 
     ~PlayerInputActions()
@@ -1446,6 +1592,10 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_PuzzleControls_SecondaryAxis;
     private readonly InputAction m_PuzzleControls_Hold;
     private readonly InputAction m_PuzzleControls_Grab;
+    private readonly InputAction m_PuzzleControls_ShiftCursorRight;
+    private readonly InputAction m_PuzzleControls_ShiftCursorLeft;
+    private readonly InputAction m_PuzzleControls_DigitUp;
+    private readonly InputAction m_PuzzleControls_DigitDown;
     public struct PuzzleControlsActions
     {
         private PlayerInputActions m_Wrapper;
@@ -1458,6 +1608,10 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @SecondaryAxis => m_Wrapper.m_PuzzleControls_SecondaryAxis;
         public InputAction @Hold => m_Wrapper.m_PuzzleControls_Hold;
         public InputAction @Grab => m_Wrapper.m_PuzzleControls_Grab;
+        public InputAction @ShiftCursorRight => m_Wrapper.m_PuzzleControls_ShiftCursorRight;
+        public InputAction @ShiftCursorLeft => m_Wrapper.m_PuzzleControls_ShiftCursorLeft;
+        public InputAction @DigitUp => m_Wrapper.m_PuzzleControls_DigitUp;
+        public InputAction @DigitDown => m_Wrapper.m_PuzzleControls_DigitDown;
         public InputActionMap Get() { return m_Wrapper.m_PuzzleControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1491,6 +1645,18 @@ public class PlayerInputActions : IInputActionCollection
                 Grab.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
                 Grab.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
                 Grab.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
+                ShiftCursorRight.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
+                ShiftCursorRight.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
+                ShiftCursorRight.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
+                ShiftCursorLeft.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
+                ShiftCursorLeft.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
+                ShiftCursorLeft.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
+                DigitUp.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
+                DigitUp.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
+                DigitUp.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
+                DigitDown.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitDown;
+                DigitDown.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitDown;
+                DigitDown.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitDown;
             }
             m_Wrapper.m_PuzzleControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -1519,6 +1685,18 @@ public class PlayerInputActions : IInputActionCollection
                 Grab.started += instance.OnGrab;
                 Grab.performed += instance.OnGrab;
                 Grab.canceled += instance.OnGrab;
+                ShiftCursorRight.started += instance.OnShiftCursorRight;
+                ShiftCursorRight.performed += instance.OnShiftCursorRight;
+                ShiftCursorRight.canceled += instance.OnShiftCursorRight;
+                ShiftCursorLeft.started += instance.OnShiftCursorLeft;
+                ShiftCursorLeft.performed += instance.OnShiftCursorLeft;
+                ShiftCursorLeft.canceled += instance.OnShiftCursorLeft;
+                DigitUp.started += instance.OnDigitUp;
+                DigitUp.performed += instance.OnDigitUp;
+                DigitUp.canceled += instance.OnDigitUp;
+                DigitDown.started += instance.OnDigitDown;
+                DigitDown.performed += instance.OnDigitDown;
+                DigitDown.canceled += instance.OnDigitDown;
             }
         }
     }
@@ -1568,5 +1746,9 @@ public class PlayerInputActions : IInputActionCollection
         void OnSecondaryAxis(InputAction.CallbackContext context);
         void OnHold(InputAction.CallbackContext context);
         void OnGrab(InputAction.CallbackContext context);
+        void OnShiftCursorRight(InputAction.CallbackContext context);
+        void OnShiftCursorLeft(InputAction.CallbackContext context);
+        void OnDigitUp(InputAction.CallbackContext context);
+        void OnDigitDown(InputAction.CallbackContext context);
     }
 }
