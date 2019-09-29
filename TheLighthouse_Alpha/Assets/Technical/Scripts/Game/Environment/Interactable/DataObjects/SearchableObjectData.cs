@@ -44,7 +44,7 @@ public class SearchableObjectData : ScriptableObject
     }
 
     public void ResetInventory () {
-        _inventory.Clear();
+        _inventory = new List<Item>();
         foreach (Item item in defaultInventory) {
             _inventory.Add(item);
         }

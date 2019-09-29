@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38c17e972fb21694f97a22555911f8d5, type: 3}
-  m_Name: 'Item #4'
+  m_Name: (5) Oil
   m_EditorClassIdentifier: 
   name: Spoon
   imageIcon: {fileID: 0}
-  itemCode: 4
+  itemCode: 5
