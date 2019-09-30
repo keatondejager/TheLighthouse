@@ -76,8 +76,7 @@ namespace Player
             
         }
 
-
-       
+        
         public override void Step() {
             if (checkingInput) {
                 instructionObject.text = _instructionText[puzzle.puzzleState + 1];
@@ -85,11 +84,13 @@ namespace Player
                     case InputTypes.AnalogueClockwise:
                         if (Vector2.Distance(LeftAnalogueInput.normalized, RotationalAccuracy[currentIndexOfAccuracy].normalized) < InputSensitivity) {
                             currentIndexOfAccuracy++;
-
+                            
                             if (currentIndexOfAccuracy >= RotationalAccuracy.Count) {
                                 currentIndexOfAccuracy = 0;
                                 checkingInput = false;
                                 InputMethods[puzzle.puzzleState].Invoke();
+                            } else {
+                                puzzle.screwObjects[puzzle.numScrews - 1].Rotate(Vector3.up * (1f/RotationalAccuracy.Count));
                             }
                         }
                     break;

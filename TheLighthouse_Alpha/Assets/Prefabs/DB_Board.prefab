@@ -1255,6 +1255,12 @@ MonoBehaviour:
   ReferencePosition: {fileID: 0}
   theCover: {fileID: 2802790848959536005}
   currentCoverState: 0
+  numScrews: 4
+  screwObjects:
+  - {fileID: 5621926721907486645}
+  - {fileID: 393624567930477219}
+  - {fileID: 6971386283414878392}
+  - {fileID: 6374111829264189813}
   offPosition: {x: 2.4, y: 1.345522, z: 0}
   onPosition: {x: 0, y: 1.345522, z: 0}
   theTopCable: {fileID: 2134635675341688896}

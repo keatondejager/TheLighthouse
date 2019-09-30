@@ -30,7 +30,8 @@ public class DB_Puzzle : MonoBehaviour {
             public enum CoverCondition { Fixed = 0, Loose = 1, Off = 2}
             public CoverCondition currentCoverState = CoverCondition.Fixed;
 
-            private int numScrews = 4;
+            public int numScrews = 4;
+            public List<Transform> screwObjects;
             public void RemoveScrew () {
                 if (!PlayerReference.instance.PlayerInventory.Contains(requirements[(int)RequirementsIndexing.Screwdriver])) {
                     // No Screwdriver, this is impossible

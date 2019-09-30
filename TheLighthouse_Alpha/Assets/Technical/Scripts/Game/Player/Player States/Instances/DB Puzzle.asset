@@ -32,8 +32,8 @@ MonoBehaviour:
   - {x: -1, y: 1}
   InputSensitivity: 0.2
   currentIndexOfAccuracy: 0
-  expectedInput: 0
-  analogueProgress: 0
+  expectedInput: 7
+  analogueProgress: 1.0132495
   _instructionText:
   - Press [X] to Start Task
   - Rotate Left Analogue Anti-Clockwise
