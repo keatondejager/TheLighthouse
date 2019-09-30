@@ -15,6 +15,15 @@ namespace Player
         public Animator animator;
         public PlayerManager manager;
 
+        private bool _hasLantern = false;
+        public bool hasLantern {
+            get => _hasLantern;
+            set {
+                _hasLantern = value;
+                animator.SetBool("hasLantern", _hasLantern);
+            }
+        }
+        
         [Header("Examining")]
             public GameObject examineUI;
             public TMP_Text examineObjectName;

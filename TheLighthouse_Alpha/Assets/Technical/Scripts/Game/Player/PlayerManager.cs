@@ -24,6 +24,8 @@ namespace Player
                 private PlayerInputActions controls;
             [Header("Lantern")]
                 [SerializeField] public GameObject lanternObject;
+
+                
         
         #endregion
 
@@ -66,6 +68,7 @@ namespace Player
 
         public void SetLantern(bool lanternState) {
             lanternObject.SetActive(lanternState);
+            PlayerReference.instance.hasLantern = true;
             SetState(_moveState);
         }
 
