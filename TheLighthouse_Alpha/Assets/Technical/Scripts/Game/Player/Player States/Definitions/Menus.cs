@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Player {
     [CreateAssetMenu(fileName = "Menu State", menuName = "Player State/Menu")]
@@ -27,6 +28,10 @@ namespace Player {
 
         public override void ExitState () {
             PlayerObject.SetState(_moveState);
+        }
+
+        public void QuitGame () {
+            SceneManager.LoadScene(0);
         }
     }
 }
