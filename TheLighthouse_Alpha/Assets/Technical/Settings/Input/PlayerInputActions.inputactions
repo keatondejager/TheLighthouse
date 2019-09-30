@@ -1177,6 +1177,74 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "OptionsMenu",
+            "id": "bf07648f-b30c-4a83-8d0a-3fc2652577b0",
+            "actions": [
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "572f3be0-9f4b-4e0d-8844-6b45d44da26f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Close",
+                    "type": "Button",
+                    "id": "db152b17-8896-44be-a77f-cc2a65358979",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e9224546-b773-4343-9a0e-8c336eadd87d",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eca27435-6f58-4a33-ad13-c344ba9eaa0e",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45491fe7-5892-4ec5-b7d1-03e850aca378",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8be71448-2149-4770-bf44-f24b8b95b47b",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

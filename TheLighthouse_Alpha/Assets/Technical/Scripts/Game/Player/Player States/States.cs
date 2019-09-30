@@ -48,7 +48,7 @@ namespace Player
 
         if (PreviousState == null) {
             PreviousState = _moveState;
-        } else if (PreviousState == this) {
+        } else if (PreviousState == _menuState || PreviousState == this) {
             PreviousState = _moveState;
         }
 

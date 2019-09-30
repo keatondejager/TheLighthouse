@@ -76,7 +76,27 @@ public class GameSettings : MonoBehaviour
             }
 
     [Header("Graphic Settings")]
-        public bool isFullscreen;
+        private bool _isFullscreen;
+        public bool isFullscreen {
+            get {
+                _isFullscreen = Screen.fullScreen;
+                return _isFullscreen;
+            }
+            set {
+                _isFullscreen = value;
+                Screen.fullScreen = _isFullscreen;
+            }
+        }
+        private Resolution[] _resolutions;
+        public Resolution[] resolutions {
+            get {
+                _resolutions = Screen.resolutions;
+                return _resolutions;
+            }
+        }
+        private QualitySettings _qualitySettings;
+
+    
 
    
 }

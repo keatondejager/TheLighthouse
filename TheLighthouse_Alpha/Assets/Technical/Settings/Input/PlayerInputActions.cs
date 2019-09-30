@@ -1189,6 +1189,74 @@ public class PlayerInputActions : IInputActionCollection
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""OptionsMenu"",
+            ""id"": ""bf07648f-b30c-4a83-8d0a-3fc2652577b0"",
+            ""actions"": [
+                {
+                    ""name"": ""Back"",
+                    ""type"": ""Button"",
+                    ""id"": ""572f3be0-9f4b-4e0d-8844-6b45d44da26f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Close"",
+                    ""type"": ""Button"",
+                    ""id"": ""db152b17-8896-44be-a77f-cc2a65358979"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""e9224546-b773-4343-9a0e-8c336eadd87d"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eca27435-6f58-4a33-ad13-c344ba9eaa0e"",
+                    ""path"": ""<Keyboard>/backspace"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""45491fe7-5892-4ec5-b7d1-03e850aca378"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8be71448-2149-4770-bf44-f24b8b95b47b"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -1232,6 +1300,10 @@ public class PlayerInputActions : IInputActionCollection
         m_PuzzleControls_ShiftCursorLeft = m_PuzzleControls.GetAction("ShiftCursorLeft");
         m_PuzzleControls_DigitUp = m_PuzzleControls.GetAction("DigitUp");
         m_PuzzleControls_DigitDown = m_PuzzleControls.GetAction("DigitDown");
+        // OptionsMenu
+        m_OptionsMenu = asset.GetActionMap("OptionsMenu");
+        m_OptionsMenu_Back = m_OptionsMenu.GetAction("Back");
+        m_OptionsMenu_Close = m_OptionsMenu.GetAction("Close");
     }
 
     ~PlayerInputActions()
@@ -1643,6 +1715,47 @@ public class PlayerInputActions : IInputActionCollection
         }
     }
     public PuzzleControlsActions @PuzzleControls => new PuzzleControlsActions(this);
+
+    // OptionsMenu
+    private readonly InputActionMap m_OptionsMenu;
+    private IOptionsMenuActions m_OptionsMenuActionsCallbackInterface;
+    private readonly InputAction m_OptionsMenu_Back;
+    private readonly InputAction m_OptionsMenu_Close;
+    public struct OptionsMenuActions
+    {
+        private PlayerInputActions m_Wrapper;
+        public OptionsMenuActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Back => m_Wrapper.m_OptionsMenu_Back;
+        public InputAction @Close => m_Wrapper.m_OptionsMenu_Close;
+        public InputActionMap Get() { return m_Wrapper.m_OptionsMenu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(OptionsMenuActions set) { return set.Get(); }
+        public void SetCallbacks(IOptionsMenuActions instance)
+        {
+            if (m_Wrapper.m_OptionsMenuActionsCallbackInterface != null)
+            {
+                Back.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnBack;
+                Back.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnBack;
+                Back.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnBack;
+                Close.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
+                Close.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
+                Close.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
+            }
+            m_Wrapper.m_OptionsMenuActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                Back.started += instance.OnBack;
+                Back.performed += instance.OnBack;
+                Back.canceled += instance.OnBack;
+                Close.started += instance.OnClose;
+                Close.performed += instance.OnClose;
+                Close.canceled += instance.OnClose;
+            }
+        }
+    }
+    public OptionsMenuActions @OptionsMenu => new OptionsMenuActions(this);
     public interface IMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
@@ -1687,5 +1800,10 @@ public class PlayerInputActions : IInputActionCollection
         void OnShiftCursorLeft(InputAction.CallbackContext context);
         void OnDigitUp(InputAction.CallbackContext context);
         void OnDigitDown(InputAction.CallbackContext context);
+    }
+    public interface IOptionsMenuActions
+    {
+        void OnBack(InputAction.CallbackContext context);
+        void OnClose(InputAction.CallbackContext context);
     }
 }

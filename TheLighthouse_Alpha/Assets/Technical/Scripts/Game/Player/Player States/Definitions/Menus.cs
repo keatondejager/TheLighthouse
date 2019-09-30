@@ -31,6 +31,8 @@ namespace Player {
         }
 
         public void QuitGame () {
+            controls.Menus.Disable();
+        
             SceneManager.LoadScene(0);
         }
     }
