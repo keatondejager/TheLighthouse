@@ -66,6 +66,7 @@ namespace Player
 
         public void SetLantern(bool lanternState) {
             lanternObject.SetActive(lanternState);
+            SetState(_moveState);
         }
 
         #region Interactions and Examine Events
