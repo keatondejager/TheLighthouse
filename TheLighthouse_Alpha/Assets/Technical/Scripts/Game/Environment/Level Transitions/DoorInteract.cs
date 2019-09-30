@@ -51,6 +51,7 @@ public class DoorInteract : MonoBehaviour
     }
 
     public void OpenDoor () {
+        PlayerReference.instance.manager.OnInteractEnter -= OpenDoor;
         levelManager.DoLevelTransition();
     }
 }

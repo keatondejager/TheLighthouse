@@ -22,6 +22,8 @@ namespace Player
             
             [Header("Input Control")]
                 private PlayerInputActions controls;
+            [Header("Lantern")]
+                [SerializeField] public GameObject lanternObject;
         
         #endregion
 
@@ -60,6 +62,10 @@ namespace Player
             state = newState;
             state.PreviousState = previousState;
             state.EnableState();
+        }
+
+        public void SetLantern(bool lanternState) {
+            lanternObject.SetActive(lanternState);
         }
 
         #region Interactions and Examine Events
