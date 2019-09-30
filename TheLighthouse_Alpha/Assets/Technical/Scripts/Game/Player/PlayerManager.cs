@@ -46,6 +46,10 @@ namespace Player
             if (!state) {
                 SetState(_moveState);
             }
+
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex != 1) {
+                SetLantern(true);
+            }
         }
 
         // Update is called once per frame
@@ -68,8 +72,7 @@ namespace Player
 
         public void SetLantern(bool lanternState) {
             lanternObject.SetActive(lanternState);
-            PlayerReference.instance.hasLantern = true;
-            SetState(_moveState);
+            PlayerReference.instance.hasLantern = lanternState;
         }
 
         #region Interactions and Examine Events
@@ -89,19 +92,21 @@ namespace Player
                 } 
            }
 
+            public bool isLantern = false;
            public void InteractButtonDown () {
                if (OnInteractEnter == null) {
                    return;
                }
 
                OnInteractEnter();
+               if (isLantern) {
+                   return;
+               }
                if (PlayerReference.instance.objectInventory) {
                     SetState(_interactState);
                } else if (PlayerReference.instance.dB_Puzzle) { 
                    SetState(_puzzleState);
-               } else if (PlayerReference.instance.canDoTransition) {
-                   Debug.Log("Transition");
-               }
+               } 
            }
 
         #endregion

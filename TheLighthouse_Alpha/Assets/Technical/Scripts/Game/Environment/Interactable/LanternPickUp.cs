@@ -12,6 +12,7 @@ public class LanternPickUp : MonoBehaviour
         if (other.CompareTag("Player")) {
             buttonPrompt.SetActive(true);
             manager.OnInteractEnter += PickUp;
+            manager.isLantern = true;
         }
     }
 
@@ -20,6 +21,7 @@ public class LanternPickUp : MonoBehaviour
         if (other.CompareTag("Player")) {
             buttonPrompt.SetActive(false);
             manager.OnInteractEnter -= PickUp;
+            manager.isLantern = false;
         }
     }
 
