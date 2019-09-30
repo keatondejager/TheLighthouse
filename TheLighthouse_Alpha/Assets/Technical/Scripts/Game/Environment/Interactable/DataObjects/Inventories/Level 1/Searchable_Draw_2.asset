@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbf9e5e1b06fe1409ffa6a7397f8e7e, type: 3}
   m_Name: Searchable_Draw_2
   m_EditorClassIdentifier: 
-  InventoryObjectName: Draw
+  InventoryObjectName: Drawer
   _inventory:
   - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
   - {fileID: 11400000, guid: aef7051dc00d6a447adc64a682c98ad1, type: 2}
