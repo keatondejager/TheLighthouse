@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17007577, g: 0.18184842, b: 0.2747654, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -995,6 +995,18 @@ Transform:
   m_Father: {fileID: 1644944026}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -91.2, z: 0}
+--- !u!114 &608215269 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7630245130439720010, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1585206331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &622219655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,6 +3075,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448810460}
   m_Mesh: {fileID: -462981019419857548, guid: 8cb76352b9e42864193ec4c789ae59f4, type: 3}
+--- !u!114 &1545500572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7630245129579082974, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1585206331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1585206331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3241,15 +3265,25 @@ PrefabInstance:
       propertyPath: dB_Puzzle
       value: 
       objectReference: {fileID: 81218083}
+    - target: {fileID: 7630245130074985525, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.517988
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245130074985525, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.653922
+      objectReference: {fileID: 0}
     - target: {fileID: 7630245129683584350, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2363906
+      value: 6.517988
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129683584350, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.915952
+      value: -13.653922
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129683584350, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -4716,17 +4750,17 @@ PrefabInstance:
         type: 3}
       propertyPath: requirementsCheckboxes.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 608215269}
     - target: {fileID: 124996262147500461, guid: bd24fd8f28fcb7e45ae3a6ddf9e788f2,
         type: 3}
       propertyPath: requirementsCheckboxes.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1926604320}
     - target: {fileID: 124996262147500461, guid: bd24fd8f28fcb7e45ae3a6ddf9e788f2,
         type: 3}
       propertyPath: requirementsCheckboxes.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1545500572}
     - target: {fileID: 124996262147500461, guid: bd24fd8f28fcb7e45ae3a6ddf9e788f2,
         type: 3}
       propertyPath: ScrewdriverTitleCard
@@ -4914,6 +4948,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896413199}
   m_Mesh: {fileID: 4579454407841743219, guid: 8d3f1762a176a74498679cda71767e5d, type: 3}
+--- !u!114 &1926604320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7630245129667139581, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1585206331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1948210632
 Mesh:
   m_ObjectHideFlags: 0
