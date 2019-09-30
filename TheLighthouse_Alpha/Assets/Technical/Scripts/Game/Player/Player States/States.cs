@@ -8,6 +8,7 @@ namespace Player
     [Header("Default")]
         [SerializeField] protected PlayerManager PlayerObject;
         [SerializeField] protected States _menuState;
+        [SerializeField] protected Movement _moveState;
         public States PreviousState;        
 
         [SerializeField] protected PlayerInputActions controls;
@@ -41,6 +42,14 @@ namespace Player
     }
 
     public virtual void ExitState () {
+        if (!PlayerObject) {
+            PlayerObject = PlayerReference.instance.manager;
+        }
+
+        if (PreviousState == null) {
+            PreviousState = _moveState;
+        }
+        
         PlayerObject.SetState(PreviousState);
     }
 

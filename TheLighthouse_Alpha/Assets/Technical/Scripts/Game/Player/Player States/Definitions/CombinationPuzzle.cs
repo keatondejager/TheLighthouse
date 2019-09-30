@@ -19,6 +19,7 @@ namespace Player {
                 ExitState();
             }
             puzzle = PlayerReference.instance.combinationLock;
+            puzzle.callbackManager = this;
             puzzle.OpenPuzzle();
         }
 

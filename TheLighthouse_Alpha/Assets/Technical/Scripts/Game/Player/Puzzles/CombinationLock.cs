@@ -9,6 +9,9 @@ public class CombinationLock : MonoBehaviour
         [SerializeField] protected List<TMP_Text> digitDisplay;
         [SerializeField] protected GameObject PuzzleUI;
         [SerializeField] protected Transform ActiveIndicator;
+        [SerializeField] protected LevelManager LevelLoader;
+
+        public Player.CombinationPuzzle callbackManager;
 
     [Header("Puzzle")]
         [SerializeField] protected List<int> correctSolution;
@@ -82,7 +85,9 @@ public class CombinationLock : MonoBehaviour
         }
 
         if (isCorrect) {
-            Debug.Log("Nice");
+            Player.PlayerReference.instance.puzzleTwoComplete = true;
+            LevelLoader.LevelTransitionStart();
+            callbackManager.ExitState();
         }
     }
 

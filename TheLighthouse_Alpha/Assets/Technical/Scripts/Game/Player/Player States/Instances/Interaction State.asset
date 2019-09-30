@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
   _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
+  _moveState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
   PreviousState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
   _animator: {fileID: 0}
+  interactableUIControl: {fileID: 0}
+  SearchUIObject: {fileID: 0}

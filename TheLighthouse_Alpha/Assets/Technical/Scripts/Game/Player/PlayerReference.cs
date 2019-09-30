@@ -40,6 +40,10 @@ namespace Player
         [Header("Puzzle Reference")]
             public TMP_Text instructions;
 
+            public bool puzzleOneComplete = false;
+            public bool puzzleTwoComplete = false;
+
+            public bool canDoTransition = false;
        
 
         private void Awake() {

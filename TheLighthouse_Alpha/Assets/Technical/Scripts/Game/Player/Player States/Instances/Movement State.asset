@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
   _menuState: {fileID: 11400000, guid: db716f84a03b5cc4e93fb1eed26530f4, type: 2}
-  PreviousState: {fileID: 11400000}
+  _moveState: {fileID: 11400000}
+  PreviousState: {fileID: 11400000, guid: f3073f9244d0691478a67c57c5f2d74b, type: 2}
   _examineState: {fileID: 11400000, guid: fb1b9ad415b4a0049aa8fefc5adb6519, type: 2}
   _interactState: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
   _inventoryState: {fileID: 11400000, guid: f3073f9244d0691478a67c57c5f2d74b, type: 2}
   _rigidbody: {fileID: 0}
   _animator: {fileID: 0}
   direction: {x: 0, y: 0}
-  motion: {x: 0, y: 0, z: -4}
+  motion: {x: 0, y: 0, z: 0}
   moveSpeed: 4
   acceleration: 1.25
   decceleration: 3.5
@@ -34,4 +35,4 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 512
-  _isWalking: 1
+  _isWalking: 0

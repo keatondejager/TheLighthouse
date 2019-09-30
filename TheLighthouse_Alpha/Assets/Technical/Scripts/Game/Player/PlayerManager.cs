@@ -76,7 +76,7 @@ namespace Player
 
                 if (PlayerReference.instance.examineObject) {
                     SetState(_examineState);
-                }
+                } 
            }
 
            public void InteractButtonDown () {
@@ -89,6 +89,8 @@ namespace Player
                     SetState(_interactState);
                } else if (PlayerReference.instance.dB_Puzzle) { 
                    SetState(_puzzleState);
+               } else if (PlayerReference.instance.canDoTransition) {
+                   Debug.Log("Transition");
                }
            }
 
