@@ -100,6 +100,7 @@ namespace Player
 
                OnInteractEnter();
                if (isLantern) {
+                   isLantern = false;
                    return;
                }
                if (PlayerReference.instance.objectInventory) {
