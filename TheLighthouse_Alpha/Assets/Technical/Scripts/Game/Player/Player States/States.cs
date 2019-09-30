@@ -48,8 +48,10 @@ namespace Player
 
         if (PreviousState == null) {
             PreviousState = _moveState;
+        } else if (PreviousState == this) {
+            PreviousState = _moveState;
         }
-        
+
         PlayerObject.SetState(PreviousState);
     }
 

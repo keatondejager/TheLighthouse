@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Technical/Settings/PlayerInputActions.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Technical/Settings/Input/PlayerInputActions.inputactions'
 
 using System.Collections;
 using System.Collections.Generic;
@@ -206,6 +206,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""bfc5adab-bba0-46de-a081-b52c62ec1b89"",
                     ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f87e3d7e-41ed-4517-8934-4d88e5c9b39d"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -432,63 +443,6 @@ public class PlayerInputActions : IInputActionCollection
             ]
         },
         {
-            ""name"": ""Inventory"",
-            ""id"": ""5691c438-a571-4e20-9dab-0af0cadce322"",
-            ""actions"": [
-                {
-                    ""name"": ""Exit"",
-                    ""type"": ""Button"",
-                    ""id"": ""4d339c7c-2468-4080-9fac-a105c49b1e13"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Pause"",
-                    ""type"": ""Button"",
-                    ""id"": ""a24254cd-2396-420b-bd7f-01750f6f182a"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""d635cd8c-2b97-49cc-9783-cb7ed9b9bd43"",
-                    ""path"": ""<Keyboard>/i"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Exit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c9770ab5-5cde-4409-9760-e4e69ba80420"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Exit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""324440d9-8ad6-403f-9461-ae6516f00808"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pause"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
             ""name"": ""Menus"",
             ""id"": ""e684fba5-927d-4ef8-a639-62dd1c282aed"",
             ""actions"": [
@@ -517,6 +471,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""6b23e34a-34a5-4e2c-b4ef-ae226ec78466"",
                     ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7eb5a97-b9bb-45c7-88e4-95c45983f347"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -574,6 +539,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""2b17185c-4208-44d6-9a3f-283f37b86186"",
                     ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""92aedd09-8938-4ce7-8444-9a0fd0b3dc65"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -831,6 +807,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""32337777-07f0-4ce3-a948-3330649b4307"",
                     ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e988738-37da-4be0-bf28-2668c741d3f8"",
+                    ""path"": ""<DualShockGamepad>/touchpadButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -1219,10 +1206,6 @@ public class PlayerInputActions : IInputActionCollection
         m_Examining_Pause = m_Examining.GetAction("Pause");
         m_Examining_Rotate = m_Examining.GetAction("Rotate");
         m_Examining_Zoom = m_Examining.GetAction("Zoom");
-        // Inventory
-        m_Inventory = asset.GetActionMap("Inventory");
-        m_Inventory_Exit = m_Inventory.GetAction("Exit");
-        m_Inventory_Pause = m_Inventory.GetAction("Pause");
         // Menus
         m_Menus = asset.GetActionMap("Menus");
         m_Menus_Exit = m_Menus.GetAction("Exit");
@@ -1416,47 +1399,6 @@ public class PlayerInputActions : IInputActionCollection
         }
     }
     public ExaminingActions @Examining => new ExaminingActions(this);
-
-    // Inventory
-    private readonly InputActionMap m_Inventory;
-    private IInventoryActions m_InventoryActionsCallbackInterface;
-    private readonly InputAction m_Inventory_Exit;
-    private readonly InputAction m_Inventory_Pause;
-    public struct InventoryActions
-    {
-        private PlayerInputActions m_Wrapper;
-        public InventoryActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Exit => m_Wrapper.m_Inventory_Exit;
-        public InputAction @Pause => m_Wrapper.m_Inventory_Pause;
-        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
-        public void SetCallbacks(IInventoryActions instance)
-        {
-            if (m_Wrapper.m_InventoryActionsCallbackInterface != null)
-            {
-                Exit.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
-                Exit.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
-                Exit.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnExit;
-                Pause.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
-                Pause.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
-                Pause.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPause;
-            }
-            m_Wrapper.m_InventoryActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                Exit.started += instance.OnExit;
-                Exit.performed += instance.OnExit;
-                Exit.canceled += instance.OnExit;
-                Pause.started += instance.OnPause;
-                Pause.performed += instance.OnPause;
-                Pause.canceled += instance.OnPause;
-            }
-        }
-    }
-    public InventoryActions @Inventory => new InventoryActions(this);
 
     // Menus
     private readonly InputActionMap m_Menus;
@@ -1715,11 +1657,6 @@ public class PlayerInputActions : IInputActionCollection
         void OnPause(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
         void OnZoom(InputAction.CallbackContext context);
-    }
-    public interface IInventoryActions
-    {
-        void OnExit(InputAction.CallbackContext context);
-        void OnPause(InputAction.CallbackContext context);
     }
     public interface IMenusActions
     {

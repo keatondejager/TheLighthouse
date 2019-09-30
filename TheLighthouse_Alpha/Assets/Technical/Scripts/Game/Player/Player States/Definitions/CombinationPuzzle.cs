@@ -8,6 +8,8 @@ namespace Player {
         private CombinationLock puzzle;
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
+
+            controls.PuzzleControls.Close.performed += ctx => ExitState();
         }
 
         public override void Step() {
@@ -21,6 +23,7 @@ namespace Player {
             puzzle = PlayerReference.instance.combinationLock;
             puzzle.callbackManager = this;
             puzzle.OpenPuzzle();
+            controls.PuzzleControls.Enable();
         }
 
         public override void DisableState() {
@@ -28,6 +31,7 @@ namespace Player {
                 return;
             }
             puzzle.ClosePuzzle();
+            controls.PuzzleControls.Disable();
         }
 
     }

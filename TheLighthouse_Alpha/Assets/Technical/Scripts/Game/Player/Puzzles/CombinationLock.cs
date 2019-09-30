@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Player;
 using TMPro;
 
 public class CombinationLock : MonoBehaviour
@@ -21,7 +22,7 @@ public class CombinationLock : MonoBehaviour
         private PlayerInputActions controls;
 
     private void Start() {
-        Player.PlayerReference.instance.combinationLock = this;
+        PlayerReference.instance.combinationLock = this;
 
         controls = new PlayerInputActions();
 
