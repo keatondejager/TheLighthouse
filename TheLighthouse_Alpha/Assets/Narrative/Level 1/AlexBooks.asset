@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: AlexLetter
+  m_Name: AlexBooks
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 0}
-  subtitle: "What\u2019s this? A letter? Looks like Alex\u2019s handwriting"
+  subtitle: Flora and Fauna of the English Channel, Alex could put a name to almost
+    anything here, not that there was never really much growing here, no matter how
+    much I tried. [chuckles]
   duration: 0
   cutscene: 0

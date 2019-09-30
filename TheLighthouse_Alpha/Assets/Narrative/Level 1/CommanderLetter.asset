@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: AlexLetter
+  m_Name: CommanderLetter
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 0}
-  subtitle: "What\u2019s this? A letter? Looks like Alex\u2019s handwriting"
+  subtitle: "This is my home\u2026 they can\u2019t just take this place away from
+    me."
   duration: 0
   cutscene: 0
