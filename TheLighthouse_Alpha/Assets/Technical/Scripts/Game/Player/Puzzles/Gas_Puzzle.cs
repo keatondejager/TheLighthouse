@@ -46,7 +46,7 @@ public class Gas_Puzzle : MonoBehaviour
             opaqueColor.a = 1;
             breathMeter.color = opaqueColor;
 
-            opaqueColor = breathBackground.color;
+            opaqueColor = Color.white;
             opaqueColor.a = 1;
             breathBackground.color = opaqueColor;
         }
@@ -63,6 +63,7 @@ public class Gas_Puzzle : MonoBehaviour
         if (isPlayerInRange) {
             breathAmount = Mathf.Lerp(breathAmount, 0f, breathDecayRate * Time.deltaTime);
             mainCam.m_Lens.FieldOfView = Mathf.Lerp(mainCam.m_Lens.FieldOfView, minimumCameraFocal, breathDecayRate * Time.deltaTime);
+            StopAllCoroutines();
         } else {
             breathAmount = Mathf.Lerp(breathAmount, 1f, breathRecoveryRate * Time.deltaTime);
             mainCam.m_Lens.FieldOfView = Mathf.Lerp(mainCam.m_Lens.FieldOfView, normalCameraFocal, breathRecoveryRate * Time.deltaTime);
