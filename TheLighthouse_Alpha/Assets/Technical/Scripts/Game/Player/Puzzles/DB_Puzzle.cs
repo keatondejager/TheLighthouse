@@ -10,7 +10,7 @@ public class DB_Puzzle : MonoBehaviour {
     public List<Item> requirements;
     public enum RequirementsIndexing {Screwdriver = 0, Wires = 1, Switch = 2}
 
-
+    public LevelManager levelManager;
     public List<Image> requirementsCheckboxes;
 
     public Sprite acquiredCheck;
@@ -169,6 +169,8 @@ public class DB_Puzzle : MonoBehaviour {
                 if (newScrewsDone >= 4) {
                     puzzleState = 7;
                     PuzzleComplete = true;
+                    PlayerReference.instance.puzzleOneComplete = true;
+                    levelManager.LevelTransitionStart();
                     SetWinIcon();
                 }
             }

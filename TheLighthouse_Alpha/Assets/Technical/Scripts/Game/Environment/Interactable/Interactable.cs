@@ -56,6 +56,7 @@ namespace Environment {
 
         public virtual void Interact() {
             PlayerReference.instance.objectInventory = ObjectInventory;
+            player.OnInteractEnter -= Interact;
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }

@@ -27,9 +27,10 @@ namespace Player
             public SearchableObjectData objectInventory;
 
             public DB_Puzzle dB_Puzzle;
+            public CombinationLock combinationLock;
 
             public TMP_Text interactableTitle;
-            
+
             public List<UI_Item> objectsInGame;
 
             public List<Item> PlayerInventory;
@@ -39,6 +40,10 @@ namespace Player
         [Header("Puzzle Reference")]
             public TMP_Text instructions;
 
+            public bool puzzleOneComplete = false;
+            public bool puzzleTwoComplete = false;
+
+            public bool canDoTransition = false;
        
 
         private void Awake() {

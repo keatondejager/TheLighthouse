@@ -13,6 +13,7 @@ public class Gas_Puzzle : MonoBehaviour
         [SerializeField] protected BoxCollider myCollider;
         [SerializeField] protected ParticleSystem myParticles;
         [SerializeField] protected Image breathMeter;
+        [SerializeField] protected Image breathBackground;
 
     [Header("Control Variables")]
         [SerializeField] protected float _breathDecayRate;
@@ -38,10 +39,16 @@ public class Gas_Puzzle : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
             isPlayerInRange = true;
+
             StopCoroutine(DisableBreathMeter());
+
             Color opaqueColor = breathMeter.color;
             opaqueColor.a = 1;
             breathMeter.color = opaqueColor;
+
+            opaqueColor = breathBackground.color;
+            opaqueColor.a = 1;
+            breathBackground.color = opaqueColor;
         }
     }
 
@@ -70,7 +77,10 @@ public class Gas_Puzzle : MonoBehaviour
         transparentColor.a = 0;
         for (int i = 0; i < 100; i++) {
             breathMeter.color = Color.Lerp(breathMeter.color, transparentColor, Time.deltaTime);
+            breathBackground.color = Color.Lerp(breathBackground.color, transparentColor, Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
+        breathBackground.color = transparentColor;
+        breathMeter.color = transparentColor;
     }
 }

@@ -15,13 +15,15 @@ namespace Player
                 [SerializeField] protected Movement _moveState;
                 [SerializeField] protected Examine _examineState;
                 [SerializeField] protected Interact _interactState;
-                [SerializeField] protected Inventory  _inventoryState;
+                [SerializeField] protected CombinationPuzzle  _combinationPuzzleState;
                 [SerializeField] protected Menus _menuState;
 
                 [SerializeField] protected Puzzle _puzzleState;
             
             [Header("Input Control")]
                 private PlayerInputActions controls;
+            [Header("Lantern")]
+                [SerializeField] public GameObject lanternObject;
         
         #endregion
 
@@ -35,7 +37,7 @@ namespace Player
             _moveState.Initialize(controls);
             _examineState.Initialize(controls);
             _interactState.Initialize(controls);
-            _inventoryState.Initialize(controls);
+            _combinationPuzzleState.Initialize(controls);
             _menuState.Initialize(controls);
             _puzzleState.Initialize(controls);
 
@@ -62,6 +64,11 @@ namespace Player
             state.EnableState();
         }
 
+        public void SetLantern(bool lanternState) {
+            lanternObject.SetActive(lanternState);
+            SetState(_moveState);
+        }
+
         #region Interactions and Examine Events
             public delegate void OnExamine();
             public delegate void OnInteract();
@@ -76,7 +83,7 @@ namespace Player
 
                 if (PlayerReference.instance.examineObject) {
                     SetState(_examineState);
-                }
+                } 
            }
 
            public void InteractButtonDown () {
@@ -89,6 +96,8 @@ namespace Player
                     SetState(_interactState);
                } else if (PlayerReference.instance.dB_Puzzle) { 
                    SetState(_puzzleState);
+               } else if (PlayerReference.instance.canDoTransition) {
+                   Debug.Log("Transition");
                }
            }
 

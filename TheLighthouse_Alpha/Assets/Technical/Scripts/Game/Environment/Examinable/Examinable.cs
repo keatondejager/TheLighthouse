@@ -56,6 +56,7 @@ namespace Environment {
 
         public virtual void Examine() {
             PlayerReference.instance.examineObject = TargetObject;
+            player.OnExamineEnter -= Examine;
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Menu State
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
-  _menuState: {fileID: 0}
-  PreviousState: {fileID: 11400000, guid: 7748a9094f4e91648a8189ee404fa628, type: 2}
+  _menuState: {fileID: 11400000}
   _moveState: {fileID: 11400000, guid: 424ef51b5f9764a4698cff67543f2a7d, type: 2}
+  PreviousState: {fileID: 11400000, guid: fb1b9ad415b4a0049aa8fefc5adb6519, type: 2}
+  MenuObject: {fileID: 0}

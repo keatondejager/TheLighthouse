@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: a024b1e803b7de64189613ef1f60b076
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7033756916143513353
+    second: controls_ps4_white_256x_0
+  - first:
+      213: 402176972062023477
+    second: controls_ps4_white_256x_1
+  - first:
+      213: -7095306181712168458
+    second: controls_ps4_white_256x_2
+  - first:
+      213: 1190045845226768225
+    second: controls_ps4_white_256x_3
+  - first:
+      213: -2596631423310846082
+    second: controls_ps4_white_256x_4
+  - first:
+      213: -4244573586694794519
+    second: controls_ps4_white_256x_5
+  - first:
+      213: -7697797338835755094
+    second: controls_ps4_white_256x_6
+  - first:
+      213: -271527472153314205
+    second: controls_ps4_white_256x_7
+  - first:
+      213: -6878084523751125669
+    second: controls_ps4_white_256x_8
+  - first:
+      213: -5157390119202281089
+    second: controls_ps4_white_256x_9
+  - first:
+      213: 1483124723194755571
+    second: controls_ps4_white_256x_10
+  - first:
+      213: 6268237280462608263
+    second: controls_ps4_white_256x_11
+  - first:
+      213: 299924329655332153
+    second: controls_ps4_white_256x_12
+  - first:
+      213: 942037164358670018
+    second: controls_ps4_white_256x_13
+  - first:
+      213: 214645435897315172
+    second: controls_ps4_white_256x_14
+  - first:
+      213: -9182614369023482267
+    second: controls_ps4_white_256x_15
+  - first:
+      213: -2295872468939001828
+    second: controls_ps4_white_256x_16
+  - first:
+      213: -5211882778292281299
+    second: controls_ps4_white_256x_17
+  - first:
+      213: 5449726107669120284
+    second: controls_ps4_white_256x_18
+  - first:
+      213: 7927500729762292751
+    second: controls_ps4_white_256x_19
+  - first:
+      213: -127628716726263276
+    second: controls_ps4_white_256x_20
+  - first:
+      213: 2943462838762365615
+    second: controls_ps4_white_256x_21
+  - first:
+      213: 9167971209376148586
+    second: controls_ps4_white_256x_22
+  - first:
+      213: -3430135972881277332
+    second: controls_ps4_white_256x_23
+  - first:
+      213: 6572790764377795991
+    second: controls_ps4_white_256x_24
+  - first:
+      213: 2255602634570831920
+    second: controls_ps4_white_256x_25
+  - first:
+      213: 5828902316684900752
+    second: controls_ps4_white_256x_26
+  - first:
+      213: -8822145613946345592
+    second: controls_ps4_white_256x_27
+  - first:
+      213: -1471901660113122693
+    second: controls_ps4_white_256x_28
+  - first:
+      213: 1479026339311318394
+    second: controls_ps4_white_256x_29
+  - first:
+      213: -5973125405966750943
+    second: controls_ps4_white_256x_30
+  - first:
+      213: 836242084156890675
+    second: controls_ps4_white_256x_31
+  - first:
+      213: 7834921650956157433
+    second: controls_ps4_white_256x_32
+  - first:
+      213: -1087898237946179883
+    second: controls_ps4_white_256x_33
+  - first:
+      213: 4987709044235500204
+    second: controls_ps4_white_256x_34
+  - first:
+      213: -8716111435102351005
+    second: controls_ps4_white_256x_35
+  - first:
+      213: -720840928195013644
+    second: controls_ps4_white_256x_36
+  - first:
+      213: 4988421596995221208
+    second: controls_ps4_white_256x_37
+  - first:
+      213: 8266437201015141904
+    second: controls_ps4_white_256x_38
+  - first:
+      213: 2663544348398954579
+    second: controls_ps4_white_256x_39
+  - first:
+      213: 4710832904717861954
+    second: controls_ps4_white_256x_40
+  - first:
+      213: 8317961123400871838
+    second: controls_ps4_white_256x_41
+  - first:
+      213: -7384952752969121259
+    second: controls_ps4_white_256x_42
+  - first:
+      213: -4223649841732049213
+    second: controls_ps4_white_256x_43
+  - first:
+      213: -8072207549873396485
+    second: controls_ps4_white_256x_44
+  - first:
+      213: -6722465361448427241
+    second: controls_ps4_white_256x_45
+  - first:
+      213: -8114608539156070973
+    second: controls_ps4_white_256x_46
+  - first:
+      213: -5813406480958850339
+    second: controls_ps4_white_256x_47
+  - first:
+      213: -8194106689458833424
+    second: controls_ps4_white_256x_48
+  - first:
+      213: 3801162337564745247
+    second: controls_ps4_white_256x_49
+  - first:
+      213: 4728785708177984458
+    second: controls_ps4_white_256x_50
+  - first:
+      213: 7598983312658621015
+    second: controls_ps4_white_256x_51
+  - first:
+      213: 4218070987726709801
+    second: controls_ps4_white_256x_52
+  - first:
+      213: -4073152868907493901
+    second: controls_ps4_white_256x_53
+  - first:
+      213: -7768301223669202398
+    second: controls_ps4_white_256x_54
+  - first:
+      213: 2108696893769688624
+    second: controls_ps4_white_256x_55
+  - first:
+      213: -2340311529365864166
+    second: controls_ps4_white_256x_56
+  - first:
+      213: -8840734852321636988
+    second: controls_ps4_white_256x_57
+  - first:
+      213: 4822704049372278959
+    second: controls_ps4_white_256x_58
+  - first:
+      213: -6324695748551429577
+    second: controls_ps4_white_256x_59
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6e08b30dc3e4f4e80b465306e17818
+      internalID: 7033756916143513353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf44b23fe696ff45b57b57c4120cada
+      internalID: 402176972062023477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd6f356f3834314ba4eff0ee75ffc5e
+      internalID: -7095306181712168458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba82ca5128e28d4f8affd900161129c
+      internalID: 1190045845226768225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee042fa117412fe4bbb5d8a6439f40b1
+      internalID: -2596631423310846082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1252a71a0512f4e47ab1b2f18b23ba2d
+      internalID: -4244573586694794519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f4a455d4ca88f4d8be589d4003edac
+      internalID: -7697797338835755094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268c7807715fc394099f0402cbe1d386
+      internalID: -271527472153314205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3756b7c1ac802c4c81e83f0db8493bd
+      internalID: -6878084523751125669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb9cd5743c289b40b242c70834855ca
+      internalID: -5157390119202281089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce624ddc66f9024f8080faa45a70656
+      internalID: 1483124723194755571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1e319acb24acd4f90ce1990c9c6de8
+      internalID: 299924329655332153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_ps4_white_256x_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51910329c81b7c46b95f266db5ed304
+      internalID: 942037164358670018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
