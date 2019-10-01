@@ -11,6 +11,9 @@ public class LightningManager : MonoBehaviour
     public float minTriggerTime = 0.75f;
     public float maxTriggerTime = 1f;
 
+    public float Delay = .25f;
+    
+    
     private float selectedTriggerTime = 0f;
     private float timer = 0f;
 
@@ -22,24 +25,34 @@ public class LightningManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer >= selectedTriggerTime)
+        if (timer >= selectedTriggerTime && !LightningParticleSystem.isPlaying)
         {
             LightningParticleSystem.Play();
-            foreach (Light AreaLight in AreaLights)
-            {
-                AreaLight.enabled = true;
-            }
-            timer = 0f;
-            selectedTriggerTime = Random.Range(minTriggerTime, maxTriggerTime);
+            Invoke("TurnOnLights", Delay);
         }
 
         if (LightningParticleSystem.isStopped)
         {
-            foreach (Light AreaLight in AreaLights)
-            {
-                AreaLight.enabled = false;
-            }
             timer += Time.deltaTime;
+        }
+    }
+
+    private void TurnOnLights()
+    {
+        foreach (Light AreaLight in AreaLights)
+        {
+            AreaLight.enabled = true;
+        }
+        timer = 0f;
+        selectedTriggerTime = Random.Range(minTriggerTime, maxTriggerTime);
+        Invoke("TurnOffLights", LightningParticleSystem.duration);
+    }
+
+    private void TurnOffLights()
+    {
+        foreach (Light AreaLight in AreaLights)
+        {
+            AreaLight.enabled = false;
         }
     }
 }
