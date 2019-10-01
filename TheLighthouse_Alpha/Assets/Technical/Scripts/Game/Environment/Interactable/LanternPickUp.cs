@@ -27,7 +27,6 @@ public class LanternPickUp : MonoBehaviour
 
     public void PickUp () {
         manager.OnInteractEnter -= PickUp;
-        manager.SetLantern(true);
         this.gameObject.SetActive(false);
     }
 }

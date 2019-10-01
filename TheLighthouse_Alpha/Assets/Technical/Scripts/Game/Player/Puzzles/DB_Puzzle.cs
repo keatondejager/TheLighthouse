@@ -41,6 +41,7 @@ public class DB_Puzzle : MonoBehaviour {
                     return;
                 } 
                 numScrews--;
+                screwObjects[numScrews].gameObject.SetActive(false);
                 if (numScrews == 0) {
                     currentCoverState = CoverCondition.Loose;
                     puzzleState = 1;
@@ -166,6 +167,7 @@ public class DB_Puzzle : MonoBehaviour {
                     return;
                 } 
 
+                screwObjects[newScrewsDone].gameObject.SetActive(true);
                 newScrewsDone++;
                 if (newScrewsDone >= 4) {
                     puzzleState = 7;
@@ -247,6 +249,7 @@ public class DB_Puzzle : MonoBehaviour {
     public void Interact () {
         puzzleUI.SetActive(true);
         transform.position = ReferencePosition.position;
+        transform.Rotate(-15, 0, 0);
         SetWinIcon();
         SetCoverState();
         SetSwitchState();
@@ -281,6 +284,7 @@ public class DB_Puzzle : MonoBehaviour {
     public void ClosePuzzle () {
         puzzleUI.SetActive(false);
         transform.position = defaultPosition;
+        transform.Rotate(15, 0, 0);
     }
 
     public bool CheckRequirements() {
