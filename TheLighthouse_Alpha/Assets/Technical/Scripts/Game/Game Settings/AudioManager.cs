@@ -57,6 +57,8 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = Songs[Mathf.FloorToInt(Random.Range(0, Songs.Count))];
         }
 
+        Invoke("SetMusic", musicSource.clip.length);
+
         musicSource.Play();
     }
 
