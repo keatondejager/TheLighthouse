@@ -40,6 +40,8 @@ namespace Player
             controls.Examining.Zoom.performed += ctx => zoomInput = ctx.ReadValue<Vector2>();
             controls.Examining.Zoom.canceled += ctx => zoomInput = Vector2.zero;
 
+            controls.Examining.Reset.performed += ctx => ResetObject();
+
             objectName = PlayerReference.instance.examineObjectName;
         }
 
@@ -92,6 +94,7 @@ namespace Player
         public void ResetObject () {
             objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
             objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
+            zoomDistance = 0;
         }
     }
 }

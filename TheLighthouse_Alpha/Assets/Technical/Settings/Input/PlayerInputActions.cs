@@ -261,6 +261,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""Button"",
+                    ""id"": ""95a21f86-6f2d-468a-9e4c-3cde54db413d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -439,6 +447,28 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""Zoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f480c526-8d2f-47d3-afe1-db92196eebf1"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e0a4988e-09b5-450c-a136-6c07df13f6ea"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1274,6 +1304,7 @@ public class PlayerInputActions : IInputActionCollection
         m_Examining_Pause = m_Examining.GetAction("Pause");
         m_Examining_Rotate = m_Examining.GetAction("Rotate");
         m_Examining_Zoom = m_Examining.GetAction("Zoom");
+        m_Examining_Reset = m_Examining.GetAction("Reset");
         // Menus
         m_Menus = asset.GetActionMap("Menus");
         m_Menus_Exit = m_Menus.GetAction("Exit");
@@ -1422,6 +1453,7 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_Examining_Pause;
     private readonly InputAction m_Examining_Rotate;
     private readonly InputAction m_Examining_Zoom;
+    private readonly InputAction m_Examining_Reset;
     public struct ExaminingActions
     {
         private PlayerInputActions m_Wrapper;
@@ -1430,6 +1462,7 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @Pause => m_Wrapper.m_Examining_Pause;
         public InputAction @Rotate => m_Wrapper.m_Examining_Rotate;
         public InputAction @Zoom => m_Wrapper.m_Examining_Zoom;
+        public InputAction @Reset => m_Wrapper.m_Examining_Reset;
         public InputActionMap Get() { return m_Wrapper.m_Examining; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1451,6 +1484,9 @@ public class PlayerInputActions : IInputActionCollection
                 Zoom.started -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnZoom;
                 Zoom.performed -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnZoom;
                 Zoom.canceled -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnZoom;
+                Reset.started -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnReset;
+                Reset.performed -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnReset;
+                Reset.canceled -= m_Wrapper.m_ExaminingActionsCallbackInterface.OnReset;
             }
             m_Wrapper.m_ExaminingActionsCallbackInterface = instance;
             if (instance != null)
@@ -1467,6 +1503,9 @@ public class PlayerInputActions : IInputActionCollection
                 Zoom.started += instance.OnZoom;
                 Zoom.performed += instance.OnZoom;
                 Zoom.canceled += instance.OnZoom;
+                Reset.started += instance.OnReset;
+                Reset.performed += instance.OnReset;
+                Reset.canceled += instance.OnReset;
             }
         }
     }
@@ -1770,6 +1809,7 @@ public class PlayerInputActions : IInputActionCollection
         void OnPause(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
         void OnZoom(InputAction.CallbackContext context);
+        void OnReset(InputAction.CallbackContext context);
     }
     public interface IMenusActions
     {
