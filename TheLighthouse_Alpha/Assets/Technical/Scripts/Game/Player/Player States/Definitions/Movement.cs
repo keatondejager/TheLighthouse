@@ -86,8 +86,12 @@ namespace Player
                                                                  Quaternion.LookRotation(motion), 
                                                                  rotationsPerSecond * 180 * Time.deltaTime);
                 isWalking = true;
+                AudioManager.instance.StartWalking();
+                
             } else { 
                 isWalking = false;
+                AudioManager.instance.StopWalking();
+                    
             }
             motion *= moveSpeed;
 
