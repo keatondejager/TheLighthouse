@@ -56,6 +56,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Button"",
+                    ""id"": ""1bb32f04-4b36-4656-8085-86daf6ed6f29"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -223,6 +231,72 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""81e426f5-87c1-4cd1-a6e9-cc5e11136880"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Arrows [Keyboard]"",
+                    ""id"": ""5be70b87-e31f-4a08-a598-275209d0c29f"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f674501c-c278-4d17-a4f3-16a66f348ffa"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""0d6f8bc9-0d17-4846-9b14-48e338fbdc74"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""bf27d34e-c3b5-45fa-94e5-ed7ae7cb2050"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""0fc14c0f-c3ad-4813-9699-42136ae47fb5"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -1298,6 +1372,7 @@ public class PlayerInputActions : IInputActionCollection
         m_Movement_Interact = m_Movement.GetAction("Interact");
         m_Movement_Inventory = m_Movement.GetAction("Inventory");
         m_Movement_Menu = m_Movement.GetAction("Menu");
+        m_Movement_Look = m_Movement.GetAction("Look");
         // Examining
         m_Examining = asset.GetActionMap("Examining");
         m_Examining_Exit = m_Examining.GetAction("Exit");
@@ -1389,6 +1464,7 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_Movement_Interact;
     private readonly InputAction m_Movement_Inventory;
     private readonly InputAction m_Movement_Menu;
+    private readonly InputAction m_Movement_Look;
     public struct MovementActions
     {
         private PlayerInputActions m_Wrapper;
@@ -1398,6 +1474,7 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @Interact => m_Wrapper.m_Movement_Interact;
         public InputAction @Inventory => m_Wrapper.m_Movement_Inventory;
         public InputAction @Menu => m_Wrapper.m_Movement_Menu;
+        public InputAction @Look => m_Wrapper.m_Movement_Look;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1422,6 +1499,9 @@ public class PlayerInputActions : IInputActionCollection
                 Menu.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMenu;
                 Menu.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMenu;
                 Menu.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMenu;
+                Look.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnLook;
+                Look.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnLook;
+                Look.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnLook;
             }
             m_Wrapper.m_MovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -1441,6 +1521,9 @@ public class PlayerInputActions : IInputActionCollection
                 Menu.started += instance.OnMenu;
                 Menu.performed += instance.OnMenu;
                 Menu.canceled += instance.OnMenu;
+                Look.started += instance.OnLook;
+                Look.performed += instance.OnLook;
+                Look.canceled += instance.OnLook;
             }
         }
     }
@@ -1802,6 +1885,7 @@ public class PlayerInputActions : IInputActionCollection
         void OnInteract(InputAction.CallbackContext context);
         void OnInventory(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
     public interface IExaminingActions
     {

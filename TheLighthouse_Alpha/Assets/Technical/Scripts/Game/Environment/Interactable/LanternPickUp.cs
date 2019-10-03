@@ -3,30 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Player;
 
-public class LanternPickUp : MonoBehaviour
+namespace Environment
 {
-    [Header("Reference")]
-        [SerializeField] protected PlayerManager manager;
-        [SerializeField] protected GameObject buttonPrompt;
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Player")) {
-            buttonPrompt.SetActive(true);
-            manager.OnInteractEnter += PickUp;
-            manager.isLantern = true;
+    public class LanternPickUp : Interactable
+    {
+        [Header("Lantern Specific")]
+            [SerializeField] protected GameObject LanternObject;
+
+        protected override void OnTriggerEnter(Collider other) {
+            base.OnTriggerEnter(other);
+
         }
     }
 
-
-    private void OnTriggerExit(Collider other) {
-        if (other.CompareTag("Player")) {
-            buttonPrompt.SetActive(false);
-            manager.OnInteractEnter -= PickUp;
-            manager.isLantern = false;
-        }
-    }
-
-    public void PickUp () {
-        manager.OnInteractEnter -= PickUp;
-        this.gameObject.SetActive(false);
-    }
 }

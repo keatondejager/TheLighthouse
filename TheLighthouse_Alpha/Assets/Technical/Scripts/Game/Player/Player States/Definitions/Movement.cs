@@ -16,12 +16,17 @@ namespace Player
 
         [Header("Movement Control")]
             [SerializeField] private Vector2 direction;
-            [SerializeField] private Vector3 motion;
+            [SerializeField] private Vector2 lookDirection;
+            private Vector3 motion;
+            private Vector3 rotation;
             [Range(1, 10)] [SerializeField] protected float moveSpeed = 1f;
             [Range(1, 10)] [SerializeField] protected float acceleration = 1f;
             [Range(1, 10)] [SerializeField] protected float decceleration = 2f;
 
             [Range(0, 1)] [SerializeField] protected float rotationsPerSecond = 0.2f;
+            [Range(5, 15)] [SerializeField] protected float lookRotationSpeed = 5f;
+
+            [Range(0, 90)] [SerializeField] protected float maxCollisionAngle = 25f;
 
             [SerializeField] protected bool grounded;
             [SerializeField] protected bool obstructed;
@@ -58,6 +63,9 @@ namespace Player
 
             controls.Movement.Walk.performed += ctx => direction = ctx.ReadValue<Vector2>();
             controls.Movement.Walk.canceled += ctx => direction = Vector2.zero;
+
+            controls.Movement.Look.performed += ctx => lookDirection = ctx.ReadValue<Vector2>();
+            controls.Movement.Look.canceled += ctx => lookDirection = Vector2.zero;
         }
 
         public override void Step() {
@@ -72,9 +80,10 @@ namespace Player
             obstructed = ForwardCheck();
 
             motion = Vector3.forward * direction.y + Vector3.right * direction.x;
+            rotation = Vector3.up * lookDirection.x;
             
             if (obstructed) {
-                if (Vector3.Angle(PlayerObject.transform.forward, motion) < 25f && motion.sqrMagnitude > 0) {
+                if (Vector3.Angle(PlayerObject.transform.forward, motion) < maxCollisionAngle && motion.sqrMagnitude > 0) {
                     isWalking = false;
                     return;
                 }
@@ -89,6 +98,9 @@ namespace Player
                 AudioManager.instance.StartWalking();
                 
             } else { 
+                
+                PlayerObject.transform.Rotate(rotation * lookRotationSpeed * 45f * Time.deltaTime);
+
                 isWalking = false;
                 AudioManager.instance.StopWalking();
                     
