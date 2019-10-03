@@ -12927,8 +12927,8 @@ MonoBehaviour:
   - {fileID: 7500077928112903333}
   - {fileID: 7052096384625889716}
   LightningParticleSystem: {fileID: 7500077928106969951}
-  minTriggerTime: 0.75
-  maxTriggerTime: 5
+  minTriggerTime: 5
+  maxTriggerTime: 15
   Delay: 0.25
 --- !u!4 &7500077928056505159
 Transform:
