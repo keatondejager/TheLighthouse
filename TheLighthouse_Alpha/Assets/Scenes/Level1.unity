@@ -6424,6 +6424,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 1616002347}
   TargetObject: {fileID: 381943790}
+  ExamineHighlightEffect: {fileID: 675932755}
   isNarrativeTrigger: 1
 --- !u!65 &782158695
 BoxCollider:
@@ -7759,6 +7760,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 1156011763}
   TargetObject: {fileID: 1818772707988758576}
+  ExamineHighlightEffect: {fileID: 1990875678}
   isNarrativeTrigger: 1
 --- !u!65 &1359112967
 BoxCollider:
@@ -25490,6 +25492,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 912553271}
   TargetObject: {fileID: 216502841}
+  ExamineHighlightEffect: {fileID: 6365638844866807219}
   isNarrativeTrigger: 1
 --- !u!65 &2827882037408618458
 BoxCollider:
@@ -37256,6 +37259,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 1142013165}
   TargetObject: {fileID: 1354286922}
+  ExamineHighlightEffect: {fileID: 1109696268022485405}
   isNarrativeTrigger: 1
 --- !u!65 &6061645728462196863
 BoxCollider:
@@ -40429,6 +40433,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 344002071}
   TargetObject: {fileID: 5719468863730845899}
+  ExamineHighlightEffect: {fileID: 7282527201821759354}
   isNarrativeTrigger: 1
 --- !u!65 &6061645729826556975
 BoxCollider:
@@ -40748,6 +40753,7 @@ MonoBehaviour:
   TriggerScale: 2
   Prompt: {fileID: 727086032}
   TargetObject: {fileID: 502675302454673184}
+  ExamineHighlightEffect: {fileID: 0}
   isNarrativeTrigger: 1
 --- !u!65 &6061645729890091017
 BoxCollider:
