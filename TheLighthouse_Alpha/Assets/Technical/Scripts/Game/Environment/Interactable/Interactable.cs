@@ -23,6 +23,8 @@ namespace Environment {
             public GameObject Prompt;
             private PlayerManager player; 
 
+            private bool hasFunction = false;
+
         protected virtual void Start() {
             triggerRange.isTrigger = true;
             player = PlayerReference.instance.manager;
@@ -30,7 +32,7 @@ namespace Environment {
             if (useOriginalTriggerSize) {
                 return;
             }
-            
+
             if (TriggerSize.sqrMagnitude < objectCollider.size.sqrMagnitude) {
                 TriggerSize = objectCollider.size * 1.01f;
             }
@@ -44,6 +46,7 @@ namespace Environment {
                     player = PlayerReference.instance.manager; 
                 }
                 player.OnInteractEnter += Interact;
+                hasFunction = true;
                 Prompt.SetActive(true);
             }
         }
@@ -53,7 +56,10 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
-                player.OnInteractEnter -= Interact;
+                if (hasFunction) {
+                    player.OnInteractEnter -= Interact;
+                    hasFunction = false;
+                }
                 Prompt.SetActive(false);
             }
         }

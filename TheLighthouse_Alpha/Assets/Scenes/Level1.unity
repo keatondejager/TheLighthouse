@@ -773,8 +773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerRange: {fileID: 533419015}
   objectCollider: {fileID: 533419016}
-  TriggerSize: {x: 0, y: 0, z: 0}
-  useOriginalTriggerSize: 1
+  TriggerSize: {x: 3, y: 3, z: 3}
+  useOriginalTriggerSize: 0
   isNarrativeTrigger: 0
   Prompt: {fileID: 22157083}
   ObjectInventory: {fileID: 11400000, guid: cae1aec92f2db0045b0764c07a5eec93, type: 2}
@@ -6339,8 +6339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerRange: {fileID: 775944686}
   objectCollider: {fileID: 775944687}
-  TriggerSize: {x: 0, y: 0, z: 0}
-  useOriginalTriggerSize: 1
+  TriggerSize: {x: 3, y: 3, z: 3}
+  useOriginalTriggerSize: 0
   isNarrativeTrigger: 0
   Prompt: {fileID: 938076153}
   ObjectInventory: {fileID: 11400000, guid: 82925e31efd10614bac0260ae936e4a5, type: 2}
@@ -14846,8 +14846,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerRange: {fileID: 2034859615}
   objectCollider: {fileID: 2034859616}
-  TriggerSize: {x: 0, y: 0, z: 0}
-  useOriginalTriggerSize: 1
+  TriggerSize: {x: 3, y: 3, z: 3}
+  useOriginalTriggerSize: 0
   isNarrativeTrigger: 0
   Prompt: {fileID: 881900560}
   ObjectInventory: {fileID: 11400000, guid: 6ca245ec5a33633489584458535401e7, type: 2}
@@ -36935,8 +36935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerRange: {fileID: 6061645728288123077}
   objectCollider: {fileID: 6061645728288123078}
-  TriggerSize: {x: 3, y: 2, z: 3}
-  useOriginalTriggerSize: 1
+  TriggerSize: {x: 3, y: 3, z: 3}
+  useOriginalTriggerSize: 0
   isNarrativeTrigger: 0
   Prompt: {fileID: 1261633304}
   ObjectInventory: {fileID: 11400000, guid: 02b56646862335b4484b5a41c2d3c2a2, type: 2}

@@ -9,8 +9,10 @@ namespace Environment {
             [SerializeField] protected SearchableObjectData ObjectInventory;
 
         protected override void OnTriggerEnter(Collider other) {
-            base.OnTriggerEnter(other);
-            PlayerReference.instance.objectInventory = ObjectInventory;
+            if (ObjectInventory.inventory.Count > 0) {
+                base.OnTriggerEnter(other);
+                PlayerReference.instance.objectInventory = ObjectInventory;
+            }
         }
 
         protected override void OnTriggerExit(Collider other) {

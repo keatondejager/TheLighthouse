@@ -48,6 +48,7 @@ namespace Player
             }
 
             if (activeData.inventory.Count == 0) {
+                ExitState();
                 return;
             }
 
