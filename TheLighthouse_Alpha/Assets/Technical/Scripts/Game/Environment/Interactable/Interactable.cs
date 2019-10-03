@@ -65,7 +65,6 @@ namespace Environment {
         }
 
         public virtual void Interact() {
-            player.OnInteractEnter -= Interact;
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }
