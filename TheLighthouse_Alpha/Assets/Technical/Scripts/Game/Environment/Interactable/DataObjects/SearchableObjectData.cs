@@ -53,4 +53,8 @@ public class SearchableObjectData : ScriptableObject
     private void OnEnable() {
         ResetInventory();
     }
+
+    private void Reset() {
+        ResetInventory();
+    }
 }

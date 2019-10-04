@@ -44,6 +44,7 @@ public class LightningManager : MonoBehaviour
             AreaLight.enabled = true;
         }
         timer = 0f;
+        AudioManager.instance.PlayThunder();
         selectedTriggerTime = Random.Range(minTriggerTime, maxTriggerTime);
         Invoke("TurnOffLights", LightningParticleSystem.duration);
     }
