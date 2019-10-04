@@ -80,7 +80,7 @@ namespace Player
             obstructed = ForwardCheck();
 
             motion = Vector3.forward * direction.y + Vector3.right * direction.x;
-            rotation = Vector3.up * lookDirection.x;
+            rotation = Vector3.right * lookDirection.x + Vector3.forward * lookDirection.y;
             
             if (obstructed) {
                 if (Vector3.Angle(PlayerObject.transform.forward, motion) < maxCollisionAngle && motion.sqrMagnitude > 0) {
@@ -99,7 +99,11 @@ namespace Player
                 
             } else { 
                 
-                PlayerObject.transform.Rotate(rotation * lookRotationSpeed * 45f * Time.deltaTime);
+                if (rotation.sqrMagnitude > 0) {
+                    PlayerObject.transform.rotation = Quaternion.Lerp(  PlayerObject.transform.rotation, 
+                                                                    Quaternion.LookRotation(rotation), 
+                                                                    rotationsPerSecond * 180 * Time.deltaTime);
+                }
 
                 isWalking = false;
                 AudioManager.instance.StopWalking();
