@@ -836,7 +836,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Hold"",
+                    ""name"": ""LeftGrab"",
                     ""type"": ""Button"",
                     ""id"": ""9c9285d3-a226-4eff-a90f-f8f3d3e8750e"",
                     ""expectedControlType"": """",
@@ -844,7 +844,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Grab"",
+                    ""name"": ""RightGrab"",
                     ""type"": ""Button"",
                     ""id"": ""771d6ae9-0ac5-453d-bd1c-b1b3124f2456"",
                     ""expectedControlType"": """",
@@ -852,7 +852,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""ShiftCursorRight"",
+                    ""name"": ""RightToggle"",
                     ""type"": ""Button"",
                     ""id"": ""b5102d3d-c869-425b-8bfa-f8712fdf4f17"",
                     ""expectedControlType"": """",
@@ -860,7 +860,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""ShiftCursorLeft"",
+                    ""name"": ""LeftToggle"",
                     ""type"": ""Button"",
                     ""id"": ""75789c5a-cfbc-4857-a943-684e9281a8b1"",
                     ""expectedControlType"": """",
@@ -1145,7 +1145,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hold"",
+                    ""action"": ""LeftGrab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1156,7 +1156,18 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hold"",
+                    ""action"": ""LeftGrab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6270f18f-9a8c-47b0-a41d-1060d0a3ee34"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftGrab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1167,7 +1178,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Grab"",
+                    ""action"": ""RightGrab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1178,7 +1189,18 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Grab"",
+                    ""action"": ""RightGrab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa99ce49-e629-4f16-8dde-66ee3e53930b"",
+                    ""path"": ""<Keyboard>/rightCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightGrab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1189,7 +1211,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ShiftCursorRight"",
+                    ""action"": ""RightToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1200,7 +1222,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ShiftCursorRight"",
+                    ""action"": ""RightToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1211,7 +1233,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ShiftCursorLeft"",
+                    ""action"": ""LeftToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1222,7 +1244,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ShiftCursorLeft"",
+                    ""action"": ""LeftToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1400,10 +1422,10 @@ public class PlayerInputActions : IInputActionCollection
         m_PuzzleControls_TertiaryButton = m_PuzzleControls.GetAction("TertiaryButton");
         m_PuzzleControls_PrimaryAxis = m_PuzzleControls.GetAction("PrimaryAxis");
         m_PuzzleControls_SecondaryAxis = m_PuzzleControls.GetAction("SecondaryAxis");
-        m_PuzzleControls_Hold = m_PuzzleControls.GetAction("Hold");
-        m_PuzzleControls_Grab = m_PuzzleControls.GetAction("Grab");
-        m_PuzzleControls_ShiftCursorRight = m_PuzzleControls.GetAction("ShiftCursorRight");
-        m_PuzzleControls_ShiftCursorLeft = m_PuzzleControls.GetAction("ShiftCursorLeft");
+        m_PuzzleControls_LeftGrab = m_PuzzleControls.GetAction("LeftGrab");
+        m_PuzzleControls_RightGrab = m_PuzzleControls.GetAction("RightGrab");
+        m_PuzzleControls_RightToggle = m_PuzzleControls.GetAction("RightToggle");
+        m_PuzzleControls_LeftToggle = m_PuzzleControls.GetAction("LeftToggle");
         m_PuzzleControls_DigitUp = m_PuzzleControls.GetAction("DigitUp");
         m_PuzzleControls_DigitDown = m_PuzzleControls.GetAction("DigitDown");
         // OptionsMenu
@@ -1726,10 +1748,10 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_PuzzleControls_TertiaryButton;
     private readonly InputAction m_PuzzleControls_PrimaryAxis;
     private readonly InputAction m_PuzzleControls_SecondaryAxis;
-    private readonly InputAction m_PuzzleControls_Hold;
-    private readonly InputAction m_PuzzleControls_Grab;
-    private readonly InputAction m_PuzzleControls_ShiftCursorRight;
-    private readonly InputAction m_PuzzleControls_ShiftCursorLeft;
+    private readonly InputAction m_PuzzleControls_LeftGrab;
+    private readonly InputAction m_PuzzleControls_RightGrab;
+    private readonly InputAction m_PuzzleControls_RightToggle;
+    private readonly InputAction m_PuzzleControls_LeftToggle;
     private readonly InputAction m_PuzzleControls_DigitUp;
     private readonly InputAction m_PuzzleControls_DigitDown;
     public struct PuzzleControlsActions
@@ -1742,10 +1764,10 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @TertiaryButton => m_Wrapper.m_PuzzleControls_TertiaryButton;
         public InputAction @PrimaryAxis => m_Wrapper.m_PuzzleControls_PrimaryAxis;
         public InputAction @SecondaryAxis => m_Wrapper.m_PuzzleControls_SecondaryAxis;
-        public InputAction @Hold => m_Wrapper.m_PuzzleControls_Hold;
-        public InputAction @Grab => m_Wrapper.m_PuzzleControls_Grab;
-        public InputAction @ShiftCursorRight => m_Wrapper.m_PuzzleControls_ShiftCursorRight;
-        public InputAction @ShiftCursorLeft => m_Wrapper.m_PuzzleControls_ShiftCursorLeft;
+        public InputAction @LeftGrab => m_Wrapper.m_PuzzleControls_LeftGrab;
+        public InputAction @RightGrab => m_Wrapper.m_PuzzleControls_RightGrab;
+        public InputAction @RightToggle => m_Wrapper.m_PuzzleControls_RightToggle;
+        public InputAction @LeftToggle => m_Wrapper.m_PuzzleControls_LeftToggle;
         public InputAction @DigitUp => m_Wrapper.m_PuzzleControls_DigitUp;
         public InputAction @DigitDown => m_Wrapper.m_PuzzleControls_DigitDown;
         public InputActionMap Get() { return m_Wrapper.m_PuzzleControls; }
@@ -1775,18 +1797,18 @@ public class PlayerInputActions : IInputActionCollection
                 SecondaryAxis.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
                 SecondaryAxis.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
                 SecondaryAxis.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnSecondaryAxis;
-                Hold.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
-                Hold.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
-                Hold.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnHold;
-                Grab.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
-                Grab.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
-                Grab.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnGrab;
-                ShiftCursorRight.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
-                ShiftCursorRight.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
-                ShiftCursorRight.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorRight;
-                ShiftCursorLeft.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
-                ShiftCursorLeft.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
-                ShiftCursorLeft.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnShiftCursorLeft;
+                LeftGrab.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftGrab;
+                LeftGrab.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftGrab;
+                LeftGrab.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftGrab;
+                RightGrab.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightGrab;
+                RightGrab.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightGrab;
+                RightGrab.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightGrab;
+                RightToggle.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightToggle;
+                RightToggle.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightToggle;
+                RightToggle.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnRightToggle;
+                LeftToggle.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftToggle;
+                LeftToggle.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftToggle;
+                LeftToggle.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnLeftToggle;
                 DigitUp.started -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
                 DigitUp.performed -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
                 DigitUp.canceled -= m_Wrapper.m_PuzzleControlsActionsCallbackInterface.OnDigitUp;
@@ -1815,18 +1837,18 @@ public class PlayerInputActions : IInputActionCollection
                 SecondaryAxis.started += instance.OnSecondaryAxis;
                 SecondaryAxis.performed += instance.OnSecondaryAxis;
                 SecondaryAxis.canceled += instance.OnSecondaryAxis;
-                Hold.started += instance.OnHold;
-                Hold.performed += instance.OnHold;
-                Hold.canceled += instance.OnHold;
-                Grab.started += instance.OnGrab;
-                Grab.performed += instance.OnGrab;
-                Grab.canceled += instance.OnGrab;
-                ShiftCursorRight.started += instance.OnShiftCursorRight;
-                ShiftCursorRight.performed += instance.OnShiftCursorRight;
-                ShiftCursorRight.canceled += instance.OnShiftCursorRight;
-                ShiftCursorLeft.started += instance.OnShiftCursorLeft;
-                ShiftCursorLeft.performed += instance.OnShiftCursorLeft;
-                ShiftCursorLeft.canceled += instance.OnShiftCursorLeft;
+                LeftGrab.started += instance.OnLeftGrab;
+                LeftGrab.performed += instance.OnLeftGrab;
+                LeftGrab.canceled += instance.OnLeftGrab;
+                RightGrab.started += instance.OnRightGrab;
+                RightGrab.performed += instance.OnRightGrab;
+                RightGrab.canceled += instance.OnRightGrab;
+                RightToggle.started += instance.OnRightToggle;
+                RightToggle.performed += instance.OnRightToggle;
+                RightToggle.canceled += instance.OnRightToggle;
+                LeftToggle.started += instance.OnLeftToggle;
+                LeftToggle.performed += instance.OnLeftToggle;
+                LeftToggle.canceled += instance.OnLeftToggle;
                 DigitUp.started += instance.OnDigitUp;
                 DigitUp.performed += instance.OnDigitUp;
                 DigitUp.canceled += instance.OnDigitUp;
@@ -1918,10 +1940,10 @@ public class PlayerInputActions : IInputActionCollection
         void OnTertiaryButton(InputAction.CallbackContext context);
         void OnPrimaryAxis(InputAction.CallbackContext context);
         void OnSecondaryAxis(InputAction.CallbackContext context);
-        void OnHold(InputAction.CallbackContext context);
-        void OnGrab(InputAction.CallbackContext context);
-        void OnShiftCursorRight(InputAction.CallbackContext context);
-        void OnShiftCursorLeft(InputAction.CallbackContext context);
+        void OnLeftGrab(InputAction.CallbackContext context);
+        void OnRightGrab(InputAction.CallbackContext context);
+        void OnRightToggle(InputAction.CallbackContext context);
+        void OnLeftToggle(InputAction.CallbackContext context);
         void OnDigitUp(InputAction.CallbackContext context);
         void OnDigitDown(InputAction.CallbackContext context);
     }

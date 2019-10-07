@@ -28,8 +28,8 @@ public class CombinationLock : MonoBehaviour
 
         controls.PuzzleControls.PrimaryButton.performed += ctx => CheckSolution();
 
-        controls.PuzzleControls.ShiftCursorLeft.started += ctx => MoveCursorLeft();
-        controls.PuzzleControls.ShiftCursorRight.started += ctx => MoveCursorRight();
+        controls.PuzzleControls.LeftToggle.started += ctx => MoveCursorLeft();
+        controls.PuzzleControls.RightToggle.started += ctx => MoveCursorRight();
 
         controls.PuzzleControls.DigitDown.started += ctx => ShiftDigit(-1);
         controls.PuzzleControls.DigitUp.started += ctx => ShiftDigit(1);

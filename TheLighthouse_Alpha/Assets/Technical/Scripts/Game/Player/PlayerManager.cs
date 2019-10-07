@@ -54,6 +54,10 @@ namespace Player
             state.Step();
         }
 
+        public void UniversalExit () {
+            SetState(_moveState);
+        }
+
         public void SetState (States newState) {
             States previousState = _moveState;
 
