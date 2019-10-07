@@ -11,10 +11,9 @@ namespace Environment {
         [Header("Control Reference")]
             [SerializeField] protected BoxCollider triggerRange;
             [SerializeField] protected BoxCollider objectCollider;
-            [Range(1f, 5f)] [SerializeField] protected float TriggerScale = 2f;
-            [SerializeField] protected SearchableObjectData ObjectInventory;
-
-
+            [SerializeField] protected Vector3 TriggerSize;
+            [SerializeField] protected bool useOriginalTriggerSize;
+            
          [Header("Narrative and Events")]
             public bool isNarrativeTrigger;
             public delegate void NarrativeTrigger();
@@ -24,12 +23,21 @@ namespace Environment {
             public GameObject Prompt;
             private PlayerManager player; 
 
+            private bool hasFunction = false;
+
         protected virtual void Start() {
             triggerRange.isTrigger = true;
-            triggerRange.size = objectCollider.size * TriggerScale;
-            objectCollider.isTrigger = false;
-
             player = PlayerReference.instance.manager;
+
+            if (useOriginalTriggerSize) {
+                return;
+            }
+
+            if (TriggerSize.sqrMagnitude < objectCollider.size.sqrMagnitude) {
+                TriggerSize = objectCollider.size * 1.01f;
+            }
+            triggerRange.size = TriggerSize;
+            
         }
 
         protected virtual void OnTriggerEnter (Collider other) {
@@ -37,8 +45,8 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
-                PlayerReference.instance.objectInventory = ObjectInventory;
                 player.OnInteractEnter += Interact;
+                hasFunction = true;
                 Prompt.SetActive(true);
             }
         }
@@ -48,15 +56,15 @@ namespace Environment {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
                 }
-                PlayerReference.instance.objectInventory = null;
-                player.OnInteractEnter -= Interact;
+                if (hasFunction) {
+                    player.OnInteractEnter -= Interact;
+                    hasFunction = false;
+                }
                 Prompt.SetActive(false);
             }
         }
 
         public virtual void Interact() {
-            PlayerReference.instance.objectInventory = ObjectInventory;
-            player.OnInteractEnter -= Interact;
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }
