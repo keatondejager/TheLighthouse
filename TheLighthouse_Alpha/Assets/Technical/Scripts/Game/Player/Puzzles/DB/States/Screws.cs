@@ -7,9 +7,10 @@ public class Screws : DB_State
 {
     [Header("Object Reference")]
         [SerializeField] protected Image progressDisp;
+        [SerializeField] protected GameObject myScrewObject;
 
     [Header("Screw State Control")]
-        [SerializeField] protected bool stateDirection;
+        [SerializeField] protected bool stateDirection; // True = Inserting screws, False = Removing Screws
         [SerializeField] protected Vector2 AnalogueInput;
 
     [Header("Value Reference")]
@@ -60,6 +61,7 @@ public class Screws : DB_State
         currentRotationCount++;
         currentProgress = 0;
         if (currentRotationCount >= numberRotations) {
+            myScrewObject.SetActive(stateDirection);
             puzzleManager.StateComplete ();
         }
     }

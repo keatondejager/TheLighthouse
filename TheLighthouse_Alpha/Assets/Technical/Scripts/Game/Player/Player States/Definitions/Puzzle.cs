@@ -66,11 +66,11 @@ namespace Player
             controls.PuzzleControls.SecondaryButton.performed += ctx => Secondary();
             controls.PuzzleControls.TertiaryButton.performed += ctx => Tertiary();
 
-            controls.PuzzleControls.Hold.performed += ctx => isLeftTriggerDown = true;
-            controls.PuzzleControls.Hold.canceled += ctx => isLeftTriggerDown = false;
+            controls.PuzzleControls.LeftGrab.performed += ctx => isLeftTriggerDown = true;
+            controls.PuzzleControls.LeftGrab.canceled += ctx => isLeftTriggerDown = false;
 
-            controls.PuzzleControls.Grab.performed += ctx => isRightTriggerDown = true;
-            controls.PuzzleControls.Grab.canceled += ctx => isRightTriggerDown = false;
+            controls.PuzzleControls.RightGrab.performed += ctx => isRightTriggerDown = true;
+            controls.PuzzleControls.RightGrab.canceled += ctx => isRightTriggerDown = false;
 
             instructionObject = PlayerReference.instance.instructions;
             

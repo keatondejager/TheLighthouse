@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class DB_State : MonoBehaviour
 {
+    [SerializeField] protected GameObject UIPrompt;
     protected Player.PlayerManager manager;
     protected DistributionBoard puzzleManager;
 
@@ -38,9 +39,21 @@ public abstract class DB_State : MonoBehaviour
 
     private void OnEnable() {
         controls.PuzzleControls.Enable();    
+        EnableState();
     }
 
     private void OnDisable() {
         controls.PuzzleControls.Disable();
+        DisableState();
+    }
+
+    public virtual void EnableState () {
+        //Enable UI prompts
+        UIPrompt.SetActive(true);
+    }
+
+    public virtual void DisableState () {
+        // Disable UI prompts
+        UIPrompt.SetActive(false);
     }
 }

@@ -824,7 +824,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Hold",
+                    "name": "LeftGrab",
                     "type": "Button",
                     "id": "9c9285d3-a226-4eff-a90f-f8f3d3e8750e",
                     "expectedControlType": "",
@@ -832,7 +832,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Grab",
+                    "name": "RightGrab",
                     "type": "Button",
                     "id": "771d6ae9-0ac5-453d-bd1c-b1b3124f2456",
                     "expectedControlType": "",
@@ -840,7 +840,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShiftCursorRight",
+                    "name": "RightToggle",
                     "type": "Button",
                     "id": "b5102d3d-c869-425b-8bfa-f8712fdf4f17",
                     "expectedControlType": "",
@@ -848,7 +848,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShiftCursorLeft",
+                    "name": "LeftToggle",
                     "type": "Button",
                     "id": "75789c5a-cfbc-4857-a943-684e9281a8b1",
                     "expectedControlType": "",
@@ -1133,7 +1133,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Hold",
+                    "action": "LeftGrab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1144,7 +1144,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Hold",
+                    "action": "LeftGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6270f18f-9a8c-47b0-a41d-1060d0a3ee34",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftGrab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1155,7 +1166,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grab",
+                    "action": "RightGrab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1166,7 +1177,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grab",
+                    "action": "RightGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa99ce49-e629-4f16-8dde-66ee3e53930b",
+                    "path": "<Keyboard>/rightCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGrab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1177,7 +1199,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShiftCursorRight",
+                    "action": "RightToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1188,7 +1210,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShiftCursorRight",
+                    "action": "RightToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1199,7 +1221,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShiftCursorLeft",
+                    "action": "LeftToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1210,7 +1232,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShiftCursorLeft",
+                    "action": "LeftToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
