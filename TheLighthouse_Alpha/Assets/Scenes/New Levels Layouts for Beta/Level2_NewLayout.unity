@@ -3939,6 +3939,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.6273585
       objectReference: {fileID: 0}
+    - target: {fileID: 5986152094427196467, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_Cookie
+      value: 
+      objectReference: {fileID: 2800000, guid: 2a5c1efe94e975f4c87a409a16ba434d, type: 3}
     - target: {fileID: 9217232753799869018, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_InnerSpotPercent
