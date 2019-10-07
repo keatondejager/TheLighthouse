@@ -200,18 +200,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &81218083 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 124996262147500461, guid: bd24fd8f28fcb7e45ae3a6ddf9e788f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848912266}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b32ecea58ca5a449fa6a628504be91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &84739444 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7630245129472999435, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
@@ -8934,7 +8922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh166602
+  m_Name: pb_Mesh33598
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
