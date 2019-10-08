@@ -371,6 +371,7 @@ MonoBehaviour:
   searchingUI: {fileID: 0}
   objectInventory: {fileID: 0}
   dB_Puzzle: {fileID: 0}
+  distributionPuzzle: {fileID: 0}
   combinationLock: {fileID: 0}
   interactableTitle: {fileID: 0}
   objectsInGame:
@@ -711,7 +712,7 @@ MonoBehaviour:
   shapeWidth: 0.5
   shapeHeight: 0.5
   aspectRatio: 1
-  shapeRadius: 0
+  shapeRadius: 1
   maxSmoothness: 0.99
   applyRangeAttenuation: 1
   useOldInspector: 0

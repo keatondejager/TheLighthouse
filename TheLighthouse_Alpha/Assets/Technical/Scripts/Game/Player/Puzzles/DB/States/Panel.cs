@@ -24,7 +24,7 @@ public class Panel : DB_State {
         [SerializeField] protected float errorMargin = 0.2f;
         [SerializeField] protected Vector3 startPosition;
         [SerializeField] protected Vector3 endPosition;
-        [SerializeField] protected Image ProgressDisplay;
+        [SerializeField] protected Slider ProgressDisplay;
 
     public override void Initialize(DistributionBoard myManager) {
         base.Initialize(myManager);
@@ -64,7 +64,7 @@ public class Panel : DB_State {
         
         PanelObject.localPosition = startPosition + (panelOffset * Mathf.Abs(offsetDistance) * Vector3.right);
        
-        ProgressDisplay.fillAmount = Mathf.Abs(panelOffset);
+        ProgressDisplay.value = Mathf.Abs(panelOffset);
 
         if ( Vector3.Distance(PanelObject.localPosition , endPosition) < errorMargin) {
             MoveDone();

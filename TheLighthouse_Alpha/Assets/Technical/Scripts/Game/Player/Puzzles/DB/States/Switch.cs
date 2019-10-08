@@ -19,7 +19,7 @@ public class Switch : DB_State {
     [Header("Progress Control")]
         [SerializeField] protected float pullSpeed = 0.02f;
         [SerializeField] protected float currentProgress;
-        [SerializeField] protected Image ProgressDisp;
+        [SerializeField] protected Slider ProgressDisp;
 
 
     public override void Initialize(DistributionBoard myManager) {
@@ -31,10 +31,10 @@ public class Switch : DB_State {
         if (isPlacing) {
             controls.PuzzleControls.TertiaryButton.started += ctx => CompleteState ();
         } else {
-            controls.PuzzleControls.RightGrab.started += ctx => isRightGrabDown = true;
+            controls.PuzzleControls.RightGrab.performed += ctx => isRightGrabDown = true;
             controls.PuzzleControls.RightGrab.canceled += ctx => isRightGrabDown = false;
 
-            controls.PuzzleControls.LeftGrab.started += ctx => isLeftGrabDown = true;
+            controls.PuzzleControls.LeftGrab.performed += ctx => isLeftGrabDown = true;
             controls.PuzzleControls.LeftGrab.canceled += ctx => isLeftGrabDown = false;
 
             controls.PuzzleControls.PrimaryAxis.performed += ctx => analogueInput_L = ctx.ReadValue<Vector2>().magnitude;
@@ -53,7 +53,7 @@ public class Switch : DB_State {
         float analogueInput = Mathf.Clamp01((analogueInput_L + analogueInput_R) / 2.0f);
         currentProgress += analogueInput * pullSpeed;
 
-        ProgressDisp.fillAmount = currentProgress;
+        ProgressDisp.value = currentProgress;
 
         if (currentProgress >= 1f) {
             CompleteState();

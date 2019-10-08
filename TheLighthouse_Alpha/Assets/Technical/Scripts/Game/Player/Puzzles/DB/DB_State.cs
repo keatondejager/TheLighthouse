@@ -8,7 +8,11 @@ public abstract class DB_State : MonoBehaviour
     protected Player.PlayerManager manager;
     protected DistributionBoard puzzleManager;
 
-    protected bool hasRequirement;
+    [Header("Requirements")]
+        [SerializeField] protected bool hasRequirement;
+        [SerializeField] protected Item requiredItem;
+        public int NarrativeCueIndex;
+
     protected PlayerInputActions controls;
 
     public virtual void Initialize(DistributionBoard myManager) {
@@ -25,24 +29,24 @@ public abstract class DB_State : MonoBehaviour
     }
 
     public virtual void ControlsSetUp() {
-        controls.PuzzleControls.PrimaryButton.performed += ctx => Debug.Log("X");
+        controls.PuzzleControls.PrimaryButton.performed += ctx => Debug.Log("x");
     }
 
     public virtual bool CheckRequirement () {
         if (hasRequirement) {
-            //Check if the player has the required thing
-            return false; // or false
+            return Player.PlayerReference.instance.PlayerInventory.Contains(requiredItem);
+        } else {
+            return true;
         }
-
-        return true;
     }
 
-    private void OnEnable() {
+    protected virtual void OnEnable() {
+        
         controls.PuzzleControls.Enable();    
         EnableState();
     }
 
-    private void OnDisable() {
+    protected virtual void OnDisable() {
         controls.PuzzleControls.Disable();
         DisableState();
     }
