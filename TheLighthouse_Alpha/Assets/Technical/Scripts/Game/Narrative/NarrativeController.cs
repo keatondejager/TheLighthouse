@@ -34,7 +34,7 @@ public class NarrativeController : MonoBehaviour
         if (!Story[cueIndex].Repeatable) {
             cuesTriggered.Add(cueIndex); 
         }
-        
+
         subtitleSource.text = Story[cueIndex].subtitle;
         if (Story[cueIndex].voiceLine != null) {
             toPlay = Story[cueIndex].voiceLine; 
@@ -43,7 +43,7 @@ public class NarrativeController : MonoBehaviour
         if (Story[cueIndex].duration > 0) {
             subtitleClearDelay = Story[cueIndex].duration;
         } else {
-            subtitleClearDelay = Story[cueIndex].voiceLine != null ? Story[cueIndex].voiceLine.length + 1f : Story[cueIndex].subtitle.Length / 15f;
+            subtitleClearDelay = Story[cueIndex].voiceLine != null ? Story[cueIndex].voiceLine.length + 1f : Story[cueIndex].subtitle.Length / 8f;
         }
         
     }

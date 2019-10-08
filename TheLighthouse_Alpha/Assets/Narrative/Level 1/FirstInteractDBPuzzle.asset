@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: FirstInteractDBPuzzle
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 8300000, guid: bda1a9256a33ca846b541100935a26e8, type: 3}
   subtitle: Oh crap, it looks like the switch is fucked. I'm going to need a new one,
     and some wires. They should be around here somewhere.
   duration: 0

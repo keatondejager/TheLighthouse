@@ -16,6 +16,7 @@ public class DistributionBoard : MonoBehaviour
         [SerializeField] protected int NarrativeCueIndex;
         [SerializeField] protected GameObject CheckList;
         [SerializeField] protected float checklistDelay = 2f;
+        [SerializeField] protected float impatientTime = 5f;
 
     [Header("UI Reference")]
         [SerializeField] protected GameObject UIObject;
@@ -23,6 +24,8 @@ public class DistributionBoard : MonoBehaviour
         [SerializeField] protected Transform ReferencePoint;
         private Vector3 originalPosition;
         private Quaternion originalRotation;
+
+        private float doSecondLineDelay = -1f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,10 +46,12 @@ public class DistributionBoard : MonoBehaviour
             if (allStates[Standby.GetState()].CheckRequirement()){
                 activeState = allStates[Standby.GetState()];
             } else {
-                if (hasInteracted)
+                if (hasInteracted) {
                     NarrativeController.instance.TriggerNarrative( allStates[Standby.GetState()].RepeatableNarrativeCueIndex );
-                else 
+                } else {
                     NarrativeController.instance.TriggerNarrative(NarrativeCueIndex);
+                    doSecondLineDelay = Time.time + checklistDelay + impatientTime;
+                }
             }
         }
         
@@ -56,10 +61,9 @@ public class DistributionBoard : MonoBehaviour
         }
         hasInteracted = true;
         
-        
+        isEnabled = true;
         if  (activeState) {
             activeState.gameObject.SetActive(true);
-            isEnabled = true;
         } 
     }
 
@@ -90,6 +94,15 @@ public class DistributionBoard : MonoBehaviour
             return;
         }
 
+        if (doSecondLineDelay != -1) {
+            if (!isEnabled) {
+                doSecondLineDelay = -1f;
+            } else if (doSecondLineDelay < Time.time) {
+                NarrativeController.instance.TriggerNarrative( allStates[Standby.GetState()].RepeatableNarrativeCueIndex );
+                doSecondLineDelay = -1;
+            }
+        }
+
         if (activeState) {
             activeState.Step();
         }
@@ -114,6 +127,7 @@ public class DistributionBoard : MonoBehaviour
             
         } else { 
             Standby.ActualState = -1;
+            CheckList.SetActive(false);
         }
     }
 
