@@ -12,6 +12,11 @@ public class DistributionBoard : MonoBehaviour
 
         [SerializeField] protected EmptyState Standby;
 
+        [SerializeField] protected bool hasInteracted;
+        [SerializeField] protected int NarrativeCueIndex;
+        [SerializeField] protected GameObject CheckList;
+        [SerializeField] protected float checklistDelay = 2f;
+
     [Header("UI Reference")]
         [SerializeField] protected GameObject UIObject;
         [SerializeField] protected Transform PuzzleObjects;
@@ -38,14 +43,28 @@ public class DistributionBoard : MonoBehaviour
             if (allStates[Standby.GetState()].CheckRequirement()){
                 activeState = allStates[Standby.GetState()];
             } else {
-               NarrativeController.instance.TriggerNarrative( allStates[Standby.GetState()].NarrativeCueIndex );
+                if (hasInteracted)
+                    NarrativeController.instance.TriggerNarrative( allStates[Standby.GetState()].RepeatableNarrativeCueIndex );
+                else 
+                    NarrativeController.instance.TriggerNarrative(NarrativeCueIndex);
             }
         }
+        
 
+        if (!hasInteracted) {
+            Invoke("TurnOnCheckList", checklistDelay);
+        }
+        hasInteracted = true;
+        
+        
         if  (activeState) {
             activeState.gameObject.SetActive(true);
             isEnabled = true;
         } 
+    }
+
+    private void TurnOnCheckList() {
+        CheckList.SetActive(hasInteracted);
     }
 
     public void ClosePuzzle() {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.03445826, g: 0.04494476, b: 0.100284085, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6279,14 +6279,8 @@ PrefabInstance:
     - target: {fileID: 7630245129060390919, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: Story.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 7630245129060390919, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
-        type: 3}
-      propertyPath: Story.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 85edd081e2e3fcc4eba3afe11bd8fb06,
-        type: 2}
     - target: {fileID: 7630245130588895561, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -7736,18 +7730,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271173059}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1274693789 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8035418922481317104, guid: 9a4605fe21ba3b14f935afccab3ceb66,
-    type: 3}
-  m_PrefabInstance: {fileID: 9058661340275975708}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 630b619925a060d428fca5c7ee88083a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1278393309
 GameObject:
   m_ObjectHideFlags: 0
@@ -14340,6 +14322,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2528079427536260778, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5463669397853414188, guid: 9a4605fe21ba3b14f935afccab3ceb66,
         type: 3}
       propertyPath: m_Name
@@ -14502,11 +14489,6 @@ PrefabInstance:
       propertyPath: ReferencePoint
       value: 
       objectReference: {fileID: 1035347056}
-    - target: {fileID: 9058661338827096128, guid: 9a4605fe21ba3b14f935afccab3ceb66,
-        type: 3}
-      propertyPath: Standby
-      value: 
-      objectReference: {fileID: 1274693789}
     - target: {fileID: 9058661338163267143, guid: 9a4605fe21ba3b14f935afccab3ceb66,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14592,6 +14574,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -200
       objectReference: {fileID: 0}
+    - target: {fileID: 9058661338324733091, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 9058661338405020146, guid: 9a4605fe21ba3b14f935afccab3ceb66,
         type: 3}
       propertyPath: m_IsActive
@@ -14648,6 +14635,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2,
         type: 2}
+    - target: {fileID: 9058661339819179880, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: NarrativeCueIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058661339819179880, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: FirstInteractNarrative
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058661339819179880, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: RepeatableNarrativeCueIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9058661340028218549, guid: 9a4605fe21ba3b14f935afccab3ceb66,
         type: 3}
       propertyPath: hasRequirement
@@ -14659,6 +14661,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2,
         type: 2}
+    - target: {fileID: 9058661340028218549, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: NarrativeCueIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058661340028218549, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: FirstInteractNarrative
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058661340028218549, guid: 9a4605fe21ba3b14f935afccab3ceb66,
+        type: 3}
+      propertyPath: RepeatableNarrativeCueIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9058661338987243929, guid: 9a4605fe21ba3b14f935afccab3ceb66,
         type: 3}
       propertyPath: m_Sprite

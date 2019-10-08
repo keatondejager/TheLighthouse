@@ -11,7 +11,7 @@ public abstract class DB_State : MonoBehaviour
     [Header("Requirements")]
         [SerializeField] protected bool hasRequirement;
         [SerializeField] protected Item requiredItem;
-        public int NarrativeCueIndex;
+        public int RepeatableNarrativeCueIndex;
 
     protected PlayerInputActions controls;
 

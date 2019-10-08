@@ -31,8 +31,10 @@ public class NarrativeController : MonoBehaviour
         if (cuesTriggered.Contains(cueIndex)) {
             return;
         }
-
-        cuesTriggered.Add(cueIndex);
+        if (!Story[cueIndex].Repeatable) {
+            cuesTriggered.Add(cueIndex); 
+        }
+        
         subtitleSource.text = Story[cueIndex].subtitle;
         if (Story[cueIndex].voiceLine != null) {
             toPlay = Story[cueIndex].voiceLine; 
