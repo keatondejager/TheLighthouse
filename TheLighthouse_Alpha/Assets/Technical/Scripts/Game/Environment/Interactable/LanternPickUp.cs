@@ -10,9 +10,8 @@ namespace Environment
         [Header("Lantern Specific")]
             [SerializeField] protected GameObject LanternObject;
 
-        protected override void OnTriggerEnter(Collider other) {
+        public override void OnTriggerEnter(Collider other) {
             base.OnTriggerEnter(other);
-
         }
     }
 

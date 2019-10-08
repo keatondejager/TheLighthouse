@@ -898,17 +898,6 @@ public class PlayerInputActions : IInputActionCollection
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1926ea5d-a7c8-45dc-8062-04767d52551f"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Close"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""32337777-07f0-4ce3-a948-3330649b4307"",
                     ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",

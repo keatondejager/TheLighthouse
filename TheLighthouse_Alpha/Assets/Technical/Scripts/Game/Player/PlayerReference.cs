@@ -36,6 +36,8 @@ namespace Player
             public SearchableObjectData objectInventory;
 
             public DB_Puzzle dB_Puzzle;
+
+            public DistributionBoard distributionPuzzle;
             public CombinationLock combinationLock;
 
             public TMP_Text interactableTitle;

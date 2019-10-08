@@ -24,7 +24,6 @@ public class Screws : DB_State
         [SerializeField] protected int numberRotations = 1;
         private int currentRotationCount = 0;
 
-
     public override void Initialize (DistributionBoard myManager) {
         base.Initialize(myManager);
         currentProgress = 0;   

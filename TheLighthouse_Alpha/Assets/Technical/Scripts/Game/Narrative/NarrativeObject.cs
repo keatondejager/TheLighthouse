@@ -8,5 +8,5 @@ public class NarrativeObject : ScriptableObject
     public AudioClip voiceLine;
     public string subtitle;
     public float duration;
-    public bool cutscene;
+    public bool Repeatable;
 }

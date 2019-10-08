@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Panel : DB_State {
@@ -23,6 +24,7 @@ public class Panel : DB_State {
         [SerializeField] protected float errorMargin = 0.2f;
         [SerializeField] protected Vector3 startPosition;
         [SerializeField] protected Vector3 endPosition;
+        [SerializeField] protected Slider ProgressDisplay;
 
     public override void Initialize(DistributionBoard myManager) {
         base.Initialize(myManager);
@@ -42,7 +44,7 @@ public class Panel : DB_State {
         controls.PuzzleControls.LeftGrab.started += ctx => isGrabButtonDown = true; // Holding L2
         controls.PuzzleControls.LeftGrab.canceled += ctx => isGrabButtonDown = false; // Not Holding L2
 
-        controls.PuzzleControls.PrimaryAxis.performed += ctx => analogueInput = ctx.ReadValue<Vector2>().x;
+        controls.PuzzleControls.PrimaryAxis.performed += ctx => analogueInput = -ctx.ReadValue<Vector2>().x;
         controls.PuzzleControls.PrimaryAxis.canceled += ctx => analogueInput = 0;
     }
 
@@ -52,16 +54,17 @@ public class Panel : DB_State {
         }
 
         if(isOpening) {
-            analogueInput = Mathf.Clamp(analogueInput, -1, 0);
-        } else {
             analogueInput = Mathf.Clamp(analogueInput, 0, 1);
+        } else {
+            analogueInput = Mathf.Clamp(analogueInput, -1, 0);
         }
 
         panelOffset += (analogueInput * movementScale);
 
         
-        PanelObject.localPosition = startPosition + (panelOffset * offsetDistance * Vector3.right);
+        PanelObject.localPosition = startPosition + (panelOffset * Mathf.Abs(offsetDistance) * Vector3.right);
        
+        ProgressDisplay.value = Mathf.Abs(panelOffset);
 
         if ( Vector3.Distance(PanelObject.localPosition , endPosition) < errorMargin) {
             MoveDone();
