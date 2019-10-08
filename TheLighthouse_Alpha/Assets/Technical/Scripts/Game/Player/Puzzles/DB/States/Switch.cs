@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Switch : DB_State {
     
@@ -18,7 +19,7 @@ public class Switch : DB_State {
     [Header("Progress Control")]
         [SerializeField] protected float pullSpeed = 0.02f;
         [SerializeField] protected float currentProgress;
-
+        [SerializeField] protected Image ProgressDisp;
 
 
     public override void Initialize(DistributionBoard myManager) {
@@ -51,6 +52,8 @@ public class Switch : DB_State {
 
         float analogueInput = Mathf.Clamp01((analogueInput_L + analogueInput_R) / 2.0f);
         currentProgress += analogueInput * pullSpeed;
+
+        ProgressDisp.fillAmount = currentProgress;
 
         if (currentProgress >= 1f) {
             CompleteState();

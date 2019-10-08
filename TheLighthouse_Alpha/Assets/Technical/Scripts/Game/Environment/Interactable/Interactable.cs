@@ -40,7 +40,7 @@ namespace Environment {
             
         }
 
-        protected virtual void OnTriggerEnter (Collider other) {
+        public virtual void OnTriggerEnter (Collider other) {
             if (other.CompareTag("Player")) {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 
@@ -51,7 +51,7 @@ namespace Environment {
             }
         }
 
-        protected virtual void OnTriggerExit(Collider other) {
+        public virtual void OnTriggerExit(Collider other) {
             if (other.CompareTag("Player")) {
                 if (!player) { 
                     player = PlayerReference.instance.manager; 

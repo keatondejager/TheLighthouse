@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Wires : DB_State
@@ -18,6 +19,8 @@ public class Wires : DB_State
         [SerializeField] protected float finalPoint;
         [SerializeField] protected float currentProgress;
         [SerializeField] protected float ErrorMargin = 0.2f;
+        [SerializeField] protected Image ProgressDisp;
+
     public override void Initialize(DistributionBoard myManager) {
         base.Initialize(myManager);
         
@@ -51,6 +54,8 @@ public class Wires : DB_State
         }
 
         currentProgress += analogueInput * pullSpeed;
+
+        ProgressDisp.fillAmount = currentProgress / finalPoint;
 
         if (Mathf.Abs(currentProgress - finalPoint) < ErrorMargin) {
             PullComplete();

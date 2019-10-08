@@ -8,14 +8,14 @@ namespace Environment {
         [Header("Search Specific")]
             [SerializeField] protected SearchableObjectData ObjectInventory;
 
-        protected override void OnTriggerEnter(Collider other) {
+        public override void OnTriggerEnter(Collider other) {
             if (ObjectInventory.inventory.Count > 0) {
                 base.OnTriggerEnter(other);
                 PlayerReference.instance.objectInventory = ObjectInventory;
             }
         }
 
-        protected override void OnTriggerExit(Collider other) {
+        public override void OnTriggerExit(Collider other) {
             base.OnTriggerExit(other);
             PlayerReference.instance.objectInventory = null;
         }

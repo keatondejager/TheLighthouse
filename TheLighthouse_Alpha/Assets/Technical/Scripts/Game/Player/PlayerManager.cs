@@ -93,12 +93,12 @@ namespace Player
                if (OnInteractEnter == null) {
                    return;
                }
-
+                
                OnInteractEnter();
 
                if (PlayerReference.instance.objectInventory) {
                     SetState(_interactState);
-               } else if (PlayerReference.instance.dB_Puzzle) { 
+               } else if (PlayerReference.instance.distributionPuzzle) { 
                    SetState(_puzzleState);
                } 
            }
