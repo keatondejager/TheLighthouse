@@ -56,10 +56,10 @@ namespace Player
             _rigidbody = PlayerReference.instance.rigidbody;
             _animator = PlayerReference.instance.animator;
 
-            controls.Movement.Examine.started += ctx => ExamineClick();
-            controls.Movement.Interact.started += ctx => InteractClick();
-            controls.Movement.Inventory.started += ctx => InventoryClick();
-            controls.Movement.Menu.started += ctx => MenuClick();
+            controls.Movement.Examine.performed += ctx => ExamineClick();
+            controls.Movement.Interact.performed += ctx => InteractClick();
+            controls.Movement.Inventory.performed += ctx => InventoryClick();
+            controls.Movement.Menu.performed += ctx => Pause();
 
             controls.Movement.Walk.performed += ctx => direction = ctx.ReadValue<Vector2>();
             controls.Movement.Walk.canceled += ctx => direction = Vector2.zero;

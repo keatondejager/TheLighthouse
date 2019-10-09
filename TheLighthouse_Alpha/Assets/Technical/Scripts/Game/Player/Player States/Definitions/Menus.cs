@@ -18,11 +18,13 @@ namespace Player {
 
         public override void EnableState() {
             controls.Menus.Enable();
+            
             MenuObject.SetActive(true);
         }
 
         public override void DisableState() {
             controls.Menus.Disable();
+            
             MenuObject.SetActive(false);
         }
 

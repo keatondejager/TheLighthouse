@@ -55,7 +55,7 @@ namespace Player
         }
 
         public void UniversalExit () {
-            SetState(_moveState);
+            //SetState(_moveState);
         }
 
         public void SetState (States newState) {
