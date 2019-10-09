@@ -5,18 +5,30 @@ using UnityEngine;
 public class DistributionBoard : MonoBehaviour
 {
     [Header("State Control")]
+        [SerializeField] Player.Puzzle playerState;
+
         [SerializeField] protected DB_State activeState;
         [SerializeField] protected List<DB_State> allStates;
         [SerializeField] protected int stateIndex;
         [SerializeField] protected bool isEnabled;
 
+        [Space]
         [SerializeField] protected EmptyState Standby;
 
+        [Space]
         [SerializeField] protected bool hasInteracted;
         [SerializeField] protected int NarrativeCueIndex;
         [SerializeField] protected GameObject CheckList;
         [SerializeField] protected float checklistDelay = 2f;
         [SerializeField] protected float impatientTime = 5f;
+
+        [Space]
+        [SerializeField] protected LightManager puzzleResult;
+        
+        [Space]
+        [SerializeField] protected Panel panelObj;
+        [SerializeField] protected GameObject ScrewObject1;
+        [SerializeField] protected GameObject ScrewObject2;
 
     [Header("UI Reference")]
         [SerializeField] protected GameObject UIObject;
@@ -127,8 +139,23 @@ public class DistributionBoard : MonoBehaviour
             
         } else { 
             Standby.ActualState = -1;
+            CompletePuzzle();
             CheckList.SetActive(false);
         }
+    }
+
+    private void CompletePuzzle () {
+        if (puzzleResult)
+                puzzleResult.TurnLightsOn();
+
+        panelObj.gameObject.SetActive(true);
+        panelObj.CloseBox();
+        panelObj.gameObject.SetActive(false);
+
+        ScrewObject1.SetActive(true);
+        ScrewObject2.SetActive(false);
+
+        playerState.ExitState();
     }
 
 
