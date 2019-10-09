@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/New Levels Layouts for Beta/Level1_NewLayout.unity
     guid: 609e631becbf51c43a1e9b5c703a839c
   - enabled: 1
+    path: Assets/Scenes/New Levels Layouts for Beta/Level2_NewLayout.unity
+    guid: a805f251014b4164f99516765a6b4ffb
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 48e23eab9f8327347a47012c80e7e113
+  - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 938dfebe03d363143b43f2b14bdae1e5
   m_configObjects: {}

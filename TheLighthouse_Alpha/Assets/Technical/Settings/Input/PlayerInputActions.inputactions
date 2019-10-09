@@ -550,17 +550,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "79c5186d-8d12-4909-8da7-45779bddf3d9",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Exit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6b23e34a-34a5-4e2c-b4ef-ae226ec78466",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",

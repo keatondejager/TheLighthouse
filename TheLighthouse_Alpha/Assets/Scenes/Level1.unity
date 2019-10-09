@@ -8105,7 +8105,17 @@ PrefabInstance:
         type: 3}
       propertyPath: dB_Puzzle
       value: 
-      objectReference: {fileID: 81218083}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245130048369010, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245130603021149, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7630245128576846353, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_IsActive
@@ -8573,6 +8583,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1009173788107313039, guid: 81d4cdf0ceb2aff44a36be7a326646dd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5621926721907486645, guid: 81d4cdf0ceb2aff44a36be7a326646dd,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -8607,11 +8622,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1009173788107313039, guid: 81d4cdf0ceb2aff44a36be7a326646dd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4cdf0ceb2aff44a36be7a326646dd, type: 3}
