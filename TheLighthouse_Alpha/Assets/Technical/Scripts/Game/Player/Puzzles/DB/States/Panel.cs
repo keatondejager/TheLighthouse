@@ -75,6 +75,8 @@ public class Panel : DB_State {
         puzzleManager.StateComplete();
     }
 
-
+    public void CloseBox () {
+        PanelObject.localPosition = onPosition;
+    }
 
 }
