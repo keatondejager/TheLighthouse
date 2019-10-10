@@ -5,7 +5,7 @@ using UnityEngine;
 public class DistributionBoard : MonoBehaviour
 {
     [Header("State Control")]
-        [SerializeField] Player.Puzzle playerState;
+        [SerializeField] protected Player.Puzzle playerState;
 
         [SerializeField] protected DB_State activeState;
         [SerializeField] protected List<DB_State> allStates;

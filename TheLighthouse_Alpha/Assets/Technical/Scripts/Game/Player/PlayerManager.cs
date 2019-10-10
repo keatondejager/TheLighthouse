@@ -24,7 +24,7 @@ namespace Player
             [Header("Input Control")]
                 private PlayerInputActions controls;
             [Header("Lantern")]
-                [SerializeField] public GameObject lanternObject;
+                public GameObject lanternObject;
 
                 
         

@@ -18,7 +18,7 @@ namespace Environment {
             public ExamineObjectData TargetObject;
             public GameObject ExamineHighlightEffect;
 
-            private bool hasBeenExamined = false;
+            //private bool hasBeenExamined = false;
 
         [Header("Narrative and Events")]
             public bool isNarrativeTrigger;
@@ -57,7 +57,7 @@ namespace Environment {
         }
 
         public virtual void Examine() {
-            hasBeenExamined = true;
+            //hasBeenExamined = true;
             if (ExamineHighlightEffect) {
                 ExamineHighlightEffect.SetActive(false);
             }

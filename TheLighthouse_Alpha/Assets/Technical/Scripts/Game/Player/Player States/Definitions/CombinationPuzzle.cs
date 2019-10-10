@@ -5,7 +5,7 @@ namespace Player {
     [CreateAssetMenu(fileName = "Combination Puzzle State", menuName = "Player State/Combo Puzzle")]
     public class CombinationPuzzle : States {
         
-        private CombinationLock puzzle;
+        protected CombinationLock puzzle;
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
 
