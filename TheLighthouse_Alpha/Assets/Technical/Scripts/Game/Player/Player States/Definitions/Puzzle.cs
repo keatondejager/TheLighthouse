@@ -30,7 +30,9 @@ namespace Player
 
         public override void DisableState() {
             controls.PuzzleControls.Disable();
-            dbPuzzleObject.ClosePuzzle();
+            if (dbPuzzleObject)
+                dbPuzzleObject.ClosePuzzle();
+            if (comboPuzzleObject)
             comboPuzzleObject.ClosePuzzleUI();
         }
     }
