@@ -368,6 +368,8 @@ MonoBehaviour:
   examineObject: {fileID: 0}
   ExamineRefPoint: {fileID: 0}
   menuObject: {fileID: 0}
+  MainMenuObj: {fileID: 0}
+  OptionsMenuObj: {fileID: 0}
   searchingUI: {fileID: 0}
   objectInventory: {fileID: 0}
   dB_Puzzle: {fileID: 0}
@@ -399,10 +401,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.5
+  m_Radius: 0.6314869
+  m_Height: 3.350245
   m_Direction: 1
-  m_Center: {x: 0, y: 1.2, z: 0.1}
+  m_Center: {x: 0.011923249, y: 1.6251224, z: 0.09999998}
 --- !u!1 &5587801067526053728
 GameObject:
   m_ObjectHideFlags: 0
