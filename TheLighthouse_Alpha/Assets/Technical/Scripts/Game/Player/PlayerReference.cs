@@ -31,6 +31,8 @@ namespace Player
             public Transform ExamineRefPoint;
         [Header("Menus")]
             public GameObject menuObject;
+            public GameObject MainMenuObj;
+            public GameObject OptionsMenuObj;
         [Header("Interactions")]
             public GameObject searchingUI;
             public SearchableObjectData objectInventory;

@@ -8,6 +8,11 @@ namespace Environment {
         [Header("Search Specific")]
             [SerializeField] protected SearchableObjectData ObjectInventory;
 
+        protected override void Start () {
+            base.Start();
+            ObjectInventory.ResetInventory();
+        }
+
         public override void OnTriggerEnter(Collider other) {
             if (ObjectInventory.inventory.Count > 0) {
                 base.OnTriggerEnter(other);
@@ -24,5 +29,7 @@ namespace Environment {
             PlayerReference.instance.objectInventory = ObjectInventory;
             base.Interact();
         }
+
+
     }
 }

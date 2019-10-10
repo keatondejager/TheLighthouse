@@ -85,6 +85,7 @@ namespace Player
             if (obstructed) {
                 if (Vector3.Angle(PlayerObject.transform.forward, motion) < maxCollisionAngle && motion.sqrMagnitude > 0) {
                     isWalking = false;
+                    motion = Vector3.zero;
                     return;
                 }
             }
@@ -136,6 +137,7 @@ namespace Player
         public override void DisableState() {
             controls.Movement.Disable();
             direction = Vector2.zero;
+            rotation = Vector2.zero;
             isWalking = false;
         }
 

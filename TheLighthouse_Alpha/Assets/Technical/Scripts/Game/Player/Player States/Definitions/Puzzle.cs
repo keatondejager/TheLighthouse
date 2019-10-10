@@ -24,7 +24,7 @@ namespace Player
         }
 
         public override void DisableState() {
-            controls.PuzzleControls.Enable();
+            controls.PuzzleControls.Disable();
             puzzleObject.ClosePuzzle();
         }
     }
