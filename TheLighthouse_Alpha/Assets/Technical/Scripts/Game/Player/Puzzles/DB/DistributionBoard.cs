@@ -155,6 +155,8 @@ public class DistributionBoard : MonoBehaviour
         ScrewObject1.SetActive(true);
         ScrewObject2.SetActive(false);
 
+        Player.PlayerReference.instance.puzzleOneComplete = true;
+
         playerState.ExitState();
     }
 

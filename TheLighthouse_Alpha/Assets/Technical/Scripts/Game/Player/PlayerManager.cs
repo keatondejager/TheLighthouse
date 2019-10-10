@@ -115,9 +115,13 @@ namespace Player
 
                if (PlayerReference.instance.objectInventory) {
                     SetState(_interactState);
-               } else if (PlayerReference.instance.distributionPuzzle) { 
+               } else if (!PlayerReference.instance.puzzleOneComplete && PlayerReference.instance.distributionPuzzle) { 
                    SetState(_puzzleState);
-               } 
+               } else if (PlayerReference.instance.puzzleOneComplete && !PlayerReference.instance.puzzleTwoComplete) {
+                    if (PlayerReference.instance.combinationLock != null) {
+                        SetState(_puzzleState);
+                    }
+               }    
            }
 
         #endregion

@@ -1217,6 +1217,17 @@ public class PlayerInputActions : IInputActionCollection
                 },
                 {
                     ""name"": """",
+                    ""id"": ""adceb1f2-74ca-44c7-8186-71a2ad8f9555"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightToggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""180419d2-7ad6-4ed3-abee-fc3c26842f4f"",
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
@@ -1230,6 +1241,17 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""a1a6891b-9e1e-4708-a1bf-7a4c53d62e06"",
                     ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftToggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8368a373-975d-4897-ac31-009f37e62f46"",
+                    ""path"": ""<Gamepad>/dpad/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

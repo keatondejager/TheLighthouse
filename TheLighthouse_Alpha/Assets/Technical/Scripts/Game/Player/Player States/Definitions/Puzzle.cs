@@ -8,24 +8,30 @@ namespace Player
     {
 
         [Header("Puzzle Object")]
-            [SerializeField] protected DistributionBoard puzzleObject;
+            [SerializeField] protected DistributionBoard dbPuzzleObject;
+            [SerializeField] protected DoorLock comboPuzzleObject;
 
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
             controls.PuzzleControls.Close.started += ctx => ExitState();
-
-            puzzleObject = PlayerReference.instance.distributionPuzzle;
         }
 
 
         public override void EnableState() {
-            puzzleObject.OpenPuzzle();
+            if (!PlayerReference.instance.puzzleOneComplete) {
+                dbPuzzleObject = PlayerReference.instance.distributionPuzzle;
+                dbPuzzleObject.OpenPuzzle();
+            } else if (!PlayerReference.instance.puzzleTwoComplete) {
+                comboPuzzleObject = PlayerReference.instance.combinationLock;
+                comboPuzzleObject.OpenPuzzleUI();
+            }
             controls.PuzzleControls.Enable();
         }
 
         public override void DisableState() {
             controls.PuzzleControls.Disable();
-            puzzleObject.ClosePuzzle();
+            dbPuzzleObject.ClosePuzzle();
+            comboPuzzleObject.ClosePuzzleUI();
         }
     }
         

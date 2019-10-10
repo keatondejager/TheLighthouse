@@ -62,7 +62,7 @@ namespace Environment {
                 ExamineHighlightEffect.SetActive(false);
             }
             PlayerReference.instance.examineObject = TargetObject;
-            player.OnExamineEnter -= Examine;
+    
             if (isNarrativeTrigger && OnNarrativeTrigger != null) {
                 OnNarrativeTrigger();
             }

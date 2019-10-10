@@ -20,7 +20,7 @@ namespace Player {
             if (PlayerReference.instance.combinationLock == null) {
                 ExitState();
             }
-            puzzle = PlayerReference.instance.combinationLock;
+            //puzzle = PlayerReference.instance.combinationLock;
             puzzle.callbackManager = this;
             puzzle.OpenPuzzle();
             controls.PuzzleControls.Enable();

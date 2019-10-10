@@ -22,8 +22,6 @@ public class CombinationLock : MonoBehaviour
         private PlayerInputActions controls;
 
     private void Start() {
-        PlayerReference.instance.combinationLock = this;
-
         controls = new PlayerInputActions();
 
         controls.PuzzleControls.PrimaryButton.performed += ctx => CheckSolution();

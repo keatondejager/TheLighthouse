@@ -40,7 +40,7 @@ namespace Player
             public DB_Puzzle dB_Puzzle;
 
             public DistributionBoard distributionPuzzle;
-            public CombinationLock combinationLock;
+            public DoorLock combinationLock;
 
             public TMP_Text interactableTitle;
 
@@ -50,6 +50,7 @@ namespace Player
 
         [Header("Puzzle Cheats")]
             public GameObject CheatButtons;
+
         [Header("Puzzle Reference")]
             public TMP_Text instructions;
 
