@@ -36,7 +36,6 @@ namespace Player {
 
         public override void DisableState() {
             controls.Menus.Disable();
-            
             MenuObject.SetActive(false);
         }
 

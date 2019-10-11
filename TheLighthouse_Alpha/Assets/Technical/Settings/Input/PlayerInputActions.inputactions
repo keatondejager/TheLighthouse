@@ -222,6 +222,17 @@
                 },
                 {
                     "name": "",
+                    "id": "6ee62315-4901-4d76-8840-e7d9267eb1ae",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "81e426f5-87c1-4cd1-a6e9-cc5e11136880",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",

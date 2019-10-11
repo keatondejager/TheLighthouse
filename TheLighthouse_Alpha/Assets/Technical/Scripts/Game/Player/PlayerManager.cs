@@ -72,7 +72,9 @@ namespace Player
         }
 
         public void UniversalExit () {
-            SetState(_moveState);
+            if (state != _menuState) {
+                SetState(_moveState);
+            }
         }
 
         public void SetState (States newState) {

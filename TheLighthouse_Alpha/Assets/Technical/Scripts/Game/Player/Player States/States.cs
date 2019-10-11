@@ -37,7 +37,7 @@ namespace Player
         if (!PlayerObject) {
             PlayerObject = FindObjectOfType<PlayerManager>();
         }
-
+        
         PlayerObject.SetState(_menuState);
     }
 

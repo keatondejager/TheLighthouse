@@ -59,7 +59,7 @@ namespace Player
             controls.Movement.Examine.performed += ctx => ExamineClick();
             controls.Movement.Interact.performed += ctx => InteractClick();
             controls.Movement.Inventory.performed += ctx => InventoryClick();
-            controls.Movement.Menu.performed += ctx => Pause();
+            controls.Movement.Menu.performed += ctx => MenuClick();
 
             controls.Movement.Walk.performed += ctx => direction = ctx.ReadValue<Vector2>();
             controls.Movement.Walk.canceled += ctx => direction = Vector2.zero;
