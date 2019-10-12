@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Player;
+using UnityEngine.InputSystem;
 
 public class DoorLock : MonoBehaviour
 {
@@ -33,6 +34,13 @@ public class DoorLock : MonoBehaviour
         [SerializeField] protected int IndexMultiplier;
         [SerializeField] protected int Index = 0;
 
+    [Header("Feedback")]
+        [Range(0.1f, 1f)] [SerializeField] protected float vibrateInterval = 0.2f;
+        [Range(0.1f, 1f)] [SerializeField] protected float vibrateDuration = 0.2f;
+        [SerializeField] protected int vibrationIterations = 2;
+        [Range(0, 1)] [SerializeField] protected float lowFreqIntensity= 0.3f;
+        [Range(0, 1)] [SerializeField] protected float highFreqIntensity= 0.3f;
+
 
 
     private void Start() {
@@ -51,14 +59,15 @@ public class DoorLock : MonoBehaviour
             normalFontSize = digitDisplay[0].fontSize;
         }
 
-        controls.PuzzleControls.PrimaryButton.performed += ctx => CheckCombination();
-        controls.PuzzleControls.Close.performed += ctx => ExitButtonPressed ();
+        controls.PuzzleControls.PrimaryButton.performed += ctx => CheckCombination(ctx.control.path);
 
         controls.PuzzleControls.RightToggle.started += ctx => CursorRight();
         controls.PuzzleControls.LeftToggle.started += ctx => CursorLeft();
 
         controls.PuzzleControls.DigitDown.started += ctx => DigitDown();
         controls.PuzzleControls.DigitUp.started += ctx => DigitUp();
+
+        MoveIndicator();
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -150,7 +159,7 @@ public class DoorLock : MonoBehaviour
         controls.PuzzleControls.Disable();
     }
 
-    private void CheckCombination () {
+    private void CheckCombination (string contextPath) {
         bool result = true;
         int count = 0;
         foreach (int digit in SolutionAttempt)
@@ -163,8 +172,16 @@ public class DoorLock : MonoBehaviour
             isLocked = false;
             SetFunction();
             ExitButtonPressed();
-        } 
+        } else {   
+            if (contextPath.Contains("DualShock4")) { // Only vibrate if PS4 controller
+                StartCoroutine(WrongAnswer());
+            } else {
+                Debug.Log (contextPath);
+            }
+        }
     }
+
+    
 
     private void DigitDown () {
         SolutionAttempt[Index]--;
@@ -212,6 +229,16 @@ public class DoorLock : MonoBehaviour
     }
 
     private void ExitButtonPressed() {
-        PlayerReference.instance.manager.UniversalExit();
+        
+    }
+
+    IEnumerator WrongAnswer () {
+        for (int i = 0; i < vibrationIterations; i++) {
+            Gamepad.current.SetMotorSpeeds(lowFreqIntensity, highFreqIntensity);
+            yield return new WaitForSeconds(vibrateDuration);
+            Gamepad.current.SetMotorSpeeds(0, 0);
+            yield return new WaitForSeconds(vibrateInterval);
+        }
+         
     }
 }

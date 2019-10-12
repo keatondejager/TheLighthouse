@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class Panel : DB_State {
@@ -58,7 +59,7 @@ public class Panel : DB_State {
         } else {
             analogueInput = Mathf.Clamp(analogueInput, -1, 0);
         }
-
+        
         panelOffset += (analogueInput * movementScale);
 
         

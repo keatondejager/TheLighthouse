@@ -1,0 +1,1831 @@
+fileFormatVersion: 2
+guid: cecc7f5b2842ec44f9ffa1694af858a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6658410343462888693
+    second: analogue_stick_spritesheet_1024x_0
+  - first:
+      213: -6933434945902577969
+    second: analogue_stick_spritesheet_1024x_1
+  - first:
+      213: -734159814136221820
+    second: analogue_stick_spritesheet_1024x_2
+  - first:
+      213: -2586751500937498918
+    second: analogue_stick_spritesheet_1024x_3
+  - first:
+      213: -8621032797573933017
+    second: analogue_stick_spritesheet_1024x_4
+  - first:
+      213: -1569133880993925104
+    second: analogue_stick_spritesheet_1024x_5
+  - first:
+      213: 4678819559188977835
+    second: analogue_stick_spritesheet_1024x_6
+  - first:
+      213: -6269122889695601628
+    second: analogue_stick_spritesheet_1024x_7
+  - first:
+      213: -350365051838223604
+    second: analogue_stick_spritesheet_1024x_8
+  - first:
+      213: 7370693786865919731
+    second: analogue_stick_spritesheet_1024x_9
+  - first:
+      213: 6713393262260127080
+    second: analogue_stick_spritesheet_1024x_10
+  - first:
+      213: -1822272929436759817
+    second: analogue_stick_spritesheet_1024x_11
+  - first:
+      213: 4841559264287549379
+    second: analogue_stick_spritesheet_1024x_12
+  - first:
+      213: -8302682629375980120
+    second: analogue_stick_spritesheet_1024x_13
+  - first:
+      213: -7935971718121525030
+    second: analogue_stick_spritesheet_1024x_14
+  - first:
+      213: 586958642086182903
+    second: analogue_stick_spritesheet_1024x_15
+  - first:
+      213: 3585938460701808518
+    second: analogue_stick_spritesheet_1024x_16
+  - first:
+      213: -254039702941233464
+    second: analogue_stick_spritesheet_1024x_17
+  - first:
+      213: -8616386567301686933
+    second: analogue_stick_spritesheet_1024x_18
+  - first:
+      213: 8630652206636269841
+    second: analogue_stick_spritesheet_1024x_19
+  - first:
+      213: 4576372155048857850
+    second: analogue_stick_spritesheet_1024x_20
+  - first:
+      213: -2235350459154817095
+    second: analogue_stick_spritesheet_1024x_21
+  - first:
+      213: 1210967331268538526
+    second: analogue_stick_spritesheet_1024x_22
+  - first:
+      213: 3739868116985421652
+    second: analogue_stick_spritesheet_1024x_23
+  - first:
+      213: 526167947512966413
+    second: analogue_stick_spritesheet_1024x_24
+  - first:
+      213: 6189142313486627654
+    second: analogue_stick_spritesheet_1024x_25
+  - first:
+      213: 581628401161893546
+    second: analogue_stick_spritesheet_1024x_26
+  - first:
+      213: 3323764281632388198
+    second: analogue_stick_spritesheet_1024x_27
+  - first:
+      213: 7112664310626083270
+    second: analogue_stick_spritesheet_1024x_28
+  - first:
+      213: 2145991189496486454
+    second: analogue_stick_spritesheet_1024x_29
+  - first:
+      213: 3287698561040204083
+    second: analogue_stick_spritesheet_1024x_30
+  - first:
+      213: 1280386967771522722
+    second: analogue_stick_spritesheet_1024x_31
+  - first:
+      213: 2593903404153825521
+    second: analogue_stick_spritesheet_1024x_32
+  - first:
+      213: 4272946280316006184
+    second: analogue_stick_spritesheet_1024x_33
+  - first:
+      213: -9086738017414368906
+    second: analogue_stick_spritesheet_1024x_34
+  - first:
+      213: 8057003227949234553
+    second: analogue_stick_spritesheet_1024x_35
+  - first:
+      213: -5114462024289631990
+    second: analogue_stick_spritesheet_1024x_36
+  - first:
+      213: 7198877701070695988
+    second: analogue_stick_spritesheet_1024x_37
+  - first:
+      213: 7202479276684397747
+    second: analogue_stick_spritesheet_1024x_38
+  - first:
+      213: 5172758338220705217
+    second: analogue_stick_spritesheet_1024x_39
+  - first:
+      213: -2924801591426007968
+    second: analogue_stick_spritesheet_1024x_40
+  - first:
+      213: -5891998223003633168
+    second: analogue_stick_spritesheet_1024x_41
+  - first:
+      213: 6808093929430843005
+    second: analogue_stick_spritesheet_1024x_42
+  - first:
+      213: -317361156802297970
+    second: analogue_stick_spritesheet_1024x_43
+  - first:
+      213: 1083700832727135986
+    second: analogue_stick_spritesheet_1024x_44
+  - first:
+      213: 2123393526929739467
+    second: analogue_stick_spritesheet_1024x_45
+  - first:
+      213: -3014636541317776058
+    second: analogue_stick_spritesheet_1024x_46
+  - first:
+      213: -462456363045238849
+    second: analogue_stick_spritesheet_1024x_47
+  - first:
+      213: 8048523483736015907
+    second: analogue_stick_spritesheet_1024x_48
+  - first:
+      213: -9002346137792074193
+    second: analogue_stick_spritesheet_1024x_49
+  - first:
+      213: 2158950922015121977
+    second: analogue_stick_spritesheet_1024x_50
+  - first:
+      213: 6460864252528156308
+    second: analogue_stick_spritesheet_1024x_51
+  - first:
+      213: 9030150972569958964
+    second: analogue_stick_spritesheet_1024x_52
+  - first:
+      213: -4214216932605975529
+    second: analogue_stick_spritesheet_1024x_53
+  - first:
+      213: 811669478385160986
+    second: analogue_stick_spritesheet_1024x_54
+  - first:
+      213: 9213808573238628227
+    second: analogue_stick_spritesheet_1024x_55
+  - first:
+      213: 6491628845346165941
+    second: analogue_stick_spritesheet_1024x_56
+  - first:
+      213: 3692318701389736746
+    second: analogue_stick_spritesheet_1024x_57
+  - first:
+      213: -4124594694309144053
+    second: analogue_stick_spritesheet_1024x_58
+  - first:
+      213: 3080403732345459503
+    second: analogue_stick_spritesheet_1024x_59
+  - first:
+      213: 8172141767045137098
+    second: analogue_stick_spritesheet_1024x_60
+  - first:
+      213: -4610895355981947605
+    second: analogue_stick_spritesheet_1024x_61
+  - first:
+      213: 6856538834377644769
+    second: analogue_stick_spritesheet_1024x_62
+  - first:
+      213: -4104333084925672323
+    second: analogue_stick_spritesheet_1024x_63
+  - first:
+      213: 1289144319460440698
+    second: analogue_stick_spritesheet_1024x_64
+  - first:
+      213: 8272029017290683211
+    second: analogue_stick_spritesheet_1024x_65
+  - first:
+      213: 5989427274504527052
+    second: analogue_stick_spritesheet_1024x_66
+  - first:
+      213: -7245164963413439062
+    second: analogue_stick_spritesheet_1024x_67
+  - first:
+      213: 4234417122211019646
+    second: analogue_stick_spritesheet_1024x_68
+  - first:
+      213: 104993013438911168
+    second: analogue_stick_spritesheet_1024x_69
+  - first:
+      213: 632159201727774633
+    second: analogue_stick_spritesheet_1024x_70
+  - first:
+      213: 2130906248723805617
+    second: analogue_stick_spritesheet_1024x_71
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_0
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 7312
+        width: 477
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2576233ec9034794889becb12ca892f6
+      internalID: -6658410343462888693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_1
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 7341
+        width: 481
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f7b9319b477104b8d10fc5b4d1b869
+      internalID: -6933434945902577969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_2
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 7375
+        width: 480
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4728dba4a5df1dd4eae32edd0279aff2
+      internalID: -734159814136221820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_3
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 7411
+        width: 477
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5e8865c5879844f9a87fa597176055
+      internalID: -2586751500937498918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_4
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 7438
+        width: 481
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87080ee95db0efd4b84c41770292cbbf
+      internalID: -8621032797573933017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_5
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 7438
+        width: 477
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1908605f416040a4fb77112e3ecb4005
+      internalID: -1569133880993925104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_6
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 7438
+        width: 477
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d833b6769d069a4c8f2a40f6f767a51
+      internalID: 4678819559188977835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_7
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 7438
+        width: 477
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6d9d6559bdd5c4ca269490af1b8838
+      internalID: -6269122889695601628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_8
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 7438
+        width: 477
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512e129b49b2391488e3239221eb5ca5
+      internalID: -350365051838223604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_9
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 6416
+        width: 477
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f210371ec696b8478d0de831df56d04
+      internalID: 7370693786865919731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_10
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 6416
+        width: 481
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c9033fd345b094f881f085d50dbd16
+      internalID: 6713393262260127080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_11
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 6416
+        width: 611
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154de45b06391e0478334d023e581a06
+      internalID: -1822272929436759817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_12
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 6416
+        width: 567
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ae1dcdf341fdc4b80379ce957fbea7
+      internalID: 4841559264287549379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_13
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 6416
+        width: 535
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ac3f2b779de1b488c01af592282a11
+      internalID: -8302682629375980120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_14
+      rect:
+        serializedVersion: 2
+        x: 5362
+        y: 6416
+        width: 504
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461afc954772b1f47a7a14218e1b4d4c
+      internalID: -7935971718121525030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_15
+      rect:
+        serializedVersion: 2
+        x: 6410
+        y: 6416
+        width: 482
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d840b86a556c24d4c8719cb16936806d
+      internalID: 586958642086182903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_16
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 6416
+        width: 477
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f767edacd501e747ae660fdeefd7933
+      internalID: 3585938460701808518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_17
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 6416
+        width: 477
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26902415df8a634eadf3001e16c176a
+      internalID: -254039702941233464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_18
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 5390
+        width: 508
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0ce759a07eb234ab1b6655c39fe575
+      internalID: -8616386567301686933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_19
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 5390
+        width: 539
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97684756494656e4aa3ca5c35a270880
+      internalID: 8630652206636269841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_20
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 5390
+        width: 571
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6d537110c9d5b48818f386443df2ff
+      internalID: 4576372155048857850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_21
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 5390
+        width: 612
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b7b04195394944ebf3654dc55ace85
+      internalID: -2235350459154817095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_22
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 5390
+        width: 594
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72869836f8f7d054a8fcbedd592436b8
+      internalID: 1210967331268538526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_23
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 5390
+        width: 553
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83b3b0e7086107439201e9c0fe2e4f7
+      internalID: 3739868116985421652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_24
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 5390
+        width: 486
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601d90ddbbe4dec4dbf961de401236f3
+      internalID: 526167947512966413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_25
+      rect:
+        serializedVersion: 2
+        x: 7427
+        y: 5390
+        width: 486
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ae407c4df7b05429b17a29f4fb8e81
+      internalID: 6189142313486627654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_26
+      rect:
+        serializedVersion: 2
+        x: 8390
+        y: 5390
+        width: 549
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388adc63acf8b6e4892d90e2f4717df3
+      internalID: 581628401161893546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_27
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 4368
+        width: 590
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab435abb4b6ff24f877c40b340ff323
+      internalID: 3323764281632388198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_28
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 4368
+        width: 608
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cd012eba97ac1459a51b062f28c07e
+      internalID: 7112664310626083270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_29
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 4323
+        width: 593
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee9ded08ec85274b88805b3dbdb7455
+      internalID: 2145991189496486454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_30
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 4269
+        width: 549
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261a50449f6f9fa409084c6448946a40
+      internalID: 3287698561040204083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_31
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 4238
+        width: 490
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950c563f1038c874c8dffd7a92fa70ad
+      internalID: 1280386967771522722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_32
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 4238
+        width: 490
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c360d4bbe716e147afd79ed40b41bc1
+      internalID: 2593903404153825521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_33
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 4269
+        width: 549
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44270feaf99727a429cad72f96981a24
+      internalID: 4272946280316006184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_34
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 4323
+        width: 594
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05759b9429cae7644a440d7e554da9ad
+      internalID: -9086738017414368906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_35
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 4368
+        width: 608
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a7997bcb7ef424a9844948e480ce4c
+      internalID: 8057003227949234553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_36
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3342
+        width: 608
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f352fd4ab2193bf4fbc0ac20e392158d
+      internalID: -5114462024289631990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_37
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 3342
+        width: 572
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223bc7455fe76d14a89fc625a37fba4e
+      internalID: 7198877701070695988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_38
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 3342
+        width: 539
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0242d363e16dd742aa8d7e0940dfe43
+      internalID: 7202479276684397747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_39
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 3342
+        width: 504
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18620590b7091ab4e89a6c5a29ef235b
+      internalID: 5172758338220705217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_40
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 3342
+        width: 481
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1728edd0f677b024bb2fc57afa954254
+      internalID: -2924801591426007968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_41
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 3342
+        width: 477
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bba7338f5700b44383aa1a2a85acc0e
+      internalID: -5891998223003633168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_42
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 3342
+        width: 477
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5684f3996f15c014fb134d3778e95a27
+      internalID: 6808093929430843005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_43
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 3342
+        width: 509
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f3924e831428a469e06e72d788ba09
+      internalID: -317361156802297970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_44
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 3342
+        width: 536
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477f4717bd83a7a40a506b303a36c66d
+      internalID: 1083700832727135986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_45
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2320
+        width: 571
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7adcac77a6b6d843b5d91246fc1fa81
+      internalID: 2123393526929739467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_46
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 2320
+        width: 611
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9322b2a03b3ee409c54a52db539a20
+      internalID: -3014636541317776058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_47
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 2190
+        width: 481
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41b683f02d6cec4e8694197c7827257
+      internalID: -462456363045238849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_48
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 2226
+        width: 477
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bb630ce1991ae458635651fbb98f84
+      internalID: 8048523483736015907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_49
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 2257
+        width: 481
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30d79ef57308de4faeddcd9377835af
+      internalID: -9002346137792074193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_50
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 2289
+        width: 477
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557c349e33fab7148b3049847fb449f2
+      internalID: 2158950922015121977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_51
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 2316
+        width: 477
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5e46a1e339b884fa6b316f1ea0ab8f
+      internalID: 6460864252528156308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_52
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 2320
+        width: 477
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a475122b9cf62a4590eb9c7178e76c4
+      internalID: 9030150972569958964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_53
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 2320
+        width: 477
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00625982d198e134199e5726cb4ebb8f
+      internalID: -4214216932605975529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_54
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1294
+        width: 477
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeade2e017abab74bab30cc5b222a83b
+      internalID: 811669478385160986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_55
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1294
+        width: 481
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df34b3b8f72828499609d5d24fecf33
+      internalID: 9213808573238628227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_56
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 1294
+        width: 480
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c6a915ba8cabd44b59a4d47a340c37
+      internalID: 6491628845346165941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_57
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 1295
+        width: 477
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede8cbaf697f8d147ae58c8f42aadf79
+      internalID: 3692318701389736746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_58
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 1294
+        width: 490
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0844143a2d520fc41a34e75dc890b3d5
+      internalID: -4124594694309144053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_59
+      rect:
+        serializedVersion: 2
+        x: 5389
+        y: 1294
+        width: 549
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b32b63d78a9a6542a5b479719a3747f
+      internalID: 3080403732345459503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_60
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 1294
+        width: 594
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeff4ab862529b14a87000d4d5d9d298
+      internalID: 8172141767045137098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_61
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 1294
+        width: 608
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407c7049bf34b464f8dc949f8c5b620a
+      internalID: -4610895355981947605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_62
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 1254
+        width: 594
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06e3a086c16c1f4984099b304ba99e2
+      internalID: 6856538834377644769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_63
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 173
+        width: 553
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01085ae36833d64c9b4bee248b52b95
+      internalID: -4104333084925672323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_64
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 146
+        width: 494
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94be7089ebec968469690e95e2253801
+      internalID: 1289144319460440698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_65
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 146
+        width: 490
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42017555ccf02d14f9e2726923164c9f
+      internalID: 8272029017290683211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_66
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 173
+        width: 549
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec59e78bdb938c4aaab08383cc8cfa6
+      internalID: 5989427274504527052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_67
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 227
+        width: 594
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c92bf3b7a684a4d87a74a993747ff6
+      internalID: -7245164963413439062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_68
+      rect:
+        serializedVersion: 2
+        x: 5258
+        y: 272
+        width: 608
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c18b0363f5ed7e45bca62d4236af5c0
+      internalID: 4234417122211019646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_69
+      rect:
+        serializedVersion: 2
+        x: 6298
+        y: 272
+        width: 594
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cb4a192ae3a44409e4f9435ee158a8
+      internalID: 104993013438911168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_70
+      rect:
+        serializedVersion: 2
+        x: 7364
+        y: 272
+        width: 549
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87dc9babdfa51c4f98a2982e10f8671
+      internalID: 632159201727774633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: analogue_stick_spritesheet_1024x_71
+      rect:
+        serializedVersion: 2
+        x: 8449
+        y: 272
+        width: 490
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb241e1352805b458c4d055ca33a8a8
+      internalID: 2130906248723805617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8c0b0dc105131c64582efd8732f18a93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

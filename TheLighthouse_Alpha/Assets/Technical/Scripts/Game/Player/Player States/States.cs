@@ -55,6 +55,10 @@ namespace Player
         PlayerObject.SetState(PreviousState);
     }
 
+    public virtual void ExitState(float time) {
+        
+    }
+
 }
 }
 

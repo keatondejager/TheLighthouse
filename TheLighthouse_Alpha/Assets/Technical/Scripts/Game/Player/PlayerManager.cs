@@ -71,12 +71,6 @@ namespace Player
             }
         }
 
-        public void UniversalExit () {
-            if (state != _menuState) {
-                SetState(_moveState);
-            }
-        }
-
         public void SetState (States newState) {
             States previousState = _moveState;
 
@@ -88,6 +82,10 @@ namespace Player
             state = newState;
             state.PreviousState = previousState;
             state.EnableState();
+        }
+
+        public void PuzzleExit () {
+        
         }
 
         #region Interactions and Examine Events

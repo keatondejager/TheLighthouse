@@ -62,7 +62,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""type"": ""Button"",
                     ""id"": ""1bb32f04-4b36-4656-8085-86daf6ed6f29"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """"
                 }
             ],
@@ -72,7 +72,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""id"": ""7b5c1060-716a-4ec9-974f-45db3f276629"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""groups"": """",
                     ""action"": ""Walk"",
                     ""isComposite"": true,
@@ -336,7 +336,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""type"": ""Button"",
                     ""id"": ""c8b7a0b9-5b42-429a-991a-dceeb2de9d0a"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """"
                 },
                 {
@@ -344,7 +344,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""type"": ""Button"",
                     ""id"": ""37911edc-dab9-4915-8db3-fefe1b3c2359"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """"
                 },
                 {
@@ -835,7 +835,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""type"": ""Button"",
                     ""id"": ""24e97c30-dba1-446d-87b3-230e1fe59200"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """"
                 },
                 {
@@ -843,7 +843,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""type"": ""Button"",
                     ""id"": ""f2abc25e-71cd-4b14-9f54-2c76e4c745d5"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """"
                 },
                 {

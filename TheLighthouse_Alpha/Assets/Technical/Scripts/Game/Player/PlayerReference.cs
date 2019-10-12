@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using Environment;
 using TMPro;
 
+using UnityEngine.InputSystem;
+using System.Collections;
+
 namespace Player
 {
     [RequireComponent(typeof(Rigidbody))]
@@ -72,6 +75,40 @@ namespace Player
             rigidbody = GetComponent<Rigidbody>();
             manager = GetComponent<PlayerManager>();
         }
+
+
+        int vibrationIterations; float vibrateDuration; float lowFreqIntensity; float highFreqIntensity; float vibrateInterval;
+        bool controllerShaking;
+        public void ShakeController (string path, int count = 2, float length = 0.2f, float interval = 0.2f, float low = 0.3f, float high = 0.4f) {
+            if (controllerShaking) {
+                return;
+            }
+
+            if (!path.Contains("DualShock4")) {
+                return;
+            }
+
+            vibrationIterations = count;
+            vibrateDuration = length;
+            vibrateInterval = interval;
+            lowFreqIntensity = low;
+            highFreqIntensity = high;
+
+            StartCoroutine(ControllerFeedback());
+        }
+        
+        private IEnumerator ControllerFeedback () {
+            controllerShaking = true;
+            for (int i = 0; i < vibrationIterations; i++) {
+                Gamepad.current.SetMotorSpeeds(lowFreqIntensity, highFreqIntensity);
+                yield return new WaitForSeconds(vibrateDuration);
+                Gamepad.current.SetMotorSpeeds(0, 0);
+                yield return new WaitForSeconds(vibrateInterval);
+            }
+            controllerShaking = false;
+        }
     }
+
+    
 }
 

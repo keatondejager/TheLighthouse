@@ -19,8 +19,7 @@ public abstract class DB_State : MonoBehaviour
         manager = Player.PlayerReference.instance.manager;
         puzzleManager = myManager;
         controls = new PlayerInputActions();
-
-        controls.PuzzleControls.Close.performed += ctx => manager.UniversalExit();
+        
         ControlsSetUp();
     }
 

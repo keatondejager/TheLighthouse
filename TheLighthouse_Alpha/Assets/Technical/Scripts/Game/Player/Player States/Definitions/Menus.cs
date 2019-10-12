@@ -40,9 +40,9 @@ namespace Player {
         }
 
         public override void ExitState () {
-            OptionsMenuObject.SetActive(false);
-            MainMenuObject.SetActive(true);
-            PlayerObject.SetState(_moveState);
+                OptionsMenuObject.SetActive(false);
+                MainMenuObject.SetActive(true);
+                PlayerObject.SetState(_moveState);
         }
 
         public void QuitGame () {
