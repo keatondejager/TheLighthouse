@@ -1,0 +1,2071 @@
+fileFormatVersion: 2
+guid: c24416025643a6949b0b1d0f204c443d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6658410343462888693
+    second: analogue_stick_spritesheet_1024x_0
+  - first:
+      213: -6933434945902577969
+    second: analogue_stick_spritesheet_1024x_1
+  - first:
+      213: -734159814136221820
+    second: analogue_stick_spritesheet_1024x_2
+  - first:
+      213: -2586751500937498918
+    second: analogue_stick_spritesheet_1024x_3
+  - first:
+      213: -8621032797573933017
+    second: analogue_stick_spritesheet_1024x_4
+  - first:
+      213: -1569133880993925104
+    second: analogue_stick_spritesheet_1024x_5
+  - first:
+      213: 4678819559188977835
+    second: analogue_stick_spritesheet_1024x_6
+  - first:
+      213: -6269122889695601628
+    second: analogue_stick_spritesheet_1024x_7
+  - first:
+      213: -350365051838223604
+    second: analogue_stick_spritesheet_1024x_8
+  - first:
+      213: 7370693786865919731
+    second: analogue_stick_spritesheet_1024x_9
+  - first:
+      213: 6713393262260127080
+    second: analogue_stick_spritesheet_1024x_10
+  - first:
+      213: -1822272929436759817
+    second: analogue_stick_spritesheet_1024x_11
+  - first:
+      213: 4841559264287549379
+    second: analogue_stick_spritesheet_1024x_12
+  - first:
+      213: -8302682629375980120
+    second: analogue_stick_spritesheet_1024x_13
+  - first:
+      213: -7935971718121525030
+    second: analogue_stick_spritesheet_1024x_14
+  - first:
+      213: 586958642086182903
+    second: analogue_stick_spritesheet_1024x_15
+  - first:
+      213: 3585938460701808518
+    second: analogue_stick_spritesheet_1024x_16
+  - first:
+      213: -254039702941233464
+    second: analogue_stick_spritesheet_1024x_17
+  - first:
+      213: -8616386567301686933
+    second: analogue_stick_spritesheet_1024x_18
+  - first:
+      213: 8630652206636269841
+    second: analogue_stick_spritesheet_1024x_19
+  - first:
+      213: 4576372155048857850
+    second: analogue_stick_spritesheet_1024x_20
+  - first:
+      213: -2235350459154817095
+    second: analogue_stick_spritesheet_1024x_21
+  - first:
+      213: 1210967331268538526
+    second: analogue_stick_spritesheet_1024x_22
+  - first:
+      213: 3739868116985421652
+    second: analogue_stick_spritesheet_1024x_23
+  - first:
+      213: 526167947512966413
+    second: analogue_stick_spritesheet_1024x_24
+  - first:
+      213: 6189142313486627654
+    second: analogue_stick_spritesheet_1024x_25
+  - first:
+      213: 581628401161893546
+    second: analogue_stick_spritesheet_1024x_26
+  - first:
+      213: 3323764281632388198
+    second: analogue_stick_spritesheet_1024x_27
+  - first:
+      213: 7112664310626083270
+    second: analogue_stick_spritesheet_1024x_28
+  - first:
+      213: 2145991189496486454
+    second: analogue_stick_spritesheet_1024x_29
+  - first:
+      213: 3287698561040204083
+    second: analogue_stick_spritesheet_1024x_30
+  - first:
+      213: 1280386967771522722
+    second: analogue_stick_spritesheet_1024x_31
+  - first:
+      213: 2593903404153825521
+    second: analogue_stick_spritesheet_1024x_32
+  - first:
+      213: 4272946280316006184
+    second: analogue_stick_spritesheet_1024x_33
+  - first:
+      213: -9086738017414368906
+    second: analogue_stick_spritesheet_1024x_34
+  - first:
+      213: 8057003227949234553
+    second: analogue_stick_spritesheet_1024x_35
+  - first:
+      213: -5114462024289631990
+    second: analogue_stick_spritesheet_1024x_36
+  - first:
+      213: 7198877701070695988
+    second: analogue_stick_spritesheet_1024x_37
+  - first:
+      213: 7202479276684397747
+    second: analogue_stick_spritesheet_1024x_38
+  - first:
+      213: 5172758338220705217
+    second: analogue_stick_spritesheet_1024x_39
+  - first:
+      213: -2924801591426007968
+    second: analogue_stick_spritesheet_1024x_40
+  - first:
+      213: -5891998223003633168
+    second: analogue_stick_spritesheet_1024x_41
+  - first:
+      213: 6808093929430843005
+    second: analogue_stick_spritesheet_1024x_42
+  - first:
+      213: -317361156802297970
+    second: analogue_stick_spritesheet_1024x_43
+  - first:
+      213: 1083700832727135986
+    second: analogue_stick_spritesheet_1024x_44
+  - first:
+      213: 2123393526929739467
+    second: analogue_stick_spritesheet_1024x_45
+  - first:
+      213: -3014636541317776058
+    second: analogue_stick_spritesheet_1024x_46
+  - first:
+      213: -462456363045238849
+    second: analogue_stick_spritesheet_1024x_47
+  - first:
+      213: 8048523483736015907
+    second: analogue_stick_spritesheet_1024x_48
+  - first:
+      213: -9002346137792074193
+    second: analogue_stick_spritesheet_1024x_49
+  - first:
+      213: 2158950922015121977
+    second: analogue_stick_spritesheet_1024x_50
+  - first:
+      213: 6460864252528156308
+    second: analogue_stick_spritesheet_1024x_51
+  - first:
+      213: 9030150972569958964
+    second: analogue_stick_spritesheet_1024x_52
+  - first:
+      213: -4214216932605975529
+    second: analogue_stick_spritesheet_1024x_53
+  - first:
+      213: 811669478385160986
+    second: analogue_stick_spritesheet_1024x_54
+  - first:
+      213: 9213808573238628227
+    second: analogue_stick_spritesheet_1024x_55
+  - first:
+      213: 6491628845346165941
+    second: analogue_stick_spritesheet_1024x_56
+  - first:
+      213: 3692318701389736746
+    second: analogue_stick_spritesheet_1024x_57
+  - first:
+      213: -4124594694309144053
+    second: analogue_stick_spritesheet_1024x_58
+  - first:
+      213: 3080403732345459503
+    second: analogue_stick_spritesheet_1024x_59
+  - first:
+      213: 8172141767045137098
+    second: analogue_stick_spritesheet_1024x_60
+  - first:
+      213: -4610895355981947605
+    second: analogue_stick_spritesheet_1024x_61
+  - first:
+      213: 6856538834377644769
+    second: analogue_stick_spritesheet_1024x_62
+  - first:
+      213: -4104333084925672323
+    second: analogue_stick_spritesheet_1024x_63
+  - first:
+      213: 1289144319460440698
+    second: analogue_stick_spritesheet_1024x_64
+  - first:
+      213: 8272029017290683211
+    second: analogue_stick_spritesheet_1024x_65
+  - first:
+      213: 5989427274504527052
+    second: analogue_stick_spritesheet_1024x_66
+  - first:
+      213: -7245164963413439062
+    second: analogue_stick_spritesheet_1024x_67
+  - first:
+      213: 4234417122211019646
+    second: analogue_stick_spritesheet_1024x_68
+  - first:
+      213: 104993013438911168
+    second: analogue_stick_spritesheet_1024x_69
+  - first:
+      213: 632159201727774633
+    second: analogue_stick_spritesheet_1024x_70
+  - first:
+      213: 2130906248723805617
+    second: analogue_stick_spritesheet_1024x_71
+  - first:
+      213: -1146707889919580688
+    second: DONEanalogue_stick_spritesheet_1024x_0
+  - first:
+      213: -7712182115957207587
+    second: DONEanalogue_stick_spritesheet_1024x_1
+  - first:
+      213: 2947948519174179628
+    second: DONEanalogue_stick_spritesheet_1024x_2
+  - first:
+      213: 8966784055467331418
+    second: DONEanalogue_stick_spritesheet_1024x_3
+  - first:
+      213: -1552164831379045402
+    second: DONEanalogue_stick_spritesheet_1024x_4
+  - first:
+      213: 5062356500886701296
+    second: DONEanalogue_stick_spritesheet_1024x_5
+  - first:
+      213: -9206614872389881577
+    second: DONEanalogue_stick_spritesheet_1024x_6
+  - first:
+      213: 9202791668457192082
+    second: DONEanalogue_stick_spritesheet_1024x_7
+  - first:
+      213: 9195221339099620280
+    second: DONEanalogue_stick_spritesheet_1024x_8
+  - first:
+      213: 3407688361869132092
+    second: DONEanalogue_stick_spritesheet_1024x_9
+  - first:
+      213: -2760496124396782771
+    second: DONEanalogue_stick_spritesheet_1024x_10
+  - first:
+      213: 3039348798698479052
+    second: DONEanalogue_stick_spritesheet_1024x_11
+  - first:
+      213: -1293535431220216501
+    second: DONEanalogue_stick_spritesheet_1024x_12
+  - first:
+      213: -8956275033736366817
+    second: DONEanalogue_stick_spritesheet_1024x_13
+  - first:
+      213: -7109936861716581714
+    second: DONEanalogue_stick_spritesheet_1024x_14
+  - first:
+      213: 4087401089870533968
+    second: DONEanalogue_stick_spritesheet_1024x_15
+  - first:
+      213: 2377842239465052076
+    second: DONEanalogue_stick_spritesheet_1024x_16
+  - first:
+      213: 2233326254245424507
+    second: DONEanalogue_stick_spritesheet_1024x_17
+  - first:
+      213: -9168638440208665687
+    second: DONEanalogue_stick_spritesheet_1024x_18
+  - first:
+      213: 2187745432610646005
+    second: DONEanalogue_stick_spritesheet_1024x_19
+  - first:
+      213: 2967796626193478023
+    second: DONEanalogue_stick_spritesheet_1024x_20
+  - first:
+      213: 2783340883753256128
+    second: DONEanalogue_stick_spritesheet_1024x_21
+  - first:
+      213: -7071512342803562537
+    second: DONEanalogue_stick_spritesheet_1024x_22
+  - first:
+      213: 3821335549639928596
+    second: DONEanalogue_stick_spritesheet_1024x_23
+  - first:
+      213: 4623422438289265899
+    second: DONEanalogue_stick_spritesheet_1024x_24
+  - first:
+      213: -8766626579798440113
+    second: DONEanalogue_stick_spritesheet_1024x_25
+  - first:
+      213: 2899588432693493702
+    second: DONEanalogue_stick_spritesheet_1024x_26
+  - first:
+      213: 9056843646068017710
+    second: DONEanalogue_stick_spritesheet_1024x_27
+  - first:
+      213: -4707290643615129355
+    second: DONEanalogue_stick_spritesheet_1024x_28
+  - first:
+      213: 7458619700629754803
+    second: DONEanalogue_stick_spritesheet_1024x_29
+  - first:
+      213: -5389971404580424275
+    second: DONEanalogue_stick_spritesheet_1024x_30
+  - first:
+      213: 2555453241349978754
+    second: DONEanalogue_stick_spritesheet_1024x_31
+  - first:
+      213: -8355338605040657786
+    second: DONEanalogue_stick_spritesheet_1024x_32
+  - first:
+      213: -5940356566044167217
+    second: DONEanalogue_stick_spritesheet_1024x_33
+  - first:
+      213: -79654772567221517
+    second: DONEanalogue_stick_spritesheet_1024x_34
+  - first:
+      213: -6209501492631585080
+    second: DONEanalogue_stick_spritesheet_1024x_35
+  - first:
+      213: -6553657716699138545
+    second: DONEanalogue_stick_spritesheet_1024x_36
+  - first:
+      213: -3096496300064997931
+    second: DONEanalogue_stick_spritesheet_1024x_37
+  - first:
+      213: 8759245753484914096
+    second: DONEanalogue_stick_spritesheet_1024x_38
+  - first:
+      213: 4742825947384562346
+    second: DONEanalogue_stick_spritesheet_1024x_39
+  - first:
+      213: -2810203350732139981
+    second: DONEanalogue_stick_spritesheet_1024x_40
+  - first:
+      213: 834619048246625159
+    second: DONEanalogue_stick_spritesheet_1024x_41
+  - first:
+      213: -8951693505203332156
+    second: DONEanalogue_stick_spritesheet_1024x_42
+  - first:
+      213: -5035111146192008816
+    second: DONEanalogue_stick_spritesheet_1024x_43
+  - first:
+      213: -6612486915446617469
+    second: DONEanalogue_stick_spritesheet_1024x_44
+  - first:
+      213: -8861806244369013250
+    second: DONEanalogue_stick_spritesheet_1024x_45
+  - first:
+      213: 3048286382037516870
+    second: DONEanalogue_stick_spritesheet_1024x_46
+  - first:
+      213: -457775088783849827
+    second: DONEanalogue_stick_spritesheet_1024x_47
+  - first:
+      213: -4788591028206178721
+    second: DONEanalogue_stick_spritesheet_1024x_48
+  - first:
+      213: -5005268344994854452
+    second: DONEanalogue_stick_spritesheet_1024x_49
+  - first:
+      213: 4205936378194638282
+    second: DONEanalogue_stick_spritesheet_1024x_50
+  - first:
+      213: 6975233566438663265
+    second: DONEanalogue_stick_spritesheet_1024x_51
+  - first:
+      213: 1011233575894068668
+    second: DONEanalogue_stick_spritesheet_1024x_52
+  - first:
+      213: 6470234589598163301
+    second: DONEanalogue_stick_spritesheet_1024x_53
+  - first:
+      213: -4981240156788340904
+    second: DONEanalogue_stick_spritesheet_1024x_54
+  - first:
+      213: 6248011334968700420
+    second: DONEanalogue_stick_spritesheet_1024x_55
+  - first:
+      213: 2996063358327431085
+    second: DONEanalogue_stick_spritesheet_1024x_56
+  - first:
+      213: -1468438310895321753
+    second: DONEanalogue_stick_spritesheet_1024x_57
+  - first:
+      213: 1951075458111213068
+    second: DONEanalogue_stick_spritesheet_1024x_58
+  - first:
+      213: -8874898504478240170
+    second: DONEanalogue_stick_spritesheet_1024x_59
+  - first:
+      213: -6443511843669266709
+    second: DONEanalogue_stick_spritesheet_1024x_60
+  - first:
+      213: 3332826907760447497
+    second: DONEanalogue_stick_spritesheet_1024x_61
+  - first:
+      213: 656064422463886231
+    second: DONEanalogue_stick_spritesheet_1024x_62
+  - first:
+      213: -4815070683315143400
+    second: DONEanalogue_stick_spritesheet_1024x_63
+  - first:
+      213: -2811315205977991966
+    second: DONEanalogue_stick_spritesheet_1024x_64
+  - first:
+      213: 1739825100477851169
+    second: DONEanalogue_stick_spritesheet_1024x_65
+  - first:
+      213: -3383273874572933038
+    second: DONEanalogue_stick_spritesheet_1024x_66
+  - first:
+      213: 3577067694095136148
+    second: DONEanalogue_stick_spritesheet_1024x_67
+  - first:
+      213: 6023172183792973
+    second: DONEanalogue_stick_spritesheet_1024x_68
+  - first:
+      213: 1572099134898004061
+    second: DONEanalogue_stick_spritesheet_1024x_69
+  - first:
+      213: -3477594507077412855
+    second: DONEanalogue_stick_spritesheet_1024x_70
+  - first:
+      213: -4442497537054663080
+    second: DONEanalogue_stick_spritesheet_1024x_71
+  - first:
+      213: -8895390448947917348
+    second: DONEanalogue_stick_spritesheet_1024x_72
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b251ded9bc33d4a95ea8c84396d8dc
+      internalID: -1146707889919580688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c4c5e1dc53c574bafe809fb749b8fa
+      internalID: -7712182115957207587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3f96ce5bd4cd64ea229df5ff492ff5
+      internalID: 2947948519174179628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6977a63ecb963f549bbd3ae9cc491200
+      internalID: 8966784055467331418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f5f0420fa9c9e4ba8370796b1533d3
+      internalID: -1552164831379045402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_5
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb35e41534c387b4a84e4e05a91fc58f
+      internalID: 5062356500886701296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_6
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61d205a08ce1340b28caf3e431e02e
+      internalID: -9206614872389881577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_7
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355c5a6873672f94580904bae29908f0
+      internalID: 9202791668457192082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_8
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 7168
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a386d69f5c57304293e6e8d3e666eaa
+      internalID: 9195221339099620280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448809c3ac6f9664489adcd3de0ba47e
+      internalID: 3407688361869132092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2a70d354d344d4caf5d9ee8e08cc45
+      internalID: -2760496124396782771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_11
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f902e0eab0d00a44b722bbb0bcf9491
+      internalID: 3039348798698479052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5463cfef28841354a9cdfbbc22107b0f
+      internalID: -1293535431220216501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_13
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6839858ec5f5aab4ea6953a6624148f0
+      internalID: -8956275033736366817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_14
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61330fcf275414448eb30861dfec2d7
+      internalID: -7109936861716581714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_15
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f27419886bbf849b844baa57305bdd
+      internalID: 4087401089870533968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_16
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f3bbb09b8f7794ca071f3a954b31a7
+      internalID: 2377842239465052076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_17
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 6144
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d84bbac7ed68404b9d9efb0adc7a00c
+      internalID: 2233326254245424507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb5cb40adaeb83499ff46720c6d57eb
+      internalID: -9168638440208665687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75fad3ac5ffaf646828e8b41cb76d14
+      internalID: 2187745432610646005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_20
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc32f43f84cdfd45b5b3a1204a8294a
+      internalID: 2967796626193478023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_21
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1debe054cbf66d4f877f2415d135b64
+      internalID: 2783340883753256128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_22
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615585997d976d4b98c9d7a5ca417ae
+      internalID: -7071512342803562537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_23
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873a30ffe7408ee49a46b2ad256dff0f
+      internalID: 3821335549639928596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_24
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff450d786b512540867798960f03a88
+      internalID: 4623422438289265899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_25
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb57829b50917814b970896b36ab5951
+      internalID: -8766626579798440113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_26
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b2d975e98df5d47b1f707e548b3c95
+      internalID: 2899588432693493702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b437549efab6b4c9b7e7a94b8c931f
+      internalID: 9056843646068017710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57aa8c920363d954ca5481dbc8914a31
+      internalID: -4707290643615129355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_29
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e70d6c8e03ee6144b2462f71003acb9
+      internalID: 7458619700629754803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_30
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c847c445247f44ab2df181ff64e190
+      internalID: -5389971404580424275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_31
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74c12bd2e27eef4dbe21d40cd443083
+      internalID: 2555453241349978754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_32
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4241648863e2d94ba796d1176de3cca
+      internalID: -8355338605040657786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_33
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a33bc52dd1652844959b57ed6fab7c8
+      internalID: -5940356566044167217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_34
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61b1759ac0561445b60b94e1065bf60
+      internalID: -79654772567221517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_35
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa671b76711e3fd44a3b09f46ab945e8
+      internalID: -6209501492631585080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e579620f4331ad4985e2a4836d0b905
+      internalID: -6553657716699138545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0481b4b23c1b0104c9060559dc1434a7
+      internalID: -3096496300064997931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_38
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c90a5df5151b1e4791821765083e15f
+      internalID: 8759245753484914096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_39
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15910e994fb5d26439ade73a6298e235
+      internalID: 4742825947384562346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_40
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f06616ccd367944797e2d7a44884f3f
+      internalID: -2810203350732139981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_41
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babfd94d4cadb1743be8246a10a4d8f1
+      internalID: 834619048246625159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_42
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abb32ed0c679dc489b0d84ad5cb048e
+      internalID: -8951693505203332156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_43
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064c1a76894f8734ea23166ffbc4900d
+      internalID: -5035111146192008816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_44
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b698b67a1af0f65489327b45d7d6ef89
+      internalID: -6612486915446617469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b95482617ab1c44ab5d4c8d7c6b9b8
+      internalID: -8861806244369013250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_46
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66619da4ab0bb7458067d3d49ec5aa8
+      internalID: 3048286382037516870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_47
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9469d442de3b71248aaf4370d974eed4
+      internalID: -457775088783849827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_48
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbbb25c5f216bf4dbab00f697888159
+      internalID: -4788591028206178721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_49
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41563d343dcbb04fafabb8a83a62473
+      internalID: -5005268344994854452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_50
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d723b1516fd20408b39298c9bc6793
+      internalID: 4205936378194638282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_51
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2999d2c8f79dc4f419d05154986bf194
+      internalID: 6975233566438663265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_52
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d232e5a9025a24e9e8139f5993ce3c
+      internalID: 1011233575894068668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_53
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cfc0bd11a014842bf954cf66f94e98
+      internalID: 6470234589598163301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f137b98f37ec543bf42ec5605d5f15
+      internalID: -4981240156788340904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_55
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb553bd4d20b6f4f9d12fddde31edd7
+      internalID: 6248011334968700420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_56
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bbe6574fb3d6a4787263fa22f9e382
+      internalID: 2996063358327431085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_57
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3922f40ff3829a4993505585af604e4
+      internalID: -1468438310895321753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_58
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ee7e10cc5b0c44aa3817e0401f907
+      internalID: 1951075458111213068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_59
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d0173ce882334794c3bcf8653fb81
+      internalID: -8874898504478240170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_60
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2e7ba14b27d194cbe47e9a831fa112
+      internalID: -6443511843669266709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_61
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63c810b855871748923fcdb5cf31407
+      internalID: 3332826907760447497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_62
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c1a5807d0d88498f4bdd7767137ea
+      internalID: 656064422463886231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aa98331cb731f4d982932d6809288b
+      internalID: -4815070683315143400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_64
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53707a51e3557ac4c97b5e26915a977c
+      internalID: -2811315205977991966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_65
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6c8ff64ad582445a6432f93d6b6b14
+      internalID: 1739825100477851169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_66
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c05a6879782f9a44973faa1d87bbd95
+      internalID: -3383273874572933038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_67
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8d360ae4e742940aa63dd8686358c5
+      internalID: 3577067694095136148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_68
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc2ca1123668414fa7042072b2ced48
+      internalID: 6023172183792973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_69
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43330b7964d308b4ab56a21a6d0706d9
+      internalID: 1572099134898004061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_70
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37388b39249e8bc4697ded22cbe75912
+      internalID: -3477594507077412855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_71
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9194b249da6924799df0e587d0a62e
+      internalID: -4442497537054663080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DONEanalogue_stick_spritesheet_1024x_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9216
+        height: 8192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ecd4082502c6d40b7d204bb0e47365
+      internalID: -8895390448947917348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8c0b0dc105131c64582efd8732f18a93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
