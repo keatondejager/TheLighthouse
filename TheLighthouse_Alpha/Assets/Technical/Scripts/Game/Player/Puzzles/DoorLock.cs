@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Player;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class DoorLock : MonoBehaviour
 {
@@ -130,7 +131,7 @@ public class DoorLock : MonoBehaviour
 
     private void OpenDoor () {  
         // Play end of game cutscene
-        
+        SceneManager.LoadScene(2);
     }
 
     private void OnDisable() {
@@ -178,7 +179,6 @@ public class DoorLock : MonoBehaviour
             ExitButtonPressed();
         } else {   
             if (contextPath.Contains("DualShock4")) { // Only vibrate if PS4 controller
-                
                 StartCoroutine(WrongAnswer());
             } 
         }
@@ -232,7 +232,7 @@ public class DoorLock : MonoBehaviour
     }
 
     private void ExitButtonPressed() {
-        
+        PlayerReference.instance.manager.PuzzleExit();
     }
 
     IEnumerator WrongAnswer () {
