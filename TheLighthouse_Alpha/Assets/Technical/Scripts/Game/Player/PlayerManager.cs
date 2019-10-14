@@ -26,6 +26,9 @@ namespace Player
             [Header("Lantern")]
                 public GameObject lanternObject;
 
+            [Header("Valve Puzzle UI")]
+                public GameObject PuzzleUI;
+
                 
         
         #endregion
@@ -82,10 +85,19 @@ namespace Player
             state = newState;
             state.PreviousState = previousState;
             state.EnableState();
+
+            if (state != _puzzleState) {
+                PuzzleUI.SetActive(false);
+            }
         }
 
         public void PuzzleExit () {
         
+        }
+
+        public void PuzzleEnter () {
+            SetState(_puzzleState);
+            PuzzleUI.SetActive(true);
         }
 
         #region Interactions and Examine Events
@@ -121,7 +133,7 @@ namespace Player
                     if (PlayerReference.instance.combinationLock != null) {
                         SetState(_puzzleState);
                     }
-               }    
+               }
            }
 
         #endregion

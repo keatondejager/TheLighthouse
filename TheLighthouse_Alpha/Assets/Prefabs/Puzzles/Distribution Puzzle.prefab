@@ -6610,8 +6610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPrompt: {fileID: 9058661338676260838}
-  hasRequirement: 0
-  requiredItem: {fileID: 0}
+  hasRequirement: 1
+  requiredItem: {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
   RepeatableNarrativeCueIndex: 0
   isPlacing: 1
   SwitchObject: {fileID: 2314102201381289573}
@@ -6640,7 +6640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9058661338987243928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6911,8 +6911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPrompt: {fileID: 9058661340175657223}
-  hasRequirement: 0
-  requiredItem: {fileID: 0}
+  hasRequirement: 1
+  requiredItem: {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
   RepeatableNarrativeCueIndex: 0
   isPlacing: 1
   SwitchObject: {fileID: 4213863082824034940}
@@ -7568,8 +7568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPrompt: {fileID: 9058661338405020146}
-  hasRequirement: 0
-  requiredItem: {fileID: 0}
+  hasRequirement: 1
+  requiredItem: {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
   RepeatableNarrativeCueIndex: 0
   isPlacing: 1
   SwitchObject: {fileID: 666557720107727060}
@@ -7640,14 +7640,14 @@ MonoBehaviour:
   - {x: -1, y: -1}
   - {x: -1, y: 0}
   - {x: -1, y: 1}
-  errorMargin: 0.4
+  errorMargin: 0.25
   direction: 1
   y_direction: 0
   x_direction: 0
   accuracyIndex: 0
   currentProgress: 0
   updateRate: 0.2
-  rotationSpeed: 0.2
+  rotationSpeed: 0.4
   numberRotations: 1
   delayedAngle: 0
   input_value: 0

@@ -55,13 +55,15 @@ public class DistributionBoard : MonoBehaviour
         PuzzleObjects.rotation = ReferencePoint.rotation;
         
         if (activeState == Standby && Standby.GetState() >= 0) {
+            if (!hasInteracted) {
+                NarrativeController.instance.TriggerNarrative(NarrativeCueIndex);
+            }
             if (allStates[Standby.GetState()].CheckRequirement()){
                 activeState = allStates[Standby.GetState()];
             } else {
                 if (hasInteracted) {
                     NarrativeController.instance.TriggerNarrative( allStates[Standby.GetState()].RepeatableNarrativeCueIndex );
                 } else {
-                    NarrativeController.instance.TriggerNarrative(NarrativeCueIndex);
                     doSecondLineDelay = Time.time + checklistDelay + impatientTime;
                 }
             }

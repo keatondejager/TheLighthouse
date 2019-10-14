@@ -101,8 +101,11 @@ public class Screws : DB_State
         progressDisp.fillAmount = delayedAngle;
 
         myPosition.fillAmount = zeroToOne;
-        upperLimit.fillAmount = Mathf.Clamp01(speedController + errorMargin);
-        lowerLimit.fillAmount = Mathf.Clamp01(speedController - errorMargin);
+        float upperNumber = speedController + errorMargin;
+        float lowerNumber = speedController - errorMargin;
+         
+        upperLimit.fillAmount = upperNumber;
+        lowerLimit.fillAmount = lowerNumber;
 
         if (delayedAngle > 1) {
             FullRotation();

@@ -59,7 +59,7 @@ namespace Player
 
             public bool puzzleOneComplete = false;
             public bool puzzleTwoComplete = false;
-
+            public bool puzzleSteamComplete = false;
             public bool canDoTransition = false;
        
 

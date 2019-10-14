@@ -22,8 +22,10 @@ namespace Player
                 dbPuzzleObject = PlayerReference.instance.distributionPuzzle;
                 dbPuzzleObject.OpenPuzzle();
             } else if (!PlayerReference.instance.puzzleTwoComplete) {
-                comboPuzzleObject = PlayerReference.instance.combinationLock;
-                comboPuzzleObject.OpenPuzzleUI();
+                if (PlayerReference.instance.puzzleSteamComplete) {
+                    comboPuzzleObject = PlayerReference.instance.combinationLock;
+                    comboPuzzleObject.OpenPuzzleUI();
+                } 
             }
             controls.PuzzleControls.Enable();
         }
