@@ -2748,7 +2748,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228031240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6201,12 +6201,12 @@ PrefabInstance:
     - target: {fileID: 7630245129169960140, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.85
+      value: 14.91
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129169960140, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.58
+      value: 2.12
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129169960140, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -6266,7 +6266,7 @@ PrefabInstance:
     - target: {fileID: 7630245128941685881, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: puzzleOneComplete
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7630245128941685881, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -6277,7 +6277,7 @@ PrefabInstance:
     - target: {fileID: 7630245129683584350, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.07
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129683584350, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -6302,7 +6302,7 @@ PrefabInstance:
     - target: {fileID: 7630245130074985525, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.07
       objectReference: {fileID: 0}
     - target: {fileID: 7630245130074985525, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -6639,6 +6639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: viewBiasScale
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245128941685887, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a72138fcb35e3245abeef4b89a2fb0c, type: 3}
