@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa3b8214f75b354e9ba2caadd022259, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 1
   focusMode:
     m_OverrideState: 1
@@ -79,13 +79,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.83469206, y: 0.9446345, z: 1, w: -0.11955593}
+    m_Value: {x: 1, y: 0.8729505, z: 0.821554, w: 0.17079425}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8750332, z: 0.7931614, w: 0.0853971}
+    m_Value: {x: 1, y: 0.95456314, z: 0.9545639, w: -0.017079417}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.8088695, y: 0.8926798, z: 1, w: 0.1537148}
+    m_Value: {x: 0.97136515, y: 1, z: 0.8989656, w: -0.025619132}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
     m_Value: 0
   compensation:
     m_OverrideState: 1
-    m_Value: 14.87
+    m_Value: 15.5
   limitMin:
     m_OverrideState: 0
     m_Value: -10
@@ -488,7 +488,7 @@ MonoBehaviour:
     showEyeDropper: 1
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.5735295, b: 1, a: 1}
+    m_Value: {r: 0.05242079, g: 0.13551563, b: 0.3584906, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -633,7 +633,7 @@ MonoBehaviour:
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 1.0717734, g: 0.9983175, b: 0.9251629, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -644,7 +644,7 @@ MonoBehaviour:
     max: 180
   saturation:
     m_OverrideState: 1
-    m_Value: 15
+    m_Value: 25
     min: -100
     max: 100
 --- !u!114 &8749258768972052293
@@ -694,13 +694,13 @@ MonoBehaviour:
     min: 0
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 79.8
+    m_Value: 34.9
     min: 1
   baseHeight:
     m_OverrideState: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
     m_Value: 8.3
   anisotropy:
     m_OverrideState: 1
-    m_Value: 0.39
+    m_Value: 0.8
     min: -1
     max: 1
   globalLightProbeDimmer:
