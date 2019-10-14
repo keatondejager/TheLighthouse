@@ -92,7 +92,9 @@ namespace Player
         }
 
         public void PuzzleExit () {
-        
+            if (state == _puzzleState) {
+                state.ExitState();
+            }
         }
 
         public void PuzzleEnter () {

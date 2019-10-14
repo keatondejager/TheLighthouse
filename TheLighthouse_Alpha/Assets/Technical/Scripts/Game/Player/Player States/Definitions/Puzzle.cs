@@ -10,6 +10,7 @@ namespace Player
         [Header("Puzzle Object")]
             [SerializeField] protected DistributionBoard dbPuzzleObject;
             [SerializeField] protected DoorLock comboPuzzleObject;
+            [SerializeField] protected Valve_Puzzle valvePuzzle;
 
         public override void Initialize(PlayerInputActions _controls) {
             controls = _controls;
@@ -25,7 +26,12 @@ namespace Player
                 if (PlayerReference.instance.puzzleSteamComplete) {
                     comboPuzzleObject = PlayerReference.instance.combinationLock;
                     comboPuzzleObject.OpenPuzzleUI();
-                } 
+                } else {
+                    valvePuzzle = PlayerReference.instance.valvePuzzle;
+                    if (valvePuzzle) {
+                        valvePuzzle.OpenPuzzleUI();
+                    }
+                }
             }
             controls.PuzzleControls.Enable();
         }
@@ -35,8 +41,10 @@ namespace Player
             if (dbPuzzleObject)
                 dbPuzzleObject.ClosePuzzle();
             if (comboPuzzleObject)
-            comboPuzzleObject.ClosePuzzleUI();
-        }
+                comboPuzzleObject.ClosePuzzleUI();
+            if (valvePuzzle) 
+                valvePuzzle.ClosePuzzleUI();
+        }   
     }
         
 }
