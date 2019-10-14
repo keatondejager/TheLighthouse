@@ -67,49 +67,49 @@ public class Screws : DB_State
             return;
         }
 
-        // if (Vector2.Distance(AnalogueInput.normalized, accuracy[accuracyIndex].normalized) < errorMargin) {
-        //     accuracyIndex++;  
-        //     if (accuracyIndex >= accuracy.Count) {
-        //         accuracyIndex = 0;
-        //         FullRotation();
-        //     }
-        // }
-        AnalogueInput.Normalize();
-        float x = AnalogueInput.x;
-        float y = AnalogueInput.y;
+        if (Vector2.Distance(AnalogueInput.normalized, accuracy[accuracyIndex].normalized) < errorMargin) {
+            accuracyIndex++;  
+            if (accuracyIndex >= accuracy.Count) {
+                accuracyIndex = 0;
+                FullRotation();
+            }
+        }
+        // AnalogueInput.Normalize();
+        // float x = AnalogueInput.x;
+        // float y = AnalogueInput.y;
 
-        float angle = Mathf.Atan(y/x);
-        if (angle < 0) {
-            angle += Mathf.PI;
+        // float angle = Mathf.Atan(y/x);
+        // if (angle < 0) {
+        //     angle += Mathf.PI;
             
-        }
-        angle += y < 0 ? Mathf.PI : 0;
+        // }
+        // angle += y < 0 ? Mathf.PI : 0;
 
-        float zeroToOne = Remap(angle);
+        // float zeroToOne = Remap(angle);
 
-        speedController += rotationSpeed * Time.deltaTime; 
-        if (speedController > 1) {
-            speedController = 0;
-        }
+        // speedController += rotationSpeed * Time.deltaTime; 
+        // if (speedController > 1) {
+        //     speedController = 0;
+        // }
 
-        if (Mathf.Abs(zeroToOne - speedController) < errorMargin) {
-            delayedAngle += rotationSpeed * Time.deltaTime;
-        } else {
-            Player.PlayerReference.instance.ShakeController(inputPath, 1);
-        }
+        // if (Mathf.Abs(zeroToOne - speedController) < errorMargin) {
+        //     delayedAngle += rotationSpeed * Time.deltaTime;
+        // } else {
+        //     Player.PlayerReference.instance.ShakeController(inputPath, 1);
+        // }
 
-        progressDisp.fillAmount = delayedAngle;
+        // progressDisp.fillAmount = delayedAngle;
 
-        myPosition.fillAmount = zeroToOne;
-        float upperNumber = speedController + errorMargin;
-        float lowerNumber = speedController - errorMargin;
+        // myPosition.fillAmount = zeroToOne;
+        // float upperNumber = speedController + errorMargin;
+        // float lowerNumber = speedController - errorMargin;
          
-        upperLimit.fillAmount = upperNumber;
-        lowerLimit.fillAmount = lowerNumber;
+        // upperLimit.fillAmount = upperNumber;
+        // lowerLimit.fillAmount = lowerNumber;
 
-        if (delayedAngle > 1) {
-            FullRotation();
-        }
+        // if (delayedAngle > 1) {
+        //     FullRotation();
+        // }
     }
 
     private float Remap(float value, float from1 = 0, float to1 = 2 * Mathf.PI, float from2 = 0, float to2 = 1) {
