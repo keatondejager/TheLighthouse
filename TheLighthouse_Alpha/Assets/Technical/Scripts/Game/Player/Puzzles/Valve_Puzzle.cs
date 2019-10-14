@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Player;
+using UnityEngine.UI;
 
 public class Valve_Puzzle : MonoBehaviour
 {   
@@ -12,6 +13,7 @@ public class Valve_Puzzle : MonoBehaviour
         [SerializeField] protected GameObject steamCollider;
 
         [SerializeField] protected GameObject UIPrompt;
+        [SerializeField] protected Image display;
 
 
     [Header("State Control")]
@@ -31,8 +33,63 @@ public class Valve_Puzzle : MonoBehaviour
     private PlayerManager manager;
     private bool hasFunction;
 
+    private PlayerInputActions controls;
+
+    [Header("Progress")]
+    [SerializeField] protected float progress;
+    [SerializeField] protected float decaySpeed = 0.05f;
+    [SerializeField] protected float jumpAmount = 0.1f;
+
+    [Header("Feedback")]
+    [SerializeField] protected float lowFreq = 0.2f;
+    [SerializeField] protected float highFreq = 0.8f;
+    [SerializeField] protected float duration = 0.1f;
+    [SerializeField] protected float interval = 0.2f;
+    [SerializeField] protected int iterations = 1;
+
+    private float displayValue;
+    private bool isActive = false;
+    private void Update() {
+        if (isActive) {
+            displayValue = progress;
+            if (progress > 0) {
+                progress = Mathf.Clamp01(progress - decaySpeed * Time.deltaTime);
+            }
+
+            display.fillAmount = displayValue;
+        }
+    }
+
+    private void Start() {
+        controls = new PlayerInputActions();
+
+        controls.PuzzleControls.SecondaryButton.started += ctx => Increase(ctx.control.path);
+    }
 
 
+    private void Increase (string path) {
+        progress = Mathf.Clamp01(progress + jumpAmount);
+        PlayerReference.instance.ShakeController(path, iterations, duration, interval, lowFreq, highFreq);
+        if (progress > 0.95f) {
+            state = ValveState.Installed_Closed;
+            CompletePuzzle();
+            PlayerReference.instance.manager.PuzzleExit();
+        }
+    }
+    
+
+    public void ClosePuzzleUI () {
+        isActive = false;
+        UIPrompt.SetActive(false);
+        controls.PuzzleControls.Disable();
+    }
+
+    public void OpenPuzzleUI () {
+        isActive = true;
+        UIPrompt.SetActive(true);
+        controls.PuzzleControls.Enable();
+        progress = 0;
+    }
 
 
     private void OnTriggerEnter(Collider other) {
@@ -96,7 +153,6 @@ public class Valve_Puzzle : MonoBehaviour
                 NarrativeController.instance.TriggerNarrative(OpeningPuzzleLineIndex);
 
                 PlayerReference.instance.manager.PuzzleEnter();
-                UIPrompt.SetActive(true);
             break;
             case ValveState.Installed_Open:
                 // Open puzzle state and allow for analogue rotations

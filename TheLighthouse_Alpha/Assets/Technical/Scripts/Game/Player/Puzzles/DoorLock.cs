@@ -126,7 +126,6 @@ public class DoorLock : MonoBehaviour
     private void OpenPuzzle () {
         // Switch player to puzzle state and open puzzle controller
         PlayerReference.instance.combinationLock = this;
-        MoveIndicator();
     }
 
     private void OpenDoor () {  
@@ -151,6 +150,7 @@ public class DoorLock : MonoBehaviour
         UI_Prompts.SetActive(true);
         digitDisplay[Index].fontSize = emphasisFontSize;
         controls.PuzzleControls.Enable();
+        MoveIndicator();
     }
 
     public void ClosePuzzleUI () {
@@ -162,9 +162,13 @@ public class DoorLock : MonoBehaviour
     private void CheckCombination (string contextPath) {
         bool result = true;
         int count = 0;
+        vibrationIterations = 0;
         foreach (int digit in SolutionAttempt)
         {
             result = result && digit == correctCombination[count];
+            if (digit != correctCombination[count]) {
+                vibrationIterations++;
+            }
             count++;    
         }
         if (result) {
@@ -174,10 +178,9 @@ public class DoorLock : MonoBehaviour
             ExitButtonPressed();
         } else {   
             if (contextPath.Contains("DualShock4")) { // Only vibrate if PS4 controller
+                
                 StartCoroutine(WrongAnswer());
-            } else {
-                Debug.Log (contextPath);
-            }
+            } 
         }
     }
 
