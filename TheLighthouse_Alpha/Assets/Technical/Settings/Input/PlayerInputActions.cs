@@ -701,6 +701,14 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""946fc497-ce04-4e71-9cc6-fb2399fe004c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -789,6 +797,28 @@ public class PlayerInputActions : IInputActionCollection
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""621008aa-dfb1-4b05-9e72-60aceb54abf7"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""64189085-4f1d-4edd-99d8-92f12a3efd26"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1436,6 +1466,7 @@ public class PlayerInputActions : IInputActionCollection
         m_UINavigation_Select = m_UINavigation.GetAction("Select");
         m_UINavigation_Down = m_UINavigation.GetAction("Down");
         m_UINavigation_Up = m_UINavigation.GetAction("Up");
+        m_UINavigation_Cancel = m_UINavigation.GetAction("Cancel");
         // PuzzleControls
         m_PuzzleControls = asset.GetActionMap("PuzzleControls");
         m_PuzzleControls_Close = m_PuzzleControls.GetAction("Close");
@@ -1718,6 +1749,7 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_UINavigation_Select;
     private readonly InputAction m_UINavigation_Down;
     private readonly InputAction m_UINavigation_Up;
+    private readonly InputAction m_UINavigation_Cancel;
     public struct UINavigationActions
     {
         private PlayerInputActions m_Wrapper;
@@ -1725,6 +1757,7 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @Select => m_Wrapper.m_UINavigation_Select;
         public InputAction @Down => m_Wrapper.m_UINavigation_Down;
         public InputAction @Up => m_Wrapper.m_UINavigation_Up;
+        public InputAction @Cancel => m_Wrapper.m_UINavigation_Cancel;
         public InputActionMap Get() { return m_Wrapper.m_UINavigation; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1743,6 +1776,9 @@ public class PlayerInputActions : IInputActionCollection
                 Up.started -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnUp;
                 Up.performed -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnUp;
                 Up.canceled -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnUp;
+                Cancel.started -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnCancel;
+                Cancel.performed -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnCancel;
+                Cancel.canceled -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnCancel;
             }
             m_Wrapper.m_UINavigationActionsCallbackInterface = instance;
             if (instance != null)
@@ -1756,6 +1792,9 @@ public class PlayerInputActions : IInputActionCollection
                 Up.started += instance.OnUp;
                 Up.performed += instance.OnUp;
                 Up.canceled += instance.OnUp;
+                Cancel.started += instance.OnCancel;
+                Cancel.performed += instance.OnCancel;
+                Cancel.canceled += instance.OnCancel;
             }
         }
     }
@@ -1953,6 +1992,7 @@ public class PlayerInputActions : IInputActionCollection
         void OnSelect(InputAction.CallbackContext context);
         void OnDown(InputAction.CallbackContext context);
         void OnUp(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
     public interface IPuzzleControlsActions
     {
