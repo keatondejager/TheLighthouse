@@ -10,6 +10,9 @@ namespace Environment
         [SerializeField] protected DistributionBoard puzzleManager;
 
         public override void OnTriggerEnter(Collider other) {
+            if (Player.PlayerReference.instance.puzzleOneComplete) {
+                return;
+            }
             base.OnTriggerEnter(other);
             PlayerReference.instance.distributionPuzzle = puzzleManager;
         }
