@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
+  m_Name: 045_Farming Tools
+  m_EditorClassIdentifier: 
+  voiceLine: {fileID: 8300000, guid: 46440d0efa642c941aab3c3b0960a9fa, type: 3}
+  subtitle: That tool head is loose on that hoe, I should wedge some wood in there
+    later...
+  duration: 0
+  Repeatable: 0
