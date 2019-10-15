@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 004_DB Board Approach
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: 03a5fbd52e9cad248ac8a4cfabc45071, type: 3}
+  subtitle: Alright, what's wrong this time?
   duration: 0
   Repeatable: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 040_CommanderLetter
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: e8f768ed710696546a215bd195897da1, type: 3}
+  subtitle: This is my home... they can't just take this place away from me
   duration: 0
   Repeatable: 0

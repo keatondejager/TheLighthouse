@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 041_Letter from Nikolai
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: 530cf71efc3ff1d4dbcb8e484abf1f18, type: 3}
+  subtitle: He should understand... he grew up here with us. I can't just leave, not
+    like he did.
   duration: 0
   Repeatable: 0

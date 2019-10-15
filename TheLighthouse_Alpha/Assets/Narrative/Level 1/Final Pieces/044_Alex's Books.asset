@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 044_Alex's Books
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: 7f4ebf0323985f64b82e85078b9d4ef2, type: 3}
+  subtitle: Alex used to be stuck in these books of hers for hours, she was always
+    the smart one
   duration: 0
   Repeatable: 0

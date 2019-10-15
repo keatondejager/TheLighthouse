@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 008_Inspect DB board
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: 0b6a566e9c67a4449a79a1352bae4029, type: 3}
+  subtitle: Ye burnt out. Need to replace the whole switch. I think I have the parts
+    lying around here somewhere.
   duration: 0
   Repeatable: 0

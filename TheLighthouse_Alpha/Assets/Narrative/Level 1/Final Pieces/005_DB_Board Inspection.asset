@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 005_DB_Board Inspection
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: 192afea8584b17640927990302a6b3da, type: 3}
+  subtitle: This piece of garbage... I've been telling them for years! But do they
+    listen? No... I'm just grumpy ol' Ivan...
   duration: 0
   Repeatable: 0

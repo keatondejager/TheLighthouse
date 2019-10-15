@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 007_Leave DB First time
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: b30353f944d00b8459e7078547b7d7ac, type: 3}
+  subtitle: Hunk of Junk
   duration: 0
   Repeatable: 0

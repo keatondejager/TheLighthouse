@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 002_StartsWalking
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 
+  voiceLine: {fileID: 8300000, guid: b932cda70c93f9943806f9a88d1a11f2, type: 3}
+  subtitle: Ugh, no. Now there's a storm and the light is out and I have to stumble
+    around in the bloody dark...
   duration: 0
   Repeatable: 0
