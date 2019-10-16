@@ -41,6 +41,8 @@ public class AudioManager : MonoBehaviour
 
 
     private void Start() {
+        Cursor.visible = false;
+
         SetMusic();
         SetAmbient();
         SetFootsteps();
