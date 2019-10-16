@@ -163,13 +163,8 @@ public class DoorLock : MonoBehaviour
     private void CheckCombination (string contextPath) {
         bool result = true;
         int count = 0;
-        vibrationIterations = 0;
-        foreach (int digit in SolutionAttempt)
-        {
+        foreach (int digit in SolutionAttempt) {
             result = result && digit == correctCombination[count];
-            if (digit != correctCombination[count]) {
-                vibrationIterations++;
-            }
             count++;    
         }
         if (result) {
@@ -178,9 +173,8 @@ public class DoorLock : MonoBehaviour
             SetFunction();
             ExitButtonPressed();
         } else {   
-            if (contextPath.Contains("DualShock4")) { // Only vibrate if PS4 controller
-                StartCoroutine(WrongAnswer());
-            } 
+            Player.PlayerReference.instance.ShakeController(contextPath, vibrationIterations, vibrateDuration,
+                                                            vibrateInterval, lowFreqIntensity, highFreqIntensity);
         }
     }
 
@@ -235,13 +229,4 @@ public class DoorLock : MonoBehaviour
         PlayerReference.instance.manager.PuzzleExit();
     }
 
-    IEnumerator WrongAnswer () {
-        for (int i = 0; i < vibrationIterations; i++) {
-            Gamepad.current.SetMotorSpeeds(lowFreqIntensity, highFreqIntensity);
-            yield return new WaitForSeconds(vibrateDuration);
-            Gamepad.current.SetMotorSpeeds(0, 0);
-            yield return new WaitForSeconds(vibrateInterval);
-        }
-         
-    }
 }

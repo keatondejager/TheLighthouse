@@ -115,7 +115,7 @@
                     "id": "23dfdf8d-ab78-4df0-bb8f-092be0b4f987",
                     "path": "<DualShockGamepad>/leftStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "Normalize(min=-1,max=1)",
                     "groups": "",
                     "action": "Walk",
                     "isComposite": false,
@@ -1710,17 +1710,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "e9224546-b773-4343-9a0e-8c336eadd87d",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Back",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "eca27435-6f58-4a33-ad13-c344ba9eaa0e",
                     "path": "<Keyboard>/backspace",
                     "interactions": "",
@@ -1733,7 +1722,18 @@
                 {
                     "name": "",
                     "id": "908014d9-aa78-4f85-adbe-0a70f82457f5",
-                    "path": "<DualShockGamepad>/buttonEast",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "371ac93d-c426-4733-8a66-02cbc6c814fa",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1777,17 +1777,5 @@
             ]
         }
     ],
-    "controlSchemes": [
-        {
-            "name": "PS4Controller",
-            "bindingGroup": "PS4Controller",
-            "devices": [
-                {
-                    "devicePath": "<DualShockGamepad>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        }
-    ]
+    "controlSchemes": []
 }

@@ -85,7 +85,7 @@ namespace Player
                 return;
             }
 
-            if (!path.Contains("DualShock4")) {
+            if (!path.Contains("DualShock4") && !path.Contains("XInputController") ) {
                 return;
             }
 
@@ -106,7 +106,20 @@ namespace Player
                 Gamepad.current.SetMotorSpeeds(0, 0);
                 yield return new WaitForSeconds(vibrateInterval);
             }
+            Gamepad.current.SetMotorSpeeds(0f, 0f);
             controllerShaking = false;
+        }
+
+        public void StopVibrations () {
+            if (controllerShaking) {
+                StopAllCoroutines();
+                Gamepad.current.SetMotorSpeeds(0f, 0f);
+                controllerShaking = false;
+            }
+        }
+
+        private void OnDisable() {
+            StopVibrations();
         }
     }
 

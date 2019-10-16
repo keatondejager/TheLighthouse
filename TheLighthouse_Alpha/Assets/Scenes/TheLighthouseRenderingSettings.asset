@@ -409,11 +409,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.89
   compensation:
     m_OverrideState: 1
-    m_Value: 15
+    m_Value: 14.2
   limitMin:
     m_OverrideState: 0
     m_Value: -10
@@ -426,19 +426,19 @@ MonoBehaviour:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: -10
-        value: -10
+        time: 0
+        value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 20
-        value: 20
-        inSlope: 1
-        outSlope: 0
+        time: 0.99087524
+        value: 0.97698975
+        inSlope: 2
+        outSlope: 2
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -536,13 +536,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.83469206, y: 0.9446345, z: 1, w: -0.11955593}
+    m_Value: {x: 0.84666044, y: 0.94831157, z: 1, w: 0.025619129}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.8750332, z: 0.7931614, w: 0.0853971}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.8088695, y: 0.8926798, z: 1, w: 0.1537148}
+    m_Value: {x: 0.8088695, y: 0.8926798, z: 1, w: -0.13663538}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0

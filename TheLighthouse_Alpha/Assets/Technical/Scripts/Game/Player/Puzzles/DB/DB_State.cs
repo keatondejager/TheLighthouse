@@ -47,6 +47,7 @@ public abstract class DB_State : MonoBehaviour
 
     protected virtual void OnDisable() {
         controls.PuzzleControls.Disable();
+        Player.PlayerReference.instance.StopVibrations();
         DisableState();
     }
 

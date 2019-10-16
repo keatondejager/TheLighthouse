@@ -127,7 +127,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""id"": ""23dfdf8d-ab78-4df0-bb8f-092be0b4f987"",
                     ""path"": ""<DualShockGamepad>/leftStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Normalize(min=-1,max=1)"",
                     ""groups"": """",
                     ""action"": ""Walk"",
                     ""isComposite"": false,
@@ -1722,17 +1722,6 @@ public class PlayerInputActions : IInputActionCollection
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""e9224546-b773-4343-9a0e-8c336eadd87d"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Back"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""eca27435-6f58-4a33-ad13-c344ba9eaa0e"",
                     ""path"": ""<Keyboard>/backspace"",
                     ""interactions"": """",
@@ -1745,7 +1734,18 @@ public class PlayerInputActions : IInputActionCollection
                 {
                     ""name"": """",
                     ""id"": ""908014d9-aa78-4f85-adbe-0a70f82457f5"",
-                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""371ac93d-c426-4733-8a66-02cbc6c814fa"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -1789,19 +1789,7 @@ public class PlayerInputActions : IInputActionCollection
             ]
         }
     ],
-    ""controlSchemes"": [
-        {
-            ""name"": ""PS4Controller"",
-            ""bindingGroup"": ""PS4Controller"",
-            ""devices"": [
-                {
-                    ""devicePath"": ""<DualShockGamepad>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
-                }
-            ]
-        }
-    ]
+    ""controlSchemes"": []
 }");
         // Movement
         m_Movement = asset.GetActionMap("Movement");
@@ -2325,15 +2313,6 @@ public class PlayerInputActions : IInputActionCollection
         }
     }
     public OptionsMenuActions @OptionsMenu => new OptionsMenuActions(this);
-    private int m_PS4ControllerSchemeIndex = -1;
-    public InputControlScheme PS4ControllerScheme
-    {
-        get
-        {
-            if (m_PS4ControllerSchemeIndex == -1) m_PS4ControllerSchemeIndex = asset.GetControlSchemeIndex("PS4Controller");
-            return asset.controlSchemes[m_PS4ControllerSchemeIndex];
-        }
-    }
     public interface IMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
