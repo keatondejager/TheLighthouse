@@ -11,6 +11,24 @@ TextureImporter:
   - first:
       213: 7254018856460239251
     second: Switch
+  - first:
+      213: 4898311117458056117
+    second: Item Icons - 256x_0
+  - first:
+      213: 6973717099975552450
+    second: Item Icons - 256x_1
+  - first:
+      213: 7327284669681942558
+    second: Item Icons - 256x_2
+  - first:
+      213: 2106707674139579448
+    second: Item Icons - 256x_3
+  - first:
+      213: -1922183412690162805
+    second: Item Icons - 256x_4
+  - first:
+      213: -874200512329036254
+    second: Item Icons - 256x_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screwdriver
+      name: Item Icons - 256x_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1793
-        width: 246
-        height: 255
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21998d8c3a7451c48be9e94602458829
-      internalID: 5449979551795561701
+      spriteID: 9262df77442a7fa4292c9c484adb8d50
+      internalID: 4898311117458056117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wires
+      name: Item Icons - 256x_1
       rect:
         serializedVersion: 2
-        x: 260
-        y: 1816
-        width: 249
-        height: 213
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18f38f5175cc1f843872159f0d730f20
-      internalID: 5431164168765772824
+      spriteID: 506438aa83510af42ba91cae1517d09e
+      internalID: 6973717099975552450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch
+      name: Item Icons - 256x_2
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1558
-        width: 195
-        height: 202
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +169,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3541f5d871b5ee244a55eb4cfc8a6454
-      internalID: 7254018856460239251
+      spriteID: a084498801fd31342b82a69222d8e168
+      internalID: 7327284669681942558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item Icons - 256x_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01f9ccf0ca06bb4ea9db526406070e8
+      internalID: 2106707674139579448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item Icons - 256x_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d915918e6ea624d8b3a2ed5f9932e7
+      internalID: -1922183412690162805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item Icons - 256x_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04843333a4ca88e43b29605fd468bd45
+      internalID: -874200512329036254
       vertices: []
       indices: 
       edges: []
