@@ -22,8 +22,16 @@ public class ButtonNavigation : MonoBehaviour
         if (buttonOptions.Count == 0) {
             return;
         }
+        
         problemCount++;
         if (problemCount >= buttonOptions.Count) {
+            for (int i = 0; i < buttonOptions.Count; i++) {
+                if (buttonOptions[i].gameObject.activeInHierarchy) {
+                    buttonOptions[i].Activate();
+                    currentIndex = i;
+                    return;
+                }
+            }
             return;
         }
         buttonOptions[currentIndex].Deactivate();
@@ -47,6 +55,13 @@ public class ButtonNavigation : MonoBehaviour
         }
         problemCount++;
         if (problemCount >= buttonOptions.Count) {
+            for (int i = 0; i < buttonOptions.Count; i++) {
+                if (buttonOptions[i].gameObject.activeInHierarchy) {
+                    buttonOptions[i].Activate();
+                    currentIndex = i;
+                    return;
+                }
+            }
             return;
         }
         buttonOptions[currentIndex].Deactivate();
@@ -87,17 +102,15 @@ public class ButtonNavigation : MonoBehaviour
         if (buttonOptions.Count == 0) {
             return;
         }
-        problemCount++;
-        if (problemCount >= buttonOptions.Count) {
-            return;
+        
+        for (int i = 0; i < buttonOptions.Count; i++) {
+            if (buttonOptions[i].gameObject.activeInHierarchy) {
+                buttonOptions[i].Activate();
+                currentIndex = i;
+                return;
+            }
         }
-        currentIndex = 0;
 
-        if (!buttonOptions[currentIndex].gameObject.activeInHierarchy) {
-            NavigateDown();
-        }
-        problemCount = 0;
-        buttonOptions[currentIndex].Activate();
     }
 
     private void OnDisable() {

@@ -126,6 +126,8 @@ public class Valve_Puzzle : MonoBehaviour
     private void Interact () {
         // Open Puzzle Menu, set player to puzzle state. 
 
+        Debug.Log(state.ToString());
+
         if (state == ValveState.NoValve) {
             if (PlayerReference.instance.PlayerInventory.Contains(ValveItem)){
                 state = ValveState.NoWrench;
@@ -137,7 +139,7 @@ public class Valve_Puzzle : MonoBehaviour
                 state = ValveState.NeedsTightening;
             }
         }
-
+        Debug.Log(state.ToString());
 
         switch (state) {
             case ValveState.NoValve:

@@ -46,7 +46,7 @@ public class LightningManager : MonoBehaviour
         timer = 0f;
         AudioManager.instance.PlayThunder();
         selectedTriggerTime = Random.Range(minTriggerTime, maxTriggerTime);
-        Invoke("TurnOffLights", LightningParticleSystem.duration);
+        Invoke("TurnOffLights", LightningParticleSystem.main.duration);
     }
 
     private void TurnOffLights()

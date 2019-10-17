@@ -62,6 +62,10 @@ namespace Player
         }
 
         public void TakeItem (int itemID) {
+            if (!activeData.inventory.Contains(PlayerReference.instance.objectsInGame[itemID].content)) {
+                return;
+            }
+
             activeData.RemoveItem(PlayerReference.instance.objectsInGame[itemID].content);
             PlayerReference.instance.AddItemToInventory(PlayerReference.instance.objectsInGame[itemID].content);
  
