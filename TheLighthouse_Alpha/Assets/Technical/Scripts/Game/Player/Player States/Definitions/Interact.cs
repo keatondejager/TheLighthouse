@@ -63,8 +63,8 @@ namespace Player
 
         public void TakeItem (int itemID) {
             activeData.RemoveItem(PlayerReference.instance.objectsInGame[itemID].content);
-            PlayerReference.instance.PlayerInventory.Add(PlayerReference.instance.objectsInGame[itemID].content);
-
+            PlayerReference.instance.AddItemToInventory(PlayerReference.instance.objectsInGame[itemID].content);
+ 
             ResetDisplay();
         }
 

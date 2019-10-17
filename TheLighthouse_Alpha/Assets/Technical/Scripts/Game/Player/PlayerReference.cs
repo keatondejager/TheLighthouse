@@ -49,6 +49,16 @@ namespace Player
 
             public List<Item> PlayerInventory;
 
+            public void AddItemToInventory(Item item) {
+                PlayerInventory.Add(item);
+                if (OnInventoryChange != null) {
+                    OnInventoryChange();
+                }
+            }
+
+            public delegate void InventoryChange();
+            public event InventoryChange OnInventoryChange;
+
         [Header("Puzzle Cheats")]
             public GameObject CheatButtons;
 
