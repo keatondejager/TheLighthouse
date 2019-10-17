@@ -22,6 +22,8 @@ namespace Environment {
 
         [Header("Narrative and Events")]
             public bool isNarrativeTrigger;
+            public bool triggerOnExit;
+            public int exitIndex;
             public delegate void NarrativeTrigger();
             public event NarrativeTrigger OnNarrativeTrigger;
 
@@ -52,6 +54,10 @@ namespace Environment {
                 PlayerReference.instance.examineObject = null;
                 player.OnExamineEnter -= Examine;
                 
+                if (triggerOnExit) {
+                    
+                }
+
                 Prompt.SetActive(false);
             }
         }

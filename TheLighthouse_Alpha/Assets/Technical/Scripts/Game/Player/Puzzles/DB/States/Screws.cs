@@ -70,7 +70,7 @@ public class Screws : DB_State
         if (Vector2.Distance(AnalogueInput.normalized, accuracy[accuracyIndex].normalized) < errorMargin) {
             accuracyIndex++; 
             Player.PlayerReference.instance.ShakeController(inputPath, 1); 
-            Debug.Log(inputPath);
+
             if (accuracyIndex >= accuracy.Count) {
                 accuracyIndex = 0;
                 FullRotation();

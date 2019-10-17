@@ -9,8 +9,22 @@ namespace Environment
         [SerializeField] protected int CannotOpenIndex;
         [SerializeField] protected Vector3 movePosition;
         [SerializeField] protected Transform cam;
- 
+
+        [SerializeField] protected Animator animControl;
+        [SerializeField] private int _currentFloor;
+        public int currentFloor {
+            get => _currentFloor;
+            set {
+                _currentFloor = value;
+                animControl.SetInteger("FloorIndex", _currentFloor);
+            }
+        }
+
         private bool hasFunction = false;
+
+        private void Start() {
+            currentFloor = 0;
+        }
 
         private void OnTriggerEnter(Collider other) {
             var manager = other.GetComponent<Player.PlayerManager>();
@@ -36,7 +50,7 @@ namespace Environment
         private void Interact () {
             if (Player.PlayerReference.instance.puzzleOneComplete) {
                 Player.PlayerReference.instance.manager.gameObject.transform.position = movePosition;
-                cam.position = new Vector3 (cam.position.x, 4.2f, cam.position.z);
+                currentFloor = 1;
             } else {
                 NarrativeController.instance.TriggerNarrative(CannotOpenIndex);
             }

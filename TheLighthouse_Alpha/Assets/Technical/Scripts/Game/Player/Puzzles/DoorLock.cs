@@ -42,6 +42,10 @@ public class DoorLock : MonoBehaviour
         [Range(0, 1)] [SerializeField] protected float lowFreqIntensity= 0.3f;
         [Range(0, 1)] [SerializeField] protected float highFreqIntensity= 0.3f;
 
+    [Header("Narrative Indices")]
+        [SerializeField] protected int OpenPuzzleIndex;
+        [SerializeField] protected int WrongCombinationNarrative;
+        [SerializeField] protected int correctCombinationNarrative;
 
 
     private void Start() {
@@ -127,6 +131,7 @@ public class DoorLock : MonoBehaviour
     private void OpenPuzzle () {
         // Switch player to puzzle state and open puzzle controller
         PlayerReference.instance.combinationLock = this;
+        NarrativeController.instance.TriggerNarrative(OpenPuzzleIndex);
     }
 
     private void OpenDoor () {  
@@ -170,11 +175,13 @@ public class DoorLock : MonoBehaviour
         if (result) {
             PlayerReference.instance.puzzleTwoComplete = true;
             isLocked = false;
+            NarrativeController.instance.TriggerNarrative(correctCombinationNarrative);
             SetFunction();
             ExitButtonPressed();
         } else {   
             Player.PlayerReference.instance.ShakeController(contextPath, vibrationIterations, vibrateDuration,
                                                             vibrateInterval, lowFreqIntensity, highFreqIntensity);
+            NarrativeController.instance.TriggerNarrative(WrongCombinationNarrative);
         }
     }
 
