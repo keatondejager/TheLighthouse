@@ -1516,8 +1516,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aba2d34c59e470c4f83d9ffe02c1ac15, type: 2}
-  m_sharedMaterial: {fileID: 5228936534365437734, guid: aba2d34c59e470c4f83d9ffe02c1ac15,
+  m_fontAsset: {fileID: 11400000, guid: fd194d83a6c48494ba9048530048d24c, type: 2}
+  m_sharedMaterial: {fileID: -119844350249701581, guid: fd194d83a6c48494ba9048530048d24c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2045,8 +2045,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aba2d34c59e470c4f83d9ffe02c1ac15, type: 2}
-  m_sharedMaterial: {fileID: 5228936534365437734, guid: aba2d34c59e470c4f83d9ffe02c1ac15,
+  m_fontAsset: {fileID: 11400000, guid: fd194d83a6c48494ba9048530048d24c, type: 2}
+  m_sharedMaterial: {fileID: -119844350249701581, guid: fd194d83a6c48494ba9048530048d24c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2203,8 +2203,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Game Paused
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aba2d34c59e470c4f83d9ffe02c1ac15, type: 2}
-  m_sharedMaterial: {fileID: 5228936534365437734, guid: aba2d34c59e470c4f83d9ffe02c1ac15,
+  m_fontAsset: {fileID: 11400000, guid: fd194d83a6c48494ba9048530048d24c, type: 2}
+  m_sharedMaterial: {fileID: -119844350249701581, guid: fd194d83a6c48494ba9048530048d24c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2247,7 +2247,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2417,8 +2417,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aba2d34c59e470c4f83d9ffe02c1ac15, type: 2}
-  m_sharedMaterial: {fileID: 5228936534365437734, guid: aba2d34c59e470c4f83d9ffe02c1ac15,
+  m_fontAsset: {fileID: 11400000, guid: fd194d83a6c48494ba9048530048d24c, type: 2}
+  m_sharedMaterial: {fileID: -119844350249701581, guid: fd194d83a6c48494ba9048530048d24c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
