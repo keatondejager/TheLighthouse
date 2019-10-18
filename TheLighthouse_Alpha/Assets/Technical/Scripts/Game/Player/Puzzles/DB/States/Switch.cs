@@ -29,7 +29,7 @@ public class Switch : DB_State {
 
     public override void ControlsSetUp() {
         if (isPlacing) {
-            controls.PuzzleControls.TertiaryButton.started += ctx => CompleteState ();
+            controls.PuzzleControls.SecondaryButton.started += ctx => CompleteState ();
         } else {
             controls.PuzzleControls.RightGrab.performed += ctx => isRightGrabDown = true;
             controls.PuzzleControls.RightGrab.canceled += ctx => isRightGrabDown = false;

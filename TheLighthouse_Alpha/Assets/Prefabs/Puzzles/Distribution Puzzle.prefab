@@ -7172,7 +7172,6 @@ GameObject:
   - component: {fileID: 9058661338987243928}
   - component: {fileID: 9058661338987243930}
   - component: {fileID: 9058661338987243929}
-  - component: {fileID: 5817227322442594591}
   m_Layer: 0
   m_Name: Background_ScrewSprite_2
   m_TagString: Untagged
@@ -7241,35 +7240,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5817227322442594591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9058661338987243935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee315198aee10de4c99adddbd612d6c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frames:
-  - {fileID: -2235350459154817095, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 1210967331268538526, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3739868116985421652, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 526167947512966413, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 6189142313486627654, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 581628401161893546, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3323764281632388198, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 7112664310626083270, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 2145991189496486454, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3287698561040204083, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 1280386967771522722, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 2593903404153825521, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 4272946280316006184, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: -9086738017414368906, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  image: {fileID: 9058661338987243929}
-  framesPerSprite: 5
 --- !u!1 &9058661339218880860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,7 +7580,6 @@ GameObject:
   - component: {fileID: 9058661339708769285}
   - component: {fileID: 9058661339708769287}
   - component: {fileID: 9058661339708769286}
-  - component: {fileID: 8875649375009148624}
   m_Layer: 0
   m_Name: Background_ScrewSprite_1
   m_TagString: Untagged
@@ -7679,35 +7648,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8875649375009148624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9058661339708769284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee315198aee10de4c99adddbd612d6c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frames:
-  - {fileID: -2235350459154817095, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 1210967331268538526, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3739868116985421652, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 526167947512966413, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 6189142313486627654, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 581628401161893546, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3323764281632388198, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 7112664310626083270, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 2145991189496486454, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 3287698561040204083, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 1280386967771522722, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 2593903404153825521, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: 4272946280316006184, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  - {fileID: -9086738017414368906, guid: cecc7f5b2842ec44f9ffa1694af858a6, type: 3}
-  image: {fileID: 9058661339708769286}
-  framesPerSprite: 5
 --- !u!1 &9058661339766572413
 GameObject:
   m_ObjectHideFlags: 0
