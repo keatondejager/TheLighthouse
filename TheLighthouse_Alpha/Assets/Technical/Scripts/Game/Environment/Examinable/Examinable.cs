@@ -28,9 +28,6 @@ namespace Environment {
             public event NarrativeTrigger OnNarrativeTrigger;
 
         private void Start() {
-            triggerCollider.isTrigger = true;
-            triggerCollider.size = objectCollider.size * TriggerScale;
-
             player = PlayerReference.instance.manager;
         }
 
@@ -55,7 +52,7 @@ namespace Environment {
                 player.OnExamineEnter -= Examine;
                 
                 if (triggerOnExit) {
-                    
+                    NarrativeController.instance.TriggerNarrative(exitIndex);
                 }
 
                 Prompt.SetActive(false);

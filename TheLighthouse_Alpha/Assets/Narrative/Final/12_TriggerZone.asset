@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: 11_TriggerZone
+  m_Name: 12_TriggerZone
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 0}
-  subtitle: 
+  subtitle: This was Nikolai's playroom. We had so many happy memories here.
   duration: 0
   Repeatable: 0

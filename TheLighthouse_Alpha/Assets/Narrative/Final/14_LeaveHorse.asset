@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: 10_Painting
+  m_Name: 14_LeaveHorse
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 0}
-  subtitle: 
+  subtitle: I wish I could go back to those days... when he was so young and were
+    all together.
   duration: 0
   Repeatable: 0

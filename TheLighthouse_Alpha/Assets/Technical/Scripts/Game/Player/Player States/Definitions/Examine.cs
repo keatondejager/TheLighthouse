@@ -22,6 +22,8 @@ namespace Player
             [Range(1, 10)] [SerializeField] protected float zoomSpeed = 1f;
 
         private TMP_Text objectName;
+
+        [SerializeField] protected Transform cameraTransform;
             
 
         public override void Initialize(PlayerInputActions _controls) {
@@ -43,10 +45,13 @@ namespace Player
             controls.Examining.Reset.performed += ctx => ResetObject();
 
             objectName = PlayerReference.instance.examineObjectName;
+            if (!cameraTransform) {
+                cameraTransform = Camera.main.transform;
+            }
         }
 
         public override void Step() {
-            Vector3 _rotation = Vector3.up * rotationInput.x + Vector3.right * rotationInput.y;
+            Vector3 _rotation = cameraTransform.forward * -rotationInput.x + cameraTransform.right * rotationInput.y;
 
             _rotation *= Time.deltaTime;
 

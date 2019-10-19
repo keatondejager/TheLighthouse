@@ -29,7 +29,8 @@ namespace Player
             [Header("Valve Puzzle UI")]
                 public GameObject PuzzleUI;
 
-                
+            [Header("Narrative")]
+                [SerializeField] protected int StartIndex;
         
         #endregion
 
@@ -51,6 +52,8 @@ namespace Player
                 SetState(_moveState);
             }
             PlayerReference.instance.hasLantern = true;
+
+            NarrativeController.instance.TriggerNarrative(StartIndex);
         }
 
         // Update is called once per frame
