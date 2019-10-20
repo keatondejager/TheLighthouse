@@ -53,8 +53,7 @@ namespace Player
                 {0, 11}, //Screwdriver
                 {1, 10}, //Wires
                 {2, 12}, // Switch
-                {6, 25}  // Valve
-                
+                {7, 25}  // Wrench                
             };
 
 
