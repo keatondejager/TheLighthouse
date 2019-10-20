@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 3_LeaveLetter
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 8300000, guid: 363ab586ee9297d41a359cc45bf65ad8, type: 3}
   subtitle: 'Alex was his mother, how could he be so heartless. I spent my life with
     her, I can''t just leave. '
   duration: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 0_Enter
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: This old junk switchbox is out again, I asked them for parts, but do they
-    listen to old Ivan? No.
+  voiceLine: {fileID: 8300000, guid: eea5966a46829f849be5c1adae5c0848, type: 3}
+  subtitle: This old junk switchbox is out again. But do they listen to old Ivan?
+    Of course not.
   duration: 0
   Repeatable: 0

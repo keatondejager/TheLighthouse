@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: 11_Painting
+  m_Name: 18_TriggerZone
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: The last time I was back home for the funeral. I couldn't look your bother
-    in the eye. I'm sorry about that Alex.
+  voiceLine: {fileID: 8300000, guid: 6257feb514019b745b5a5ff72d64128e, type: 3}
+  subtitle: This was Nikolai's playroom. We had so many happy memories here.
   duration: 0
   Repeatable: 0

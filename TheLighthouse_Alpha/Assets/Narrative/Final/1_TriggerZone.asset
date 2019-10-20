@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 1_TriggerZone
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: I miss her... If alex was still around, this place wouldnt be such a mess.
-    I would have had the time.
+  voiceLine: {fileID: 8300000, guid: 1bf0a79c513b75b44b96262759288cb5, type: 3}
+  subtitle: 'I miss her. If Alex was still around this place wouldn''t be such a mess.
+    She would have made me clean it. '
   duration: 0
   Repeatable: 0

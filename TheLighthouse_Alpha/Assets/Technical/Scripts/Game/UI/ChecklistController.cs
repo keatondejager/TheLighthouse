@@ -13,6 +13,8 @@ public class ChecklistController : MonoBehaviour
 
     private bool isVisible = false;
 
+  
+
     public void EnableCheckBox () {
         isVisible = true;
     }

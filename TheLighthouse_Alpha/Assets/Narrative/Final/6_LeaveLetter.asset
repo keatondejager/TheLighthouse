@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 6_LeaveLetter
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 8300000, guid: 51757891e5a05bc42832025d5e6ef69c, type: 3}
   subtitle: I'm doing them a favour. We are short on men cause of the war. I don't
     need some yelp running around here keeping me company. I can do this myself.
   duration: 0

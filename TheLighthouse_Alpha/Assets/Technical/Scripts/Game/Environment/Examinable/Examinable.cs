@@ -27,6 +27,8 @@ namespace Environment {
             public delegate void NarrativeTrigger();
             public event NarrativeTrigger OnNarrativeTrigger;
 
+            private bool hasInteracted = false;
+
         private void Start() {
             player = PlayerReference.instance.manager;
         }
@@ -51,7 +53,7 @@ namespace Environment {
                 PlayerReference.instance.examineObject = null;
                 player.OnExamineEnter -= Examine;
                 
-                if (triggerOnExit) {
+                if (triggerOnExit && hasInteracted) {
                     NarrativeController.instance.TriggerNarrative(exitIndex);
                 }
 
@@ -61,6 +63,7 @@ namespace Environment {
 
         public virtual void Examine() {
             //hasBeenExamined = true;
+            hasInteracted = true;
             if (ExamineHighlightEffect) {
                 ExamineHighlightEffect.SetActive(false);
             }

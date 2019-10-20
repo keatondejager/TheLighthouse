@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: 16_LeaveLadder
+  m_Name: 21_Ladder
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: 'I had to fix it her way, the thing hasn''t so much as creaked in the
-    last eight years. I wish she was still here, I miss her everyday. '
+  voiceLine: {fileID: 8300000, guid: 20ce1accd4cd85b42b280fff657f19ac, type: 3}
+  subtitle: '*chuckles* This old this. It broke once. It didn''t work when I tried
+    to fix it the first time. Alex laughed at me when I fell flat on my arse. I miss
+    her laugh.'
   duration: 0
   Repeatable: 0

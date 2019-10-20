@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
+  m_Name: 17_Painting
+  m_EditorClassIdentifier: 
+  voiceLine: {fileID: 8300000, guid: 13e2fe911c568084c9d4126d5679c107, type: 3}
+  subtitle: The last time I was back home for the funeral. I couldn't look your bother
+    in the eye. I'm sorry about that Alex.
+  duration: 0
+  Repeatable: 0

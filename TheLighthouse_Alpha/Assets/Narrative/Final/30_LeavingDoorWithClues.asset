@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
-  m_Name: 12_TriggerZone
+  m_Name: 30_LeavingDoorWithClues
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
-  subtitle: This was Nikolai's playroom. We had so many happy memories here.
+  voiceLine: {fileID: 8300000, guid: 1220853acaacb2d48912beb0ff53215c, type: 3}
+  subtitle: 'I had to fix it her way, the thing hasn''t so much as creaked in the
+    last eight years. I wish she was still here, I miss her everyday. '
   duration: 0
   Repeatable: 0

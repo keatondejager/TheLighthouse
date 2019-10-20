@@ -59,22 +59,6 @@ namespace Player
         // Update is called once per frame
         private void Update() {
             state.Step();
-
-            // if (Input.GetKeyDown(KeyCode.Alpha1)) {
-            //     SceneManager.LoadScene(1);
-            // }
-
-            // if (Input.GetKeyDown(KeyCode.Alpha2)) {
-            //     SceneManager.LoadScene(2);
-            // }
-
-            // if (Input.GetKeyDown(KeyCode.Alpha3)) {
-            //     SceneManager.LoadScene(3);
-            // }
-
-            // if (Input.GetKeyDown(KeyCode.Alpha4)) {
-            //     SceneManager.LoadScene(4);
-            // }
         }
 
         public void SetState (States newState) {

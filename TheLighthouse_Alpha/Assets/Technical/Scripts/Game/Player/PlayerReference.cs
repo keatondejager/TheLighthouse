@@ -47,10 +47,22 @@ namespace Player
 
             public List<UI_Item> objectsInGame;
 
-            public List<Item> PlayerInventory;
+            public List<Item>  PlayerInventory;
+
+            public Dictionary<int, int> NarrativeItemCues = new Dictionary<int, int>() {
+                {0, 11}, //Screwdriver
+                {1, 10}, //Wires
+                {2, 12}, // Switch
+                {6, 25}  // Valve
+                
+            };
+
 
             public void AddItemToInventory(Item item) {
                 PlayerInventory.Add(item);
+                if (NarrativeItemCues.ContainsKey(item.itemCode)) {
+                    NarrativeController.instance.TriggerNarrative(NarrativeItemCues[item.itemCode]);
+                }
                 RefreshCheckList();
             }
 

@@ -856,6 +856,7 @@ MonoBehaviour:
   - {fileID: 4267516861091936519}
   LightsToTurnOff: []
   breakChance: 0.5
+  LightsOffNarrativeIndex: 14
 --- !u!1 &1067898784901449869
 GameObject:
   m_ObjectHideFlags: 0

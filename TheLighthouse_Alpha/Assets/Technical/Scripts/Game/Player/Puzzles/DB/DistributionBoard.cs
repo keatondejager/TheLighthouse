@@ -18,6 +18,7 @@ public class DistributionBoard : MonoBehaviour
         [Space]
         [SerializeField] protected bool hasInteracted;
         [SerializeField] protected int NarrativeCueIndex;
+        [SerializeField] protected int CompletePuzzleIndex;
         [SerializeField] protected GameObject CheckList;
         [SerializeField] protected float checklistDelay = 2f;
         [SerializeField] protected float impatientTime = 5f;
@@ -158,6 +159,7 @@ public class DistributionBoard : MonoBehaviour
         ScrewObject2.SetActive(false);
 
         Player.PlayerReference.instance.puzzleOneComplete = true;
+        NarrativeController.instance.TriggerNarrative(CompletePuzzleIndex);
 
         playerState.ExitState();
     }

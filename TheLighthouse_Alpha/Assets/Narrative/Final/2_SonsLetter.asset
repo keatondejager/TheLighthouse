@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
   m_Name: 2_SonsLetter
   m_EditorClassIdentifier: 
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 8300000, guid: 84e7ff5ebba08a3438dce406fa69acca, type: 3}
   subtitle: 'My son should understand. He grew up here. With us. I can''t just leave.
     Not like he did. '
   duration: 0
