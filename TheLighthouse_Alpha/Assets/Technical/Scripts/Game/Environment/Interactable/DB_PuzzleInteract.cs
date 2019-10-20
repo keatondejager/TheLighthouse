@@ -24,6 +24,7 @@ namespace Environment
 
         public override void Interact() {
             PlayerReference.instance.distributionPuzzle = puzzleManager;
+            PlayerReference.instance.RefreshCheckList();
             base.Interact();
         }
 

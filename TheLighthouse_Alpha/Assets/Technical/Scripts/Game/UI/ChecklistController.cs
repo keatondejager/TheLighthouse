@@ -34,6 +34,7 @@ public class ChecklistController : MonoBehaviour
     }
 
     private void OnEnable() {
+        SetSprite();
         Player.PlayerReference.instance.OnInventoryChange += SetSprite;
     }
 

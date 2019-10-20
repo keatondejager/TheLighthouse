@@ -31,7 +31,8 @@ namespace Player {
 
         public override void EnableState() {
             delay = 2 * Time.deltaTime;
-            MenuObject.SetActive(true);
+            if (MenuObject)
+                MenuObject.SetActive(true);
         }
 
         public override void DisableState() {

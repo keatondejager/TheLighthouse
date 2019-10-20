@@ -51,6 +51,10 @@ namespace Player
 
             public void AddItemToInventory(Item item) {
                 PlayerInventory.Add(item);
+                RefreshCheckList();
+            }
+
+            public void RefreshCheckList () {
                 if (OnInventoryChange != null) {
                     OnInventoryChange();
                 }
