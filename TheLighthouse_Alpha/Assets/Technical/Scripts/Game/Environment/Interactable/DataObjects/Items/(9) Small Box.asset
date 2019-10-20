@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38c17e972fb21694f97a22555911f8d5, type: 3}
-  m_Name: (3) Gear
+  m_Name: (9) Small Box
   m_EditorClassIdentifier: 
-  name: Gear
-  imageIcon: {fileID: 21300000, guid: b0b86b905adfcaf4cb451fdbf296cddf, type: 3}
-  itemCode: 3
+  name: Small Box
+  imageIcon: {fileID: 21300000, guid: 4c2e7d601c17d17469c0faee7c957b22, type: 3}
+  itemCode: 9

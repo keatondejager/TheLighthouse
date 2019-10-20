@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryObjectName: Tool Drawer
   _inventory:
-  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
+  - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
+  - {fileID: 11400000, guid: f7e39d3f8e3e38a48b445927171af216, type: 2}
   defaultInventory:
   - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
+  - {fileID: 11400000, guid: f7e39d3f8e3e38a48b445927171af216, type: 2}

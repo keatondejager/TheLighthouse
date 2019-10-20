@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Shelf_01 (Switch)
   m_EditorClassIdentifier: 
   InventoryObjectName: Tool Drawer
-  _inventory: []
+  _inventory:
+  - {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
+  - {fileID: 11400000, guid: 5eea75b71545489418811d08f1fe272e, type: 2}
   defaultInventory:
   - {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
+  - {fileID: 11400000, guid: 5eea75b71545489418811d08f1fe272e, type: 2}

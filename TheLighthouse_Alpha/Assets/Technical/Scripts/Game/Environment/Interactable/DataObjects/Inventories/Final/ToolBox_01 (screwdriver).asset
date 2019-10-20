@@ -16,3 +16,5 @@ MonoBehaviour:
   _inventory: []
   defaultInventory:
   - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
+  - {fileID: 11400000, guid: 220aa6d29d2d58e418459fcbd535740a, type: 2}
+  - {fileID: 11400000, guid: 7d85a55dd89ad5e4aa0d3b54901eb06a, type: 2}
