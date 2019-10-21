@@ -29,6 +29,7 @@ public class Valve_Puzzle : MonoBehaviour
         [SerializeField] protected int NoWrenchLineIndex;
         [SerializeField] protected int NoValveLineIndex;
         [SerializeField] protected int OpeningPuzzleLineIndex;
+        [SerializeField] protected int FinishPuzzleIndex;
 
     private PlayerManager manager;
     private bool hasFunction;
@@ -174,6 +175,7 @@ public class Valve_Puzzle : MonoBehaviour
 
     private void CompletePuzzle () {
         steam.Stop();
+        NarrativeController.instance.TriggerNarrative(FinishPuzzleIndex);
         steamCollider.SetActive(false);
         ButtonPrompt.SetActive(false);
         PlayerReference.instance.puzzleSteamComplete = true;

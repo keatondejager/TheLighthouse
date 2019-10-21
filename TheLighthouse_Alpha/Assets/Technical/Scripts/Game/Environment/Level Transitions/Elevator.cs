@@ -12,6 +12,7 @@ namespace Environment
 
         [SerializeField] protected Animator animControl;
         [SerializeField] private int _currentFloor;
+        [SerializeField] protected int NextFloorIndex;
         public int currentFloor {
             get => _currentFloor;
             set {
@@ -51,6 +52,7 @@ namespace Environment
             if (Player.PlayerReference.instance.puzzleOneComplete) {
                 Player.PlayerReference.instance.manager.gameObject.transform.position = movePosition;
                 currentFloor = 1;
+                NarrativeController.instance.TriggerNarrative(NextFloorIndex);
             } else {
                 NarrativeController.instance.TriggerNarrative(CannotOpenIndex);
             }

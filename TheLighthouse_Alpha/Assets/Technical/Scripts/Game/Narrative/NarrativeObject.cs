@@ -9,4 +9,6 @@ public class NarrativeObject : ScriptableObject
     public string subtitle;
     public float duration;
     public bool Repeatable;
+
+    public int priority;
 }
