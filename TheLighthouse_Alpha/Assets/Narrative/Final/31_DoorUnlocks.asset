@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 31_DoorUnlocks
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 8300000, guid: 4d963bc856e11744bbf195568b7f55aa, type: 3}
-  subtitle: 'I had to fix it her way, the thing hasn''t so much as creaked in the
-    last eight years. I wish she was still here, I miss her everyday. '
+  subtitle: That should do it. There we go doors open.
   duration: 0
   Repeatable: 0

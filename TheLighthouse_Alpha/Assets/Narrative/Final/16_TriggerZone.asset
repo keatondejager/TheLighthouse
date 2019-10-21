@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 16_TriggerZone
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 8300000, guid: 62a11e74ef041ef449b7d7c3600b3915, type: 3}
-  subtitle: Looks like the pipe burst. I can probably just close it, but I am going
-    to need my wrench.
+  subtitle: Looks like the pipe's burst. I can close it, but I'll need my wrench.
   duration: 0
   Repeatable: 0

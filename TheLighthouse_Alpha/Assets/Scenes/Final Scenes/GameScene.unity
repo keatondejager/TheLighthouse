@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.083862364, g: 0.083862364, b: 0.083862364, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8931,9 +8931,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630245128941685881, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
+      propertyPath: PlayerInventory.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245128941685881, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
       propertyPath: PlayerInventory.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2,
+      objectReference: {fileID: 11400000, guid: aef7051dc00d6a447adc64a682c98ad1,
         type: 2}
     - target: {fileID: 7630245128941685881, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -10275,6 +10280,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630245128802672069, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7630245129344398369, guid: 7a72138fcb35e3245abeef4b89a2fb0c,
         type: 3}
@@ -25037,6 +25047,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   animControl: {fileID: 4919627391787004378}
   _currentFloor: 0
+  NextFloorIndex: 15
 --- !u!95 &4919627391787004378
 Animator:
   serializedVersion: 3
@@ -31789,9 +31800,10 @@ MonoBehaviour:
   state: 0
   ValveItem: {fileID: 11400000, guid: aef7051dc00d6a447adc64a682c98ad1, type: 2}
   WrenchItem: {fileID: 11400000, guid: 0b3522178dffe044ab69e2225b5ea11e, type: 2}
-  NoWrenchLineIndex: 0
+  NoWrenchLineIndex: 24
   NoValveLineIndex: 0
-  OpeningPuzzleLineIndex: 24
+  OpeningPuzzleLineIndex: 0
+  FinishPuzzleIndex: 26
   progress: 0
   decaySpeed: 0.2
   jumpAmount: 0.1

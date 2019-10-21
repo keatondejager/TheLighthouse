@@ -17,6 +17,8 @@ public class NarrativeController : MonoBehaviour
     private float subtitleClearDelay;
     private AudioClip toPlay;
 
+    private List<NarrativeObject> queue;
+
     private void Awake() {
         if (instance == null) {
             instance = this;
@@ -25,36 +27,53 @@ public class NarrativeController : MonoBehaviour
         }
 
         cuesTriggered = new List<int>();
+        queue = new List<NarrativeObject>();
     }
 
     public void TriggerNarrative (int cueIndex) {
-        if (cuesTriggered.Contains(cueIndex)) {
+        if (cuesTriggered.Contains(cueIndex) || queue.Contains(Story[cueIndex])) {
             return;
         }
         if (!Story[cueIndex].Repeatable) {
             cuesTriggered.Add(cueIndex); 
         }
 
-        subtitleSource.text = Story[cueIndex].subtitle;
-        if (Story[cueIndex].voiceLine != null) {
-            toPlay = Story[cueIndex].voiceLine; 
+        if (queue.Count > 0) {
+            if (Story[cueIndex].priority > 0) {
+                if (Story[cueIndex].priority > 9) {
+                    queue.Insert(0, Story[cueIndex]);
+                } else if (queue.Count < 2) {
+                    queue.Add(Story[cueIndex]);
+                }
+            }
+            return;
         }
-
-        if (Story[cueIndex].duration > 0) {
-            subtitleClearDelay = Story[cueIndex].duration;
-        } else {
-            subtitleClearDelay = Story[cueIndex].voiceLine != null ? Story[cueIndex].voiceLine.length + 1f : Story[cueIndex].subtitle.Length / 8f;
-        }
-        
+        queue.Add(Story[cueIndex]);    
     }
 
     private void Update() {
-        if (toPlay != null) {
+        // if (toPlay != null) {
+        //     if (!VoiceLineSource.isPlaying) {
+        //         VoiceLineSource.clip = toPlay;
+        //         VoiceLineSource.Play();
+        //         toPlay = null;
+        //     } 
+        // }
+
+        if (queue.Count > 0) {
             if (!VoiceLineSource.isPlaying) {
-                VoiceLineSource.clip = toPlay;
+                VoiceLineSource.clip = queue[0].voiceLine;
                 VoiceLineSource.Play();
-                toPlay = null;
-            } 
+                subtitleSource.text = queue[0].subtitle;
+
+                if (queue[0].duration > 0) {
+                    subtitleClearDelay = queue[0].duration;
+                } else {
+                    subtitleClearDelay = queue[0].voiceLine != null ? queue[0].voiceLine.length + 1.5f : queue[0].subtitle.Length / 8f;
+                }
+
+                queue.RemoveAt(0);
+            }
         }
 
         if (subtitleClearDelay > 0) {
