@@ -87,6 +87,9 @@ namespace Player
             public bool puzzleTwoComplete = false;
             public bool puzzleSteamComplete = false;
             public bool canDoTransition = false;
+        
+        [Header("Narrative")]
+            public bool hasInteractedWithDoor;
        
 
         private void Awake() {
