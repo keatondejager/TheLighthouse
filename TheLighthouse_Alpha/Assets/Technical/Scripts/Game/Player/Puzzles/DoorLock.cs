@@ -46,6 +46,8 @@ public class DoorLock : MonoBehaviour
         [SerializeField] protected int OpenPuzzleIndex;
         [SerializeField] protected int WrongCombinationNarrative;
         [SerializeField] protected int correctCombinationNarrative;
+        [SerializeField] protected int leaveBeforeSolveIndex;
+        [SerializeField] protected int leaveRepeated;
 
 
     private void Start() {
@@ -162,6 +164,12 @@ public class DoorLock : MonoBehaviour
     public void ClosePuzzleUI () {
         UI_Prompts.SetActive(false);
         digitDisplay[Index].fontSize = normalFontSize;
+        if (isLocked && !PlayerReference.instance.hasInteractedWithDoor) {
+            PlayerReference.instance.hasInteractedWithDoor = true;
+            NarrativeController.instance.TriggerNarrative(leaveBeforeSolveIndex);
+        } else if (isLocked) {
+            NarrativeController.instance.TriggerNarrative(leaveRepeated);
+        }
         controls.PuzzleControls.Disable();
     }
 

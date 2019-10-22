@@ -485,7 +485,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -4244573586694794519, guid: a024b1e803b7de64189613ef1f60b076,
+  m_Sprite: {fileID: -3084754811954313425, guid: 7d45be8596e8af043a26b00aca3a0f50,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -816,7 +816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2128112604947117652
 Transform:
   m_ObjectHideFlags: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
   - {fileID: 8566654397925319277}
   - {fileID: 4267516861091936519}
   LightsToTurnOff: []
-  breakChance: 0.5
+  breakChance: 0
   LightsOffNarrativeIndex: 14
 --- !u!1 &1067898784901449869
 GameObject:
@@ -1036,8 +1036,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Wires
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 91bd1350fd93e534dae3fafa5b892f35, type: 2}
-  m_sharedMaterial: {fileID: -2514835776635761130, guid: 91bd1350fd93e534dae3fafa5b892f35,
+  m_fontAsset: {fileID: 11400000, guid: 817dc9937767f594787faf4d2c059253, type: 2}
+  m_sharedMaterial: {fileID: 2945648357108710941, guid: 817dc9937767f594787faf4d2c059253,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1063,14 +1063,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2256,8 +2256,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Switch
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 91bd1350fd93e534dae3fafa5b892f35, type: 2}
-  m_sharedMaterial: {fileID: -2514835776635761130, guid: 91bd1350fd93e534dae3fafa5b892f35,
+  m_fontAsset: {fileID: 11400000, guid: 817dc9937767f594787faf4d2c059253, type: 2}
+  m_sharedMaterial: {fileID: 2945648357108710941, guid: 817dc9937767f594787faf4d2c059253,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2283,14 +2283,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2432,6 +2432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389183773840248920}
+  - component: {fileID: 1417838327}
   m_Layer: 0
   m_Name: Checklist
   m_TagString: Untagged
@@ -2459,6 +2460,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1417838327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528079427536260778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a631d430d853dd646b0085f578232a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckBox:
+  - {fileID: 2437593536586372208}
+  - {fileID: 598714394813000389}
+  - {fileID: 3480763949345730734}
+  Items:
+  - {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
+  - {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
+  - {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
+  CheckMark: {fileID: 2818856825450654885, guid: 7d45be8596e8af043a26b00aca3a0f50,
+    type: 3}
+  EmptyBox: {fileID: -3084754811954313425, guid: 7d45be8596e8af043a26b00aca3a0f50,
+    type: 3}
+  myImage: {fileID: 1132487685223077006}
 --- !u!1 &2614808636407792758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,7 +3469,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -4244573586694794519, guid: a024b1e803b7de64189613ef1f60b076,
+  m_Sprite: {fileID: -3084754811954313425, guid: 7d45be8596e8af043a26b00aca3a0f50,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3827,8 +3853,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Screwdriver
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 91bd1350fd93e534dae3fafa5b892f35, type: 2}
-  m_sharedMaterial: {fileID: -2514835776635761130, guid: 91bd1350fd93e534dae3fafa5b892f35,
+  m_fontAsset: {fileID: 11400000, guid: 817dc9937767f594787faf4d2c059253, type: 2}
+  m_sharedMaterial: {fileID: 2945648357108710941, guid: 817dc9937767f594787faf4d2c059253,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3854,14 +3880,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3986,8 +4012,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 8881607374623424356, guid: 12b94bf89b566434fbc0fee56c68660c,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 080c9c03713374d459f07ce2c9fc6021, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5304,7 +5329,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -4244573586694794519, guid: a024b1e803b7de64189613ef1f60b076,
+  m_Sprite: {fileID: -3084754811954313425, guid: 7d45be8596e8af043a26b00aca3a0f50,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -6728,8 +6753,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -7896066625056345520, guid: 26f1987b1bea1564abeb650011d8540b,
-    type: 3}
+  m_Sprite: {fileID: 291926779446066459, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6956,8 +6980,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -7896066625056345520, guid: 26f1987b1bea1564abeb650011d8540b,
-    type: 3}
+  m_Sprite: {fileID: 291926779446066459, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7095,7 +7118,8 @@ MonoBehaviour:
   isEnabled: 0
   Standby: {fileID: 8035418922481317104}
   hasInteracted: 0
-  NarrativeCueIndex: 4
+  NarrativeCueIndex: 0
+  CompletePuzzleIndex: 13
   CheckList: {fileID: 2528079427536260778}
   checklistDelay: 2
   impatientTime: 11
@@ -7152,7 +7176,7 @@ MonoBehaviour:
   UIPrompt: {fileID: 9058661338676260838}
   hasRequirement: 1
   requiredItem: {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
-  RepeatableNarrativeCueIndex: 0
+  RepeatableNarrativeCueIndex: 3
   isPlacing: 1
   SwitchObject: {fileID: 2360212908813869085}
   isRightGrabDown: 0
@@ -7424,7 +7448,7 @@ MonoBehaviour:
   UIPrompt: {fileID: 9058661340175657223}
   hasRequirement: 1
   requiredItem: {fileID: 11400000, guid: 5a9c0db6057e7904b9dc2a99694fa682, type: 2}
-  RepeatableNarrativeCueIndex: 0
+  RepeatableNarrativeCueIndex: 2
   isPlacing: 1
   SwitchObject: {fileID: 6718864812440043158}
   isRightGrabDown: 0
@@ -7771,7 +7795,7 @@ MonoBehaviour:
   UIPrompt: {fileID: 9058661339708769284}
   hasRequirement: 1
   requiredItem: {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
-  RepeatableNarrativeCueIndex: 3
+  RepeatableNarrativeCueIndex: 1
   progressDisp: {fileID: 5911106307146718032}
   myScrewObject: {fileID: 7083262278739931642}
   stateDirection: 0
@@ -8052,7 +8076,7 @@ MonoBehaviour:
   UIPrompt: {fileID: 9058661338405020146}
   hasRequirement: 1
   requiredItem: {fileID: 11400000, guid: 1b211b536d9936b44bb9acc31f545d15, type: 2}
-  RepeatableNarrativeCueIndex: 0
+  RepeatableNarrativeCueIndex: 3
   isPlacing: 1
   SwitchObject: {fileID: 1326392280426203967}
   isRightGrabDown: 0
@@ -8108,7 +8132,7 @@ MonoBehaviour:
   UIPrompt: {fileID: 9058661338987243935}
   hasRequirement: 1
   requiredItem: {fileID: 11400000, guid: 35696904f675935418be3f902eb03db2, type: 2}
-  RepeatableNarrativeCueIndex: 3
+  RepeatableNarrativeCueIndex: 1
   progressDisp: {fileID: 6503969765785091587}
   myScrewObject: {fileID: 4575335517117887107}
   stateDirection: 0
@@ -8202,8 +8226,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -7896066625056345520, guid: 26f1987b1bea1564abeb650011d8540b,
-    type: 3}
+  m_Sprite: {fileID: 291926779446066459, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

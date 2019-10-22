@@ -16,8 +16,9 @@ public class NarrativeController : MonoBehaviour
     private List<int> cuesTriggered;
     private float subtitleClearDelay;
     private AudioClip toPlay;
-
+    private float timestamp;
     private List<NarrativeObject> queue;
+    private bool interrupted;
 
     private void Awake() {
         if (instance == null) {
@@ -38,6 +39,11 @@ public class NarrativeController : MonoBehaviour
             cuesTriggered.Add(cueIndex); 
         }
 
+        if (Story[cueIndex].priority > 100) {
+            Interupt(Story[cueIndex]);
+            return;
+        }
+
         if (queue.Count > 0) {
             if (Story[cueIndex].priority > 0) {
                 if (Story[cueIndex].priority > 9) {
@@ -51,6 +57,11 @@ public class NarrativeController : MonoBehaviour
         queue.Add(Story[cueIndex]);    
     }
 
+    private void Interupt (NarrativeObject interupter) {
+        queue.Insert(0, interupter);
+        VoiceLineSource.Stop();
+    }
+
     private void Update() {
         // if (toPlay != null) {
         //     if (!VoiceLineSource.isPlaying) {
@@ -62,7 +73,9 @@ public class NarrativeController : MonoBehaviour
 
         if (queue.Count > 0) {
             if (!VoiceLineSource.isPlaying) {
+                
                 VoiceLineSource.clip = queue[0].voiceLine;
+
                 VoiceLineSource.Play();
                 subtitleSource.text = queue[0].subtitle;
 

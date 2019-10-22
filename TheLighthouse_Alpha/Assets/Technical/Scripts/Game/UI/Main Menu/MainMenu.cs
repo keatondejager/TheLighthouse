@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    
     public GameObject ConfirmQuitMenu; // To Be Added 
 
-
+    public GameObject OptionsMenu;
 
 
 
@@ -22,7 +23,7 @@ public class MainMenu : MonoBehaviour
     } 
 
     public void Options () {
-        // Watch this space
+        OptionsMenu.SetActive(true);
     }
 
     public void QuitGame () {
