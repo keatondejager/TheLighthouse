@@ -1717,6 +1717,46 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Up"",
+                    ""type"": ""Button"",
+                    ""id"": ""f45f804e-9395-460c-a121-a76cc583ac0e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Down"",
+                    ""type"": ""Button"",
+                    ""id"": ""0495e77d-fa09-4e9f-bfc6-35b029234128"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""b9cfc037-5384-49d4-8701-4c124ce63b8c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""5af45a3d-3412-40b2-9d7d-6b41c8afc02f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Save"",
+                    ""type"": ""Button"",
+                    ""id"": ""75138636-0617-4876-ba4a-adc65aec64c7"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -1724,17 +1764,6 @@ public class PlayerInputActions : IInputActionCollection
                     ""name"": """",
                     ""id"": ""eca27435-6f58-4a33-ad13-c344ba9eaa0e"",
                     ""path"": ""<Keyboard>/backspace"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Back"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""908014d9-aa78-4f85-adbe-0a70f82457f5"",
-                    ""path"": ""<DualShockGamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -1777,12 +1806,111 @@ public class PlayerInputActions : IInputActionCollection
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f21f1de3-77d9-4e58-a1ac-c54a4825eb3a"",
-                    ""path"": ""<DualShockGamepad>/start"",
+                    ""id"": ""51d60626-2244-49bb-87b4-2a895f5f0cf1"",
+                    ""path"": ""<Gamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Close"",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9821a1e9-5402-4e9c-b0b0-905aec7dfd50"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""554302b8-4dae-4c96-909e-292196a1ef36"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ccbe21e4-9979-429a-895e-293dc5037460"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0fcf8b95-d1c9-4035-9fdd-68ab4ad4d5d4"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ad085a0-db36-4716-b402-fe7b8f606344"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9d410bbe-4868-438f-8922-1b33a159b04f"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4541c008-8dd2-4c76-804c-a15b2b61572a"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bc2ae0fb-408c-4bc0-b93c-e4ec1cae8efa"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Save"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e9cb9f8a-c5be-4692-8c06-6922895736b4"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Save"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1837,6 +1965,11 @@ public class PlayerInputActions : IInputActionCollection
         m_OptionsMenu = asset.GetActionMap("OptionsMenu");
         m_OptionsMenu_Back = m_OptionsMenu.GetAction("Back");
         m_OptionsMenu_Close = m_OptionsMenu.GetAction("Close");
+        m_OptionsMenu_Up = m_OptionsMenu.GetAction("Up");
+        m_OptionsMenu_Down = m_OptionsMenu.GetAction("Down");
+        m_OptionsMenu_Right = m_OptionsMenu.GetAction("Right");
+        m_OptionsMenu_Left = m_OptionsMenu.GetAction("Left");
+        m_OptionsMenu_Save = m_OptionsMenu.GetAction("Save");
     }
 
     ~PlayerInputActions()
@@ -2278,12 +2411,22 @@ public class PlayerInputActions : IInputActionCollection
     private IOptionsMenuActions m_OptionsMenuActionsCallbackInterface;
     private readonly InputAction m_OptionsMenu_Back;
     private readonly InputAction m_OptionsMenu_Close;
+    private readonly InputAction m_OptionsMenu_Up;
+    private readonly InputAction m_OptionsMenu_Down;
+    private readonly InputAction m_OptionsMenu_Right;
+    private readonly InputAction m_OptionsMenu_Left;
+    private readonly InputAction m_OptionsMenu_Save;
     public struct OptionsMenuActions
     {
         private PlayerInputActions m_Wrapper;
         public OptionsMenuActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Back => m_Wrapper.m_OptionsMenu_Back;
         public InputAction @Close => m_Wrapper.m_OptionsMenu_Close;
+        public InputAction @Up => m_Wrapper.m_OptionsMenu_Up;
+        public InputAction @Down => m_Wrapper.m_OptionsMenu_Down;
+        public InputAction @Right => m_Wrapper.m_OptionsMenu_Right;
+        public InputAction @Left => m_Wrapper.m_OptionsMenu_Left;
+        public InputAction @Save => m_Wrapper.m_OptionsMenu_Save;
         public InputActionMap Get() { return m_Wrapper.m_OptionsMenu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -2299,6 +2442,21 @@ public class PlayerInputActions : IInputActionCollection
                 Close.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
                 Close.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
                 Close.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnClose;
+                Up.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnUp;
+                Up.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnUp;
+                Up.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnUp;
+                Down.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDown;
+                Down.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDown;
+                Down.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDown;
+                Right.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnRight;
+                Right.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnRight;
+                Right.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnRight;
+                Left.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnLeft;
+                Left.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnLeft;
+                Left.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnLeft;
+                Save.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
+                Save.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
+                Save.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
             }
             m_Wrapper.m_OptionsMenuActionsCallbackInterface = instance;
             if (instance != null)
@@ -2309,6 +2467,21 @@ public class PlayerInputActions : IInputActionCollection
                 Close.started += instance.OnClose;
                 Close.performed += instance.OnClose;
                 Close.canceled += instance.OnClose;
+                Up.started += instance.OnUp;
+                Up.performed += instance.OnUp;
+                Up.canceled += instance.OnUp;
+                Down.started += instance.OnDown;
+                Down.performed += instance.OnDown;
+                Down.canceled += instance.OnDown;
+                Right.started += instance.OnRight;
+                Right.performed += instance.OnRight;
+                Right.canceled += instance.OnRight;
+                Left.started += instance.OnLeft;
+                Left.performed += instance.OnLeft;
+                Left.canceled += instance.OnLeft;
+                Save.started += instance.OnSave;
+                Save.performed += instance.OnSave;
+                Save.canceled += instance.OnSave;
             }
         }
     }
@@ -2365,5 +2538,10 @@ public class PlayerInputActions : IInputActionCollection
     {
         void OnBack(InputAction.CallbackContext context);
         void OnClose(InputAction.CallbackContext context);
+        void OnUp(InputAction.CallbackContext context);
+        void OnDown(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
+        void OnSave(InputAction.CallbackContext context);
     }
 }
