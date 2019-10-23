@@ -50,6 +50,8 @@ public class Panel : DB_State {
     }
 
     public override void Step() {
+        ProgressDisplay.gameObject.SetActive(isGrabButtonDown);
+
         if (analogueInput == 0 || !isGrabButtonDown) {
             return;
         }

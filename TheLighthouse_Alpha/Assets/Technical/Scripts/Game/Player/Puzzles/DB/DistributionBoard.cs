@@ -137,6 +137,7 @@ public class DistributionBoard : MonoBehaviour
                 }
             } else {
                 activeState = Standby;
+                doSecondLineDelay = Time.time + 0.5f;
             }
 
             

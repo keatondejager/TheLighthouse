@@ -43,6 +43,7 @@ public class Wires : DB_State
     }
 
     public override void Step() {
+        ProgressDisp.gameObject.SetActive( isLeftGrabDown && isRightGrabDown);
         if (!isLeftGrabDown || !isRightGrabDown || analogueInput == 0) {
             return;
         }

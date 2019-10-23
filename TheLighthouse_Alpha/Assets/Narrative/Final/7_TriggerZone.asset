@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 7_TriggerZone
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 8300000, guid: 6f0279f4a63efd640a77017ebd0afe03, type: 3}
-  subtitle: Hmph. It's burnt out.
+  subtitle: Hmph. It's burnt out. I should have spare parts lying around, maybe I
+    can put it back together.
   duration: 0
   Repeatable: 0
+  priority: 0
