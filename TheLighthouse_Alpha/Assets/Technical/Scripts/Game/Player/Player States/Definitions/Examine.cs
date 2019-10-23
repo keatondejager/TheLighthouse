@@ -51,7 +51,7 @@ namespace Player
         }
 
         public override void Step() {
-            Vector3 _rotation = cameraTransform.forward * -rotationInput.x + cameraTransform.right * rotationInput.y;
+            Vector3 _rotation = Vector3.up * -rotationInput.x + cameraTransform.right * rotationInput.y;
 
             _rotation *= Time.deltaTime;
 
