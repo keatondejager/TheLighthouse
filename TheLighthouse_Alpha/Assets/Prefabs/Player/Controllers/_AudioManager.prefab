@@ -618,6 +618,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: aff2190f17981114690ccfb3a15623e4, type: 3}
   - {fileID: 8300000, guid: 40d8f170f62f7f340a9858738f3a5836, type: 3}
   - {fileID: 8300000, guid: b1d61ae932ad8ba4dae0e4230728bd77, type: 3}
+  creditsSong: {fileID: 8300000, guid: aff2190f17981114690ccfb3a15623e4, type: 3}
 --- !u!1 &7329773964295222666
 GameObject:
   m_ObjectHideFlags: 0

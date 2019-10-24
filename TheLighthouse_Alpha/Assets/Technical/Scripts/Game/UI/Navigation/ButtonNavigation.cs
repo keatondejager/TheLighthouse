@@ -86,6 +86,7 @@ public class ButtonNavigation : MonoBehaviour
             return;
         }
         buttonOptions[currentIndex].Submit();
+        buttonOptions[currentIndex].Deactivate();
     }
 
     private void OnEnable() {

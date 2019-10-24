@@ -59,6 +59,9 @@ namespace Player
         public override void DisableState() {
             controls.Interact.Disable();
             SearchUIObject.SetActive(false);
+            if (activeData.inventory.Count <= 0) {
+                PlayerReference.instance.manager.interacting.Prompt.SetActive(false);
+            }
         }
 
         public void TakeItem (int itemID) {

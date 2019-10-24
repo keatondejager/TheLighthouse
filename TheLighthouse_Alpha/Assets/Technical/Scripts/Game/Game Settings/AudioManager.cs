@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class AudioManager : MonoBehaviour
     [Header("Music")]
         [SerializeField] protected AudioSource musicSource;
         [SerializeField] protected List<AudioClip> Songs; 
+        [SerializeField] protected AudioClip creditsSong;
 
 
     private void Start() {
@@ -47,10 +49,24 @@ public class AudioManager : MonoBehaviour
         SetAmbient();
         SetFootsteps();
 
-        informativeSource.Play();
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            informativeSource.Play();
+        }
     }
 
     private void SetMusic () {
+        if (SceneManager.GetActiveScene().buildIndex == 2) {
+            rain.Stop();
+            musicSource.Stop();
+
+            musicSource.clip = creditsSong;
+
+            musicSource.Play();
+            
+            Invoke("ExitCredits", creditsSong.length);
+            return;
+        }
+
         if (musicSource.isPlaying) {
             musicSource.Stop();
         }
@@ -99,6 +115,10 @@ public class AudioManager : MonoBehaviour
         if (generalSource.isPlaying) {
             generalSource.Pause();
         }
+    }
+
+    private void ExitCredits() {
+        SceneManager.LoadScene(0);
     }
 
     

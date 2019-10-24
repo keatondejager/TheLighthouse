@@ -31,7 +31,9 @@ namespace Player
 
             [Header("Narrative")]
                 [SerializeField] protected int StartIndex;
-        
+
+            [Header("Interactables")]
+                public Environment.Interactable interacting;
         #endregion
 
         private void Awake() {

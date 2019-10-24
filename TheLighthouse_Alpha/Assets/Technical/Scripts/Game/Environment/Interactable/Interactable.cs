@@ -46,6 +46,7 @@ namespace Environment {
                     player = PlayerReference.instance.manager; 
                 }
                 player.OnInteractEnter += Interact;
+                player.interacting = this;
                 hasFunction = true;
                 Prompt.SetActive(true);
             }
