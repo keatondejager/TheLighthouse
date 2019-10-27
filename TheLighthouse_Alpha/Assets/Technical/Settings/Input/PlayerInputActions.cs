@@ -1757,6 +1757,30 @@ public class PlayerInputActions : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Defaults"",
+                    ""type"": ""Button"",
+                    ""id"": ""71b4b406-f91d-4d1c-8730-d3be4c03ab39"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Next"",
+                    ""type"": ""Button"",
+                    ""id"": ""9cd8d93a-1a5c-4bc5-8467-623bb4f0dc87"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Previous"",
+                    ""type"": ""Button"",
+                    ""id"": ""f4f6ec55-0f8d-42b8-b1fc-1d565d8ece39"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -1913,6 +1937,72 @@ public class PlayerInputActions : IInputActionCollection
                     ""action"": ""Save"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2e4dada-a53b-4ec5-a71d-8ba9e51a6af2"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Defaults"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1061aec6-fa3c-4919-b7f2-1e3ee9199123"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Defaults"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""371eec9c-0557-4829-a1c2-2e207e5470ca"",
+                    ""path"": ""<Keyboard>/rightCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Next"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab386f32-0a9b-42b6-9ac6-5b46ef5adebb"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Next"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af6484e2-881f-4a1f-967d-e8cf37bd0175"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Previous"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3611e890-26f5-4522-a4c2-905bd4a7f574"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Previous"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1970,6 +2060,9 @@ public class PlayerInputActions : IInputActionCollection
         m_OptionsMenu_Right = m_OptionsMenu.GetAction("Right");
         m_OptionsMenu_Left = m_OptionsMenu.GetAction("Left");
         m_OptionsMenu_Save = m_OptionsMenu.GetAction("Save");
+        m_OptionsMenu_Defaults = m_OptionsMenu.GetAction("Defaults");
+        m_OptionsMenu_Next = m_OptionsMenu.GetAction("Next");
+        m_OptionsMenu_Previous = m_OptionsMenu.GetAction("Previous");
     }
 
     ~PlayerInputActions()
@@ -2416,6 +2509,9 @@ public class PlayerInputActions : IInputActionCollection
     private readonly InputAction m_OptionsMenu_Right;
     private readonly InputAction m_OptionsMenu_Left;
     private readonly InputAction m_OptionsMenu_Save;
+    private readonly InputAction m_OptionsMenu_Defaults;
+    private readonly InputAction m_OptionsMenu_Next;
+    private readonly InputAction m_OptionsMenu_Previous;
     public struct OptionsMenuActions
     {
         private PlayerInputActions m_Wrapper;
@@ -2427,6 +2523,9 @@ public class PlayerInputActions : IInputActionCollection
         public InputAction @Right => m_Wrapper.m_OptionsMenu_Right;
         public InputAction @Left => m_Wrapper.m_OptionsMenu_Left;
         public InputAction @Save => m_Wrapper.m_OptionsMenu_Save;
+        public InputAction @Defaults => m_Wrapper.m_OptionsMenu_Defaults;
+        public InputAction @Next => m_Wrapper.m_OptionsMenu_Next;
+        public InputAction @Previous => m_Wrapper.m_OptionsMenu_Previous;
         public InputActionMap Get() { return m_Wrapper.m_OptionsMenu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -2457,6 +2556,15 @@ public class PlayerInputActions : IInputActionCollection
                 Save.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
                 Save.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
                 Save.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnSave;
+                Defaults.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDefaults;
+                Defaults.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDefaults;
+                Defaults.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnDefaults;
+                Next.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnNext;
+                Next.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnNext;
+                Next.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnNext;
+                Previous.started -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnPrevious;
+                Previous.performed -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnPrevious;
+                Previous.canceled -= m_Wrapper.m_OptionsMenuActionsCallbackInterface.OnPrevious;
             }
             m_Wrapper.m_OptionsMenuActionsCallbackInterface = instance;
             if (instance != null)
@@ -2482,6 +2590,15 @@ public class PlayerInputActions : IInputActionCollection
                 Save.started += instance.OnSave;
                 Save.performed += instance.OnSave;
                 Save.canceled += instance.OnSave;
+                Defaults.started += instance.OnDefaults;
+                Defaults.performed += instance.OnDefaults;
+                Defaults.canceled += instance.OnDefaults;
+                Next.started += instance.OnNext;
+                Next.performed += instance.OnNext;
+                Next.canceled += instance.OnNext;
+                Previous.started += instance.OnPrevious;
+                Previous.performed += instance.OnPrevious;
+                Previous.canceled += instance.OnPrevious;
             }
         }
     }
@@ -2543,5 +2660,8 @@ public class PlayerInputActions : IInputActionCollection
         void OnRight(InputAction.CallbackContext context);
         void OnLeft(InputAction.CallbackContext context);
         void OnSave(InputAction.CallbackContext context);
+        void OnDefaults(InputAction.CallbackContext context);
+        void OnNext(InputAction.CallbackContext context);
+        void OnPrevious(InputAction.CallbackContext context);
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 using UnityEngine;
 using UnityEngine.Audio;
 using TMPro;
 
-public class OptionsMenu : MonoBehaviour
+public class AudioOptions : MonoBehaviour
 {
 
     public List<VolumeSetting> settings;
@@ -29,35 +30,61 @@ public class OptionsMenu : MonoBehaviour
         }
     }
 
+    public float sensitivity = 0.2f;
+    private float delay;
 
-    
+
+    private bool isRightDown;
+    private bool isLeftDown;
     
     private void Awake() {
         controls = new PlayerInputActions();
 
-        controls.OptionsMenu.Back.performed += ctx => OptionsClose();
+        controls.OptionsMenu.Back.canceled += ctx => Revert();
 
         controls.OptionsMenu.Up.started += ctx => Up();
         controls.OptionsMenu.Down.started += ctx => Down();
-        controls.OptionsMenu.Left.started += ctx => Left();
-        controls.OptionsMenu.Right.started += ctx => Right();
 
-        controls.OptionsMenu.Save.performed += ctx => Save();
+        controls.OptionsMenu.Left.started += ctx => Left();
+        controls.OptionsMenu.Left.performed += ctx => isLeftDown = true;
+        controls.OptionsMenu.Left.canceled += ctx => isLeftDown = false;
+        
+        controls.OptionsMenu.Right.started += ctx => Right();
+        controls.OptionsMenu.Right.performed += ctx => isRightDown = true;
+        controls.OptionsMenu.Right.canceled += ctx => isRightDown = false;
+
+        controls.OptionsMenu.Save.canceled += ctx => Save();
+
+        controls.OptionsMenu.Defaults.started += ctx => SetDefault();
+    }
+
+    private void Update() {
+        if (isRightDown) {
+            Right();
+        } 
+        if (isLeftDown) {
+            Left();
+        }
     }
 
     public void Save () {
         foreach(VolumeSetting item in settings) {
             item.SaveVolume();
         }
-        OptionsClose();
     }
 
-    private void OptionsClose () {
-        mainMenu.SetActive(true);
-
-        this.gameObject.SetActive(false);
-        controls.UINavigation.Enable();
+    public void Revert () {
+        foreach (VolumeSetting item in settings) {
+            item.RevertVolume();
+        }
     }
+
+    public void SetDefault () {
+        foreach (VolumeSetting item in settings) {
+            item.SetToDefault();
+        }
+    }
+
 
     private void OnEnable() {
         controls.OptionsMenu.Enable();
@@ -82,12 +109,17 @@ public class OptionsMenu : MonoBehaviour
     }
 
     private void Left () {
-         settings[optionIndex].volume = Mathf.Clamp( settings[optionIndex].volume - 1, 0, 100);
+        if (delay < Time.time) {
+            settings[optionIndex].volume = Mathf.Clamp( settings[optionIndex].volume - 1, 0, 100);
+            delay = Time.time + sensitivity;
+        }
     }
 
     private void Right () {
-         settings[optionIndex].volume = Mathf.Clamp( settings[optionIndex].volume + 1, 0, 100);
-        
+        if (delay < Time.time) {
+            settings[optionIndex].volume = Mathf.Clamp( settings[optionIndex].volume + 1, 0, 100);
+            delay = Time.time + sensitivity;
+        }
     }
 }
 
@@ -101,21 +133,38 @@ public class VolumeSetting {
         set {
             _volume = Mathf.Round(value - 80f);
             display.text = volume.ToString();
+            manager.SetFloat(volumeParameter, _volume);
         }
     }
 
     private float _volume; 
+
+    public float DefaultVolume;
+    private float originalVolume;
     public GameObject indicator;
     public AudioMixer manager;
 
     public string volumeParameter = "Master Volume";
 
     public void FetchVolume () {
-        manager.GetFloat(volumeParameter, out _volume);
+        manager.GetFloat(volumeParameter, out originalVolume);
+        _volume = originalVolume;
     }
 
     public void SaveVolume() {
         manager.SetFloat(volumeParameter, _volume);
+        originalVolume = _volume;
+    }
+
+    public void RevertVolume () {
+        manager.SetFloat(volumeParameter, originalVolume);
+        _volume = originalVolume;
+        display.text = volume.ToString();
+    }
+
+    public void SetToDefault () {
+        originalVolume = DefaultVolume;
+        RevertVolume();
     }
 
 } 
