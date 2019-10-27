@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4643560017134988908}
   - component: {fileID: 8912512654899127555}
   - component: {fileID: 5385980457587041605}
+  - component: {fileID: 8026068333662015227}
   m_Layer: 5
   m_Name: ButtonIcon
   m_TagString: Untagged
@@ -76,6 +77,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8026068333662015227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110102356144628213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7717af5002ad2a540aaf46b4a4a43f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myImage: {fileID: 5385980457587041605}
+  type: 2
 --- !u!1 &6454279337694709917
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +296,7 @@ GameObject:
   - component: {fileID: 7730150115157207049}
   - component: {fileID: 935761210116877751}
   - component: {fileID: 620361796179289470}
+  - component: {fileID: 2859550545144928728}
   m_Layer: 5
   m_Name: ButtonIcon
   m_TagString: Untagged
@@ -346,6 +362,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2859550545144928728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743860251450694021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7717af5002ad2a540aaf46b4a4a43f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myImage: {fileID: 620361796179289470}
+  type: 0
 --- !u!1 &8374684437744987074
 GameObject:
   m_ObjectHideFlags: 0

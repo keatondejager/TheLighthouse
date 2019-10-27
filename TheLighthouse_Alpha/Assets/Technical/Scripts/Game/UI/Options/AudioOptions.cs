@@ -9,8 +9,6 @@ public class AudioOptions : MonoBehaviour
 {
 
     public List<VolumeSetting> settings;
-
-    public GameObject mainMenu;
     private PlayerInputActions controls;
 
     private int _index;
@@ -89,11 +87,12 @@ public class AudioOptions : MonoBehaviour
     private void OnEnable() {
         controls.OptionsMenu.Enable();
         controls.UINavigation.Disable();
-        mainMenu.SetActive(false);
+
         foreach (VolumeSetting item in settings) {
             item.FetchVolume();
             item.display.text = item.volume.ToString();
         }
+        optionIndex = 0;
     }
 
     private void OnDisable() {

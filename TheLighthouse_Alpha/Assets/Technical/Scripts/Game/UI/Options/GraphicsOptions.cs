@@ -21,6 +21,12 @@ public class GraphicsOptions : MonoBehaviour
         public float defaultExposure;
         [Space]
         public float increment = 0.1f;
+
+    [Header("Screen Mode")]
+        public bool isFullScreen = true;
+
+        public TMP_Text ModeDisplay;
+
     
     [Header("Reference")]
         public List<GameObject> indicators;
@@ -79,6 +85,9 @@ public class GraphicsOptions : MonoBehaviour
         }
 
         BrightnessValue = menuExposure.compensation.GetValue<float>();
+
+        index = 0;
+        valueDisplay.value = Map01(BrightnessValue, minExposure, maxExposure);
     }
 
     private void Update() {
@@ -111,6 +120,10 @@ public class GraphicsOptions : MonoBehaviour
             SetExposure(); 
         }
 
+        if (index == 1) {
+            SetScreen();
+        }
+
         delay = Time.time + sensitivity;
     }
 
@@ -124,6 +137,10 @@ public class GraphicsOptions : MonoBehaviour
             SetExposure();
         }
 
+        if (index == 1) {
+            SetScreen();
+        }
+
         delay = Time.time + sensitivity;
     }
 
@@ -133,6 +150,13 @@ public class GraphicsOptions : MonoBehaviour
 
         valueDisplay.value = Map01(BrightnessValue, minExposure, maxExposure);
     } 
+
+    private void SetScreen () {
+        isFullScreen = !isFullScreen;
+        ModeDisplay.text = isFullScreen ? "Fullscreen" : "Windowed";
+
+        Screen.fullScreen = isFullScreen;
+    }
 
     private float Map01 (float val, float min, float max) {
         return (val - min) / (max - min); 

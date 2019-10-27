@@ -5,7 +5,13 @@ using UnityEngine;
 public class OptionsMenuControl : MonoBehaviour
 {
     public List<GameObject> optionsLists;
+    public List<Transform> optionLabels;
     public GameObject MainMenu;
+
+    
+
+    public GameObject MenuIndicator;
+
     private int _listIndex;
     protected int index {
         get => _listIndex;
@@ -21,6 +27,9 @@ public class OptionsMenuControl : MonoBehaviour
                 _listIndex = 0;
             }
             optionsLists[_listIndex].SetActive(true);
+            Vector3 position = MenuIndicator.transform.position;
+            position.x = optionLabels[_listIndex].position.x;
+            MenuIndicator.transform.position = position;
         }
     }
 

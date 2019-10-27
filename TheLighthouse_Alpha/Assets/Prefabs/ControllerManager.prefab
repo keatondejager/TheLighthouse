@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8304004128761732352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8304004128761732358}
+  - component: {fileID: 8304004128761732353}
+  m_Layer: 0
+  m_Name: ControllerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8304004128761732358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304004128761732352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 705.62415, y: 371.59677, z: 114.99017}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8304004128761732353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304004128761732352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b9d6d986869b64c8f911f891bcbe5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractSprites:
+  - {fileID: -7896066625056345520, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
+  - {fileID: 402176972062023477, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  ExamineSprites:
+  - {fileID: 291926779446066459, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
+  - {fileID: -4244573586694794519, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  CloseSprites:
+  - {fileID: -3729955917459970327, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
+  - {fileID: -2596631423310846082, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  ConfirmSprites:
+  - {fileID: 9154463152959459473, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
+  - {fileID: 7033756916143513353, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  North: {fileID: 0}
+  South: {fileID: 0}
+  West: {fileID: 0}
+  East: {fileID: 0}
+  ActiveController: 1
