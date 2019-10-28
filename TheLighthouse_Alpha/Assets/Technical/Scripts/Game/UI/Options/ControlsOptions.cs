@@ -23,6 +23,13 @@ public class ControlsOptions : MonoBehaviour
     }
 
     private void OnEnable() {
+        if (activeController == ControllerType.PS4) {
+            ActiveTypeDisp.text = "Dualshock4";
+            
+        } else {
+            ActiveTypeDisp.text = "XBox / Microsoft";
+            
+        }
         controls.OptionsMenu.Enable();
     }
 
@@ -33,13 +40,6 @@ public class ControlsOptions : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         
-        if (activeController == ControllerType.PS4) {
-            ActiveTypeDisp.text = "Dualshock4";
-            
-        } else {
-            ActiveTypeDisp.text = "XBox / Microsoft";
-            
-        }
     }
 
     // Update is called once per frame
