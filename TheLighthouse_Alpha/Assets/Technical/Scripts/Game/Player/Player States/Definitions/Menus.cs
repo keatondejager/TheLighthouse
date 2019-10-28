@@ -17,7 +17,7 @@ namespace Player {
             MenuObject = PlayerReference.instance.menuObject;
             MainMenuObject = PlayerReference.instance.MainMenuObj;
             OptionsMenuObject = PlayerReference.instance.OptionsMenuObj;
-            
+
             controls.Menus.Exit.performed += ctx => ExitState();
         }
 

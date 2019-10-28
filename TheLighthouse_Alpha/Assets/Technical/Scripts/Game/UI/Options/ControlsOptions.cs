@@ -14,6 +14,7 @@ public class ControlsOptions : MonoBehaviour
 
     public ControllerType activeController = ControllerType.PS4;
     private PlayerInputActions controls;
+
     private void Awake() {
         controls = new PlayerInputActions();
 

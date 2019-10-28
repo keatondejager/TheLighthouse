@@ -42,6 +42,7 @@ public class OptionsMenuControl : MonoBehaviour
         controls.OptionsMenu.Previous.started += ctx => index--;
 
         controls.OptionsMenu.Back.canceled += ctx => CloseMenu();
+        controls.OptionsMenu.Save.performed += ctx => CloseMenu();
     }
 
     private void OnEnable() {

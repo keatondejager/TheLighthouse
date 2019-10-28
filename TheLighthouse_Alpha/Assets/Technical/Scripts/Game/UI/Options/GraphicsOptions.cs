@@ -59,6 +59,9 @@ public class GraphicsOptions : MonoBehaviour
     private bool isRightDown;
     private bool isLeftDown;
 
+    private float OriginalBrightness;
+    private bool originalScreen;
+
     private void Awake() {
         controls = new PlayerInputActions();
 
@@ -70,6 +73,16 @@ public class GraphicsOptions : MonoBehaviour
 
         controls.OptionsMenu.Up.started += ctx => index--;
         controls.OptionsMenu.Down.started += ctx => index++;
+
+        controls.OptionsMenu.Close.performed += ctx => Revert();
+    }
+
+    private void Revert () {
+        BrightnessValue = OriginalBrightness;
+        isFullScreen = !originalScreen;
+
+        SetExposure();
+        SetScreen();
     }
     
     // Start is called before the first frame update
@@ -85,6 +98,8 @@ public class GraphicsOptions : MonoBehaviour
         }
 
         BrightnessValue = menuExposure.compensation.GetValue<float>();
+        OriginalBrightness = BrightnessValue;
+        originalScreen = isFullScreen;
 
         index = 0;
         valueDisplay.value = Map01(BrightnessValue, minExposure, maxExposure);

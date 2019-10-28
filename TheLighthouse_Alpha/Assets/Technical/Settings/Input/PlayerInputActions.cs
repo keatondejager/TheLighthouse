@@ -691,19 +691,7 @@ public class PlayerInputActions : IInputActionCollection
                     ""interactions"": """"
                 }
             ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""6b23e34a-34a5-4e2c-b4ef-ae226ec78466"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Exit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
+            ""bindings"": []
         },
         {
             ""name"": ""Interact"",
