@@ -65,5 +65,12 @@ public class ControllerSettings : MonoBehaviour
         if (OnSpriteChange != null) {
             OnSpriteChange();
         }
+
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            PlayerPrompts player = GameObject.FindObjectOfType<PlayerPrompts>();
+
+            player.SetController(ActiveController == 0);
+        }
+        
     } 
 }

@@ -17,7 +17,6 @@ public class PlayerPrompts : MonoBehaviour {
     [Header("Camera")]
         public Transform cameraTransform;
 
-
     public void SetController (bool type) {
         InteractRenderer.sprite = type ? Interact_PS4 : Interact_Xbox;
         ExamineRenderer.sprite = type ? Examine_PS4 : Examine_Xbox;
