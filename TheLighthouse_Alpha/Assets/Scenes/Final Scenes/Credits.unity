@@ -1813,7 +1813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -100}
+  m_AnchoredPosition: {x: 50, y: -200}
   m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543035403
@@ -4398,7 +4398,7 @@ MonoBehaviour:
     - {fileID: 319878676}
     delay: 3
     duration: 4.9
-    display: {fileID: 749432255}
+    display: {fileID: 928079673}
   - EnglishTitle: Programmers
     RussianTitle: "\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0441\u0442\u044B"
     names:
@@ -4407,7 +4407,7 @@ MonoBehaviour:
     - {fileID: 1446468273}
     delay: 3
     duration: 4.9
-    display: {fileID: 749432255}
+    display: {fileID: 156542459}
   - EnglishTitle: Visual Effects
     RussianTitle: "\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0439 \u042D\u0444\u0444\u0435\u043A\u0442"
     names:
@@ -4415,7 +4415,7 @@ MonoBehaviour:
     - {fileID: 1486185680}
     delay: 3
     duration: 4.9
-    display: {fileID: 749432255}
+    display: {fileID: 317887044}
   transparent: {r: 0, g: 0, b: 0, a: 0}
   opaque: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1446468271
@@ -4452,7 +4452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -100}
+  m_AnchoredPosition: {x: 50, y: -300}
   m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446468273
@@ -4832,7 +4832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -100}
+  m_AnchoredPosition: {x: 50, y: -200}
   m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486185680
