@@ -31,18 +31,29 @@ public class Credits : MonoBehaviour
             item.display.text = item.RussianTitle;
 
             item.display.color = transparent;
-
+            foreach (TMP_Text name in item.names) {
+                name.color = transparent;        
+            }
+            
             for (int i = 0; i < 15; i++) {
-                item.display.color = Color.Lerp(item.display.color, opaque, 0.15f );
+                Color lerpColor = Color.Lerp(item.display.color, opaque, 0.15f );
+                item.display.color = lerpColor;
+                foreach (TMP_Text name in item.names) {
+                    name.color = lerpColor;
+                }
                 yield return new WaitForEndOfFrame();
             }
             
             
             yield return new WaitForSecondsRealtime(item.delay);
-            int iterations = item.RussianTitle.Length > item.EnglishTitle.Length ? item.EnglishTitle.Length : item.RussianTitle.Length;
+            int iterations = item.EnglishTitle.Length;
             for (int i = 0; i < iterations; i++) {
-                item.display.text = item.display.text.Remove(i, 1);
-                item.display.text = item.display.text.Insert(i, item.EnglishTitle[i].ToString());
+                if (i < item.display.text.Length) {
+                    item.display.text = item.display.text.Remove(i, 1);
+                    item.display.text = item.display.text.Insert(i, item.EnglishTitle[i].ToString());
+                } else {
+                    item.display.text += item.EnglishTitle[i];
+                }
                 yield return new WaitForSecondsRealtime(0.05f);
             }
 
@@ -51,7 +62,11 @@ public class Credits : MonoBehaviour
 
             
             for (int i = 0; i < 15; i++) {
-                item.display.color = Color.Lerp(item.display.color, transparent, 0.1f );
+                Color lerpColor = Color.Lerp(item.display.color, transparent, 0.1f );
+                item.display.color = lerpColor;
+                foreach (TMP_Text name in item.names) {
+                    name.color = lerpColor;
+                }
                 yield return new WaitForEndOfFrame();
             }
 
@@ -70,10 +85,10 @@ public class Credits : MonoBehaviour
 
 [System.Serializable]
 public class Credit {
-    public string RussianTitle;
     public string EnglishTitle;
-    public List<string> RussianNames;
-    public List<string> EnglishNames;
+    public string RussianTitle;
+    
+    public List<TMP_Text> names;
 
     public float delay;
     public float duration;
