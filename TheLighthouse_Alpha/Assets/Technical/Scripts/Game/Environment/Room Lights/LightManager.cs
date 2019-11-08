@@ -8,17 +8,11 @@ public class LightManager : MonoBehaviour
     public List<GameObject> SceneLights;
     public List<GameObject> LightsToTurnOff;
 
-    [Range(0, 1f)] public float breakChance = 0.4f;
-
 
     public int LightsOffNarrativeIndex;
     public void TurnLightsOn () {
         LightsToTurnOff = new List<GameObject>();
         foreach (GameObject light in SceneLights) {
-            float rand = Random.Range(0f,1f);
-            if (rand < 0.45f) {
-                LightsToTurnOff.Add(light);
-            }
             light.SetActive(true);
         }
         StartCoroutine(LightsOff());

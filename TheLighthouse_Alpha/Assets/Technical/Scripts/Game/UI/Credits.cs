@@ -11,12 +11,12 @@ public class Credits : MonoBehaviour
     private void OnEnable() {
         controls = new PlayerInputActions();
 
-        controls.Menus.Exit.performed += ctx => SceneManager.LoadScene(0);
-        controls.Menus.Enable();
+        controls.PuzzleControls.Close.performed += ctx => SceneManager.LoadScene(0);
+        controls.PuzzleControls.Enable();
     }
 
     private void OnDisable() {
-        controls.Menus.Disable();
+        controls.PuzzleControls.Disable();
     }
 
 
