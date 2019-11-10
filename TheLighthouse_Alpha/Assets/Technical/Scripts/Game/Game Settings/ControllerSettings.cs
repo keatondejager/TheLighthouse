@@ -39,7 +39,7 @@ public class ControllerSettings : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start() {
+     private void OnEnable()  {
         if (SceneManager.GetActiveScene().buildIndex == 1) {
             PlayerPrompts player = GameObject.FindObjectOfType<PlayerPrompts>();
 

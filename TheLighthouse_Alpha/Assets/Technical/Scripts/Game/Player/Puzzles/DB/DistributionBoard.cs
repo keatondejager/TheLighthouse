@@ -109,6 +109,8 @@ public class DistributionBoard : MonoBehaviour
             return;
         }
 
+        PuzzleObjects.position = ReferencePoint.position;
+
         if (doSecondLineDelay != -1) {
             if (!isEnabled) {
                 doSecondLineDelay = -1f;
@@ -121,6 +123,7 @@ public class DistributionBoard : MonoBehaviour
         if (activeState) {
             activeState.Step();
         }
+
     }
 
     public void StateComplete() {
