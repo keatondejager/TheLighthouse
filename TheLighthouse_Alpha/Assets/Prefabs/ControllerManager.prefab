@@ -44,17 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractSprites:
-  - {fileID: -7896066625056345520, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
-  - {fileID: 402176972062023477, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  - {fileID: 4080114351533899329, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -2905948176418241823, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
   ExamineSprites:
-  - {fileID: 291926779446066459, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
-  - {fileID: -4244573586694794519, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  - {fileID: -7797084676183656097, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -2059106360587505679, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
   CloseSprites:
-  - {fileID: -3729955917459970327, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
-  - {fileID: -2596631423310846082, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  - {fileID: 4710729158590095514, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -5988242829446757198, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
   ConfirmSprites:
-  - {fileID: 9154463152959459473, guid: 26f1987b1bea1564abeb650011d8540b, type: 3}
-  - {fileID: 7033756916143513353, guid: a024b1e803b7de64189613ef1f60b076, type: 3}
+  - {fileID: 2208191909921104419, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -615167446257432165, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
   North: {fileID: 0}
   South: {fileID: 0}
   West: {fileID: 0}

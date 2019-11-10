@@ -46,6 +46,9 @@ public class Switch : DB_State {
     }
 
     public override void Step() {
+        if (isPlacing) {
+            return;
+        }
         ProgressDisp.gameObject.SetActive(isLeftGrabDown&&isRightGrabDown);
         
         if (analogueInput_R == 0 || analogueInput_L == 0 || !isLeftGrabDown || !isRightGrabDown || isPlacing) {
