@@ -55,6 +55,8 @@ public class AudioManager : MonoBehaviour
         SetAmbient();
         SetFootsteps();
 
+        StopSteam();
+
         if (SceneManager.GetActiveScene().buildIndex == 1) {
             informativeSource.Play();
         }

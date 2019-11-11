@@ -67,7 +67,7 @@ namespace Player
                 zoomDistance += zoomChange;
             }
 
-            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position + Vector3.forward * zoomDistance;
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position + objectBeingExamined.PositionOffset + Vector3.forward * zoomDistance;
 
             
         }
@@ -83,7 +83,7 @@ namespace Player
             originalPosition = objectBeingExamined.ObjectMesh.position;
             originalRotation = objectBeingExamined.ObjectMesh.rotation;
 
-            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position + objectBeingExamined.PositionOffset;
             objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
             objectBeingExamined.ObjectMesh.gameObject.SetActive(true);
         }
@@ -97,7 +97,7 @@ namespace Player
             ExamineUI.SetActive(false);
         }
         public void ResetObject () {
-            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position;
+            objectBeingExamined.ObjectMesh.position = ExamineReferencePoint.position + objectBeingExamined.PositionOffset;
             objectBeingExamined.ObjectMesh.rotation = Quaternion.Euler(objectBeingExamined.StartingRotation);
             zoomDistance = 0;
         }
