@@ -28,9 +28,10 @@ public class LightManager : MonoBehaviour
         lightSoundEffect.Play();
         yield return new WaitForSeconds(audioClipDuration);
         AudioManager.instance.SetSteamSound();
-        NarrativeController.instance.TriggerNarrative(LightsOffNarrativeIndex);
+        //NarrativeController.instance.TriggerNarrative(LightsOffNarrativeIndex);
         foreach (GameObject item in LightsToTurnOff) {
             item.SetActive(false);
         }
+
     }
 }

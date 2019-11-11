@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0_Enter
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 8300000, guid: eea5966a46829f849be5c1adae5c0848, type: 3}
-  subtitle: This old junk switchbox is out again. But do they listen to old Ivan?
-    Of course not.
+  subtitle: This old junk switchbox is out again. I asked them for parts. But do they
+    listen to old Ivan? Of course not.
   duration: 0
   Repeatable: 0
   priority: 10

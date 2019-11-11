@@ -13,8 +13,6 @@ public class AudioManager : MonoBehaviour
         } else if (instance != this) {
             Destroy(this.gameObject);
         }
-
-        DontDestroyOnLoad(this);
     }
 
     [Header("Spoken Sounds")]
@@ -46,6 +44,7 @@ public class AudioManager : MonoBehaviour
         [SerializeField] protected AudioSource steamSource;
         [SerializeField] protected AudioClip pipeBurst;
         [SerializeField] protected AudioClip steamSound;
+        [SerializeField] protected int LightsOffNarrativeIndex;
  
 
     private void Start() {
@@ -132,7 +131,7 @@ public class AudioManager : MonoBehaviour
     public void SetSteamSound () {
         steamSource.clip = pipeBurst;
         steamSource.Play();
-        Invoke("SteamEffect", pipeBurst.length);
+        Invoke("SteamEffect", pipeBurst.length-0.1f);
     }
 
     private void SteamEffect () {
@@ -140,6 +139,7 @@ public class AudioManager : MonoBehaviour
         steamSource.clip = steamSound;
         steamSource.loop = true;
         steamSource.Play();
+        NarrativeController.instance.TriggerNarrative(LightsOffNarrativeIndex);
     }
 
     public void StopSteam () {
