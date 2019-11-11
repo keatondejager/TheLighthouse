@@ -140,5 +140,9 @@ public class AudioManager : MonoBehaviour
         steamSource.Play();
     }
 
+    public void StopSteam () {
+        steamSource.Stop();
+    }
+
     
 }

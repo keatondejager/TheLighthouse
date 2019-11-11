@@ -71,7 +71,7 @@ public class Valve_Puzzle : MonoBehaviour
     private void Increase (string path) {
         progress = Mathf.Clamp01(progress + jumpAmount);
         PlayerReference.instance.ShakeController(path, iterations, duration, interval, lowFreq, highFreq);
-        if (progress > 0.95f) {
+        if (progress > 0.97f) {
             state = ValveState.Installed_Closed;
             CompletePuzzle();
             PlayerReference.instance.manager.PuzzleExit();
@@ -175,6 +175,7 @@ public class Valve_Puzzle : MonoBehaviour
 
     private void CompletePuzzle () {
         steam.Stop();
+        AudioManager.instance.StopSteam();
         NarrativeController.instance.TriggerNarrative(FinishPuzzleIndex);
         steamCollider.SetActive(false);
         ButtonPrompt.SetActive(false);
