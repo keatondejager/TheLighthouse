@@ -9,6 +9,9 @@ public class ButtonNavigation : MonoBehaviour
 
     private int currentIndex;
 
+    public AudioSource NavigationSound;
+    public AudioSource SelectSound;
+
     private PlayerInputActions controls;
     private int problemCount = 0;
 
@@ -46,6 +49,7 @@ public class ButtonNavigation : MonoBehaviour
         }
         problemCount = 0;
         buttonOptions[currentIndex].Activate();
+        NavigationSound.Play();
         
     }
 
@@ -53,6 +57,8 @@ public class ButtonNavigation : MonoBehaviour
         if (buttonOptions.Count == 0) {
             return;
         }
+
+        
         problemCount++;
         if (problemCount >= buttonOptions.Count) {
             for (int i = 0; i < buttonOptions.Count; i++) {
@@ -77,7 +83,7 @@ public class ButtonNavigation : MonoBehaviour
         }
         problemCount = 0;
         buttonOptions[currentIndex].Activate();
-
+        NavigationSound.Play();
         
     }
 
@@ -86,7 +92,9 @@ public class ButtonNavigation : MonoBehaviour
             return;
         }
         buttonOptions[currentIndex].Submit();
+        SelectSound.Play();
         buttonOptions[currentIndex].Deactivate();
+        ActivateDefault();
     }
 
     private void OnEnable() {

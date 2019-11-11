@@ -35,7 +35,7 @@ public class DistributionBoard : MonoBehaviour
         [SerializeField] protected GameObject UIObject;
         [SerializeField] protected Transform PuzzleObjects;
         [SerializeField] protected Transform ReferencePoint;
-        private Vector3 originalPosition;
+        public Vector3 originalPosition;
         private Quaternion originalRotation;
 
         private float doSecondLineDelay = -1f;

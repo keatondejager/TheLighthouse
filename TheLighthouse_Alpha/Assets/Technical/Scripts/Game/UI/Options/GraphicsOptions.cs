@@ -30,7 +30,7 @@ public class GraphicsOptions : MonoBehaviour
     
     [Header("Reference")]
         public List<GameObject> indicators;
-
+        public AudioSource SoundEffect;        
         private int _optionIndex;
         protected int index {
             get => _optionIndex;
@@ -45,6 +45,7 @@ public class GraphicsOptions : MonoBehaviour
                     _optionIndex = 0;
                 }
                 indicators[_optionIndex].SetActive(true);
+                SoundEffect.Play();
             }
         }
 

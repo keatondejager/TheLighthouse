@@ -92,12 +92,20 @@ namespace Player
             public bool hasInteractedWithDoor;
        
 
+        private PlayerInputActions controls;
         private void Awake() {
             if (instance == null) {
                 instance = this;
             } else if (instance != this) {
                 Destroy(this.gameObject);
             }
+
+            controls = new PlayerInputActions();
+            controls.CheatCodes.Level1.performed += ctx => puzzleOneComplete = true;
+            controls.CheatCodes.Level2.performed += ctx => puzzleTwoComplete = true;
+
+            controls.CheatCodes.Enable();
+
         }
 
         private void Start() {
@@ -148,6 +156,8 @@ namespace Player
 
         private void OnDisable() {
             StopVibrations();
+
+            controls.CheatCodes.Disable();
         }
     }
 

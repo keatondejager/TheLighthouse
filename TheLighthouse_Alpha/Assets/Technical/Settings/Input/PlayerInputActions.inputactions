@@ -1948,6 +1948,71 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "CheatCodes",
+            "id": "0da2b1db-7296-4f51-823f-fbe414ebdc05",
+            "actions": [
+                {
+                    "name": "Level1",
+                    "type": "Button",
+                    "id": "0d38bcec-b0a2-426f-b932-aad43b9da064",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Level2",
+                    "type": "Button",
+                    "id": "6b960d1f-7e24-456b-b6a3-2c9db29a837c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Level3",
+                    "type": "Button",
+                    "id": "5180e20e-b9ca-49c9-b654-2fb7ea01a438",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "258db253-ac93-4077-a1c7-73136e74fd5f",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "501d8bf7-de91-464b-899b-dcbda1e89b72",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b451efd-c43e-4ef6-b385-15375d4860c2",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

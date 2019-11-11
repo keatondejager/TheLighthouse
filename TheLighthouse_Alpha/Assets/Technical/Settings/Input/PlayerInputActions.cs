@@ -1960,6 +1960,71 @@ public class PlayerInputActions : IInputActionCollection
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""CheatCodes"",
+            ""id"": ""0da2b1db-7296-4f51-823f-fbe414ebdc05"",
+            ""actions"": [
+                {
+                    ""name"": ""Level1"",
+                    ""type"": ""Button"",
+                    ""id"": ""0d38bcec-b0a2-426f-b932-aad43b9da064"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Level2"",
+                    ""type"": ""Button"",
+                    ""id"": ""6b960d1f-7e24-456b-b6a3-2c9db29a837c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Level3"",
+                    ""type"": ""Button"",
+                    ""id"": ""5180e20e-b9ca-49c9-b654-2fb7ea01a438"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""258db253-ac93-4077-a1c7-73136e74fd5f"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Level1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""501d8bf7-de91-464b-899b-dcbda1e89b72"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Level2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b451efd-c43e-4ef6-b385-15375d4860c2"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Level3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -2018,6 +2083,11 @@ public class PlayerInputActions : IInputActionCollection
         m_OptionsMenu_Defaults = m_OptionsMenu.GetAction("Defaults");
         m_OptionsMenu_Next = m_OptionsMenu.GetAction("Next");
         m_OptionsMenu_Previous = m_OptionsMenu.GetAction("Previous");
+        // CheatCodes
+        m_CheatCodes = asset.GetActionMap("CheatCodes");
+        m_CheatCodes_Level1 = m_CheatCodes.GetAction("Level1");
+        m_CheatCodes_Level2 = m_CheatCodes.GetAction("Level2");
+        m_CheatCodes_Level3 = m_CheatCodes.GetAction("Level3");
     }
 
     ~PlayerInputActions()
@@ -2558,6 +2628,55 @@ public class PlayerInputActions : IInputActionCollection
         }
     }
     public OptionsMenuActions @OptionsMenu => new OptionsMenuActions(this);
+
+    // CheatCodes
+    private readonly InputActionMap m_CheatCodes;
+    private ICheatCodesActions m_CheatCodesActionsCallbackInterface;
+    private readonly InputAction m_CheatCodes_Level1;
+    private readonly InputAction m_CheatCodes_Level2;
+    private readonly InputAction m_CheatCodes_Level3;
+    public struct CheatCodesActions
+    {
+        private PlayerInputActions m_Wrapper;
+        public CheatCodesActions(PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Level1 => m_Wrapper.m_CheatCodes_Level1;
+        public InputAction @Level2 => m_Wrapper.m_CheatCodes_Level2;
+        public InputAction @Level3 => m_Wrapper.m_CheatCodes_Level3;
+        public InputActionMap Get() { return m_Wrapper.m_CheatCodes; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CheatCodesActions set) { return set.Get(); }
+        public void SetCallbacks(ICheatCodesActions instance)
+        {
+            if (m_Wrapper.m_CheatCodesActionsCallbackInterface != null)
+            {
+                Level1.started -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel1;
+                Level1.performed -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel1;
+                Level1.canceled -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel1;
+                Level2.started -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel2;
+                Level2.performed -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel2;
+                Level2.canceled -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel2;
+                Level3.started -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel3;
+                Level3.performed -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel3;
+                Level3.canceled -= m_Wrapper.m_CheatCodesActionsCallbackInterface.OnLevel3;
+            }
+            m_Wrapper.m_CheatCodesActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                Level1.started += instance.OnLevel1;
+                Level1.performed += instance.OnLevel1;
+                Level1.canceled += instance.OnLevel1;
+                Level2.started += instance.OnLevel2;
+                Level2.performed += instance.OnLevel2;
+                Level2.canceled += instance.OnLevel2;
+                Level3.started += instance.OnLevel3;
+                Level3.performed += instance.OnLevel3;
+                Level3.canceled += instance.OnLevel3;
+            }
+        }
+    }
+    public CheatCodesActions @CheatCodes => new CheatCodesActions(this);
     public interface IMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
@@ -2618,5 +2737,11 @@ public class PlayerInputActions : IInputActionCollection
         void OnDefaults(InputAction.CallbackContext context);
         void OnNext(InputAction.CallbackContext context);
         void OnPrevious(InputAction.CallbackContext context);
+    }
+    public interface ICheatCodesActions
+    {
+        void OnLevel1(InputAction.CallbackContext context);
+        void OnLevel2(InputAction.CallbackContext context);
+        void OnLevel3(InputAction.CallbackContext context);
     }
 }

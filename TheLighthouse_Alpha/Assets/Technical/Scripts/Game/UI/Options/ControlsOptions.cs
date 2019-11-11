@@ -8,6 +8,7 @@ public class ControlsOptions : MonoBehaviour
 {   
 
     public TMP_Text ActiveTypeDisp;
+    public AudioSource SoundEffect;
     public enum ControllerType {
         PS4 = 0, XBox = 1
     }
@@ -57,7 +58,7 @@ public class ControlsOptions : MonoBehaviour
             ActiveTypeDisp.text = "XBox / Microsoft";
             
         }
-
+        SoundEffect.Play();
         ControllerSettings.instance.SetControllerType((int)activeController);
     }
 

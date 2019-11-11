@@ -1521,7 +1521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dominique Bothma (3D)
+  m_text: Dominique Bothma (3D and 2D)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc7192f770a35804a94e1a7dce4eddf4, type: 2}
   m_sharedMaterial: {fileID: -4506043353485466760, guid: cc7192f770a35804a94e1a7dce4eddf4,
@@ -6571,7 +6571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stash Gomes (2D)
+  m_text: Stash Gomes (Sprites and UI)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc7192f770a35804a94e1a7dce4eddf4, type: 2}
   m_sharedMaterial: {fileID: -4506043353485466760, guid: cc7192f770a35804a94e1a7dce4eddf4,

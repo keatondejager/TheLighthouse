@@ -12,6 +12,8 @@ public class OptionsMenuControl : MonoBehaviour
 
     public GameObject MenuIndicator;
 
+    public AudioSource PageChange;
+
     private int _listIndex;
     protected int index {
         get => _listIndex;
@@ -29,6 +31,7 @@ public class OptionsMenuControl : MonoBehaviour
             optionsLists[_listIndex].SetActive(true);
             Vector3 position = MenuIndicator.transform.position;
             position.x = optionLabels[_listIndex].position.x;
+            PageChange.Play();
             MenuIndicator.transform.position = position;
         }
     }

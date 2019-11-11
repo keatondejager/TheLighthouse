@@ -24,14 +24,14 @@ public class AudioOptions : MonoBehaviour
                 _index = settings.Count - 1;
             }
             settings[_index].indicator.SetActive(true);
-           
+            SoundEffect.Play();
         }
     }
 
     public float sensitivity = 0.2f;
     private float delay;
 
-
+    public AudioSource SoundEffect;
     private bool isRightDown;
     private bool isLeftDown;
     

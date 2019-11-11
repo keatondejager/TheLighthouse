@@ -41,6 +41,12 @@ public class AudioManager : MonoBehaviour
         [SerializeField] protected List<AudioClip> Songs; 
         [SerializeField] protected AudioClip creditsSong;
 
+    
+    [Header("Steam Sound Effects")]
+        [SerializeField] protected AudioSource steamSource;
+        [SerializeField] protected AudioClip pipeBurst;
+        [SerializeField] protected AudioClip steamSound;
+ 
 
     private void Start() {
         Cursor.visible = false;
@@ -119,6 +125,19 @@ public class AudioManager : MonoBehaviour
 
     private void ExitCredits() {
         SceneManager.LoadScene(0);
+    }
+
+    public void SetSteamSound () {
+        steamSource.clip = pipeBurst;
+        steamSource.Play();
+        Invoke("SteamEffect", pipeBurst.length);
+    }
+
+    private void SteamEffect () {
+        steamSource.Stop();
+        steamSource.clip = steamSound;
+        steamSource.loop = true;
+        steamSource.Play();
     }
 
     

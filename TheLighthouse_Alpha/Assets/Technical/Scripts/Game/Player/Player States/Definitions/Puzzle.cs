@@ -24,8 +24,11 @@ namespace Player
         }
 
         public override void Step() {
-            if (Vector3.Distance(playertransform.position, puzzletransform.position) > 13f) {
-                DisableState();
+            if (!puzzletransform || PlayerReference.instance.puzzleOneComplete) {
+                return;
+            }
+            if (Vector3.Distance(playertransform.position, dbPuzzleObject.originalPosition) > 3f) {
+                PlayerReference.instance.manager.PuzzleExit();
             }
         }
 

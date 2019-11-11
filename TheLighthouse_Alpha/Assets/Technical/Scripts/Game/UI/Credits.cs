@@ -73,7 +73,7 @@ public class Credits : MonoBehaviour
             item.display.gameObject.SetActive(false);
             yield return null;
         }
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
     }
     
 
