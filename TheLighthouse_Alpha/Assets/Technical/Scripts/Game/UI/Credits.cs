@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class Credits : MonoBehaviour
 {
@@ -11,8 +12,14 @@ public class Credits : MonoBehaviour
 
     public List<Credit> credits;
 
+    public float startDelay;
+
     public Color transparent;
     public Color opaque;
+
+    public Image Fade;
+    public float FadeSpeed;
+    private bool fadeDirection;
     
     // Start is called before the first frame update
     private void OnEnable() {
@@ -25,7 +32,17 @@ public class Credits : MonoBehaviour
 
     }
 
+    private void Update() {
+        if (fadeDirection) {
+            Fade.color = Color.Lerp(Fade.color, opaque, FadeSpeed * Time.deltaTime);
+        } else {
+            Fade.color = Color.Lerp(Fade.color, transparent, FadeSpeed * Time.deltaTime);
+        }
+    }
+
     IEnumerator RunCredits () {
+        fadeDirection = false;
+        yield return new WaitForSecondsRealtime(startDelay);
         foreach (Credit item in credits) {
             item.display.gameObject.SetActive(true);
             item.display.text = item.RussianTitle;
@@ -73,6 +90,8 @@ public class Credits : MonoBehaviour
             item.display.gameObject.SetActive(false);
             yield return null;
         }
+        fadeDirection = true;
+        yield return new WaitForSecondsRealtime(startDelay);
         SceneManager.LoadScene(0);
     }
     

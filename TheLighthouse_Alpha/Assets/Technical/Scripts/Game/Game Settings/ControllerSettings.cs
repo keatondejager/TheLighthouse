@@ -14,12 +14,21 @@ public class ControllerSettings : MonoBehaviour
     public List<Sprite> ExamineSprites;
     public List<Sprite> CloseSprites;
     public List<Sprite> ConfirmSprites;
+    public List<Sprite> RShoulderSprites;
+    public List<Sprite> LShoulderSprites;
+    public List<Sprite> RTriggerSprites;
+    public List<Sprite> LTriggerSprites;
 
 
     public Sprite North;
     public Sprite South;
     public Sprite West;
     public Sprite East;
+    public Sprite RightShoulder;
+    public Sprite LeftShoulder;
+    public Sprite RightTrigger; 
+    public Sprite LeftTrigger;
+
 
     public delegate void SetSprite();
     public event SetSprite OnSpriteChange;
@@ -61,6 +70,10 @@ public class ControllerSettings : MonoBehaviour
         South = ConfirmSprites[ActiveController];
         West = ExamineSprites[ActiveController];
         East = CloseSprites[ActiveController];
+        RightShoulder = RShoulderSprites[ActiveController];
+        RightTrigger = RTriggerSprites[ActiveController];
+        LeftShoulder = LShoulderSprites[ActiveController];
+        LeftTrigger = LTriggerSprites[ActiveController];
 
         if (OnSpriteChange != null) {
             OnSpriteChange();

@@ -55,8 +55,24 @@ MonoBehaviour:
   ConfirmSprites:
   - {fileID: 2208191909921104419, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
   - {fileID: -615167446257432165, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
+  RShoulderSprites:
+  - {fileID: -9027939467542237369, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -3780861698964480559, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
+  LShoulderSprites:
+  - {fileID: -635043501118316248, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -1079395394462240970, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  RTriggerSprites:
+  - {fileID: 6046717827878157927, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: 7186875559281642135, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
+  LTriggerSprites:
+  - {fileID: -1079395394462240970, guid: 491652bcdbabb4a41bcb34db1948df3a, type: 3}
+  - {fileID: -6277583953797786764, guid: 5e6d5447b1971f44b9a9c3eef3db6379, type: 3}
   North: {fileID: 0}
   South: {fileID: 0}
   West: {fileID: 0}
   East: {fileID: 0}
+  RightShoulder: {fileID: 0}
+  LeftShoulder: {fileID: 0}
+  RightTrigger: {fileID: 0}
+  LeftTrigger: {fileID: 0}
   ActiveController: 1

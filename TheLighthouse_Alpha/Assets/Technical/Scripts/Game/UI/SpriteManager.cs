@@ -37,6 +37,18 @@ public class SpriteManager : MonoBehaviour
             case ButtonOption.West:
                 myImage.sprite = ControllerSettings.instance.West;
             break;
+            case ButtonOption.RShoulder:
+                myImage.sprite = ControllerSettings.instance.RightShoulder;
+            break;
+            case ButtonOption.LShoulder:
+                myImage.sprite = ControllerSettings.instance.LeftShoulder;
+            break;
+            case ButtonOption.RTrigger:
+                myImage.sprite = ControllerSettings.instance.RightTrigger;
+            break;
+            case ButtonOption.LTrigger:
+                myImage.sprite = ControllerSettings.instance.LeftTrigger;
+            break;
         }
     }
 
