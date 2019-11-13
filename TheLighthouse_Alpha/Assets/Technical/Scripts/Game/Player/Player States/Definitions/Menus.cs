@@ -32,6 +32,7 @@ namespace Player {
 
         public override void EnableState() {
             delay = 2 * Time.deltaTime;
+            NarrativeController.instance.PauseGame();
             if (MenuObject)
                 MenuObject.SetActive(true);
         }
@@ -43,6 +44,7 @@ namespace Player {
         public override void ExitState () {
                 MainMenuObject.SetActive(true);
                 PlayerObject.SetState(_moveState);
+                NarrativeController.instance.PauseGame();
         }
 
         public void QuitGame () {

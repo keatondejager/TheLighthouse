@@ -50,10 +50,10 @@ namespace Player
             public List<Item>  PlayerInventory;
 
             public Dictionary<int, int> NarrativeItemCues = new Dictionary<int, int>() {
-                {0, 11}, //Screwdriver
-                {1, 10}, //Wires
-                {2, 12}, // Switch
-                {7, 25}  // Wrench                
+                {0, 8}, //Screwdriver
+                {1, 7}, //Wires
+                {2, 9}, // Switch
+                {7, 24}  // Wrench                
             };
 
 
