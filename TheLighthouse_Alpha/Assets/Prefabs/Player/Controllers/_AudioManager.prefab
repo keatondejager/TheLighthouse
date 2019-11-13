@@ -720,7 +720,7 @@ MonoBehaviour:
   steamSource: {fileID: 7821500993590007058}
   pipeBurst: {fileID: 8300000, guid: 6d9743feeca49d640b10347fbc272654, type: 3}
   steamSound: {fileID: 8300000, guid: 5468aa307c4fb184b90e62df0ba8b6b6, type: 3}
-  LightsOffNarrativeIndex: 14
+  LightsOffNarrativeIndex: 11
 --- !u!1 &7329773964295222666
 GameObject:
   m_ObjectHideFlags: 0

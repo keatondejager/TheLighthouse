@@ -6,13 +6,13 @@ namespace Environment
 {
     public class Elevator : MonoBehaviour {
         [SerializeField] protected GameObject ButtonPrompt;
-        [SerializeField] protected int CannotOpenIndex;
         [SerializeField] protected Vector3 movePosition;
         [SerializeField] protected Transform cam;
 
         [SerializeField] protected Animator animControl;
         [SerializeField] private int _currentFloor;
         [SerializeField] protected int NextFloorIndex;
+        [SerializeField] protected float transitionDuration;
         public int currentFloor {
             get => _currentFloor;
             set {
@@ -52,10 +52,12 @@ namespace Environment
             if (Player.PlayerReference.instance.puzzleOneComplete) {
                 Player.PlayerReference.instance.manager.gameObject.transform.position = movePosition;
                 currentFloor = 1;
-                NarrativeController.instance.TriggerNarrative(NextFloorIndex);
-            } else {
-                NarrativeController.instance.TriggerNarrative(CannotOpenIndex);
-            }
+                Invoke("NarrativeTrigger", transitionDuration);
+            } 
+        }
+
+        public void NarrativeTrigger () {
+            NarrativeController.instance.TriggerNarrative(NextFloorIndex);
         }
     }
 }

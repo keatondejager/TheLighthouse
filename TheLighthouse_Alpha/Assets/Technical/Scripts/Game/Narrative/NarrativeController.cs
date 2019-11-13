@@ -20,6 +20,8 @@ public class NarrativeController : MonoBehaviour
     private List<NarrativeObject> queue;
     private bool interrupted;
 
+    private bool paused;
+
     private void Awake() {
         if (instance == null) {
             instance = this;
@@ -70,7 +72,9 @@ public class NarrativeController : MonoBehaviour
         //         toPlay = null;
         //     } 
         // }
-
+        if (paused) {
+            return;
+        }
         if (queue.Count > 0) {
             if (!VoiceLineSource.isPlaying) {
                 
@@ -95,6 +99,15 @@ public class NarrativeController : MonoBehaviour
             subtitleSource.text = "";
         }
 
+    }
+
+    public void PauseGame () {
+        paused = !paused;
+        if (VoiceLineSource.isPlaying) {
+            VoiceLineSource.Pause();
+        } else {
+            VoiceLineSource.UnPause();
+        }
     }
 
 }

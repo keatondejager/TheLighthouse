@@ -54,6 +54,12 @@ public class SpriteManager : MonoBehaviour
 
     private void OnEnable() {
         ControllerSettings.instance.OnSpriteChange += SetImage;
+
+         if (!myImage) {
+            myImage = GetComponent<Image>();
+        }
+
+        SetImage();
     }
 
     private void OnDisable() {

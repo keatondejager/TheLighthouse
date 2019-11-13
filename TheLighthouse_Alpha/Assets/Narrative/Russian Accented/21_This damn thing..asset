@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e414a5df5608b2849ac47c1a0996787a, type: 3}
+  m_Name: 21_This damn thing.
+  m_EditorClassIdentifier: 
+  voiceLine: {fileID: 8300000, guid: 875bcddf4fa27b04c990992b6366cddc, type: 3}
+  subtitle: This damn thing. It broke once, did not work when I tried to fix it. Iliyana
+    laughed at me when I landed on my kaput.
+  duration: 0
+  Repeatable: 0
+  priority: 0

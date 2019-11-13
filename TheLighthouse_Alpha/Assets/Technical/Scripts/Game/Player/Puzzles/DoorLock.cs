@@ -138,7 +138,17 @@ public class DoorLock : MonoBehaviour
 
     private void OpenDoor () {  
         // Play end of game cutscene
-        SceneManager.LoadScene(2);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Single);
+        fading = true;
+    }
+
+    public UnityEngine.UI.Image fadeOut;
+    public Color black;
+    private bool fading = false;
+    private void Update() {
+        if (fading) {
+            fadeOut.color = Color.Lerp(fadeOut.color, black, 3 * Time.deltaTime);
+        }
     }
 
     private void OnDisable() {
