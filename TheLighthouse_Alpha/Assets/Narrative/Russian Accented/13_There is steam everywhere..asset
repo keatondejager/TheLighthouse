@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 13_There is steam everywhere.
   m_EditorClassIdentifier: 
   voiceLine: {fileID: 8300000, guid: 20778b8b5c6111b46adb6a55b2e4cec3, type: 3}
-  subtitle: There is steam everywhere! I can't see a thing.
+  subtitle: There is steam everywhere! I can not see.
   duration: 0
   Repeatable: 0
   priority: 0
